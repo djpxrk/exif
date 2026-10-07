@@ -411,5 +411,16 @@ Promise.allSettled(faces.map((f) => document.fonts.load(f, 'Aa1/α'))).then(refr
 refreshAll();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform()) {
-  navigator.serviceWorker.register('/sw.js').catch(() => {});
+  // Relative URL so the app also works from a subpath (GitHub Pages).
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+  // On hosts that can't send isolation headers (GitHub Pages) the service
+  // worker adds them; reload once when it first takes over, before any work.
+  if (!crossOriginIsolated && !navigator.serviceWorker.controller) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (photos.length === 0 && !sessionStorage.getItem('rebate:isolated-reload')) {
+        sessionStorage.setItem('rebate:isolated-reload', '1');
+        location.reload();
+      }
+    });
+  }
 }

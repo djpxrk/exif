@@ -25,9 +25,19 @@ npm run dev        # http://localhost:5173
 npm run build      # outputs dist/
 ```
 
-## Deploy the website (Vercel)
+## Website
 
-`vercel.json` sends the cross-origin-isolation headers that the libraw-wasm RAW fallback needs. Deploy `dist/` with `vercel --prod`, or connect the repo (build command `npm run build`, output `dist`).
+Live at **https://djpxrk.github.io/exif/**
+
+To publish changes:
+
+```bash
+npm run deploy
+```
+
+This builds the site and pushes `dist/` to the `gh-pages` branch. Pages is set to **Deploy from a branch** (`gh-pages`, root) under Settings → Pages.
+
+The RAW develop fallback (libraw-wasm) needs a cross-origin isolated page. GitHub Pages can't send the required headers, so the service worker (`public/sw.js`) adds them. On a first visit the page reloads once to pick them up. `vercel.json` sends the same headers if you ever host on Vercel instead.
 
 ## iOS app (Capacitor)
 
