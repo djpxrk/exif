@@ -2,6 +2,7 @@ import { Capacitor, registerPlugin } from '@capacitor/core';
 import exifr from 'exifr';
 import { readExif, toFields, toMetadata, orientationOf } from './exif.js';
 import { isTiff, readIfds, findEmbeddedJpegs } from './tiff.js';
+import { drawOriented } from './render.js';
 
 const RawDecoder = registerPlugin('RawDecoder');
 
@@ -29,7 +30,10 @@ export function sniff(bytes, name = '') {
 
 /**
  * Decodes a File into a drawable image plus its EXIF.
- * Returns { image, width, height, kind, fields, meta, note }.
+ * Returns { image, orientation, width, height, kind, fields, meta, note }.
+ * `orientation` is the EXIF rotation still to apply when drawing `image`;
+ * width/height are the upright size. Full-size images are never redrawn
+ * rotated, which would need a canvas bigger than iOS allows.
  */
 export async function decodeFile(file) {
   const buffer = await file.arrayBuffer();
@@ -45,12 +49,18 @@ export async function decodeFile(file) {
   else if (kind === 'heif') decoded = await decodeHeif(file);
   else decoded = { image: await loadNative(file) };
 
-  const { width, height } = sizeOf(decoded.image);
-  return { ...decoded, width, height, kind, fields: toFields(tags), meta: toMetadata(tags) };
+  const orientation = decoded.orientation || 1;
+  const { width, height } = uprightSize(decoded.image, orientation);
+  return { ...decoded, orientation, width, height, kind, fields: toFields(tags), meta: toMetadata(tags) };
 }
 
 function isDng(buffer) {
   try { return readIfds(buffer).some((t) => t.has(0xc612)); } catch { return false; }
+}
+
+export function uprightSize(img, orientation = 1) {
+  const { width, height } = sizeOf(img);
+  return orientation >= 5 ? { width: height, height: width } : { width, height };
 }
 
 export function sizeOf(img) {
@@ -90,11 +100,8 @@ async function decodeTiff(file, buffer, tags) {
   if (!main) throw new Error(`${file.name} has no image data UTIF can read.`);
   UTIF.decodeImage(buffer, main);
   const rgba = UTIF.toRGBA8(main);
-  const canvas = document.createElement('canvas');
-  canvas.width = main.width;
-  canvas.height = main.height;
-  canvas.getContext('2d').putImageData(new ImageData(new Uint8ClampedArray(rgba.buffer), main.width, main.height), 0, 0);
-  return { image: applyOrientation(canvas, orientationOf(tags)) };
+  const bitmap = await createImageBitmap(new ImageData(new Uint8ClampedArray(rgba.buffer), main.width, main.height));
+  return { image: bitmap, orientation: orientationOf(tags) };
 }
 
 async function decodeRaw(file, buffer, tags) {
@@ -106,13 +113,13 @@ async function decodeRaw(file, buffer, tags) {
       const img = await loadNative(blob);
       // If the preview carries its own orientation the browser already applied it.
       const own = await exifr.orientation(blob).catch(() => undefined);
-      best = own && own !== 1 ? img : applyOrientation(img, orientation);
+      best = { image: img, orientation: own && own !== 1 ? 1 : orientation };
       break;
     } catch { /* try the next candidate */ }
   }
 
-  const edge = best ? Math.max(sizeOf(best).width, sizeOf(best).height) : 0;
-  if (edge >= MIN_PREVIEW_EDGE) return { image: best, note: previewNote(best) };
+  const edge = best ? Math.max(sizeOf(best.image).width, sizeOf(best.image).height) : 0;
+  if (edge >= MIN_PREVIEW_EDGE) return { ...best, note: previewNote(best.image) };
 
   // Small or missing preview: develop the RAW itself when we can.
   try {
@@ -121,11 +128,14 @@ async function decodeRaw(file, buffer, tags) {
   } catch (err) {
     console.warn('RAW develop failed', err);
   }
-  if (best) return { image: best, note: previewNote(best) + ' This file only embeds a small preview.' };
+  if (best) return { ...best, note: previewNote(best.image) + ' This file only embeds a small preview.' };
   throw new Error(`${file.name} has no preview this browser can show. Open it in the iOS app, or export a JPEG from your RAW editor.`);
 }
 
-const previewNote = (img) => `Using the camera's embedded preview (${sizeOf(img).width}×${sizeOf(img).height}).`;
+const previewNote = (img) => {
+  const { width, height } = sizeOf(img);
+  return `Using the camera's embedded preview (${Math.max(width, height)}×${Math.min(width, height)}).`;
+};
 
 async function developRaw(file) {
   if (Capacitor.isNativePlatform()) {
@@ -155,46 +165,20 @@ async function developRaw(file) {
     rgba[i * 4 + 2] = src[j + 2];
     rgba[i * 4 + 3] = 255;
   }
-  const canvas = document.createElement('canvas');
-  canvas.width = width;
-  canvas.height = height;
-  canvas.getContext('2d').putImageData(new ImageData(rgba, width, height), 0, 0);
-  // LibRaw already applies the camera's flip setting (userFlip: -1).
-  return canvas;
+  // An ImageBitmap avoids iOS's canvas size cap. LibRaw already applied the
+  // camera's flip setting (userFlip: -1).
+  return createImageBitmap(new ImageData(rgba, width, height));
 }
 
-/** Bakes an EXIF orientation (1–8) into a new canvas. */
-export function applyOrientation(img, orientation) {
-  if (!orientation || orientation === 1) return img;
-  const { width: w, height: h } = sizeOf(img);
-  const swap = orientation >= 5;
-  const canvas = document.createElement('canvas');
-  canvas.width = swap ? h : w;
-  canvas.height = swap ? w : h;
-  const ctx = canvas.getContext('2d');
-  const transforms = {
-    2: [-1, 0, 0, 1, w, 0],
-    3: [-1, 0, 0, -1, w, h],
-    4: [1, 0, 0, -1, 0, h],
-    5: [0, 1, 1, 0, 0, 0],
-    6: [0, 1, -1, 0, h, 0],
-    7: [0, -1, -1, 0, h, w],
-    8: [0, -1, 1, 0, 0, w],
-  };
-  ctx.setTransform(...transforms[orientation]);
-  ctx.drawImage(img, 0, 0);
-  return canvas;
-}
-
-/** Downscaled copy used for fast live preview. */
-export function makePreview(img, maxEdge = 1800) {
-  const { width, height } = sizeOf(img);
+/** Downscaled, upright copy used for fast live preview. */
+export function makePreview(img, maxEdge = 1800, orientation = 1) {
+  const { width, height } = uprightSize(img, orientation);
   const s = Math.min(1, maxEdge / Math.max(width, height));
   const canvas = document.createElement('canvas');
   canvas.width = Math.round(width * s);
   canvas.height = Math.round(height * s);
   const ctx = canvas.getContext('2d');
   ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  drawOriented(ctx, img, orientation, 0, 0, canvas.width, canvas.height);
   return canvas;
 }

@@ -15,8 +15,8 @@ import './styles.css';
 
 import { Capacitor } from '@capacitor/core';
 import { ACCEPT, decodeFile, makePreview } from './decode.js';
-import { DEFAULT_SETTINGS, FONTS, RATIOS, TEMPLATES, layout, renderFrame } from './render.js';
-import { FORMATS, SIZES, deliver, exportPhoto, maxCanvasPixels } from './export.js';
+import { DEFAULT_SETTINGS, FONTS, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
+import { FORMATS, deliver, exportPhoto, maxCanvasPixels, needsStrips, outputSize } from './export.js';
 
 const $ = (sel) => document.querySelector(sel);
 const el = (tag, props = {}, ...children) => {
@@ -44,6 +44,8 @@ const BACKGROUNDS = [
 
 const stored = load('rebate:settings', {});
 const settings = { ...structuredClone(DEFAULT_SETTINGS), ...stored, show: { ...DEFAULT_SETTINGS.show, ...stored.show } };
+// Ratios saved by earlier versions ('3:2', '16:9') map to their short:long preset.
+if (!RATIOS[settings.ratio]) settings.ratio = { '3:2': '2:3', '16:9': '9:16' }[settings.ratio] || 'auto';
 const exportOpts = { format: 'jpeg', quality: 0.92, size: 'full', keepExif: true, ...load('rebate:export', {}) };
 const photos = [];
 let current = -1;
@@ -82,7 +84,7 @@ async function addFiles(files) {
     busy(`Reading ${file.name}${files.length > 1 ? ` (${i + 1} of ${files.length})` : ''}`);
     try {
       const d = await decodeFile(file);
-      const preview = makePreview(d.image, 2000);
+      const preview = makePreview(d.image, 2000, d.orientation);
       photos.push({
         id: crypto.randomUUID?.() || String(Math.random()),
         name: file.name,
@@ -227,7 +229,7 @@ function samplePhoto() {
   g.fillStyle = grad; g.fillRect(0, 0, 300, 200);
   sample = {
     width: 6000, height: 4000, thumb: c,
-    fields: { make: 'SONY', model: 'α7 IV', lens: 'FE 35mm F1.4 GM', focal: '35mm', aperture: 'f/1.4', shutter: '1/500s', iso: 'ISO100', date: '2026.10.07 17:42', location: '', artist: '', caption: '' },
+    fields: { make: 'SONY', model: 'α7 IV', lens: 'FE 35mm F1.4 GM', focal: '35mm', focal35: '35mm', aperture: 'f/1.4', shutter: '1/500s', iso: 'ISO100', date: '2026.10.07 17:42', location: '', artist: '', caption: '' },
   };
   return sample;
 }
@@ -239,21 +241,34 @@ function drawFields() {
   $('#details-hint').textContent = photo
     ? 'Turn a line off to leave it out of the frame. Text edits apply to the selected photo.'
     : 'Add a photo to edit its details.';
-  $('#fields').replaceChildren(
-    ...FIELD_ROWS.map(([key, label]) => {
-      const id = `f-${key}`;
-      const check = el('input', { type: 'checkbox', className: 'check', checked: settings.show[key], title: `Show ${label.toLowerCase()}` });
-      check.setAttribute('aria-label', `Show ${label.toLowerCase()}`);
-      const input = el('input', {
-        type: 'text', id, value: photo?.fields[key] || '', disabled: !photo, autocomplete: 'off',
-        placeholder: key === 'caption' ? 'Add a caption' : key === 'artist' ? 'Your name' : photo ? 'Not in EXIF' : '',
-      });
-      input.spellcheck = false;
-      check.onchange = () => { settings.show[key] = check.checked; changed({ fields: false }); };
-      input.oninput = () => { photo.fields[key] = input.value; drawPreview(); drawTemplatesLater(); };
-      return el('div', { className: 'field' }, check, el('label', { htmlFor: id, textContent: label }), input);
-    }),
-  );
+  const rows = FIELD_ROWS.map(([key, label]) => {
+    // The focal length row edits whichever value is shown: actual or 35mm equivalent.
+    const prop = key === 'focal' && settings.focal35 && photo?.fields.focal35 ? 'focal35' : key;
+    const id = `f-${key}`;
+    const check = el('input', { type: 'checkbox', className: 'check', checked: settings.show[key], title: `Show ${label.toLowerCase()}` });
+    check.setAttribute('aria-label', `Show ${label.toLowerCase()}`);
+    const input = el('input', {
+      type: 'text', id, value: photo?.fields[prop] || '', disabled: !photo, autocomplete: 'off',
+      placeholder: key === 'caption' ? 'Add a caption' : key === 'artist' ? 'Your name' : photo ? 'Not in EXIF' : '',
+    });
+    input.spellcheck = false;
+    check.onchange = () => { settings.show[key] = check.checked; changed(); };
+    input.oninput = () => { photo.fields[prop] = input.value; drawPreview(); drawTemplatesLater(); };
+    const row = el('div', { className: 'field' }, check, el('label', { htmlFor: id, textContent: prop === 'focal35' ? 'Focal (35mm)' : label }), input);
+    if (key !== 'focal') return row;
+
+    const toggle = el('input', { type: 'checkbox', id: 'focal35', checked: settings.focal35 });
+    toggle.onchange = () => { settings.focal35 = toggle.checked; changed(); drawFields(); };
+    const missing = settings.focal35 && photo && !photo.fields.focal35;
+    const actual = photo?.original.focal;
+    const eq = photo?.original.focal35;
+    const detail = missing
+      ? 'This photo has no 35mm-equivalent value, so the actual focal length is shown.'
+      : actual && eq && actual !== eq ? `${actual} on this camera equals ${eq} on full frame.`
+      : 'Shows the focal length as it would be on a full-frame (35mm) camera.';
+    return [row, el('label', { className: 'toggle focal35' }, toggle, el('span', {}, 'Use 35mm-equivalent focal length', el('small', { textContent: detail })))];
+  });
+  $('#fields').replaceChildren(...rows.flat());
 }
 const drawTemplatesLater = () => { if (!$('[data-body="frame"]').hidden) drawTemplates(); };
 
@@ -284,7 +299,18 @@ function chipGroup(container, options, isOn, onPick) {
 }
 
 function drawLayoutControls() {
-  chipGroup($('#ratios'), Object.keys(RATIOS).map((r) => [r, r === 'auto' ? 'Original' : r]), (v) => settings.ratio === v, (v) => { settings.ratio = v; changed(); });
+  const photo = photos[current] || samplePhoto();
+  const L0 = layout(photo.width, photo.height, { ...settings, ratio: 'auto', orient: 'auto' });
+  chipGroup($('#orients'), [['auto', 'Match photo'], ['portrait', 'Vertical'], ['landscape', 'Horizontal']],
+    (v) => settings.orient === v, (v) => { settings.orient = v; changed(); });
+  chipGroup($('#ratios'), Object.keys(RATIOS).map((k) => [k, ratioLabel(k, settings, L0.content.w, L0.content.h)]),
+    (v) => settings.ratio === v, (v) => { settings.ratio = v; changed(); });
+  $('#custom-ratio').hidden = settings.ratio !== 'custom';
+  $('#custom-w').value = settings.custom[0];
+  $('#custom-h').value = settings.custom[1];
+  const L = layout(photo.width, photo.height, settings);
+  $('#ratio-out').textContent = simpleRatio(L.width, L.height);
+  $('#orient-out').textContent = L.width === L.height ? 'Square' : L.width > L.height ? 'Horizontal' : 'Vertical';
 
   $('#border').value = settings.border;
   $('#border-out').textContent = `${Math.round(settings.border * 100)}%`;
@@ -324,6 +350,28 @@ function drawLayoutControls() {
     }),
   );
 }
+function simpleRatio(w, h) {
+  const r = w / h;
+  for (let d = 1; d <= 20; d++) {
+    const n = Math.round(r * d);
+    if (n > 0 && Math.abs(n / d - r) < 0.0015) return `${n}:${d}`;
+  }
+  return r >= 1 ? `${r.toFixed(2)}:1` : `1:${(1 / r).toFixed(2)}`;
+}
+for (const [id, i] of [['#custom-w', 0], ['#custom-h', 1]]) {
+  $(id).oninput = (e) => {
+    const v = parseFloat(e.target.value);
+    if (!(v > 0 && v <= 100)) return;
+    settings.custom = [...settings.custom];
+    settings.custom[i] = v;
+    persist();
+    drawPreview();
+    const photo = photos[current] || samplePhoto();
+    const L = layout(photo.width, photo.height, settings);
+    $('#ratio-out').textContent = simpleRatio(L.width, L.height);
+  };
+  $(id).onchange = () => changed();
+}
 $('#border').oninput = (e) => { settings.border = +e.target.value; $('#border-out').textContent = `${Math.round(settings.border * 100)}%`; changed({ controls: false }); };
 $('#radius').oninput = (e) => { settings.radius = +e.target.value; $('#radius-out').textContent = settings.radius ? `${Math.round(settings.radius * 100)}%` : 'Square'; changed({ controls: false }); };
 
@@ -348,13 +396,11 @@ $('#keep-exif').onchange = (e) => { exportOpts.keepExif = e.target.checked; pers
 function updateDims() {
   const photo = photos[current];
   if (!photo) { $('#dims').textContent = 'Add a photo to see the output size.'; return; }
-  const L = layout(photo.width, photo.height, settings);
-  let s = Math.min(1, SIZES[exportOpts.size] / Math.max(L.width, L.height));
-  const limit = canvasLimitKnown ?? Infinity;
-  const capped = L.width * L.height * s * s > limit;
-  if (capped) s = Math.sqrt(limit / (L.width * L.height)) * 0.995;
-  $('#dims').textContent = `Output ${Math.round(L.width * s)} × ${Math.round(L.height * s)} px` +
-    (capped ? ', reduced to fit this device’s canvas limit' : '');
+  const { width, height, scale } = outputSize(photo, settings, exportOpts.size);
+  const big = canvasLimitKnown && needsStrips(width, height, canvasLimitKnown);
+  $('#dims').textContent = `Output ${width} × ${height} px` +
+    (scale === 1 ? ', photo at full resolution' : `, photo scaled to ${Math.round(scale * 100)}%`) +
+    (big ? '. Large frames take a little longer to save.' : '.');
 }
 let canvasLimitKnown = null;
 
@@ -365,16 +411,19 @@ async function save(list) {
     canvasLimitKnown = maxCanvasPixels();
     const out = [];
     for (const [i, photo] of list.entries()) {
-      busy(`Rendering ${photo.name}${list.length > 1 ? ` (${i + 1} of ${list.length})` : ''}`);
+      const label = `Rendering ${photo.name}${list.length > 1 ? ` (${i + 1} of ${list.length})` : ''}`;
+      busy(label);
       await new Promise((r) => setTimeout(r, 30)); // let the status paint
-      out.push(await exportPhoto(photo, settings, exportOpts));
+      out.push(await exportPhoto(photo, settings, exportOpts, (p) => busy(`${label} ${Math.round(p * 100)}%`)));
     }
     busy(list.length > 1 ? 'Packing' : 'Saving');
     const result = await deliver(out);
     busy(null);
-    if (result === 'downloaded') note(list.length > 1 ? `Saved ${list.length} photos as framed-photos.zip.` : `Saved ${out[0].name}.`);
-    if (out.some((o) => o.scale < 1 && exportOpts.size === 'full')) {
-      note('Saved below full size to fit this device’s canvas limit.');
+    if (result === 'downloaded') note(list.length > 1 ? `Saved ${list.length} photos as framed-photos.zip.` : `Saved ${out[0].name} (${out[0].width} × ${out[0].height} px).`);
+    if (exportOpts.format === 'webp' && out.some((o) => o.format !== 'webp')) {
+      note(out.some((o) => o.strips)
+        ? 'Saved as JPEG: frames this large can only be saved as JPEG or PNG.'
+        : 'Saved as PNG: this browser can’t create WebP files.');
     }
   } catch (err) {
     busy(null);

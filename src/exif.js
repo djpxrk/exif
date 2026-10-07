@@ -130,6 +130,22 @@ export function formatLocation(lat, lon) {
   return `${fmt(lat, 'N', 'S')} ${fmt(lon, 'E', 'W')}`;
 }
 
+/**
+ * 35mm-equivalent focal length. Uses the camera's own value when recorded,
+ * otherwise derives the crop factor from the sensor's focal-plane resolution.
+ */
+export function focal35(tags) {
+  if (tags.FocalLengthIn35mmFormat > 0) return tags.FocalLengthIn35mmFormat;
+  const f = tags.FocalLength;
+  const res = tags.FocalPlaneXResolution;
+  const px = Math.max(tags.ExifImageWidth || 0, tags.ExifImageHeight || 0);
+  const unit = { 2: 25.4, 3: 10, 4: 1, 5: 0.001 }[tags.FocalPlaneResolutionUnit ?? 2];
+  if (!(f > 0 && res > 0 && px > 0 && unit)) return null;
+  const sensorLong = (px / res) * unit;
+  if (!(sensorLong > 2 && sensorLong < 80)) return null; // implausible: ignore
+  return f * (36 / sensorLong);
+}
+
 /** Editable, display-ready fields for one photo. */
 export function toFields(tags) {
   const lens = String(tags.LensModel || tags.Lens || '').trim();
@@ -138,6 +154,7 @@ export function toFields(tags) {
     model: prettyModel(tags.Model, tags.Make),
     lens: lens.replace(/\0/g, ''),
     focal: formatFocal(tags.FocalLength),
+    focal35: formatFocal(focal35(tags)),
     aperture: formatAperture(tags.FNumber),
     shutter: formatShutter(tags.ExposureTime),
     iso: formatIso(tags.ISO ?? tags.ISOSpeedRatings ?? tags.RecommendedExposureIndex),

@@ -244,3 +244,19 @@ input[type="range"] { width: 100%; accent-color: var(--ink); margin: 0; }
 @media (prefers-reduced-motion: reduce) {
   .spinner { animation-duration: 2.4s; }
 }
+
+/* ---------- Ratio controls ---------- */
+.custom-ratio {
+  display: flex; align-items: flex-end; gap: 10px; margin-top: 14px;
+}
+.custom-ratio label { display: grid; gap: 6px; color: var(--muted); font-size: 13px; flex: 1; }
+.custom-ratio input {
+  width: 100%; background: var(--raised); border: 1px solid transparent; border-radius: 3px;
+  padding: 8px 10px; font-size: 16px; color: var(--ink);
+}
+.custom-ratio input:focus { border-color: var(--line); outline: none; }
+.custom-ratio span { padding-bottom: 9px; color: var(--muted); }
+.ratio-hint { margin: 12px 0 0; }
+.group legend output { color: var(--ink); }
+.focal35 { margin: 6px 0 4px 34px; }
+.focal35 small { display: block; color: var(--muted); font-size: 13px; }

@@ -15,7 +15,18 @@ EXIF comes from `exifr`, with a WebP `EXIF` chunk reader and a raw `Exif\0\0` sc
 
 ## Frames
 
-Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay) and Film rebate. Aspect ratio (Original, 1:1, 4:5, 3:4, 9:16, 3:2, 16:9), border size, corner radius, background and typeface are adjustable. Every text line can be turned off or edited per photo. Saved JPEGs can keep the camera metadata (never GPS).
+Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay) and Film rebate.
+
+- **Orientation:** match the photo, or force a vertical or horizontal frame. With the original ratio this turns a horizontal photo into a vertical post (and back) by extending the background.
+- **Aspect ratio:** Original, 1:1, 4:5, 3:4, 2:3, 5:7, 9:16, A4, or any custom W:H. Presets flip with the orientation (4:5 ↔ 5:4).
+- **Never cropped:** ratios only add space around the frame. The photo always keeps its full resolution and shape.
+- Border size, corner radius, background and typeface are adjustable. Every text line can be turned off or edited per photo.
+- **35mm-equivalent focal length:** a Details option. It uses the camera's recorded value, or works it out from the sensor size when the camera didn't record one.
+- Saved JPEGs can keep the camera metadata (never GPS).
+
+## Full-resolution export
+
+Frames are saved at the photo's native resolution. When a frame is larger than the browser allows in one canvas (iOS caps canvases at about 16.7 MP), it's drawn in strips and encoded by a streaming JPEG/PNG encoder in a Web Worker (`src/encode-worker.js`). Output size is never reduced to fit the device. Strip-encoded files match a normal export to within 43–48 dB PSNR, which is visually identical.
 
 ## Develop
 
@@ -58,6 +69,5 @@ Saving on iOS opens the share sheet. Choose "Save Image" to put the framed photo
 
 ## Limits worth knowing
 
-- iOS caps a canvas at about 16.7 megapixels, so on iPhone and iPad very large frames are saved slightly smaller. The Save tab shows the exact output size.
 - Picking from the iOS Photos library can hand over a converted JPEG instead of the original RAW. To frame a RAW file, use "Choose File" and pick it from the Files app.
-- Safari can't encode WebP. Choosing WebP there saves a PNG.
+- Safari can't encode WebP. Choosing WebP there saves a PNG. Frames too large for one canvas are saved as JPEG or PNG only.

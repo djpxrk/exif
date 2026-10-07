@@ -17,26 +17,68 @@ export const TEMPLATES = {
   film: { label: 'Film rebate', font: 'mono', background: '#000000' },
 };
 
-export const RATIOS = { auto: null, '1:1': 1, '4:5': 4 / 5, '3:4': 3 / 4, '9:16': 9 / 16, '3:2': 3 / 2, '16:9': 16 / 9 };
+// Presets are stored short:long; orientation decides which way round they go.
+export const RATIOS = {
+  auto: { label: 'Original' },
+  '1:1': { label: '1:1', r: [1, 1] },
+  '4:5': { label: '4:5', r: [4, 5] },
+  '3:4': { label: '3:4', r: [3, 4] },
+  '2:3': { label: '2:3', r: [2, 3] },
+  '5:7': { label: '5:7', r: [5, 7] },
+  '9:16': { label: '9:16', r: [9, 16] },
+  a4: { label: 'A4', r: [1, Math.SQRT2] },
+  custom: { label: 'Custom' },
+};
 
 export const DEFAULT_SETTINGS = {
   template: 'strip',
   ratio: 'auto',
+  orient: 'auto',        // 'auto' follows the photo; 'portrait' | 'landscape' force it
+  custom: [4, 5],        // free ratio, width:height as typed
   border: 1,
   radius: 0,
   background: 'template',
   font: 'template',
+  focal35: false,        // show the 35mm-equivalent focal length
   show: {
     make: true, model: true, lens: true, focal: true, aperture: true, shutter: true,
     iso: true, date: true, location: false, artist: false, caption: true,
   },
 };
 
+/**
+ * Canvas width/height ratio for content of size cw×ch, or null to keep the
+ * content's own shape. The frame is only ever extended, never cropped.
+ */
+export function targetRatio(settings, cw, ch) {
+  const landscape = cw >= ch;
+  const wantLandscape = settings.orient === 'auto' ? landscape : settings.orient === 'landscape';
+  if (settings.ratio === 'auto' || !RATIOS[settings.ratio]) {
+    return wantLandscape === landscape ? null : ch / cw;
+  }
+  if (settings.ratio === 'custom') {
+    let [w, h] = settings.custom;
+    if (!(w > 0 && h > 0)) return null;
+    if (settings.orient !== 'auto' && wantLandscape !== w >= h) [w, h] = [h, w];
+    return w / h;
+  }
+  const [a, b] = RATIOS[settings.ratio].r;
+  return wantLandscape ? b / a : a / b;
+}
+
+/** Ratio chip label as it will actually apply (4:5 reads 5:4 when horizontal). */
+export function ratioLabel(key, settings, cw, ch) {
+  const def = RATIOS[key];
+  if (!def.r || def.r[0] === def.r[1] || key === 'a4') return def.label;
+  const wantLandscape = settings.orient === 'auto' ? cw >= ch : settings.orient === 'landscape';
+  return wantLandscape ? `${def.r[1]}:${def.r[0]}` : def.label;
+}
+
 const FILM_AMBER = '#f39a2c';
 
 // ---------- Text composition ----------
 
-function compose(fields, show) {
+function compose(fields, show, focal35) {
   const pick = (k) => (show[k] && fields[k] ? fields[k] : '');
   const join = (parts, sep = '  ') => parts.filter(Boolean).join(sep);
   return {
@@ -44,7 +86,7 @@ function compose(fields, show) {
     model: pick('model'),
     camera: join([pick('make'), pick('model')], ' '),
     lens: pick('lens'),
-    exposure: join([pick('focal'), pick('aperture'), pick('shutter'), pick('iso')]),
+    exposure: join([show.focal ? (focal35 && fields.focal35) || fields.focal || '' : '', pick('aperture'), pick('shutter'), pick('iso')]),
     when: join([pick('date'), pick('location')], '   '),
     artist: pick('artist') ? `© ${fields.artist}` : '',
     caption: pick('caption'),
@@ -97,7 +139,7 @@ export function layout(W, H, settings) {
   let height = H + pad.top + pad.bottom;
   let ox = 0;
   let oy = 0;
-  const r = RATIOS[settings.ratio];
+  const r = targetRatio(settings, width, height);
   if (r) {
     if (width / height < r) { const nw = height * r; ox = (nw - width) / 2; width = nw; }
     else { const nh = width / r; oy = (nh - height) / 2; height = nh; }
@@ -121,22 +163,25 @@ export function layout(W, H, settings) {
  * @param fields   editable EXIF text fields
  * @param settings frame settings
  * @param scale    output pixels per full-resolution pixel
+ * @param orientation EXIF orientation still to apply to img (1 = upright)
+ * @param blurImg  small upright copy used for the blurred backdrop
+ * @param offsetX/Y top-left of this tile in output pixels (strip rendering)
  */
-export function renderFrame(ctx, { img, W, H, fields, settings, scale = 1 }) {
+export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, settings, scale = 1, offsetX = 0, offsetY = 0 }) {
   const L = layout(W, H, settings);
   const tpl = TEMPLATES[settings.template];
   const font = FONTS[settings.font === 'template' ? tpl.font : settings.font];
   const bg = settings.background === 'template' ? tpl.background : settings.background;
-  const t = compose(fields, settings.show);
+  const t = compose(fields, settings.show, settings.focal35);
   const { S, photo } = L;
   const radius = settings.radius * S * 0.05;
 
   ctx.save();
-  ctx.setTransform(scale, 0, 0, scale, 0, 0);
+  ctx.setTransform(scale, 0, 0, scale, -offsetX, -offsetY);
   ctx.textBaseline = 'alphabetic';
 
   // Background
-  if (bg === 'blur') drawBlurBackground(ctx, img, L.width, L.height);
+  if (bg === 'blur') drawBlurBackground(ctx, blurImg || img, L.width, L.height);
   else { ctx.fillStyle = bg; ctx.fillRect(0, 0, L.width, L.height); }
 
   const ink = bg === 'blur' ? palette('#000000') : palette(bg);
@@ -155,7 +200,7 @@ export function renderFrame(ctx, { img, W, H, fields, settings, scale = 1 }) {
   roundRect(ctx, photo.x, photo.y, photo.w, photo.h, radius);
   ctx.clip();
   ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(img, photo.x, photo.y, photo.w, photo.h);
+  drawOriented(ctx, img, orientation, photo.x, photo.y, photo.w, photo.h);
   ctx.restore();
 
   const draw = { ctx, font, ink, S, L, t, scale };
@@ -356,8 +401,31 @@ function roundRect(ctx, x, y, w, h, r) {
   ctx.closePath();
 }
 
+/**
+ * Draws img into the box (x, y, w, h) — the box is in upright orientation —
+ * applying an EXIF orientation on the fly so no rotated copy is ever made.
+ */
+export function drawOriented(ctx, img, o, x, y, w, h) {
+  if (!o || o === 1) { ctx.drawImage(img, x, y, w, h); return; }
+  const swap = o >= 5;
+  ctx.save();
+  ctx.translate(x, y);
+  const m = {
+    2: [-1, 0, 0, 1, w, 0], 3: [-1, 0, 0, -1, w, h], 4: [1, 0, 0, -1, 0, h],
+    5: [0, 1, 1, 0, 0, 0], 6: [0, 1, -1, 0, w, 0], 7: [0, -1, -1, 0, w, h], 8: [0, -1, 1, 0, 0, h],
+  }[o];
+  ctx.transform(...m);
+  ctx.drawImage(img, 0, 0, swap ? h : w, swap ? w : h);
+  ctx.restore();
+}
+
 // Soft blur by repeated downscaling; works in every browser, unlike ctx.filter.
-function drawBlurBackground(ctx, img, width, height) {
+// Cached because strip rendering draws the backdrop once per tile.
+const blurCache = new WeakMap();
+function blurredCopy(img, width, height) {
+  const key = `${Math.round(width)}x${Math.round(height)}`;
+  const hit = blurCache.get(img);
+  if (hit?.key === key) return hit.canvas;
   const iw = img.naturalWidth || img.width;
   const ih = img.naturalHeight || img.height;
   const tiny = document.createElement('canvas');
@@ -374,9 +442,14 @@ function drawBlurBackground(ctx, img, width, height) {
   const mc = mid.getContext('2d');
   mc.imageSmoothingQuality = 'high';
   mc.drawImage(tiny, 0, 0, mid.width, mid.height);
+  blurCache.set(img, { key, canvas: mid });
+  return mid;
+}
+
+function drawBlurBackground(ctx, img, width, height) {
   ctx.save();
   ctx.imageSmoothingQuality = 'high';
-  ctx.drawImage(mid, 0, 0, width, height);
+  ctx.drawImage(blurredCopy(img, width, height), 0, 0, width, height);
   ctx.fillStyle = 'rgba(0,0,0,0.38)';
   ctx.fillRect(0, 0, width, height);
   ctx.restore();
