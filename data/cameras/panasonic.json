@@ -1,0 +1,3326 @@
+{
+  "group": "panasonic",
+  "brand": "LUMIX",
+  "exifMakes": [
+    "Panasonic"
+  ],
+  "cameras": [
+    {
+      "model": "DC-S1",
+      "names": [
+        "LUMIX S1",
+        "S1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S1R",
+      "names": [
+        "LUMIX S1R",
+        "S1R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "DC-S1H",
+      "names": [
+        "LUMIX S1H",
+        "S1H"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S5",
+      "names": [
+        "LUMIX S5",
+        "S5"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S5D",
+      "names": [
+        "LUMIX S5D",
+        "S5D"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S5M2",
+      "names": [
+        "LUMIX S5 II",
+        "S5 II",
+        "LUMIX S5II",
+        "S5II",
+        "LUMIX S5 Mark II",
+        "S5 Mark II",
+        "LUMIX S5M2",
+        "S5M2",
+        "S5 Mk II",
+        "S5 Mk2",
+        "S5 Mark 2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S5M2X",
+      "names": [
+        "LUMIX S5 IIX",
+        "S5 IIX",
+        "LUMIX S5IIX",
+        "S5IIX",
+        "LUMIX S5 Mark IIX",
+        "S5 Mark IIX",
+        "LUMIX S5M2X",
+        "S5M2X",
+        "S5 Mk IIX",
+        "S5 Mk2X",
+        "S5 Mark 2X"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S9",
+      "names": [
+        "LUMIX S9",
+        "S9"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S1RM2",
+      "names": [
+        "LUMIX S1R II",
+        "S1R II",
+        "LUMIX S1RII",
+        "S1RII",
+        "LUMIX S1R Mark II",
+        "S1R Mark II",
+        "LUMIX S1RM2",
+        "S1RM2",
+        "S1R Mk II",
+        "S1R Mk2",
+        "S1R Mark 2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S1M2",
+      "names": [
+        "LUMIX S1 II",
+        "S1 II",
+        "LUMIX S1II",
+        "S1II",
+        "LUMIX S1 Mark II",
+        "S1 Mark II",
+        "LUMIX S1M2",
+        "S1M2",
+        "S1 Mk II",
+        "S1 Mk2",
+        "S1 Mark 2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-S1M2ES",
+      "names": [
+        "LUMIX S1 IIE",
+        "S1 IIE",
+        "LUMIX S1IIE",
+        "S1IIE",
+        "LUMIX S1M2E",
+        "S1M2E",
+        "LUMIX S1M2ES",
+        "S1M2ES",
+        "S1 Mark IIE",
+        "S1 Mk IIE"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DC-BS1H",
+      "names": [
+        "LUMIX BS1H",
+        "BS1H"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-G1",
+      "names": [
+        "LUMIX G1",
+        "G1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G2",
+      "names": [
+        "LUMIX G2",
+        "G2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G10",
+      "names": [
+        "LUMIX G10",
+        "G10"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G3",
+      "names": [
+        "LUMIX G3",
+        "G3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G5",
+      "names": [
+        "LUMIX G5",
+        "G5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G6",
+      "names": [
+        "LUMIX G6",
+        "G6"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G7",
+      "names": [
+        "LUMIX G7",
+        "G7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G70",
+      "names": [
+        "LUMIX G70",
+        "G70"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G8",
+      "names": [
+        "LUMIX G8",
+        "G8"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G80",
+      "names": [
+        "LUMIX G80",
+        "G80"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G81",
+      "names": [
+        "LUMIX G81",
+        "G81"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-G85",
+      "names": [
+        "LUMIX G85",
+        "G85"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G9",
+      "names": [
+        "LUMIX G9",
+        "G9",
+        "LUMIX G9 PRO",
+        "G9 PRO"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G9M2",
+      "names": [
+        "LUMIX G9 II",
+        "G9 II",
+        "LUMIX G9II",
+        "G9II",
+        "LUMIX G9 Mark II",
+        "G9 Mark II",
+        "LUMIX G9M2",
+        "G9M2",
+        "G9 Mk II",
+        "G9 Mk2",
+        "G9 Mark 2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G90",
+      "names": [
+        "LUMIX G90",
+        "G90"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G91",
+      "names": [
+        "LUMIX G91",
+        "G91"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G95",
+      "names": [
+        "LUMIX G95",
+        "G95"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G99",
+      "names": [
+        "LUMIX G99",
+        "G99"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G95D",
+      "names": [
+        "LUMIX G95D",
+        "G95D"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G99D",
+      "names": [
+        "LUMIX G99D",
+        "G99D"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G97",
+      "names": [
+        "LUMIX G97",
+        "G97"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G99M2",
+      "names": [
+        "LUMIX G99 II",
+        "G99 II",
+        "LUMIX G99II",
+        "G99II",
+        "LUMIX G99 Mark II",
+        "G99 Mark II",
+        "LUMIX G99M2",
+        "G99M2",
+        "G99 Mk II",
+        "G99 Mk2",
+        "G99 Mark 2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G100",
+      "names": [
+        "LUMIX G100",
+        "G100",
+        "LUMIX G100V",
+        "G100V"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G100D",
+      "names": [
+        "LUMIX G100D",
+        "G100D"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-G110",
+      "names": [
+        "LUMIX G110",
+        "G110"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GH1",
+      "names": [
+        "LUMIX GH1",
+        "GH1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GH2",
+      "names": [
+        "LUMIX GH2",
+        "GH2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GH3",
+      "names": [
+        "LUMIX GH3",
+        "GH3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GH4",
+      "names": [
+        "LUMIX GH4",
+        "GH4",
+        "LUMIX GH4R",
+        "GH4R"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "AG-GH4",
+      "names": [
+        "AG-GH4U"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "uncertain": true
+    },
+    {
+      "model": "DC-GH5",
+      "names": [
+        "LUMIX GH5",
+        "GH5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GH5S",
+      "names": [
+        "LUMIX GH5S",
+        "GH5S"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GH5M2",
+      "names": [
+        "LUMIX GH5 II",
+        "GH5 II",
+        "LUMIX GH5II",
+        "GH5II",
+        "LUMIX GH5 Mark II",
+        "GH5 Mark II",
+        "LUMIX GH5M2",
+        "GH5M2",
+        "GH5 Mk II",
+        "GH5 Mk2",
+        "GH5 Mark 2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GH6",
+      "names": [
+        "LUMIX GH6",
+        "GH6"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GH7",
+      "names": [
+        "LUMIX GH7",
+        "GH7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-BGH1",
+      "names": [
+        "LUMIX BGH1",
+        "BGH1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-GF1",
+      "names": [
+        "LUMIX GF1",
+        "GF1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF2",
+      "names": [
+        "LUMIX GF2",
+        "GF2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF3",
+      "names": [
+        "LUMIX GF3",
+        "GF3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF5",
+      "names": [
+        "LUMIX GF5",
+        "GF5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF6",
+      "names": [
+        "LUMIX GF6",
+        "GF6"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF7",
+      "names": [
+        "LUMIX GF7",
+        "GF7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GF8",
+      "names": [
+        "LUMIX GF8",
+        "GF8"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GF9",
+      "names": [
+        "LUMIX GF9",
+        "GF9"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GX800",
+      "names": [
+        "LUMIX GX800",
+        "GX800"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GX850",
+      "names": [
+        "LUMIX GX850",
+        "GX850"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GF10",
+      "names": [
+        "LUMIX GF10",
+        "GF10"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GF90",
+      "names": [
+        "LUMIX GF90",
+        "GF90"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GX880",
+      "names": [
+        "LUMIX GX880",
+        "GX880"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX1",
+      "names": [
+        "LUMIX GX1",
+        "GX1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX7",
+      "names": [
+        "LUMIX GX7",
+        "GX7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX8",
+      "names": [
+        "LUMIX GX8",
+        "GX8"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX85",
+      "names": [
+        "LUMIX GX85",
+        "GX85"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX80",
+      "names": [
+        "LUMIX GX80",
+        "GX80"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GX7MK2",
+      "names": [
+        "LUMIX GX7 Mark II",
+        "GX7 Mark II",
+        "LUMIX GX7 II",
+        "GX7 II",
+        "LUMIX GX7II",
+        "GX7II",
+        "LUMIX GX7MK2",
+        "GX7MK2",
+        "GX7 Mk II",
+        "GX7 Mark 2",
+        "GX7M2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GX9",
+      "names": [
+        "LUMIX GX9",
+        "GX9"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DC-GX7MK3",
+      "names": [
+        "LUMIX GX7 Mark III",
+        "GX7 Mark III",
+        "LUMIX GX7 III",
+        "GX7 III",
+        "LUMIX GX7III",
+        "GX7III",
+        "LUMIX GX7MK3",
+        "GX7MK3",
+        "GX7 Mk III",
+        "GX7 Mark 3",
+        "GX7M3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GM1",
+      "names": [
+        "LUMIX GM1",
+        "GM1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GM1S",
+      "names": [
+        "LUMIX GM1S",
+        "GM1S"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-GM5",
+      "names": [
+        "LUMIX GM5",
+        "GM5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-L1",
+      "names": [
+        "LUMIX DMC-L1",
+        "Lumix L1"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-L10",
+      "names": [
+        "LUMIX DMC-L10",
+        "Lumix L10 DSLR"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "DMC-LX100",
+      "names": [
+        "LUMIX LX100",
+        "LX100"
+      ],
+      "format": "Four Thirds (multi-aspect)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "DC-LX100M2",
+      "names": [
+        "LUMIX LX100 II",
+        "LX100 II",
+        "LUMIX LX100II",
+        "LX100II",
+        "LUMIX LX100 Mark II",
+        "LX100 Mark II",
+        "LUMIX LX100M2",
+        "LX100M2",
+        "LX100 Mk II",
+        "LX100 Mk2",
+        "LX100 Mark 2"
+      ],
+      "format": "Four Thirds (multi-aspect)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "DC-L10",
+      "names": [
+        "LUMIX L10",
+        "L10"
+      ],
+      "format": "Four Thirds (multi-aspect)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "DMC-LX10",
+      "names": [
+        "LUMIX LX10",
+        "LX10"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-LX15",
+      "names": [
+        "LUMIX LX15",
+        "LX15"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-LX9",
+      "names": [
+        "LUMIX LX9",
+        "LX9"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-ZS100",
+      "names": [
+        "LUMIX ZS100",
+        "ZS100"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-ZS110",
+      "names": [
+        "LUMIX ZS110",
+        "ZS110"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-TZ100",
+      "names": [
+        "LUMIX TZ100",
+        "TZ100"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-TZ101",
+      "names": [
+        "LUMIX TZ101",
+        "TZ101"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-TZ110",
+      "names": [
+        "LUMIX TZ110",
+        "TZ110"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-TX1",
+      "names": [
+        "LUMIX TX1",
+        "TX1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-ZS200",
+      "names": [
+        "LUMIX ZS200",
+        "ZS200"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-ZS220",
+      "names": [
+        "LUMIX ZS220",
+        "ZS220"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ200",
+      "names": [
+        "LUMIX TZ200",
+        "TZ200"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ202",
+      "names": [
+        "LUMIX TZ202",
+        "TZ202"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ220",
+      "names": [
+        "LUMIX TZ220",
+        "TZ220"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TX2",
+      "names": [
+        "LUMIX TX2",
+        "TX2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-ZS200D",
+      "names": [
+        "LUMIX ZS200D",
+        "ZS200D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-ZS220D",
+      "names": [
+        "LUMIX ZS220D",
+        "ZS220D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ200D",
+      "names": [
+        "LUMIX TZ200D",
+        "TZ200D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ202D",
+      "names": [
+        "LUMIX TZ202D",
+        "TZ202D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ220D",
+      "names": [
+        "LUMIX TZ220D",
+        "TZ220D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TX2D",
+      "names": [
+        "LUMIX TX2D",
+        "TX2D"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-ZS300",
+      "names": [
+        "LUMIX ZS300",
+        "ZS300"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TZ300",
+      "names": [
+        "LUMIX TZ300",
+        "TZ300"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-TX3",
+      "names": [
+        "LUMIX TX3",
+        "TX3"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-FZ1000",
+      "names": [
+        "LUMIX FZ1000",
+        "FZ1000"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DC-FZ10002",
+      "names": [
+        "LUMIX FZ1000 II",
+        "FZ1000 II",
+        "LUMIX FZ1000II",
+        "FZ1000II",
+        "LUMIX FZ1000 Mark II",
+        "FZ1000 Mark II",
+        "LUMIX FZ1000M2",
+        "FZ1000M2",
+        "FZ10002",
+        "DC-FZ1000M2",
+        "FZ1000 Mk II",
+        "FZ1000 Mk2",
+        "FZ1000 Mark 2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-FZ2500",
+      "names": [
+        "LUMIX FZ2500",
+        "FZ2500"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-FZ2000",
+      "names": [
+        "LUMIX FZ2000",
+        "FZ2000"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-FZH1",
+      "names": [
+        "LUMIX FZH1",
+        "FZH1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-CM1",
+      "names": [
+        "LUMIX CM1",
+        "CM1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-CM10",
+      "names": [
+        "LUMIX CM10",
+        "CM10"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DMC-LX7",
+      "names": [
+        "LUMIX LX7",
+        "LX7"
+      ],
+      "format": "1/1.7\" (multi-aspect)",
+      "sensorMm": [
+        6.77,
+        5.08
+      ],
+      "crop": 5.11
+    },
+    {
+      "model": "DMC-LX5",
+      "names": [
+        "LUMIX LX5",
+        "LX5"
+      ],
+      "format": "1/1.63\" (multi-aspect)",
+      "sensorMm": [
+        7.36,
+        5.52
+      ],
+      "crop": 4.7
+    },
+    {
+      "model": "DMC-LX3",
+      "names": [
+        "LUMIX LX3",
+        "LX3"
+      ],
+      "format": "1/1.63\" (multi-aspect)",
+      "sensorMm": [
+        7.36,
+        5.52
+      ],
+      "crop": 4.7
+    },
+    {
+      "model": "DMC-LX2",
+      "names": [
+        "LUMIX LX2",
+        "LX2"
+      ],
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43
+    },
+    {
+      "model": "DMC-LX1",
+      "names": [
+        "LUMIX LX1",
+        "LX1"
+      ],
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43
+    },
+    {
+      "model": "DMC-LF1",
+      "names": [
+        "LUMIX LF1",
+        "LF1"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "DMC-FX150",
+      "names": [
+        "LUMIX FX150",
+        "FX150"
+      ],
+      "format": "1/1.72\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "DMC-FX180",
+      "names": [
+        "LUMIX FX180",
+        "FX180"
+      ],
+      "format": "1/1.72\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "DMC-LC1",
+      "names": [
+        "LUMIX LC1",
+        "LC1"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "DMC-FZ50",
+      "names": [
+        "LUMIX FZ50",
+        "FZ50"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "DMC-FZ30",
+      "names": [
+        "LUMIX FZ30",
+        "FZ30"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "DC-FZ80",
+      "names": [
+        "LUMIX FZ80",
+        "FZ80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ81",
+      "names": [
+        "LUMIX FZ81",
+        "FZ81"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ82",
+      "names": [
+        "LUMIX FZ82",
+        "FZ82"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ83",
+      "names": [
+        "LUMIX FZ83",
+        "FZ83"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ85",
+      "names": [
+        "LUMIX FZ85",
+        "FZ85"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ80D",
+      "names": [
+        "LUMIX FZ80D",
+        "FZ80D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ82D",
+      "names": [
+        "LUMIX FZ82D",
+        "FZ82D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ85D",
+      "names": [
+        "LUMIX FZ85D",
+        "FZ85D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FZ45",
+      "names": [
+        "LUMIX DC-FZ45"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ300",
+      "names": [
+        "LUMIX FZ300",
+        "FZ300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ330",
+      "names": [
+        "LUMIX FZ330",
+        "FZ330"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ200",
+      "names": [
+        "LUMIX FZ200",
+        "FZ200"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ150",
+      "names": [
+        "LUMIX FZ150",
+        "FZ150"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ100",
+      "names": [
+        "LUMIX FZ100",
+        "FZ100"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ70",
+      "names": [
+        "LUMIX FZ70",
+        "FZ70"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ72",
+      "names": [
+        "LUMIX FZ72",
+        "FZ72"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ47",
+      "names": [
+        "LUMIX FZ47",
+        "FZ47"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ48",
+      "names": [
+        "LUMIX FZ48",
+        "FZ48"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ40",
+      "names": [
+        "LUMIX FZ40",
+        "FZ40"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ42",
+      "names": [
+        "LUMIX FZ42",
+        "FZ42"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ45",
+      "names": [
+        "LUMIX FZ45",
+        "FZ45"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ35",
+      "names": [
+        "LUMIX FZ35",
+        "FZ35"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ38",
+      "names": [
+        "LUMIX FZ38",
+        "FZ38"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ28",
+      "names": [
+        "LUMIX FZ28",
+        "FZ28"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ60",
+      "names": [
+        "LUMIX FZ60",
+        "FZ60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ62",
+      "names": [
+        "LUMIX FZ62",
+        "FZ62"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FZ18",
+      "names": [
+        "LUMIX FZ18",
+        "FZ18"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "DMC-FZ8",
+      "names": [
+        "LUMIX FZ8",
+        "FZ8"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "DC-ZS99",
+      "names": [
+        "LUMIX ZS99",
+        "ZS99"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ99",
+      "names": [
+        "LUMIX TZ99",
+        "TZ99"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-ZS80",
+      "names": [
+        "LUMIX ZS80",
+        "ZS80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-ZS80D",
+      "names": [
+        "LUMIX ZS80D",
+        "ZS80D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ95",
+      "names": [
+        "LUMIX TZ95",
+        "TZ95"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ95D",
+      "names": [
+        "LUMIX TZ95D",
+        "TZ95D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ96",
+      "names": [
+        "LUMIX TZ96",
+        "TZ96"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ96D",
+      "names": [
+        "LUMIX TZ96D",
+        "TZ96D"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ97",
+      "names": [
+        "LUMIX TZ97",
+        "TZ97"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-ZS70",
+      "names": [
+        "LUMIX ZS70",
+        "ZS70"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ90",
+      "names": [
+        "LUMIX TZ90",
+        "TZ90"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ91",
+      "names": [
+        "LUMIX TZ91",
+        "TZ91"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ92",
+      "names": [
+        "LUMIX TZ92",
+        "TZ92"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-TZ93",
+      "names": [
+        "LUMIX TZ93",
+        "TZ93"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS60",
+      "names": [
+        "LUMIX ZS60",
+        "ZS60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ80",
+      "names": [
+        "LUMIX TZ80",
+        "TZ80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ81",
+      "names": [
+        "LUMIX TZ81",
+        "TZ81"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ82",
+      "names": [
+        "LUMIX TZ82",
+        "TZ82"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ85",
+      "names": [
+        "LUMIX TZ85",
+        "TZ85"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS50",
+      "names": [
+        "LUMIX ZS50",
+        "ZS50"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ70",
+      "names": [
+        "LUMIX TZ70",
+        "TZ70"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ71",
+      "names": [
+        "LUMIX TZ71",
+        "TZ71"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS40",
+      "names": [
+        "LUMIX ZS40",
+        "ZS40"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ60",
+      "names": [
+        "LUMIX TZ60",
+        "TZ60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ61",
+      "names": [
+        "LUMIX TZ61",
+        "TZ61"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS30",
+      "names": [
+        "LUMIX ZS30",
+        "ZS30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ40",
+      "names": [
+        "LUMIX TZ40",
+        "TZ40"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS20",
+      "names": [
+        "LUMIX ZS20",
+        "ZS20"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ30",
+      "names": [
+        "LUMIX TZ30",
+        "TZ30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS10",
+      "names": [
+        "LUMIX ZS10",
+        "ZS10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ20",
+      "names": [
+        "LUMIX TZ20",
+        "TZ20"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS8",
+      "names": [
+        "LUMIX ZS8",
+        "ZS8"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TZ18",
+      "names": [
+        "LUMIX TZ18",
+        "TZ18"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZS45",
+      "names": [
+        "LUMIX ZS45",
+        "ZS45"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ57",
+      "names": [
+        "LUMIX TZ57",
+        "TZ57"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-ZS35",
+      "names": [
+        "LUMIX ZS35",
+        "ZS35"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ55",
+      "names": [
+        "LUMIX TZ55",
+        "TZ55"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ41",
+      "names": [
+        "LUMIX TZ41",
+        "TZ41"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-ZS25",
+      "names": [
+        "LUMIX ZS25",
+        "ZS25"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ35",
+      "names": [
+        "LUMIX TZ35",
+        "TZ35"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ31",
+      "names": [
+        "LUMIX TZ31",
+        "TZ31"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-ZS19",
+      "names": [
+        "LUMIX ZS19",
+        "ZS19"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ27",
+      "names": [
+        "LUMIX TZ27",
+        "TZ27"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-ZS15",
+      "names": [
+        "LUMIX ZS15",
+        "ZS15"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ25",
+      "names": [
+        "LUMIX TZ25",
+        "TZ25"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-TZ22",
+      "names": [
+        "LUMIX TZ22",
+        "TZ22"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "model": "DMC-ZS7",
+      "names": [
+        "LUMIX ZS7",
+        "ZS7"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ10",
+      "names": [
+        "LUMIX TZ10",
+        "TZ10"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-ZS5",
+      "names": [
+        "LUMIX ZS5",
+        "ZS5"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ8",
+      "names": [
+        "LUMIX TZ8",
+        "TZ8"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-ZS3",
+      "names": [
+        "LUMIX ZS3",
+        "ZS3"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ7",
+      "names": [
+        "LUMIX TZ7",
+        "TZ7"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-ZS1",
+      "names": [
+        "LUMIX ZS1",
+        "ZS1"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ6",
+      "names": [
+        "LUMIX TZ6",
+        "TZ6"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ5",
+      "names": [
+        "LUMIX TZ5",
+        "TZ5"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.81,
+        4.36
+      ],
+      "crop": 5.96
+    },
+    {
+      "model": "DMC-TZ15",
+      "names": [
+        "LUMIX TZ15",
+        "TZ15"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.81,
+        4.36
+      ],
+      "crop": 5.96
+    },
+    {
+      "model": "DMC-TZ4",
+      "names": [
+        "LUMIX TZ4",
+        "TZ4"
+      ],
+      "format": "1/2.35\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DMC-TZ3",
+      "names": [
+        "LUMIX TZ3",
+        "TZ3"
+      ],
+      "format": "1/2.35\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DC-TS7",
+      "names": [
+        "LUMIX TS7",
+        "TS7"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DC-FT7",
+      "names": [
+        "LUMIX FT7",
+        "FT7"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TS6",
+      "names": [
+        "LUMIX TS6",
+        "TS6"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FT6",
+      "names": [
+        "LUMIX FT6",
+        "FT6"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TS5",
+      "names": [
+        "LUMIX TS5",
+        "TS5"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FT5",
+      "names": [
+        "LUMIX FT5",
+        "FT5"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TS30",
+      "names": [
+        "LUMIX TS30",
+        "TS30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FT30",
+      "names": [
+        "LUMIX FT30",
+        "FT30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TS4",
+      "names": [
+        "LUMIX TS4",
+        "TS4"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FT4",
+      "names": [
+        "LUMIX FT4",
+        "FT4"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-TS3",
+      "names": [
+        "LUMIX TS3",
+        "TS3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-FT3",
+      "names": [
+        "LUMIX FT3",
+        "FT3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DMC-ZX1",
+      "names": [
+        "LUMIX ZX1",
+        "ZX1"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "DMC-ZR1",
+      "names": [
+        "LUMIX ZR1",
+        "ZR1"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "DMC-ZX3",
+      "names": [
+        "LUMIX ZX3",
+        "ZX3"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "DMC-ZR3",
+      "names": [
+        "LUMIX ZR3",
+        "ZR3"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "DMC-3D1",
+      "names": [
+        "LUMIX 3D1",
+        "3D1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^DC-B?S\\d",
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "note": "Full-frame L-mount S series (DC-S1/S5/S9 and Mark II/IIX/E variants, BS1H box). DC- prefix only; DMC-S# are small compacts."
+    },
+    {
+      "pattern": "^DM?C-LX100",
+      "format": "Four Thirds (multi-aspect)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2,
+      "note": "LX100 / LX100 II: multi-aspect 4/3 sensor, 10.9mm = 24mm equiv (~2.2x)."
+    },
+    {
+      "pattern": "^DC-L\\d",
+      "format": "Four Thirds (multi-aspect)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2,
+      "note": "L-series premium compacts (DC-L10, 2026): multi-aspect 4/3 sensor, 10.9-34mm = 24-75mm equiv (~2.2x, same as LX100 II)."
+    },
+    {
+      "pattern": "^DMC-L\\d",
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "Lumix DMC-L1/L10 Four Thirds DSLRs (2006-2007)."
+    },
+    {
+      "pattern": "^DM?C-(?:G|GH|GF|GX|GM)\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "Micro Four Thirds bodies: G/GH/GF/GX/GM incl. suffixes (M2, MK2, MK3, S, D)."
+    },
+    {
+      "pattern": "^DC-BGH",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "BGH1 box camera, Micro Four Thirds."
+    },
+    {
+      "pattern": "^DM?C-LX(?:9|1[0-9])$",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "LX9/LX10/LX15 family: 1-inch sensor."
+    },
+    {
+      "pattern": "^DM?C-(?:TZ|ZS)[1-9]\\d\\dD?$",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Three-digit TZ/ZS (TZ100/110, ZS100/110, TZ200/202/220, ZS200/220, TZ300/ZS300 and D variants): 1-inch sensor."
+    },
+    {
+      "pattern": "^DM?C-TX\\d",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Japanese TX1/TX2/TX3 (= TZ100/TZ200/TZ300): 1-inch sensor."
+    },
+    {
+      "pattern": "^DM?C-FZ(?:\\d{4,}|H\\d)",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Four-digit FZ (FZ1000, FZ10002 = FZ1000 II, FZ2000/FZ2500) and Japanese FZH1: 1-inch sensor."
+    },
+    {
+      "pattern": "^DM?C-CM\\d",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "CM1/CM10 communication camera: 1-inch sensor."
+    },
+    {
+      "pattern": "^DMC-LX7",
+      "format": "1/1.7\" (multi-aspect)",
+      "sensorMm": [
+        6.77,
+        5.08
+      ],
+      "crop": 5.11,
+      "note": "LX7: 1/1.7\" multi-aspect, 4.7mm = 24mm equiv."
+    },
+    {
+      "pattern": "^DMC-LX[35]$",
+      "format": "1/1.63\" (multi-aspect)",
+      "sensorMm": [
+        7.36,
+        5.52
+      ],
+      "crop": 4.7,
+      "note": "LX3/LX5: 1/1.63\" multi-aspect, 5.1mm = 24mm equiv."
+    },
+    {
+      "pattern": "^DMC-LX[12]$",
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43,
+      "note": "LX1/LX2: native 16:9 1/1.65\" sensor."
+    },
+    {
+      "pattern": "^DMC-LF\\d",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "LF1: 1/1.7\" sensor."
+    },
+    {
+      "pattern": "^DMC-LC1$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "LC1 only: 2/3\" sensor. Other DMC-LC models are much smaller sensors (see following rules)."
+    },
+    {
+      "pattern": "^DMC-LC(?:5|40)$",
+      "format": "1/1.76\"",
+      "sensorMm": [
+        7.53,
+        5.64
+      ],
+      "crop": 4.6,
+      "note": "LC5/LC40 (2002-2003): 1/1.76\" CCD (digicamdb 7.53 x 5.64 mm)."
+    },
+    {
+      "pattern": "^DMC-(?:LC20|F7)$",
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.33,
+        4
+      ],
+      "crop": 6.49,
+      "note": "LC20/F7 (2003): 1/2.7\" CCD (digicamdb 5.33 x 4 mm, ~6.5x)."
+    },
+    {
+      "pattern": "^DMC-FZ[35]0$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "FZ30/FZ50: 1/1.8\" sensor."
+    },
+    {
+      "pattern": "^DMC-(?:ZS[1357]|TZ(?:6|7|8|10))$",
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09,
+      "note": "Early CCD travel zooms (ZS1-ZS7 / TZ6-TZ10): 4.1mm = 25mm equiv (~6.1x effective)."
+    },
+    {
+      "pattern": "^DMC-TZ(?:5|15|50)$",
+      "format": "1/2.33\"",
+      "sensorMm": [
+        5.81,
+        4.36
+      ],
+      "crop": 5.96,
+      "note": "TZ5/TZ15/TZ50 (TZ50 = Wi-Fi TZ5, same lens/sensor): 4.7mm = 28mm equiv (~5.96x effective)."
+    },
+    {
+      "pattern": "^DMC-TZ[1-4]$",
+      "format": "1/2.35\"",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09,
+      "note": "TZ1-TZ4 (2006-2007): ~1/2.35-1/2.5\" CCD, ~6.1x."
+    },
+    {
+      "pattern": "^DM?C-(?!ZS[1357]$|TZ(?:[1-8]|10|15|50)$)(?:TZ|ZS)\\d{1,2}D?$",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Two-digit TZ/ZS travel zooms (ZS8+/TZ18+, ZS99/TZ99): 1/2.3\" sensor. Excludes the older CCD TZ1-TZ10/TZ15/TZ50 and ZS1-ZS7 handled by earlier rules."
+    },
+    {
+      "pattern": "^DMC-FZ[1-3]$",
+      "format": "1/3.2\"",
+      "sensorMm": [
+        4.54,
+        3.42
+      ],
+      "crop": 7.61,
+      "note": "FZ1/FZ2/FZ3 (2002-2004): 1/3.2\" CCD, 35-420mm equiv (~7.6x)."
+    },
+    {
+      "pattern": "^DMC-FZ(?:[4-9]|1\\d|20)$",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Older FZ bridges (FZ4-FZ20, 2004-2007): 1/2.5\" sensor."
+    },
+    {
+      "pattern": "^DM?C-FZ(?!(?:\\d|1\\d|20|30|50)$)\\d{1,3}D?$",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "One- to three-digit FZ bridge superzooms (FZ28-FZ330, FZ80-FZ85/D): 1/2.3\" sensor. Excludes FZ1-FZ20 and FZ30/FZ50 handled by earlier rules."
+    },
+    {
+      "pattern": "^DM?C-(?:TS|FT)\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Tough/waterproof TS/FT series: 1/2.3\" sensor."
+    },
+    {
+      "pattern": "^DMC-FX1[058]0$",
+      "format": "1/1.72\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "FX100/FX150/FX180: 1/1.72\" CCD, 6.0mm = 28mm equiv."
+    },
+    {
+      "pattern": "^DMC-(?:FX(?:[1-9]|0[17]|1[02]|3[03]|5[05])|LS(?:[1-3]|[6-8]\\d)|LZ[1-8]|FS(?:[2367]|[46]2)|F1|LC(?:33|43|50|70|80))$",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Legacy 2003-2008 compacts with 1/2.5\" CCDs (FX1-FX9, FX01/07/10/12/30/33/50/55, LS1-3/LS60-85, LZ1-8, FS2/3/6/7/42/62, F1, LC33-80) per digicamdb/dpreview."
+    },
+    {
+      "pattern": "^DMC-(?!FX1[058]0$)(?:FS|FH|FX|FP|SZ|XS|LZ|LS|S|F)\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Budget/slim compacts (FS, FH, FX, FP, SZ, XS, S, LZ, LS, F series): 1/2.3\"-class sensor. Excludes the 1/1.72\" FX100/FX150/FX180; legacy 1/2.5\" models are caught by the preceding rule."
+    }
+  ]
+}

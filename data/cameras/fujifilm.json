@@ -1,0 +1,2059 @@
+{
+  "group": "fujifilm",
+  "brand": "FUJIFILM",
+  "exifMakes": [
+    "FUJIFILM",
+    "FUJI PHOTO FILM CO., LTD.",
+    "Fujifilm",
+    "FUJI"
+  ],
+  "cameras": [
+    {
+      "model": "X-Pro1",
+      "names": [
+        "Fujifilm X-Pro1",
+        "Fuji X-Pro1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-E1",
+      "names": [
+        "Fujifilm X-E1",
+        "Fuji X-E1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-M1",
+      "names": [
+        "Fujifilm X-M1",
+        "Fuji X-M1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T1",
+      "names": [
+        "Fujifilm X-T1",
+        "X-T1 Graphite Silver",
+        "X-T1 Graphite Silver Edition",
+        "X-T1 GS",
+        "Fuji X-T1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T1IR",
+      "names": [
+        "Fujifilm X-T1 IR",
+        "Fuji X-T1 IR"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "EXIF Model \"X-T1IR\" (no space) per LibRaw fujialias table (\"@X-T1 IR\", \"X-T1IR\"); same 16MP X-Trans II sensor as X-T1 without IR-cut filter."
+    },
+    {
+      "model": "X-E2",
+      "names": [
+        "Fujifilm X-E2",
+        "Fuji X-E2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-E2S",
+      "names": [
+        "Fujifilm X-E2S",
+        "Fuji X-E2S"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T10",
+      "names": [
+        "Fujifilm X-T10",
+        "Fuji X-T10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A1",
+      "names": [
+        "Fujifilm X-A1",
+        "Fuji X-A1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A2",
+      "names": [
+        "Fujifilm X-A2",
+        "Fuji X-A2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A10",
+      "names": [
+        "Fujifilm X-A10",
+        "Fuji X-A10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A20",
+      "names": [
+        "Fujifilm X-A20",
+        "Fuji X-A20"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A3",
+      "names": [
+        "Fujifilm X-A3",
+        "Fuji X-A3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A5",
+      "names": [
+        "Fujifilm X-A5",
+        "Fuji X-A5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-A7",
+      "names": [
+        "Fujifilm X-A7",
+        "Fuji X-A7"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T100",
+      "names": [
+        "Fujifilm X-T100",
+        "Fuji X-T100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T200",
+      "names": [
+        "Fujifilm X-T200",
+        "Fuji X-T200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-Pro2",
+      "names": [
+        "Fujifilm X-Pro2",
+        "Fuji X-Pro2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T2",
+      "names": [
+        "Fujifilm X-T2",
+        "Fuji X-T2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T20",
+      "names": [
+        "Fujifilm X-T20",
+        "Fuji X-T20"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-E3",
+      "names": [
+        "Fujifilm X-E3",
+        "Fuji X-E3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-H1",
+      "names": [
+        "Fujifilm X-H1",
+        "Fuji X-H1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T3",
+      "names": [
+        "Fujifilm X-T3",
+        "Fuji X-T3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T30",
+      "names": [
+        "Fujifilm X-T30",
+        "Fuji X-T30"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T30 II",
+      "names": [
+        "X-T30 Mark II",
+        "Fujifilm X-T30 II",
+        "X-T30 M2",
+        "X-T30 Mk II",
+        "X-T30 2",
+        "Fuji X-T30 II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T30 III",
+      "names": [
+        "X-T30 Mark III",
+        "Fujifilm X-T30 III",
+        "X-T30 M3",
+        "X-T30 Mk III",
+        "X-T30 3",
+        "Fuji X-T30 III"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T4",
+      "names": [
+        "Fujifilm X-T4",
+        "Fuji X-T4"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-Pro3",
+      "names": [
+        "Fujifilm X-Pro3",
+        "Fuji X-Pro3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-E4",
+      "names": [
+        "Fujifilm X-E4",
+        "Fuji X-E4"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-S10",
+      "names": [
+        "Fujifilm X-S10",
+        "Fuji X-S10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-S20",
+      "names": [
+        "Fujifilm X-S20",
+        "Fuji X-S20"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-H2S",
+      "names": [
+        "Fujifilm X-H2S",
+        "Fuji X-H2S"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-M5",
+      "names": [
+        "Fujifilm X-M5",
+        "Fuji X-M5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-H2",
+      "names": [
+        "Fujifilm X-H2",
+        "Fuji X-H2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T5",
+      "names": [
+        "Fujifilm X-T5",
+        "Fuji X-T5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-T50",
+      "names": [
+        "Fujifilm X-T50",
+        "Fuji X-T50"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-E5",
+      "names": [
+        "Fujifilm X-E5",
+        "Fuji X-E5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "FinePix X100",
+      "names": [
+        "X100",
+        "X100 Classic",
+        "Fujifilm X100",
+        "Fuji X100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "X100S",
+      "names": [
+        "Fujifilm X100S",
+        "Fuji X100S"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X100T",
+      "names": [
+        "Fujifilm X100T",
+        "Fuji X100T"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X100F",
+      "names": [
+        "Fujifilm X100F",
+        "Fuji X100F"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X100V",
+      "names": [
+        "Fujifilm X100V",
+        "X100 5",
+        "X100 Mark V",
+        "Fuji X100V"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X100VI",
+      "names": [
+        "Fujifilm X100VI",
+        "X100 Mark VI",
+        "Fuji X100VI"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X70",
+      "names": [
+        "Fujifilm X70",
+        "Fuji X70"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "XF10",
+      "names": [
+        "Fujifilm XF10",
+        "Fuji XF10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "X-HF1",
+      "names": [
+        "X half",
+        "Fujifilm X half",
+        "Fuji X half"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        11.73,
+        8.8
+      ],
+      "crop": 2.95,
+      "note": "Fujifilm spec: 1-inch sensor 13.3x8.8 mm (manual: 13.3x8.9), but every frame is a 3:4 crop of 3648x4864 px (17.74 MP), i.e. ~8.8x11.73 mm. sensorMm is that recorded area so crop (2.95) matches Fujifilm's quoted 10.8 mm = 32 mm equivalent; the full-sensor diagonal would give 2.70 (29 mm), which is wrong for X half photos."
+    },
+    {
+      "model": "X10",
+      "names": [
+        "Fujifilm X10",
+        "FinePix X10",
+        "Fuji X10"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "X20",
+      "names": [
+        "Fujifilm X20",
+        "Fuji X20"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "X30",
+      "names": [
+        "Fujifilm X30",
+        "Fuji X30"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "XF1",
+      "names": [
+        "Fujifilm XF1",
+        "Fuji XF1"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "X-S1",
+      "names": [
+        "Fujifilm X-S1",
+        "Fuji X-S1"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "XQ1",
+      "names": [
+        "Fujifilm XQ1",
+        "Fuji XQ1"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "XQ2",
+      "names": [
+        "Fujifilm XQ2",
+        "Fuji XQ2"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "GFX 50S",
+      "names": [
+        "Fujifilm GFX 50S",
+        "Fuji GFX 50S"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX 50R",
+      "names": [
+        "Fujifilm GFX 50R",
+        "Fuji GFX 50R"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX50S II",
+      "names": [
+        "GFX 50S Mark II",
+        "Fujifilm GFX50S II",
+        "GFX 50S M2",
+        "GFX50S Mk II",
+        "Fuji GFX50S II"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX 100",
+      "names": [
+        "Fujifilm GFX100",
+        "Fuji GFX100"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX100S",
+      "names": [
+        "Fujifilm GFX100S",
+        "Fuji GFX100S"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX100 II",
+      "names": [
+        "Fujifilm GFX100 II",
+        "GFX100 Mark II",
+        "GFX100 M2",
+        "GFX100 Mk II",
+        "Fuji GFX100 II"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX100S II",
+      "names": [
+        "Fujifilm GFX100S II",
+        "GFX100S Mark II",
+        "GFX100S M2",
+        "GFX100S Mk II",
+        "Fuji GFX100S II"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX100RF",
+      "names": [
+        "Fujifilm GFX100RF",
+        "GFX100RF Fragment Edition",
+        "Fuji GFX100RF"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "model": "GFX ETERNA 55",
+      "names": [
+        "GFX Eterna",
+        "Eterna 55",
+        "Fujifilm GFX ETERNA 55",
+        "Fuji GFX ETERNA 55"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "uncertain": true,
+      "note": "Video-only filmmaking camera (MXF/MOV, no stills per Fujifilm spec page), so no EXIF still sample exists; model string assumed from the product name. Full 43.8x32.9 open-gate sensor; 16:9/35mm video modes crop further."
+    },
+    {
+      "model": "FinePixS1Pro",
+      "names": [
+        "S1 Pro",
+        "Fujifilm S1 Pro",
+        "Fuji S1 Pro"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "FinePixS2Pro",
+      "names": [
+        "S2 Pro",
+        "Fujifilm S2 Pro",
+        "Fuji S2 Pro"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "FinePix S3Pro",
+      "names": [
+        "S3 Pro",
+        "Fujifilm S3 Pro",
+        "Fuji S3 Pro"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "FinePix S3Pro UVIR",
+      "names": [
+        "S3 Pro UVIR",
+        "Fujifilm S3 Pro UVIR",
+        "Fuji S3 Pro UVIR"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "FinePix S5Pro",
+      "names": [
+        "S5 Pro",
+        "Fujifilm S5 Pro",
+        "Fuji S5 Pro"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "IS Pro",
+      "names": [
+        "FinePix IS Pro",
+        "Fujifilm IS Pro",
+        "Fuji IS Pro"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "FinePix F10",
+      "names": [
+        "F10",
+        "Fujifilm F10",
+        "Fuji F10"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F11",
+      "names": [
+        "F11",
+        "Fujifilm F11",
+        "Fuji F11"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F30",
+      "names": [
+        "F30",
+        "Fujifilm F30",
+        "Fuji F30"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F31fd",
+      "names": [
+        "F31fd",
+        "Fujifilm F31fd",
+        "Fuji F31fd"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix S6000fd",
+      "names": [
+        "S6000fd",
+        "Fujifilm S6000fd",
+        "Fuji S6000fd"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix S6500fd",
+      "names": [
+        "S6500fd",
+        "Fujifilm S6500fd",
+        "Fuji S6500fd"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix E900",
+      "names": [
+        "E900",
+        "Fujifilm E900",
+        "Fuji E900"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S9000",
+      "names": [
+        "S9000",
+        "Fujifilm S9000",
+        "Fuji S9000"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S9500",
+      "names": [
+        "S9500",
+        "Fujifilm S9500",
+        "Fuji S9500"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S9100",
+      "names": [
+        "S9100",
+        "Fujifilm S9100",
+        "Fuji S9100"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S9600",
+      "names": [
+        "S9600",
+        "Fujifilm S9600",
+        "Fuji S9600"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S9600fd",
+      "names": [
+        "S9600fd",
+        "Fujifilm S9600fd",
+        "Fuji S9600fd"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33,
+      "note": "Regional/variant of FinePix S9600; same sensor. rawspeed Alias of FinePix S9600."
+    },
+    {
+      "model": "FinePix F100fd",
+      "names": [
+        "F100fd",
+        "Fujifilm F100fd",
+        "Fuji F100fd"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix F200EXR",
+      "names": [
+        "F200EXR",
+        "Fujifilm F200EXR",
+        "Fuji F200EXR"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S200EXR",
+      "names": [
+        "S200EXR",
+        "Fujifilm S200EXR",
+        "Fuji S200EXR"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S205EXR",
+      "names": [
+        "S205EXR",
+        "Fujifilm S205EXR",
+        "Fuji S205EXR"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33,
+      "note": "Regional/variant of FinePix S200EXR; same sensor. EXIF string in ExifTool samples, rawspeed, LibRaw."
+    },
+    {
+      "model": "FinePix S100FS",
+      "names": [
+        "S100FS",
+        "Fujifilm S100FS",
+        "Fuji S100FS"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "FinePix F70EXR",
+      "names": [
+        "F70EXR",
+        "Fujifilm F70EXR",
+        "Fuji F70EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F80EXR",
+      "names": [
+        "F80EXR",
+        "Fujifilm F80EXR",
+        "Fuji F80EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F85EXR",
+      "names": [
+        "F85EXR",
+        "Fujifilm F85EXR",
+        "Fuji F85EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F80EXR; same sensor. ExifTool sample."
+    },
+    {
+      "model": "FinePix F300EXR",
+      "names": [
+        "F300EXR",
+        "Fujifilm F300EXR",
+        "Fuji F300EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F550EXR",
+      "names": [
+        "F550EXR",
+        "Fujifilm F550EXR",
+        "Fuji F550EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F500EXR",
+      "names": [
+        "F500EXR",
+        "Fujifilm F500EXR",
+        "Fuji F500EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F550EXR; same sensor. ExifTool sample, rawspeed, LibRaw."
+    },
+    {
+      "model": "FinePix F505EXR",
+      "names": [
+        "F505EXR",
+        "Fujifilm F505EXR",
+        "Fuji F505EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F500EXR; same sensor. ExifTool sample, rawspeed, LibRaw alias of F500EXR."
+    },
+    {
+      "model": "FinePix F600EXR",
+      "names": [
+        "F600EXR",
+        "Fujifilm F600EXR",
+        "Fuji F600EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F605EXR",
+      "names": [
+        "F605EXR",
+        "Fujifilm F605EXR",
+        "Fuji F605EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F600EXR; same sensor. ExifTool sample, rawspeed, LibRaw alias."
+    },
+    {
+      "model": "FinePix F770EXR",
+      "names": [
+        "F770EXR",
+        "Fujifilm F770EXR",
+        "Fuji F770EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F750EXR",
+      "names": [
+        "F750EXR",
+        "Fujifilm F750EXR",
+        "Fuji F750EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F770EXR; same sensor. ExifTool sample."
+    },
+    {
+      "model": "FinePix F775EXR",
+      "names": [
+        "F775EXR",
+        "Fujifilm F775EXR",
+        "Fuji F775EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix F770EXR; same sensor. rawspeed, LibRaw alias."
+    },
+    {
+      "model": "FinePix F800EXR",
+      "names": [
+        "F800EXR",
+        "Fujifilm F800EXR",
+        "Fuji F800EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix F900EXR",
+      "names": [
+        "F900EXR",
+        "Fujifilm F900EXR",
+        "Fuji F900EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix HS20EXR",
+      "names": [
+        "HS20EXR",
+        "Fujifilm HS20EXR",
+        "Fuji HS20EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix HS22EXR",
+      "names": [
+        "HS22EXR",
+        "Fujifilm HS22EXR",
+        "Fuji HS22EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix HS20EXR; same sensor. rawspeed, LibRaw alias."
+    },
+    {
+      "model": "FinePix HS30EXR",
+      "names": [
+        "HS30EXR",
+        "Fujifilm HS30EXR",
+        "Fuji HS30EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix HS28EXR",
+      "names": [
+        "HS28EXR",
+        "Fujifilm HS28EXR",
+        "Fuji HS28EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix HS30EXR; same sensor. ExifTool sample."
+    },
+    {
+      "model": "FinePix HS25EXR",
+      "names": [
+        "HS25EXR",
+        "Fujifilm HS25EXR",
+        "Fuji HS25EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix HS30EXR; same sensor. ExifTool sample."
+    },
+    {
+      "model": "FinePix HS35EXR",
+      "names": [
+        "HS35EXR",
+        "Fujifilm HS35EXR",
+        "Fuji HS35EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix HS30EXR; same sensor. ExifTool sample, rawspeed, LibRaw alias."
+    },
+    {
+      "model": "FinePix HS33EXR",
+      "names": [
+        "HS33EXR",
+        "Fujifilm HS33EXR",
+        "Fuji HS33EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Regional/variant of FinePix HS30EXR; same sensor. ExifTool sample, rawspeed Alias, LibRaw alias."
+    },
+    {
+      "model": "FinePix HS50EXR",
+      "names": [
+        "HS50EXR",
+        "Fujifilm HS50EXR",
+        "Fuji HS50EXR"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "FinePix HS10 HS11",
+      "names": [
+        "HS10",
+        "FinePix HS10",
+        "Fujifilm HS10",
+        "HS11",
+        "FinePix HS11",
+        "Fuji HS10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "FinePix SL1000",
+      "names": [
+        "SL1000",
+        "Fujifilm SL1000",
+        "Fuji SL1000"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "FinePix S1",
+      "names": [
+        "Fujifilm FinePix S1",
+        "Fuji FinePix S1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "FinePix REAL 3D W1",
+      "names": [
+        "REAL 3D W1",
+        "Fujifilm REAL 3D W1",
+        "Fuji REAL 3D W1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "FinePix REAL 3D W3",
+      "names": [
+        "REAL 3D W3",
+        "Fujifilm REAL 3D W3",
+        "Fuji REAL 3D W3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "FinePix S20Pro",
+      "names": [
+        "S20Pro",
+        "Fujifilm S20Pro",
+        "Fuji S20Pro"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix S602 ZOOM",
+      "names": [
+        "S602",
+        "S602 Zoom",
+        "FinePix S602",
+        "S602Z",
+        "Fujifilm S602",
+        "Fuji S602"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix S7000",
+      "names": [
+        "S7000",
+        "S7000 Zoom",
+        "Fujifilm S7000",
+        "Fuji S7000"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix E550",
+      "names": [
+        "E550",
+        "E550 Zoom",
+        "Fujifilm E550",
+        "Fuji E550"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F700",
+      "names": [
+        "F700",
+        "Fujifilm F700",
+        "Fuji F700"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F710",
+      "names": [
+        "F710",
+        "Fujifilm F710",
+        "Fuji F710"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F810",
+      "names": [
+        "F810",
+        "F810 Zoom",
+        "Fujifilm F810",
+        "Fuji F810"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F20",
+      "names": [
+        "F20",
+        "F20 Zoom",
+        "Fujifilm F20",
+        "Fuji F20"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.6,
+        5.7
+      ],
+      "crop": 4.55
+    },
+    {
+      "model": "FinePix F40fd",
+      "names": [
+        "F40fd",
+        "Fujifilm F40fd",
+        "Fuji F40fd"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix F50fd",
+      "names": [
+        "F50fd",
+        "Fujifilm F50fd",
+        "Fuji F50fd"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix F60fd",
+      "names": [
+        "F60fd",
+        "Fujifilm F60fd",
+        "Fuji F60fd"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "IS-1",
+      "names": [
+        "FinePix IS-1",
+        "Fujifilm IS-1",
+        "Fuji IS-1"
+      ],
+      "format": "1/1.6\"",
+      "sensorMm": [
+        8,
+        6
+      ],
+      "crop": 4.33
+    },
+    {
+      "model": "FinePix S5000",
+      "names": [
+        "S5000",
+        "S5000 Zoom",
+        "Fujifilm S5000",
+        "Fuji S5000"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.33,
+        4
+      ],
+      "crop": 6.49
+    },
+    {
+      "model": "FinePix S5100",
+      "names": [
+        "S5100",
+        "S5100 Zoom",
+        "Fujifilm S5100",
+        "Fuji S5100"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.33,
+        4
+      ],
+      "crop": 6.49
+    },
+    {
+      "model": "FinePix S5500",
+      "names": [
+        "S5500",
+        "S5500 Zoom",
+        "Fujifilm S5500",
+        "Fuji S5500"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.33,
+        4
+      ],
+      "crop": 6.49
+    },
+    {
+      "model": "FinePix S5200",
+      "names": [
+        "S5200",
+        "S5200 Zoom",
+        "Fujifilm S5200",
+        "Fuji S5200"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "FinePix S5600",
+      "names": [
+        "S5600",
+        "S5600 Zoom",
+        "Fujifilm S5600",
+        "Fuji S5600"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^FinePix X100\\b",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52,
+      "note": "Original X100 (2011) writes \"FinePix X100\"; 12MP APS-C 23.6x15.8."
+    },
+    {
+      "pattern": "^X100",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X100 line (X100S/T/F/V/VI and future X100 models) all use APS-C sensors (23.5-23.6 x 15.6-15.7 mm)."
+    },
+    {
+      "pattern": "^X[- ]?(HF\\d|half)",
+      "format": "1-inch",
+      "sensorMm": [
+        11.73,
+        8.8
+      ],
+      "crop": 2.95,
+      "note": "X half family (EXIF/marketing \"X half\", product code X-HF1): 1-inch sensor, 3:4 recorded area ~8.8x11.73 mm (crop 2.95 = Fujifilm 10.8 mm -> 32 mm equiv)."
+    },
+    {
+      "pattern": "^X[- ]?H\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-H flagship bodies (X-H1, X-H2, X-H2S, successors): APS-C X-Trans."
+    },
+    {
+      "pattern": "^X[- ]?Pro ?\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-Pro rangefinder-style bodies: APS-C."
+    },
+    {
+      "pattern": "^X[- ]?T\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-T SLR-style bodies (X-T1..X-T6, X-T10..X-T50, X-T100/200, X-T30 II/III): APS-C."
+    },
+    {
+      "pattern": "^X[- ]?E\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-E rangefinder-style bodies: APS-C."
+    },
+    {
+      "pattern": "^X[- ]?S\\d{2}",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-S10/X-S20 and successors: APS-C (checked before the 2/3\" X-S1 rule)."
+    },
+    {
+      "pattern": "^X[- ]?S\\d\\s*$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "X-S1 (2011) is a 2/3\" EXR-CMOS superzoom bridge, not APS-C."
+    },
+    {
+      "pattern": "^X[- ]?A\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "X-A entry bodies: APS-C Bayer CMOS."
+    },
+    {
+      "pattern": "^X[- ]?M\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X-M compact bodies (X-M1, X-M5): APS-C."
+    },
+    {
+      "pattern": "^X[1-3]0\\s*$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "X10/X20/X30 premium compacts: 2/3\" sensor."
+    },
+    {
+      "pattern": "^X[7-9]0\\s*$",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "X70 (and an X80/X90 successor): APS-C fixed 18.5mm lens. X40-X60 deliberately excluded: they would sit next to the 2/3\" X10/X20/X30 numbering."
+    },
+    {
+      "pattern": "^XQ\\d",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "XQ1/XQ2 pocket compacts: 2/3\" X-Trans CMOS II."
+    },
+    {
+      "pattern": "^XF1\\s*$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "XF1 (2012) pocket compact: 2/3\" EXR CMOS."
+    },
+    {
+      "pattern": "^XF\\d{2}",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "XF10 and successors: APS-C fixed 18.5mm lens."
+    },
+    {
+      "pattern": "^GFX",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "All GFX bodies (50S/50R/50S II/100/100S/100 II/100S II/100RF/ETERNA) use the 43.8x32.9 mm sensor."
+    },
+    {
+      "pattern": "^(FinePix ?)?(S\\d ?Pro|IS[ -]?Pro)",
+      "format": "APS-C",
+      "sensorMm": [
+        23,
+        15.5
+      ],
+      "crop": 1.56,
+      "note": "FinePix S-Pro / IS Pro Nikon-mount DSLRs: APS-C Super CCD (~23.0x15.5). Space after FinePix optional: the S2 Pro writes \"FinePixS2Pro\". Does not match the 1/1.7\" S20Pro."
+    },
+    {
+      "pattern": "^FinePix HS1\\d\\b",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "HS10/HS11 superzooms: 1/2.3\" BSI-CMOS."
+    },
+    {
+      "pattern": "^FinePix HS\\d{2}EXR",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "HS20EXR..HS50EXR superzooms: 1/2\" EXR-CMOS."
+    },
+    {
+      "pattern": "^FinePix F\\d{2,3}EXR",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "FinePix F-series EXR compacts are mostly 1/2\" (F200EXR, a 1/1.6\" exception, is listed explicitly)."
+    },
+    {
+      "pattern": "^FinePix (XP|J|JV|JX|JZ|T|AX|AV|Z|SL|S\\d{4}|REAL 3D|L|A\\d)",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Mainstream FinePix compacts, rugged XP and bridge S-series: mostly 1/2.3\" (older A-series may be 1/2.5\"); approximate."
+    },
+    {
+      "pattern": "^FinePix",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Generic FinePix compact fallback; most are 1/2.3\"–1/1.6\"; approximate."
+    },
+    {
+      "pattern": "^X-[A-Z]+\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Generic X-mount fallback: every interchangeable-lens X body is APS-C (X-S1 and X-HF1 handled above)."
+    }
+  ]
+}

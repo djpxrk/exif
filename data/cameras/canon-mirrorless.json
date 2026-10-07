@@ -1,0 +1,1764 @@
+{
+  "group": "canon-mirrorless",
+  "brand": "Canon",
+  "exifMakes": [
+    "Canon"
+  ],
+  "cameras": [
+    {
+      "model": "Canon EOS R",
+      "names": [
+        "EOS R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS Ra",
+      "names": [
+        "EOS Ra",
+        "Ra",
+        "EOS Ra astro"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS RP",
+      "names": [
+        "EOS RP",
+        "RP"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R5",
+      "names": [
+        "EOS R5",
+        "R5"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R6",
+      "names": [
+        "EOS R6",
+        "R6"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R3",
+      "names": [
+        "EOS R3",
+        "R3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R5 C",
+      "names": [
+        "EOS R5 C",
+        "R5 C"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R6m2",
+      "names": [
+        "EOS R6 Mark II",
+        "Canon EOS R6 Mark II",
+        "R6 Mark II",
+        "R6 II",
+        "R6 Mk II",
+        "R6m2",
+        "R6 Mark 2",
+        "EOS R6 II",
+        "R6 Mk2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R8",
+      "names": [
+        "EOS R8",
+        "R8"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R1",
+      "names": [
+        "EOS R1",
+        "R1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R5m2",
+      "names": [
+        "EOS R5 Mark II",
+        "Canon EOS R5 Mark II",
+        "R5 Mark II",
+        "R5 II",
+        "R5 Mk II",
+        "R5m2",
+        "R5 Mark 2",
+        "EOS R5 II",
+        "R5 Mk2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R6 Mark III",
+      "names": [
+        "EOS R6 Mark III",
+        "R6 Mark III",
+        "R6 III",
+        "R6 Mk III",
+        "R6m3",
+        "R6 Mark 3",
+        "EOS R6 III",
+        "R6 Mk3",
+        "Canon EOS R6m3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R6 V",
+      "names": [
+        "EOS R6 V",
+        "R6 V"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS R8 Mark II",
+      "names": [
+        "EOS R8 Mark II",
+        "R8 Mark II",
+        "R8 II",
+        "R8 Mk II",
+        "R8m2",
+        "R8 Mark 2",
+        "EOS R8 II",
+        "R8 Mk2",
+        "Canon EOS R8m2",
+        "EOS R8m2",
+        "Canon EOS R8 II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "Announced Sept 2026; EXIF Model string not yet confirmed by a sample (R6 Mark III writes \"Canon EOS R6 Mark III\", R5/R6 Mark II wrote \"R5m2\"/\"R6m2\"); the \"R8m2\" alias covers either form."
+    },
+    {
+      "model": "Canon EOS C50",
+      "names": [
+        "EOS C50",
+        "C50",
+        "Cinema EOS C50",
+        "EOS C50 Cinema"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "uncertain": true
+    },
+    {
+      "model": "Canon EOS R7",
+      "names": [
+        "EOS R7",
+        "R7"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS R10",
+      "names": [
+        "EOS R10",
+        "R10"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS R50",
+      "names": [
+        "EOS R50",
+        "R50"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS R100",
+      "names": [
+        "EOS R100",
+        "R100"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS R50 V",
+      "names": [
+        "EOS R50 V",
+        "R50 V"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M",
+      "names": [
+        "EOS M"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M2",
+      "names": [
+        "EOS M2",
+        "M2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M3",
+      "names": [
+        "EOS M3",
+        "M3"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M10",
+      "names": [
+        "EOS M10",
+        "M10"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M5",
+      "names": [
+        "EOS M5",
+        "M5"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M6",
+      "names": [
+        "EOS M6",
+        "M6"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M100",
+      "names": [
+        "EOS M100",
+        "M100"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M50",
+      "names": [
+        "EOS M50",
+        "M50"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS KISS M",
+      "names": [
+        "EOS Kiss M",
+        "Kiss M",
+        "EOS M50 (Japan)"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M6 Mark II",
+      "names": [
+        "EOS M6 Mark II",
+        "M6 Mark II",
+        "M6 II",
+        "M6 Mk II",
+        "M6m2",
+        "M6 Mark 2",
+        "EOS M6 II",
+        "M6 Mk2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS M200",
+      "names": [
+        "EOS M200",
+        "M200"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS M50m2",
+      "names": [
+        "EOS M50 Mark II",
+        "Canon EOS M50 Mark II",
+        "M50 Mark II",
+        "M50 II",
+        "M50 Mk II",
+        "M50m2",
+        "M50 Mark 2",
+        "EOS M50 II",
+        "M50 Mk2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS KISS M2",
+      "names": [
+        "EOS Kiss M2",
+        "Kiss M2",
+        "EOS M50 Mark II (Japan)"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon PowerShot G1",
+      "names": [
+        "PowerShot G1",
+        "G1"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G2",
+      "names": [
+        "PowerShot G2",
+        "G2"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G3",
+      "names": [
+        "PowerShot G3",
+        "G3"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G5",
+      "names": [
+        "PowerShot G5",
+        "G5"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G6",
+      "names": [
+        "PowerShot G6",
+        "G6"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G7",
+      "names": [
+        "PowerShot G7",
+        "G7"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "Canon PowerShot G9",
+      "names": [
+        "PowerShot G9",
+        "G9"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G10",
+      "names": [
+        "PowerShot G10",
+        "G10"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G11",
+      "names": [
+        "PowerShot G11",
+        "G11"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G12",
+      "names": [
+        "PowerShot G12",
+        "G12"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G15",
+      "names": [
+        "PowerShot G15",
+        "G15"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G16",
+      "names": [
+        "PowerShot G16",
+        "G16"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot G1 X",
+      "names": [
+        "PowerShot G1 X",
+        "G1 X"
+      ],
+      "format": "1.5\"",
+      "sensorMm": [
+        18.7,
+        14
+      ],
+      "crop": 1.85
+    },
+    {
+      "model": "Canon PowerShot G1 X Mark II",
+      "names": [
+        "PowerShot G1 X Mark II",
+        "G1 X Mark II",
+        "G1X II",
+        "G1X Mk II",
+        "G1Xm2",
+        "G1X2",
+        "G1X Mark 2",
+        "G1 X Mk2"
+      ],
+      "format": "1.5\" (multi-aspect, 3:2 area)",
+      "sensorMm": [
+        18.7,
+        12.5
+      ],
+      "crop": 1.92
+    },
+    {
+      "model": "Canon PowerShot G1 X Mark III",
+      "names": [
+        "PowerShot G1 X Mark III",
+        "G1 X Mark III",
+        "G1X III",
+        "G1X Mk III",
+        "G1Xm3",
+        "G1X3",
+        "G1X Mark 3",
+        "G1 X Mk3"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon PowerShot G3 X",
+      "names": [
+        "PowerShot G3 X",
+        "G3 X"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G5 X",
+      "names": [
+        "PowerShot G5 X",
+        "G5 X"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G5 X Mark II",
+      "names": [
+        "PowerShot G5 X Mark II",
+        "G5 X Mark II",
+        "G5X II",
+        "G5X Mk II",
+        "G5Xm2",
+        "G5X2",
+        "G5X Mark 2",
+        "G5 X Mk2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G7 X",
+      "names": [
+        "PowerShot G7 X",
+        "G7 X"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G7 X Mark II",
+      "names": [
+        "PowerShot G7 X Mark II",
+        "G7 X Mark II",
+        "G7X II",
+        "G7X Mk II",
+        "G7Xm2",
+        "G7X2",
+        "G7X Mark 2",
+        "G7 X Mk2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G7 X Mark III",
+      "names": [
+        "PowerShot G7 X Mark III",
+        "G7 X Mark III",
+        "G7X III",
+        "G7X Mk III",
+        "G7Xm3",
+        "G7X3",
+        "G7X Mark 3",
+        "G7 X Mk3"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G9 X",
+      "names": [
+        "PowerShot G9 X",
+        "G9 X"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot G9 X Mark II",
+      "names": [
+        "PowerShot G9 X Mark II",
+        "G9 X Mark II",
+        "G9X II",
+        "G9X Mk II",
+        "G9Xm2",
+        "G9X2",
+        "G9X Mark 2",
+        "G9 X Mk2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot S90",
+      "names": [
+        "PowerShot S90",
+        "S90"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot S95",
+      "names": [
+        "PowerShot S95",
+        "S95"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot S100",
+      "names": [
+        "PowerShot S100",
+        "S100"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot S100V",
+      "names": [
+        "PowerShot S100V",
+        "S100V"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Regional variant of the 2011 PowerShot S100 (own CanonModelID 0x3320000; rawspeed alias \"Canon PowerShot S100V\")."
+    },
+    {
+      "model": "Canon PowerShot S110",
+      "names": [
+        "PowerShot S110",
+        "S110"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot S120",
+      "names": [
+        "PowerShot S120",
+        "S120"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot V10",
+      "names": [
+        "PowerShot V10",
+        "V10"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "Canon PowerShot V1",
+      "names": [
+        "PowerShot V1",
+        "V1"
+      ],
+      "format": "1.4\"",
+      "sensorMm": [
+        18.4,
+        12.3
+      ],
+      "crop": 1.96
+    },
+    {
+      "model": "Canon PowerShot ZOOM",
+      "names": [
+        "PowerShot ZOOM",
+        "ZOOM"
+      ],
+      "format": "1/3\"",
+      "sensorMm": [
+        4.8,
+        3.6
+      ],
+      "crop": 7.21
+    },
+    {
+      "model": "Canon PowerShot SX1 IS",
+      "names": [
+        "PowerShot SX1 IS",
+        "SX1 IS",
+        "SX1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX10 IS",
+      "names": [
+        "PowerShot SX10 IS",
+        "SX10 IS",
+        "SX10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX20 IS",
+      "names": [
+        "PowerShot SX20 IS",
+        "SX20 IS",
+        "SX20"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX30 IS",
+      "names": [
+        "PowerShot SX30 IS",
+        "SX30 IS",
+        "SX30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX40 HS",
+      "names": [
+        "PowerShot SX40 HS",
+        "SX40 HS",
+        "SX40"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX50 HS",
+      "names": [
+        "PowerShot SX50 HS",
+        "SX50 HS",
+        "SX50"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX60 HS",
+      "names": [
+        "PowerShot SX60 HS",
+        "SX60 HS",
+        "SX60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX70 HS",
+      "names": [
+        "PowerShot SX70 HS",
+        "SX70 HS",
+        "SX70"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX100 IS",
+      "names": [
+        "PowerShot SX100 IS",
+        "SX100 IS",
+        "SX100"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "Canon PowerShot SX110 IS",
+      "names": [
+        "PowerShot SX110 IS",
+        "SX110 IS",
+        "SX110"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX120 IS",
+      "names": [
+        "PowerShot SX120 IS",
+        "SX120 IS",
+        "SX120"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "Canon PowerShot SX130 IS",
+      "names": [
+        "PowerShot SX130 IS",
+        "SX130 IS",
+        "SX130"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX150 IS",
+      "names": [
+        "PowerShot SX150 IS",
+        "SX150 IS",
+        "SX150"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX160 IS",
+      "names": [
+        "PowerShot SX160 IS",
+        "SX160 IS",
+        "SX160"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX170 IS",
+      "names": [
+        "PowerShot SX170 IS",
+        "SX170 IS",
+        "SX170"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX200 IS",
+      "names": [
+        "PowerShot SX200 IS",
+        "SX200 IS",
+        "SX200"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX210 IS",
+      "names": [
+        "PowerShot SX210 IS",
+        "SX210 IS",
+        "SX210"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX220 HS",
+      "names": [
+        "PowerShot SX220 HS",
+        "SX220 HS",
+        "SX220"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX230 HS",
+      "names": [
+        "PowerShot SX230 HS",
+        "SX230 HS",
+        "SX230"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX240 HS",
+      "names": [
+        "PowerShot SX240 HS",
+        "SX240 HS",
+        "SX240"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX260 HS",
+      "names": [
+        "PowerShot SX260 HS",
+        "SX260 HS",
+        "SX260"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX270 HS",
+      "names": [
+        "PowerShot SX270 HS",
+        "SX270 HS",
+        "SX270"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX275 HS",
+      "names": [
+        "PowerShot SX275 HS",
+        "SX275 HS",
+        "SX275"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX280 HS",
+      "names": [
+        "PowerShot SX280 HS",
+        "SX280 HS",
+        "SX280"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX400 IS",
+      "names": [
+        "PowerShot SX400 IS",
+        "SX400 IS",
+        "SX400"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX410 IS",
+      "names": [
+        "PowerShot SX410 IS",
+        "SX410 IS",
+        "SX410"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX420 IS",
+      "names": [
+        "PowerShot SX420 IS",
+        "SX420 IS",
+        "SX420"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX430 IS",
+      "names": [
+        "PowerShot SX430 IS",
+        "SX430 IS",
+        "SX430"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX500 IS",
+      "names": [
+        "PowerShot SX500 IS",
+        "SX500 IS",
+        "SX500"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX510 HS",
+      "names": [
+        "PowerShot SX510 HS",
+        "SX510 HS",
+        "SX510"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX520 HS",
+      "names": [
+        "PowerShot SX520 HS",
+        "SX520 HS",
+        "SX520"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX530 HS",
+      "names": [
+        "PowerShot SX530 HS",
+        "SX530 HS",
+        "SX530"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX540 HS",
+      "names": [
+        "PowerShot SX540 HS",
+        "SX540 HS",
+        "SX540"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX600 HS",
+      "names": [
+        "PowerShot SX600 HS",
+        "SX600 HS",
+        "SX600"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX610 HS",
+      "names": [
+        "PowerShot SX610 HS",
+        "SX610 HS",
+        "SX610"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX620 HS",
+      "names": [
+        "PowerShot SX620 HS",
+        "SX620 HS",
+        "SX620"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX700 HS",
+      "names": [
+        "PowerShot SX700 HS",
+        "SX700 HS",
+        "SX700"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX710 HS",
+      "names": [
+        "PowerShot SX710 HS",
+        "SX710 HS",
+        "SX710"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX720 HS",
+      "names": [
+        "PowerShot SX720 HS",
+        "SX720 HS",
+        "SX720"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX730 HS",
+      "names": [
+        "PowerShot SX730 HS",
+        "SX730 HS",
+        "SX730"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot SX740 HS",
+      "names": [
+        "PowerShot SX740 HS",
+        "SX740 HS",
+        "SX740"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "Canon PowerShot Pro1",
+      "names": [
+        "PowerShot Pro1",
+        "Pro1"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "Canon PowerShot N100",
+      "names": [
+        "PowerShot N100",
+        "N100"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "Canon PowerShot S200",
+      "names": [
+        "PowerShot S200",
+        "S200"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^(?:Canon )?EOS R(?:7|\\d{2,3})(?:m\\d+)?(?:\\s|$)",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "RF-mount APS-C bodies: R7 and any two/three-digit R model (R10, R50, R50 V, R100 and future Mark II / mN variants such as \"R7 Mark II\" or \"R50m2\")."
+    },
+    {
+      "pattern": "^(?:Canon )?EOS R(?:a|p|[1-689])?(?:m\\d+)?(?:\\s|$)",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "RF-mount full-frame bodies: EOS R, Ra, RP and single-digit models (R1, R3, R5, R5 C, R6, R8) incl. \"Mark N\", \"mN\" and suffixed (V, C) variants."
+    },
+    {
+      "pattern": "^(?:Canon )?EOS (?:Kiss )?M\\d*(?:m\\d+)?(?:\\s|$)",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "EF-M mount EOS M family incl. regional EOS Kiss M / Kiss M2 and \"M50m2\"-style Mark II strings; every EOS M body uses a ~22.3x14.9 mm APS-C sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?EOS C50(?:\\s|$)",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "Cinema EOS C50 (RF mount, full-frame 7K sensor; can record stills)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G1 ?X ?(?:Mark ?|Mk ?|M)?(?:III|3)\\b",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "G1 X Mark III uses a 24 MP APS-C sensor (same class as EOS M)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G1 ?X ?(?:Mark ?|Mk ?|M)?(?:II|2)\\b",
+      "format": "1.5\" (multi-aspect, 3:2 area)",
+      "sensorMm": [
+        18.7,
+        12.5
+      ],
+      "crop": 1.92,
+      "note": "G1 X Mark II: 1.5-type multi-aspect sensor; 3:2 image area ~18.7x12.5 mm (lens 12.5 mm = 24 mm equiv)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G1 ?X",
+      "format": "1.5\"",
+      "sensorMm": [
+        18.7,
+        14
+      ],
+      "crop": 1.85,
+      "note": "Original G1 X: 1.5-type 18.7x14.0 mm 4:3 sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G\\d+ ?X",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "PowerShot G3 X / G5 X / G7 X / G9 X families (all marks) use 1-inch 13.2x8.8 mm sensors; covers future G-series X models."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G(?:9|1[0-6])(?:\\s|$)",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "PowerShot G9-G16 (non-X) enthusiast compacts: 1/1.7\" sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot G[1-7](?:\\s|$)",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Early PowerShot G1-G7 (2000-2006): 1/1.8\" sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot (?:S(?:9\\d|1[0-2]\\d|200)|N100)(?:\\s|$)",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "PowerShot S90/S95/S100/S110/S120, S200 (2014) and N100: 1/1.7\" sensor (note: the 2000-era Digital ELPH S100 and 2002 Digital ELPH S200 also wrote \"PowerShot S100\"/\"S200\" but used 1/2.7\" sensors and are rare)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot S(?:[2-8]0|45|4[01]0|500)(?:\\s|$)",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "PowerShot S20-S80 (incl. S45) and Digital ELPH S400/S410/S500 (2000-2005): 1/1.8\" CCD (digicamdb/DPReview 7.1 mm wide)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot S[2-5] IS",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "PowerShot S2 IS / S3 IS / S5 IS superzooms: 1/2.5\" CCD (5.74 mm wide per digicamdb/DPReview)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot Pro1(?:\\s|$)",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "PowerShot Pro1 (2004): 2/3\" 8 MP CCD."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot V1(?:\\s|$)",
+      "format": "1.4\"",
+      "sensorMm": [
+        18.4,
+        12.3
+      ],
+      "crop": 1.96,
+      "note": "PowerShot V1: 1.4-type 18.4x12.3 mm sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot V\\d{2,}",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "PowerShot V10 and later two-digit V models: 1-inch sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot SX1[02]0 IS",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "SX100 IS / SX120 IS: 1/2.5\" CCD."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot SX\\d+",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "PowerShot SX superzoom / travel-zoom line: 1/2.3\" sensor (vast majority of models)."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot ZOOM",
+      "format": "1/3\"",
+      "sensorMm": [
+        4.8,
+        3.6
+      ],
+      "crop": 7.21,
+      "note": "PowerShot ZOOM monocular camera: 1/3\" sensor."
+    },
+    {
+      "pattern": "^(?:Canon )?(?:PowerShot (?:ELPH|SD|A|D|N|PICK)|(?:DIGITAL )?IXUS|IXY)",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Approximate fallback: IXUS / ELPH / IXY / A / D-series point-and-shoots mostly use 1/2.3\" sensors (older ones 1/2.5\"-1/1.8\"); low confidence."
+    },
+    {
+      "pattern": "^(?:Canon )?PowerShot",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Last-resort fallback for unknown PowerShot models: 1/2.3\" (most common PowerShot sensor); low confidence."
+    }
+  ]
+}

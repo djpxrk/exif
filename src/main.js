@@ -11,11 +11,32 @@ import '@fontsource/fraunces/400-italic.css';
 import '@fontsource/fraunces/600.css';
 import '@fontsource/jetbrains-mono/400.css';
 import '@fontsource/jetbrains-mono/600.css';
+import '@fontsource/manrope/400.css';
+import '@fontsource/manrope/700.css';
+import '@fontsource/unbounded/400.css';
+import '@fontsource/unbounded/700.css';
+import '@fontsource/eb-garamond/400.css';
+import '@fontsource/eb-garamond/700.css';
+import '@fontsource/eb-garamond/400-italic.css';
+import '@fontsource/noto-serif-display/400.css';
+import '@fontsource/noto-serif-display/700.css';
+import '@fontsource/noto-serif-display/400-italic.css';
+import '@fontsource/courier-prime/400.css';
+import '@fontsource/courier-prime/700.css';
+import '@fontsource/caveat/400.css';
+import '@fontsource/caveat/700.css';
+import '@fontsource/nanum-pen-script/400.css';
+import dsegUrl from 'dseg/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2?url';
 import './styles.css';
 
 import { Capacitor } from '@capacitor/core';
 import { ACCEPT, decodeFile, makePreview } from './decode.js';
-import { DEFAULT_SETTINGS, FONTS, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
+import { equivalentFocal, formatForCrop, lookupCamera } from './crop.js';
+import { cameraLogo, lensLogo } from './brands.js';
+import { LOGOS } from './logos.js';
+import { prettyModel } from './exif.js';
+import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
+import { coordsOf, loadMaps, maps, placeOf } from './map.js';
 import { FORMATS, deliver, exportPhoto, maxCanvasPixels, needsStrips, outputSize } from './export.js';
 
 const $ = (sel) => document.querySelector(sel);
@@ -29,8 +50,8 @@ const el = (tag, props = {}, ...children) => {
 
 const FIELD_ROWS = [
   ['make', 'Brand'], ['model', 'Camera'], ['lens', 'Lens'], ['focal', 'Focal length'],
-  ['aperture', 'Aperture'], ['shutter', 'Shutter'], ['iso', 'ISO'], ['date', 'Date'],
-  ['location', 'Location'], ['artist', 'Artist'], ['caption', 'Caption'],
+  ['aperture', 'Aperture'], ['shutter', 'Shutter'], ['iso', 'ISO'], ['date', 'Date'], ['time', 'Time'],
+  ['location', 'Location'], ['place', 'Place'], ['artist', 'Artist'], ['caption', 'Caption'],
 ];
 const BACKGROUNDS = [
   ['template', 'Template default', 'auto'],
@@ -84,6 +105,7 @@ async function addFiles(files) {
     busy(`Reading ${file.name}${files.length > 1 ? ` (${i + 1} of ${files.length})` : ''}`);
     try {
       const d = await decodeFile(file);
+      d.fields.file = file.name; // not a Details row; the Lightroom and Slide frames use it
       const preview = makePreview(d.image, 2000, d.orientation);
       photos.push({
         id: crypto.randomUUID?.() || String(Math.random()),
@@ -92,6 +114,8 @@ async function addFiles(files) {
         preview,
         thumb: makePreview(preview, 320),
         original: { ...d.fields },
+        originalCrop: d.crop,
+        originalFocalMm: d.focalMm,
       });
       if (d.note) lastNote = `${file.name}: ${d.note}`;
       if (current === -1 || i === 0) current = photos.length - 1;
@@ -125,6 +149,58 @@ function note(text, error = false) {
   }
 }
 
+// ---------- Fonts ----------
+
+// The 7-segment date-stamp face isn't on Fontsource; register it directly.
+const dateStampFace = new FontFace(DATE_STAMP_FONT.family, `url(${dsegUrl}) format("woff2")`, { weight: '700' });
+document.fonts.add(dateStampFace);
+const dateStampReady = dateStampFace.load().catch(() => null);
+
+// Canvas text only uses a web font once it has loaded, and @font-face
+// unicode-range means each script (Latin, Greek, Korean…) loads separately,
+// so faces are loaded for the exact text about to be drawn.
+const fontsReady = new Set();
+function activeFontKey() {
+  return settings.font === 'template' ? TEMPLATES[settings.template].font : settings.font;
+}
+/** The selected face plus any the frame always uses (Postcard's typewriter, Slide's pen). */
+function activeFontKeys() {
+  return [activeFontKey(), ...(TEMPLATES[settings.template].fonts || [])];
+}
+function frameText(photo) {
+  return photo ? [...Object.values(photo.fields), placeOf(photo.fields)?.label].filter(Boolean).join(' ') : '';
+}
+function ensureFont(key, text = '') {
+  const f = FONTS[key];
+  if (!f) return Promise.resolve();
+  const sample = `Aa1/α°©'${text}`;
+  const id = `${key}|${sample}`;
+  if (fontsReady.has(id)) return Promise.resolve();
+  const families = [f.family, ...(f.stack ? f.stack.split(',').map((x) => x.trim().replace(/"/g, '')) : [])];
+  const specs = families.flatMap((fam) => [`${f.regular} 20px "${fam}"`, `${f.bold} 20px "${fam}"`]);
+  if (f.italic) specs.push(`italic ${f.regular} 20px "${f.family}"`);
+  return Promise.allSettled([...specs.map((spec) => document.fonts.load(spec, sample)), dateStampReady]).then(() => fontsReady.add(id));
+}
+/** Redraws once the active face is ready for this photo's text. */
+function ensureActiveFont(photo) {
+  const missing = activeFontKeys().filter((key) => !fontsReady.has(`${key}|Aa1/α°©'${frameText(photo)}`));
+  if (!missing.length) return true;
+  Promise.all(missing.map((key) => ensureFont(key, frameText(photo)))).then(() => drawPreview());
+  return false;
+}
+
+// ---------- Maps ----------
+
+// Map frames and place names need the offline map data (~500 KB), which is
+// fetched once on first use.
+const needsMaps = (s = settings) => !!TEMPLATES[s.template].map || s.show.place;
+let mapsWanted = false;
+function ensureMaps() {
+  if (maps() || mapsWanted) return;
+  mapsWanted = true;
+  loadMaps().then(() => { drawPreview(); drawTemplatesLater(); drawFields(); }, () => { mapsWanted = false; });
+}
+
 // ---------- Preview ----------
 
 const canvas = $('#preview');
@@ -136,7 +212,9 @@ function drawPreview() {
     $('#empty').hidden = !!photo;
     canvas.hidden = !photo;
     if (!photo) return;
-    const L = layout(photo.width, photo.height, settings);
+    ensureActiveFont(photo); // draws now with what's loaded, again when the face arrives
+    if (needsMaps()) ensureMaps();
+    const L = layout(photo.width, photo.height, settings, photo.fields);
     const cs = getComputedStyle(stage);
     const availW = stage.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
     const availH = stage.clientHeight - parseFloat(cs.paddingTop) - parseFloat(cs.paddingBottom);
@@ -189,6 +267,7 @@ document.querySelectorAll('[role="tab"]').forEach((tab) => {
     document.querySelectorAll('[role="tab"]').forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
     document.querySelectorAll('.tab-body').forEach((b) => (b.hidden = b.dataset.body !== tab.dataset.tab));
     if (tab.dataset.tab === 'frame') drawTemplates();
+    if (tab.dataset.tab === 'layout') drawLayoutControls();
   };
 });
 
@@ -198,12 +277,13 @@ let templateTimer;
 function drawTemplates() {
   clearTimeout(templateTimer);
   templateTimer = setTimeout(() => {
+    ensureMaps(); // the Atlas and Postcard thumbnails show a map
     const photo = photos[current];
     const sample = photo || samplePhoto();
     $('#templates').replaceChildren(
       ...Object.entries(TEMPLATES).map(([key, tpl]) => {
         const s = { ...settings, template: key, ratio: 'auto', background: 'template', font: 'template' };
-        const L = layout(sample.width, sample.height, s);
+        const L = layout(sample.width, sample.height, s, sample.fields);
         const k = 240 / Math.max(L.width, L.height);
         const c = el('canvas');
         c.width = Math.round(L.width * k);
@@ -211,7 +291,7 @@ function drawTemplates() {
         renderFrame(c.getContext('2d'), { img: sample.thumb, W: sample.width, H: sample.height, fields: sample.fields, settings: s, scale: k });
         const b = el('button', { className: 'template af', type: 'button' }, el('div', { className: 'template-art' }, c), el('span', { textContent: tpl.label }));
         b.setAttribute('aria-pressed', String(settings.template === key));
-        b.onclick = () => { settings.template = key; changed(); };
+        b.onclick = () => { settings.template = key; changed(); drawFields(); };
         return b;
       }),
     );
@@ -229,7 +309,11 @@ function samplePhoto() {
   g.fillStyle = grad; g.fillRect(0, 0, 300, 200);
   sample = {
     width: 6000, height: 4000, thumb: c,
-    fields: { make: 'SONY', model: 'α7 IV', lens: 'FE 35mm F1.4 GM', focal: '35mm', focal35: '35mm', aperture: 'f/1.4', shutter: '1/500s', iso: 'ISO100', date: '2026.10.07 17:42', location: '', artist: '', caption: '' },
+    fields: {
+      make: 'SONY', model: 'α7 IV', lens: 'FE 35mm F1.4 GM', focal: '35mm', focal35: '35mm', aperture: 'f/1.4', shutter: '1/500s',
+      iso: 'ISO100', date: '2026.10.07', time: '17:42', location: '33.4581°N 126.9426°E', place: '', heading: '75°', altitude: '',
+      artist: '', caption: '', file: 'DSC01234.ARW',
+    },
   };
   return sample;
 }
@@ -238,9 +322,28 @@ function samplePhoto() {
 
 function drawFields() {
   const photo = photos[current];
-  $('#details-hint').textContent = photo
-    ? 'Turn a line off to leave it out of the frame. Text edits apply to the selected photo.'
-    : 'Add a photo to edit its details.';
+  $('#details-hint').textContent = !photo
+    ? 'Add a photo to edit its details.'
+    : TEMPLATES[settings.template].map
+      ? `${TEMPLATES[settings.template].label} always shows where the photo was taken${coordsOf(photo.fields) ? '' : ' (type coordinates under Location, e.g. 37.5665, 126.9780)'}; exact coordinates appear only with Location on.`
+      : 'Turn a line off to leave it out of the frame. Text edits apply to the selected photo.';
+  let focalInput;
+  let placeInput;
+  let cropInput;
+  let cropStatus;
+
+  // Recomputes the 35mm value from the focal length and crop factor, and
+  // refreshes the crop row without rebuilding inputs (keeps typing focus).
+  const syncCrop = (message) => {
+    if (!photo) return;
+    if (photo.crop && photo.focalMm) photo.fields.focal35 = equivalentFocal(photo.focalMm, photo.crop.value);
+    if (cropInput && document.activeElement !== cropInput) cropInput.value = photo.crop ? photo.crop.value.toFixed(2) : '';
+    if (cropStatus) cropStatus.textContent = message || cropDescription(photo.crop);
+    if (focalInput && settings.focal35 && document.activeElement !== focalInput) focalInput.value = photo.fields.focal35 || photo.fields.focal;
+    drawPreview();
+    drawTemplatesLater();
+  };
+
   const rows = FIELD_ROWS.map(([key, label]) => {
     // The focal length row edits whichever value is shown: actual or 35mm equivalent.
     const prop = key === 'focal' && settings.focal35 && photo?.fields.focal35 ? 'focal35' : key;
@@ -249,26 +352,83 @@ function drawFields() {
     check.setAttribute('aria-label', `Show ${label.toLowerCase()}`);
     const input = el('input', {
       type: 'text', id, value: photo?.fields[prop] || '', disabled: !photo, autocomplete: 'off',
-      placeholder: key === 'caption' ? 'Add a caption' : key === 'artist' ? 'Your name' : photo ? 'Not in EXIF' : '',
+      placeholder: key === 'caption' ? 'Add a caption' : key === 'artist' ? 'Your name' : key === 'place' ? placeHint(photo) : photo ? 'Not in EXIF' : '',
     });
+    if (key === 'place') placeInput = input;
     input.spellcheck = false;
     check.onchange = () => { settings.show[key] = check.checked; changed(); };
-    input.oninput = () => { photo.fields[prop] = input.value; drawPreview(); drawTemplatesLater(); };
+    input.oninput = () => {
+      photo.fields[prop] = input.value;
+      if (key === 'make' || key === 'model') {
+        // New camera entered: look its crop factor up in the database.
+        const hit = lookupCamera(photo.fields.make, photo.fields.model);
+        if (hit) photo.crop = { value: hit.crop, format: hit.format, source: 'database', model: hit.model, brand: hit.brand, matched: hit.matched };
+        syncCrop(hit ? null : photo.fields.model
+          ? `“${photo.fields.model}” isn’t in the camera database. ${photo.crop ? `Keeping ${photo.crop.value.toFixed(2)}×.` : 'Enter a crop factor.'}`
+          : null);
+        return;
+      }
+      if (prop === 'focal') { photo.focalMm = parseFloat(input.value) || null; syncCrop(); return; }
+      if (key === 'location' && placeInput) placeInput.placeholder = placeHint(photo);
+      drawPreview();
+      drawTemplatesLater();
+    };
     const row = el('div', { className: 'field' }, check, el('label', { htmlFor: id, textContent: prop === 'focal35' ? 'Focal (35mm)' : label }), input);
     if (key !== 'focal') return row;
+    focalInput = input;
 
     const toggle = el('input', { type: 'checkbox', id: 'focal35', checked: settings.focal35 });
     toggle.onchange = () => { settings.focal35 = toggle.checked; changed(); drawFields(); };
-    const missing = settings.focal35 && photo && !photo.fields.focal35;
-    const actual = photo?.original.focal;
-    const eq = photo?.original.focal35;
-    const detail = missing
-      ? 'This photo has no 35mm-equivalent value, so the actual focal length is shown.'
+    const actual = photo?.fields.focal;
+    const eq = photo?.fields.focal35;
+    const detail = settings.focal35 && photo && !eq
+      ? 'No crop factor for this camera yet, so the actual focal length is shown. Enter one below.'
       : actual && eq && actual !== eq ? `${actual} on this camera equals ${eq} on full frame.`
       : 'Shows the focal length as it would be on a full-frame (35mm) camera.';
-    return [row, el('label', { className: 'toggle focal35' }, toggle, el('span', {}, 'Use 35mm-equivalent focal length', el('small', { textContent: detail })))];
+
+    cropInput = el('input', {
+      type: 'number', id: 'crop', min: '0.2', max: '12', step: '0.01', inputMode: 'decimal', disabled: !photo,
+      value: photo?.crop ? photo.crop.value.toFixed(2) : '', placeholder: '—',
+    });
+    cropInput.oninput = () => {
+      const v = parseFloat(cropInput.value);
+      if (!(v >= 0.2 && v <= 12)) return;
+      photo.crop = { value: v, format: formatForCrop(v), source: 'manual' };
+      syncCrop();
+    };
+    cropStatus = el('small', { className: 'crop-status', textContent: photo ? cropDescription(photo.crop) : '' });
+    const cropRow = el('div', { className: 'field crop-row' },
+      el('span'), el('label', { htmlFor: 'crop', textContent: 'Crop factor' }),
+      el('div', { className: 'crop-input' }, cropInput, el('span', { textContent: '×', ariaHidden: 'true' })));
+    return [
+      row,
+      el('label', { className: 'toggle focal35' }, toggle, el('span', {}, 'Use 35mm-equivalent focal length', el('small', { textContent: detail }))),
+      cropRow,
+      el('div', { className: 'crop-note' }, cropStatus),
+    ];
   });
   $('#fields').replaceChildren(...rows.flat());
+}
+
+/** Placeholder for the Place field: the name looked up from the coordinates. */
+function placeHint(photo) {
+  if (!photo) return '';
+  if (!coordsOf(photo.fields)) return 'Type a place, or add coordinates';
+  if (!maps()) return 'Found from the location';
+  return maps().placeName(coordsOf(photo.fields).lat, coordsOf(photo.fields).lon).label || 'No town nearby';
+}
+
+function cropDescription(crop) {
+  if (!crop) return 'Not found. Type the crop factor, e.g. 1.5 for APS-C or 2 for Micro Four Thirds.';
+  const where = {
+    database: crop.matched === 'series'
+      ? 'estimated from the camera’s product line'
+      : `camera database${crop.model ? `: ${prettyModel(crop.model, crop.brand || '')}` : ''}`,
+    exif: 'from the camera’s EXIF',
+    sensor: 'estimated from the sensor size in EXIF',
+    manual: 'set by you',
+  }[crop.source];
+  return `${crop.format || formatForCrop(crop.value)}, ${where}.`;
 }
 const drawTemplatesLater = () => { if (!$('[data-body="frame"]').hidden) drawTemplates(); };
 
@@ -276,7 +436,9 @@ $('#reset-fields').onclick = () => {
   const photo = photos[current];
   if (!photo) return;
   photo.fields = { ...photo.original, artist: photo.fields.artist, caption: photo.fields.caption };
-  drawFields(); drawPreview();
+  photo.crop = photo.originalCrop;
+  photo.focalMm = photo.originalFocalMm;
+  drawFields(); drawPreview(); drawTemplatesLater();
 };
 $('#copy-fields').onclick = () => {
   const photo = photos[current];
@@ -300,7 +462,7 @@ function chipGroup(container, options, isOn, onPick) {
 
 function drawLayoutControls() {
   const photo = photos[current] || samplePhoto();
-  const L0 = layout(photo.width, photo.height, { ...settings, ratio: 'auto', orient: 'auto' });
+  const L0 = layout(photo.width, photo.height, { ...settings, ratio: 'auto', orient: 'auto' }, photo.fields);
   chipGroup($('#orients'), [['auto', 'Match photo'], ['portrait', 'Vertical'], ['landscape', 'Horizontal']],
     (v) => settings.orient === v, (v) => { settings.orient = v; changed(); });
   chipGroup($('#ratios'), Object.keys(RATIOS).map((k) => [k, ratioLabel(k, settings, L0.content.w, L0.content.h)]),
@@ -308,7 +470,7 @@ function drawLayoutControls() {
   $('#custom-ratio').hidden = settings.ratio !== 'custom';
   $('#custom-w').value = settings.custom[0];
   $('#custom-h').value = settings.custom[1];
-  const L = layout(photo.width, photo.height, settings);
+  const L = layout(photo.width, photo.height, settings, photo.fields);
   $('#ratio-out').textContent = simpleRatio(L.width, L.height);
   $('#orient-out').textContent = L.width === L.height ? 'Square' : L.width > L.height ? 'Horizontal' : 'Vertical';
 
@@ -338,11 +500,21 @@ function drawLayoutControls() {
     })(),
   );
 
+  const tpl = TEMPLATES[settings.template];
+  $('#map-group').hidden = !tpl.map;
+  $('#map-scales').hidden = settings.template !== 'atlas';
+  chipGroup($('#map-scales'), Object.entries(MAP_SCALES).map(([k, m]) => [k, m.label]),
+    (v) => (settings.mapScale || 'region') === v, (v) => { settings.mapScale = v; changed(); });
+
+  chipGroup($('#logo-modes'), [['both', 'Camera + lens logos'], ['camera', 'Camera logo'], ['text', 'Name as text']],
+    (v) => (settings.logo || 'both') === v, (v) => { settings.logo = v; changed(); });
+  $('#logo-hint').textContent = logoHint(photos[current]);
+
   const tplFont = FONTS[TEMPLATES[settings.template].font];
   $('#fonts').replaceChildren(
     ...[['template', `Template default`, tplFont], ...Object.entries(FONTS).map(([k, f]) => [k, f.label, f])].map(([key, label, f]) => {
       const b = el('button', { className: 'font-opt af', type: 'button' },
-        el('b', { textContent: '1/250s f/2.8', style: `font-family:"${f.family}";${f.italic && key === 'fraunces' ? 'font-style:italic;' : ''}` }),
+        el('b', { textContent: f.sample || '1/250s f/2.8', style: `font-family:"${f.family}";${f.italic && key === 'fraunces' ? 'font-style:italic;' : ''}` }),
         el('small', { textContent: key === 'template' ? `${label} (${f.label})` : label }));
       b.setAttribute('aria-pressed', String(settings.font === key));
       b.onclick = () => { settings.font = key; changed(); };
@@ -350,6 +522,17 @@ function drawLayoutControls() {
     }),
   );
 }
+function logoHint(photo) {
+  if (!photo) return 'Logos appear for supported camera and lens brands. A lens logo is added when the lens maker differs from the camera’s.';
+  const cam = cameraLogo(photo.fields.make);
+  const lens = lensLogo(photo.fields.lens, photo.fields.lensMake);
+  const name = (k) => LOGOS[k]?.name || k;
+  const parts = [];
+  parts.push(cam ? `Camera: ${name(cam)} logo.` : photo.fields.make ? `No logo for “${photo.fields.make}”, so its name is shown as text.` : 'No camera brand in this photo.');
+  if (lens && lens !== cam) parts.push(`Lens: ${name(lens)} logo.`);
+  return parts.join(' ');
+}
+
 function simpleRatio(w, h) {
   const r = w / h;
   for (let d = 1; d <= 20; d++) {
@@ -367,7 +550,7 @@ for (const [id, i] of [['#custom-w', 0], ['#custom-h', 1]]) {
     persist();
     drawPreview();
     const photo = photos[current] || samplePhoto();
-    const L = layout(photo.width, photo.height, settings);
+    const L = layout(photo.width, photo.height, settings, photo.fields);
     $('#ratio-out').textContent = simpleRatio(L.width, L.height);
   };
   $(id).onchange = () => changed();
@@ -414,6 +597,8 @@ async function save(list) {
       const label = `Rendering ${photo.name}${list.length > 1 ? ` (${i + 1} of ${list.length})` : ''}`;
       busy(label);
       await new Promise((r) => setTimeout(r, 30)); // let the status paint
+      await Promise.all(activeFontKeys().map((key) => ensureFont(key, frameText(photo))));
+      if (needsMaps()) await loadMaps().catch(() => { throw new Error('The map data couldn’t be loaded. Check your connection and try again.'); });
       out.push(await exportPhoto(photo, settings, exportOpts, (p) => busy(`${label} ${Math.round(p * 100)}%`)));
     }
     busy(list.length > 1 ? 'Packing' : 'Saving');
@@ -453,10 +638,9 @@ function refreshAll() {
   drawPreview();
 }
 
-// Canvas text needs the faces loaded before the first draw.
-const faces = Object.values(FONTS).flatMap((f) => [`${f.regular} 20px "${f.family}"`, `${f.bold} 20px "${f.family}"`])
-  .concat(['italic 400 20px "Fraunces"']);
-Promise.allSettled(faces.map((f) => document.fonts.load(f, 'Aa1/α'))).then(refreshAll);
+// Template default faces are needed for the template thumbnails at once;
+// other typefaces load on demand (see ensureFont).
+Promise.allSettled([...new Set(Object.values(TEMPLATES).map((t) => t.font))].map((k) => ensureFont(k))).then(refreshAll);
 refreshAll();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform()) {

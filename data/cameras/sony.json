@@ -1,0 +1,3206 @@
+{
+  "group": "sony",
+  "brand": "SONY",
+  "exifMakes": [
+    "SONY",
+    "Sony"
+  ],
+  "cameras": [
+    {
+      "model": "ILCE-7",
+      "names": [
+        "α7",
+        "A7",
+        "a7",
+        "Alpha 7",
+        "Alpha A7",
+        "Sony α7",
+        "Sony A7",
+        "Sony Alpha 7",
+        "Sony Alpha A7"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7R",
+      "names": [
+        "α7R",
+        "A7R",
+        "a7R",
+        "Alpha 7R",
+        "Alpha A7R",
+        "Sony α7R",
+        "Sony A7R",
+        "Sony Alpha 7R",
+        "Sony Alpha A7R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7S",
+      "names": [
+        "α7S",
+        "A7S",
+        "a7S",
+        "Alpha 7S",
+        "Alpha A7S",
+        "Sony α7S",
+        "Sony A7S",
+        "Sony Alpha 7S",
+        "Sony Alpha A7S"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7M2",
+      "names": [
+        "α7 II",
+        "A7 II",
+        "a7 II",
+        "Alpha 7 II",
+        "Alpha A7 II",
+        "Sony α7 II",
+        "Sony A7 II",
+        "Sony Alpha 7 II",
+        "Sony Alpha A7 II",
+        "α7II",
+        "A7II",
+        "A7 Mark II",
+        "A7M2",
+        "A7 Mark 2",
+        "A7 Mk II",
+        "A7 Mk2",
+        "A7 MII",
+        "Alpha 7 Mark II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7RM2",
+      "names": [
+        "α7R II",
+        "A7R II",
+        "a7R II",
+        "Alpha 7R II",
+        "Alpha A7R II",
+        "Sony α7R II",
+        "Sony A7R II",
+        "Sony Alpha 7R II",
+        "Sony Alpha A7R II",
+        "α7RII",
+        "A7RII",
+        "A7R Mark II",
+        "A7RM2",
+        "A7R Mark 2",
+        "A7R Mk II",
+        "A7R Mk2",
+        "A7R MII",
+        "Alpha 7R Mark II",
+        "A7R2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7SM2",
+      "names": [
+        "α7S II",
+        "A7S II",
+        "a7S II",
+        "Alpha 7S II",
+        "Alpha A7S II",
+        "Sony α7S II",
+        "Sony A7S II",
+        "Sony Alpha 7S II",
+        "Sony Alpha A7S II",
+        "α7SII",
+        "A7SII",
+        "A7S Mark II",
+        "A7SM2",
+        "A7S Mark 2",
+        "A7S Mk II",
+        "A7S Mk2",
+        "A7S MII",
+        "Alpha 7S Mark II",
+        "A7S2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7M3",
+      "names": [
+        "α7 III",
+        "A7 III",
+        "a7 III",
+        "Alpha 7 III",
+        "Alpha A7 III",
+        "Sony α7 III",
+        "Sony A7 III",
+        "Sony Alpha 7 III",
+        "Sony Alpha A7 III",
+        "α7III",
+        "A7III",
+        "A7 Mark III",
+        "A7M3",
+        "A7 Mark 3",
+        "A7 Mk III",
+        "A7 Mk3",
+        "A7 MIII",
+        "Alpha 7 Mark III"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7RM3",
+      "names": [
+        "α7R III",
+        "A7R III",
+        "a7R III",
+        "Alpha 7R III",
+        "Alpha A7R III",
+        "Sony α7R III",
+        "Sony A7R III",
+        "Sony Alpha 7R III",
+        "Sony Alpha A7R III",
+        "α7RIII",
+        "A7RIII",
+        "A7R Mark III",
+        "A7RM3",
+        "A7R Mark 3",
+        "A7R Mk III",
+        "A7R Mk3",
+        "A7R MIII",
+        "Alpha 7R Mark III",
+        "A7R3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7RM3A",
+      "names": [
+        "α7R IIIA",
+        "A7R IIIA",
+        "a7R IIIA",
+        "Alpha 7R IIIA",
+        "Alpha A7R IIIA",
+        "Sony α7R IIIA",
+        "Sony A7R IIIA",
+        "Sony Alpha 7R IIIA",
+        "Sony Alpha A7R IIIA",
+        "α7RIIIA",
+        "A7RIIIA",
+        "A7R Mark IIIA",
+        "A7RM3A",
+        "A7R Mark 3A",
+        "A7R Mk IIIA",
+        "A7R Mk3A",
+        "A7R MIIIA",
+        "Alpha 7R Mark IIIA",
+        "A7R3A",
+        "A7R III A",
+        "A7R Mark III A"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7RM4",
+      "names": [
+        "α7R IV",
+        "A7R IV",
+        "a7R IV",
+        "Alpha 7R IV",
+        "Alpha A7R IV",
+        "Sony α7R IV",
+        "Sony A7R IV",
+        "Sony Alpha 7R IV",
+        "Sony Alpha A7R IV",
+        "α7RIV",
+        "A7RIV",
+        "A7R Mark IV",
+        "A7RM4",
+        "A7R Mark 4",
+        "A7R Mk IV",
+        "A7R Mk4",
+        "A7R MIV",
+        "Alpha 7R Mark IV",
+        "A7R4"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7RM4A",
+      "names": [
+        "α7R IVA",
+        "A7R IVA",
+        "a7R IVA",
+        "Alpha 7R IVA",
+        "Alpha A7R IVA",
+        "Sony α7R IVA",
+        "Sony A7R IVA",
+        "Sony Alpha 7R IVA",
+        "Sony Alpha A7R IVA",
+        "α7RIVA",
+        "A7RIVA",
+        "A7R Mark IVA",
+        "A7RM4A",
+        "A7R Mark 4A",
+        "A7R Mk IVA",
+        "A7R Mk4A",
+        "A7R MIVA",
+        "Alpha 7R Mark IVA",
+        "A7R4A",
+        "A7R IV A",
+        "A7R Mark IV A"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7SM3",
+      "names": [
+        "α7S III",
+        "A7S III",
+        "a7S III",
+        "Alpha 7S III",
+        "Alpha A7S III",
+        "Sony α7S III",
+        "Sony A7S III",
+        "Sony Alpha 7S III",
+        "Sony Alpha A7S III",
+        "α7SIII",
+        "A7SIII",
+        "A7S Mark III",
+        "A7SM3",
+        "A7S Mark 3",
+        "A7S Mk III",
+        "A7S Mk3",
+        "A7S MIII",
+        "Alpha 7S Mark III",
+        "A7S3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7C",
+      "names": [
+        "α7C",
+        "A7C",
+        "a7C",
+        "Alpha 7C",
+        "Alpha A7C",
+        "Sony α7C",
+        "Sony A7C",
+        "Sony Alpha 7C",
+        "Sony Alpha A7C"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7M4",
+      "names": [
+        "α7 IV",
+        "A7 IV",
+        "a7 IV",
+        "Alpha 7 IV",
+        "Alpha A7 IV",
+        "Sony α7 IV",
+        "Sony A7 IV",
+        "Sony Alpha 7 IV",
+        "Sony Alpha A7 IV",
+        "α7IV",
+        "A7IV",
+        "A7 Mark IV",
+        "A7M4",
+        "A7 Mark 4",
+        "A7 Mk IV",
+        "A7 Mk4",
+        "A7 MIV",
+        "Alpha 7 Mark IV"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7RM5",
+      "names": [
+        "α7R V",
+        "A7R V",
+        "a7R V",
+        "Alpha 7R V",
+        "Alpha A7R V",
+        "Sony α7R V",
+        "Sony A7R V",
+        "Sony Alpha 7R V",
+        "Sony Alpha A7R V",
+        "α7RV",
+        "A7RV",
+        "A7R Mark V",
+        "A7RM5",
+        "A7R Mark 5",
+        "A7R Mk V",
+        "A7R Mk5",
+        "A7R MV",
+        "Alpha 7R Mark V",
+        "A7R5"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7CM2",
+      "names": [
+        "α7C II",
+        "A7C II",
+        "a7C II",
+        "Alpha 7C II",
+        "Alpha A7C II",
+        "Sony α7C II",
+        "Sony A7C II",
+        "Sony Alpha 7C II",
+        "Sony Alpha A7C II",
+        "α7CII",
+        "A7CII",
+        "A7C Mark II",
+        "A7CM2",
+        "A7C Mark 2",
+        "A7C Mk II",
+        "A7C Mk2",
+        "A7C MII",
+        "Alpha 7C Mark II",
+        "A7C2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7CR",
+      "names": [
+        "α7CR",
+        "A7CR",
+        "a7CR",
+        "Alpha 7CR",
+        "Alpha A7CR",
+        "Sony α7CR",
+        "Sony A7CR",
+        "Sony Alpha 7CR",
+        "Sony Alpha A7CR",
+        "α7C R",
+        "A7C R",
+        "a7C R",
+        "Alpha 7C R",
+        "Alpha A7C R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-7M5",
+      "names": [
+        "α7 V",
+        "A7 V",
+        "a7 V",
+        "Alpha 7 V",
+        "Alpha A7 V",
+        "Sony α7 V",
+        "Sony A7 V",
+        "Sony Alpha 7 V",
+        "Sony Alpha A7 V",
+        "α7V",
+        "A7V",
+        "A7 Mark V",
+        "A7M5",
+        "A7 Mark 5",
+        "A7 Mk V",
+        "A7 Mk5",
+        "A7 MV",
+        "Alpha 7 Mark V"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-7RM6",
+      "names": [
+        "α7R VI",
+        "A7R VI",
+        "a7R VI",
+        "Alpha 7R VI",
+        "Alpha A7R VI",
+        "Sony α7R VI",
+        "Sony A7R VI",
+        "Sony Alpha 7R VI",
+        "Sony Alpha A7R VI",
+        "α7RVI",
+        "A7RVI",
+        "A7R Mark VI",
+        "A7RM6",
+        "A7R Mark 6",
+        "A7R Mk VI",
+        "A7R Mk6",
+        "A7R MVI",
+        "Alpha 7R Mark VI",
+        "A7R6"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-9",
+      "names": [
+        "α9",
+        "A9",
+        "a9",
+        "Alpha 9",
+        "Alpha A9",
+        "Sony α9",
+        "Sony A9",
+        "Sony Alpha 9",
+        "Sony Alpha A9"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-9M2",
+      "names": [
+        "α9 II",
+        "A9 II",
+        "a9 II",
+        "Alpha 9 II",
+        "Alpha A9 II",
+        "Sony α9 II",
+        "Sony A9 II",
+        "Sony Alpha 9 II",
+        "Sony Alpha A9 II",
+        "α9II",
+        "A9II",
+        "A9 Mark II",
+        "A9M2",
+        "A9 Mark 2",
+        "A9 Mk II",
+        "A9 Mk2",
+        "A9 MII",
+        "Alpha 9 Mark II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-9M3",
+      "names": [
+        "α9 III",
+        "A9 III",
+        "a9 III",
+        "Alpha 9 III",
+        "Alpha A9 III",
+        "Sony α9 III",
+        "Sony A9 III",
+        "Sony Alpha 9 III",
+        "Sony Alpha A9 III",
+        "α9III",
+        "A9III",
+        "A9 Mark III",
+        "A9M3",
+        "A9 Mark 3",
+        "A9 Mk III",
+        "A9 Mk3",
+        "A9 MIII",
+        "Alpha 9 Mark III"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCE-1",
+      "names": [
+        "α1",
+        "A1",
+        "a1",
+        "Alpha 1",
+        "Alpha A1",
+        "Sony α1",
+        "Sony A1",
+        "Sony Alpha 1",
+        "Sony Alpha A1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILCE-1M2",
+      "names": [
+        "α1 II",
+        "A1 II",
+        "a1 II",
+        "Alpha 1 II",
+        "Alpha A1 II",
+        "Sony α1 II",
+        "Sony A1 II",
+        "Sony Alpha 1 II",
+        "Sony Alpha A1 II",
+        "α1II",
+        "A1II",
+        "A1 Mark II",
+        "A1M2",
+        "A1 Mark 2",
+        "A1 Mk II",
+        "A1 Mk2",
+        "A1 MII",
+        "Alpha 1 Mark II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ZV-E1",
+      "names": [
+        "ZV-E1",
+        "ZVE1",
+        "Sony ZV-E1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILME-FX3",
+      "names": [
+        "FX3",
+        "Sony FX3",
+        "ILME-FX3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILME-FX3A",
+      "names": [
+        "FX3A",
+        "Sony FX3A",
+        "ILME-FX3A"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILME-FX2",
+      "names": [
+        "FX2",
+        "Sony FX2",
+        "ILME-FX2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "ILME-FX30",
+      "names": [
+        "FX30",
+        "Sony FX30",
+        "ILME-FX30"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILME-FX6V",
+      "names": [
+        "FX6",
+        "Sony FX6",
+        "ILME-FX6",
+        "ILME-FX6VK"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "uncertain": true
+    },
+    {
+      "model": "ILX-LR1",
+      "names": [
+        "LR1",
+        "ILX-LR1",
+        "Sony LR1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "UMC-R10C",
+      "names": [
+        "UMC-R10C",
+        "UMCR10C",
+        "Sony UMC-R10C"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILCE-3000",
+      "names": [
+        "α3000",
+        "A3000",
+        "a3000",
+        "Alpha 3000",
+        "Alpha A3000",
+        "Sony α3000",
+        "Sony A3000",
+        "Sony Alpha 3000",
+        "Sony Alpha A3000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILCE-3500",
+      "names": [
+        "α3500",
+        "A3500",
+        "a3500",
+        "Alpha 3500",
+        "Alpha A3500",
+        "Sony α3500",
+        "Sony A3500",
+        "Sony Alpha 3500",
+        "Sony Alpha A3500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILCE-5000",
+      "names": [
+        "α5000",
+        "A5000",
+        "a5000",
+        "Alpha 5000",
+        "Alpha A5000",
+        "Sony α5000",
+        "Sony A5000",
+        "Sony Alpha 5000",
+        "Sony Alpha A5000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILCE-5100",
+      "names": [
+        "α5100",
+        "A5100",
+        "a5100",
+        "Alpha 5100",
+        "Alpha A5100",
+        "Sony α5100",
+        "Sony A5100",
+        "Sony Alpha 5100",
+        "Sony Alpha A5100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6000",
+      "names": [
+        "α6000",
+        "A6000",
+        "a6000",
+        "Alpha 6000",
+        "Alpha A6000",
+        "Sony α6000",
+        "Sony A6000",
+        "Sony Alpha 6000",
+        "Sony Alpha A6000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6100",
+      "names": [
+        "α6100",
+        "A6100",
+        "a6100",
+        "Alpha 6100",
+        "Alpha A6100",
+        "Sony α6100",
+        "Sony A6100",
+        "Sony Alpha 6100",
+        "Sony Alpha A6100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6100A",
+      "names": [
+        "α6100A",
+        "A6100A",
+        "a6100A",
+        "Alpha 6100A",
+        "Alpha A6100A",
+        "Sony α6100A",
+        "Sony A6100A",
+        "Sony Alpha 6100A",
+        "Sony Alpha A6100A"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6300",
+      "names": [
+        "α6300",
+        "A6300",
+        "a6300",
+        "Alpha 6300",
+        "Alpha A6300",
+        "Sony α6300",
+        "Sony A6300",
+        "Sony Alpha 6300",
+        "Sony Alpha A6300"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6400",
+      "names": [
+        "α6400",
+        "A6400",
+        "a6400",
+        "Alpha 6400",
+        "Alpha A6400",
+        "Sony α6400",
+        "Sony A6400",
+        "Sony Alpha 6400",
+        "Sony Alpha A6400"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6400A",
+      "names": [
+        "α6400A",
+        "A6400A",
+        "a6400A",
+        "Alpha 6400A",
+        "Alpha A6400A",
+        "Sony α6400A",
+        "Sony A6400A",
+        "Sony Alpha 6400A",
+        "Sony Alpha A6400A"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6500",
+      "names": [
+        "α6500",
+        "A6500",
+        "a6500",
+        "Alpha 6500",
+        "Alpha A6500",
+        "Sony α6500",
+        "Sony A6500",
+        "Sony Alpha 6500",
+        "Sony Alpha A6500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6600",
+      "names": [
+        "α6600",
+        "A6600",
+        "a6600",
+        "Alpha 6600",
+        "Alpha A6600",
+        "Sony α6600",
+        "Sony A6600",
+        "Sony Alpha 6600",
+        "Sony Alpha A6600"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCE-6700",
+      "names": [
+        "α6700",
+        "A6700",
+        "a6700",
+        "Alpha 6700",
+        "Alpha A6700",
+        "Sony α6700",
+        "Sony A6700",
+        "Sony Alpha 6700",
+        "Sony Alpha A6700"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ILCE-QX1",
+      "names": [
+        "QX1",
+        "ILCE-QX1",
+        "Sony QX1",
+        "α QX1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "ZV-E10",
+      "names": [
+        "ZV-E10",
+        "ZVE10",
+        "Sony ZV-E10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ZV-E10M2",
+      "names": [
+        "ZV-E10 II",
+        "ZV-E10II",
+        "ZV-E10 Mark II",
+        "ZV-E10 Mark 2",
+        "ZV-E10 Mk II",
+        "ZV-E10 Mk2",
+        "ZVE10M2",
+        "Sony ZV-E10 II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "NEX-3",
+      "names": [
+        "NEX-3",
+        "NEX3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-5",
+      "names": [
+        "NEX-5",
+        "NEX5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-5C",
+      "names": [
+        "NEX-5C",
+        "NEX5C"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-3C",
+      "names": [
+        "NEX-3C",
+        "NEX3C"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54,
+      "uncertain": true
+    },
+    {
+      "model": "NEX-C3",
+      "names": [
+        "NEX-C3",
+        "NEXC3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-5N",
+      "names": [
+        "NEX-5N",
+        "NEX5N"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-7",
+      "names": [
+        "NEX-7",
+        "NEX7"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NEX-F3",
+      "names": [
+        "NEX-F3",
+        "NEXF3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-5R",
+      "names": [
+        "NEX-5R",
+        "NEX5R"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-6",
+      "names": [
+        "NEX-6",
+        "NEX6"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NEX-3N",
+      "names": [
+        "NEX-3N",
+        "NEX3N"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NEX-5T",
+      "names": [
+        "NEX-5T",
+        "NEX5T"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-VG10",
+      "names": [
+        "VG10",
+        "Handycam VG10"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54,
+      "uncertain": true
+    },
+    {
+      "model": "NEX-VG10E",
+      "names": [
+        "VG10E"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-VG20",
+      "names": [
+        "VG20",
+        "Handycam VG20"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-VG20E",
+      "names": [
+        "VG20E"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "NEX-VG30",
+      "names": [
+        "VG30",
+        "Handycam VG30"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NEX-VG30E",
+      "names": [
+        "VG30E"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NEX-VG900",
+      "names": [
+        "NEX-VG900",
+        "VG900"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DSLR-A100",
+      "names": [
+        "α100",
+        "A100",
+        "a100",
+        "Alpha 100",
+        "Alpha A100",
+        "Sony α100",
+        "Sony A100",
+        "Sony Alpha 100",
+        "Sony Alpha A100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A200",
+      "names": [
+        "α200",
+        "A200",
+        "a200",
+        "Alpha 200",
+        "Alpha A200",
+        "Sony α200",
+        "Sony A200",
+        "Sony Alpha 200",
+        "Sony Alpha A200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A300",
+      "names": [
+        "α300",
+        "A300",
+        "a300",
+        "Alpha 300",
+        "Alpha A300",
+        "Sony α300",
+        "Sony A300",
+        "Sony Alpha 300",
+        "Sony Alpha A300"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A350",
+      "names": [
+        "α350",
+        "A350",
+        "a350",
+        "Alpha 350",
+        "Alpha A350",
+        "Sony α350",
+        "Sony A350",
+        "Sony Alpha 350",
+        "Sony Alpha A350"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A700",
+      "names": [
+        "α700",
+        "A700",
+        "a700",
+        "Alpha 700",
+        "Alpha A700",
+        "Sony α700",
+        "Sony A700",
+        "Sony Alpha 700",
+        "Sony Alpha A700"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "DSLR-A900",
+      "names": [
+        "α900",
+        "A900",
+        "a900",
+        "Alpha 900",
+        "Alpha A900",
+        "Sony α900",
+        "Sony A900",
+        "Sony Alpha 900",
+        "Sony Alpha A900"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "DSLR-A850",
+      "names": [
+        "α850",
+        "A850",
+        "a850",
+        "Alpha 850",
+        "Alpha A850",
+        "Sony α850",
+        "Sony A850",
+        "Sony Alpha 850",
+        "Sony Alpha A850"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "DSLR-A230",
+      "names": [
+        "α230",
+        "A230",
+        "a230",
+        "Alpha 230",
+        "Alpha A230",
+        "Sony α230",
+        "Sony A230",
+        "Sony Alpha 230",
+        "Sony Alpha A230"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A330",
+      "names": [
+        "α330",
+        "A330",
+        "a330",
+        "Alpha 330",
+        "Alpha A330",
+        "Sony α330",
+        "Sony A330",
+        "Sony Alpha 330",
+        "Sony Alpha A330"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A380",
+      "names": [
+        "α380",
+        "A380",
+        "a380",
+        "Alpha 380",
+        "Alpha A380",
+        "Sony α380",
+        "Sony A380",
+        "Sony Alpha 380",
+        "Sony Alpha A380"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "DSLR-A290",
+      "names": [
+        "α290",
+        "A290",
+        "a290",
+        "Alpha 290",
+        "Alpha A290",
+        "Sony α290",
+        "Sony A290",
+        "Sony Alpha 290",
+        "Sony Alpha A290"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "DSLR-A390",
+      "names": [
+        "α390",
+        "A390",
+        "a390",
+        "Alpha 390",
+        "Alpha A390",
+        "Sony α390",
+        "Sony A390",
+        "Sony Alpha 390",
+        "Sony Alpha A390"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "DSLR-A450",
+      "names": [
+        "α450",
+        "A450",
+        "a450",
+        "Alpha 450",
+        "Alpha A450",
+        "Sony α450",
+        "Sony A450",
+        "Sony Alpha 450",
+        "Sony Alpha A450"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "DSLR-A500",
+      "names": [
+        "α500",
+        "A500",
+        "a500",
+        "Alpha 500",
+        "Alpha A500",
+        "Sony α500",
+        "Sony A500",
+        "Sony Alpha 500",
+        "Sony Alpha A500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "DSLR-A550",
+      "names": [
+        "α550",
+        "A550",
+        "a550",
+        "Alpha 550",
+        "Alpha A550",
+        "Sony α550",
+        "Sony A550",
+        "Sony Alpha 550",
+        "Sony Alpha A550"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "model": "DSLR-A560",
+      "names": [
+        "α560",
+        "A560",
+        "a560",
+        "Alpha 560",
+        "Alpha A560",
+        "Sony α560",
+        "Sony A560",
+        "Sony Alpha 560",
+        "Sony Alpha A560"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "DSLR-A580",
+      "names": [
+        "α580",
+        "A580",
+        "a580",
+        "Alpha 580",
+        "Alpha A580",
+        "Sony α580",
+        "Sony A580",
+        "Sony Alpha 580",
+        "Sony Alpha A580"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A33",
+      "names": [
+        "α33",
+        "A33",
+        "a33",
+        "Alpha 33",
+        "Alpha A33",
+        "Sony α33",
+        "Sony A33",
+        "Sony Alpha 33",
+        "Sony Alpha A33"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A55V",
+      "names": [
+        "α55",
+        "A55",
+        "a55",
+        "Alpha 55",
+        "Alpha A55",
+        "Sony α55",
+        "Sony A55",
+        "Sony Alpha 55",
+        "Sony Alpha A55",
+        "A55V"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A55",
+      "names": [
+        "SLT-A55"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A35",
+      "names": [
+        "α35",
+        "A35",
+        "a35",
+        "Alpha 35",
+        "Alpha A35",
+        "Sony α35",
+        "Sony A35",
+        "Sony Alpha 35",
+        "Sony Alpha A35"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A65V",
+      "names": [
+        "α65",
+        "A65",
+        "a65",
+        "Alpha 65",
+        "Alpha A65",
+        "Sony α65",
+        "Sony A65",
+        "Sony Alpha 65",
+        "Sony Alpha A65",
+        "A65V"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A65",
+      "names": [
+        "SLT-A65"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A77V",
+      "names": [
+        "α77",
+        "A77",
+        "a77",
+        "Alpha 77",
+        "Alpha A77",
+        "Sony α77",
+        "Sony A77",
+        "Sony Alpha 77",
+        "Sony Alpha A77",
+        "A77V"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A77",
+      "names": [
+        "SLT-A77"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A37",
+      "names": [
+        "α37",
+        "A37",
+        "a37",
+        "Alpha 37",
+        "Alpha A37",
+        "Sony α37",
+        "Sony A37",
+        "Sony Alpha 37",
+        "Sony Alpha A37"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A57",
+      "names": [
+        "α57",
+        "A57",
+        "a57",
+        "Alpha 57",
+        "Alpha A57",
+        "Sony α57",
+        "Sony A57",
+        "Sony Alpha 57",
+        "Sony Alpha A57"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "SLT-A58",
+      "names": [
+        "α58",
+        "A58",
+        "a58",
+        "Alpha 58",
+        "Alpha A58",
+        "Sony α58",
+        "Sony A58",
+        "Sony Alpha 58",
+        "Sony Alpha A58"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "SLT-A99V",
+      "names": [
+        "α99",
+        "A99",
+        "a99",
+        "Alpha 99",
+        "Alpha A99",
+        "Sony α99",
+        "Sony A99",
+        "Sony Alpha 99",
+        "Sony Alpha A99",
+        "A99V"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "SLT-A99",
+      "names": [
+        "SLT-A99"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ILCA-77M2",
+      "names": [
+        "α77 II",
+        "A77 II",
+        "a77 II",
+        "Alpha 77 II",
+        "Alpha A77 II",
+        "Sony α77 II",
+        "Sony A77 II",
+        "Sony Alpha 77 II",
+        "Sony Alpha A77 II",
+        "α77II",
+        "A77II",
+        "A77 Mark II",
+        "A77M2",
+        "A77 Mark 2",
+        "A77 Mk II",
+        "A77 Mk2",
+        "A77 MII",
+        "Alpha 77 Mark II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCA-68",
+      "names": [
+        "α68",
+        "A68",
+        "a68",
+        "Alpha 68",
+        "Alpha A68",
+        "Sony α68",
+        "Sony A68",
+        "Sony Alpha 68",
+        "Sony Alpha A68"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "ILCA-99M2",
+      "names": [
+        "α99 II",
+        "A99 II",
+        "a99 II",
+        "Alpha 99 II",
+        "Alpha A99 II",
+        "Sony α99 II",
+        "Sony A99 II",
+        "Sony Alpha 99 II",
+        "Sony Alpha A99 II",
+        "α99II",
+        "A99II",
+        "A99 Mark II",
+        "A99M2",
+        "A99 Mark 2",
+        "A99 Mk II",
+        "A99 Mk2",
+        "A99 MII",
+        "Alpha 99 Mark II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "DSC-RX100",
+      "names": [
+        "RX100",
+        "Sony RX100",
+        "Cyber-shot RX100"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M2",
+      "names": [
+        "RX100 II",
+        "RX100II",
+        "RX100 Mark II",
+        "RX100 Mk II",
+        "RX100 Mark 2",
+        "RX100M2",
+        "Sony RX100 II",
+        "Cyber-shot RX100 II",
+        "DSC-RX100 II"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M3",
+      "names": [
+        "RX100 III",
+        "RX100III",
+        "RX100 Mark III",
+        "RX100 Mk III",
+        "RX100 Mark 3",
+        "RX100M3",
+        "Sony RX100 III",
+        "Cyber-shot RX100 III",
+        "DSC-RX100 III"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M4",
+      "names": [
+        "RX100 IV",
+        "RX100IV",
+        "RX100 Mark IV",
+        "RX100 Mk IV",
+        "RX100 Mark 4",
+        "RX100M4",
+        "Sony RX100 IV",
+        "Cyber-shot RX100 IV",
+        "DSC-RX100 IV"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M5",
+      "names": [
+        "RX100 V",
+        "RX100V",
+        "RX100 Mark V",
+        "RX100 Mk V",
+        "RX100 Mark 5",
+        "RX100M5",
+        "Sony RX100 V",
+        "Cyber-shot RX100 V",
+        "DSC-RX100 V"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M5A",
+      "names": [
+        "RX100 VA",
+        "RX100VA",
+        "RX100 Mark VA",
+        "RX100 Mk VA",
+        "RX100 Mark 5A",
+        "RX100M5A",
+        "Sony RX100 VA",
+        "Cyber-shot RX100 VA",
+        "DSC-RX100 VA"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M6",
+      "names": [
+        "RX100 VI",
+        "RX100VI",
+        "RX100 Mark VI",
+        "RX100 Mk VI",
+        "RX100 Mark 6",
+        "RX100M6",
+        "Sony RX100 VI",
+        "Cyber-shot RX100 VI",
+        "DSC-RX100 VI"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M7",
+      "names": [
+        "RX100 VII",
+        "RX100VII",
+        "RX100 Mark VII",
+        "RX100 Mk VII",
+        "RX100 Mark 7",
+        "RX100M7",
+        "Sony RX100 VII",
+        "Cyber-shot RX100 VII",
+        "DSC-RX100 VII",
+        "RX100M7G"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX100M7A",
+      "names": [
+        "RX100 VIIA",
+        "RX100VIIA",
+        "RX100 Mark VIIA",
+        "RX100 Mk VIIA",
+        "RX100 Mark 7A",
+        "RX100M7A",
+        "Sony RX100 VIIA",
+        "Cyber-shot RX100 VIIA",
+        "DSC-RX100 VIIA"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX10",
+      "names": [
+        "RX10",
+        "Sony RX10",
+        "Cyber-shot RX10"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX10M2",
+      "names": [
+        "RX10 II",
+        "RX10II",
+        "RX10 Mark II",
+        "RX10 Mk II",
+        "RX10 Mark 2",
+        "RX10M2",
+        "Sony RX10 II",
+        "Cyber-shot RX10 II",
+        "DSC-RX10 II"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX10M3",
+      "names": [
+        "RX10 III",
+        "RX10III",
+        "RX10 Mark III",
+        "RX10 Mk III",
+        "RX10 Mark 3",
+        "RX10M3",
+        "Sony RX10 III",
+        "Cyber-shot RX10 III",
+        "DSC-RX10 III"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX10M4",
+      "names": [
+        "RX10 IV",
+        "RX10IV",
+        "RX10 Mark IV",
+        "RX10 Mk IV",
+        "RX10 Mark 4",
+        "RX10M4",
+        "Sony RX10 IV",
+        "Cyber-shot RX10 IV",
+        "DSC-RX10 IV"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX10M5",
+      "names": [
+        "RX10 V",
+        "RX10V",
+        "RX10 Mark V",
+        "RX10 Mk V",
+        "RX10 Mark 5",
+        "RX10M5",
+        "Sony RX10 V",
+        "Cyber-shot RX10 V",
+        "DSC-RX10 V"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX0",
+      "names": [
+        "RX0",
+        "Sony RX0",
+        "Cyber-shot RX0"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX0M2",
+      "names": [
+        "RX0 II",
+        "RX0II",
+        "RX0 Mark II",
+        "RX0 Mk II",
+        "RX0 Mark 2",
+        "RX0M2",
+        "Sony RX0 II",
+        "Cyber-shot RX0 II",
+        "DSC-RX0 II"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-RX1",
+      "names": [
+        "RX1",
+        "Sony RX1",
+        "Cyber-shot RX1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DSC-RX1R",
+      "names": [
+        "RX1R",
+        "Sony RX1R",
+        "Cyber-shot RX1R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "DSC-RX1RM2",
+      "names": [
+        "RX1R II",
+        "RX1RII",
+        "RX1R Mark II",
+        "RX1R Mk II",
+        "RX1R Mark 2",
+        "RX1RM2",
+        "Sony RX1R II",
+        "Cyber-shot RX1R II",
+        "DSC-RX1R II",
+        "RX1R2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "DSC-RX1RM3",
+      "names": [
+        "RX1R III",
+        "RX1RIII",
+        "RX1R Mark III",
+        "RX1R Mk III",
+        "RX1R Mark 3",
+        "RX1RM3",
+        "Sony RX1R III",
+        "Cyber-shot RX1R III",
+        "DSC-RX1R III",
+        "RX1R3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "ZV-1",
+      "names": [
+        "ZV-1",
+        "ZV1",
+        "Sony ZV-1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "ZV-1A",
+      "names": [
+        "ZV-1A",
+        "ZV1A",
+        "Sony ZV-1A"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "ZV-1M2",
+      "names": [
+        "ZV-1 II",
+        "ZV-1II",
+        "ZV-1 Mark II",
+        "ZV-1 Mark 2",
+        "ZV-1 Mk II",
+        "ZV-1 Mk2",
+        "ZV1M2",
+        "Sony ZV-1 II"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "ZV-1F",
+      "names": [
+        "ZV-1F",
+        "ZV1F",
+        "Sony ZV-1F"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-QX100",
+      "names": [
+        "QX100",
+        "Sony QX100",
+        "Cyber-shot QX100"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "DSC-QX10",
+      "names": [
+        "QX10",
+        "Sony QX10",
+        "Cyber-shot QX10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-QX30",
+      "names": [
+        "QX30",
+        "Sony QX30",
+        "Cyber-shot QX30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX5V",
+      "names": [
+        "HX5V",
+        "Sony HX5V",
+        "Cyber-shot HX5V"
+      ],
+      "format": "1/2.4\"",
+      "sensorMm": [
+        6.1,
+        4.58
+      ],
+      "crop": 5.67
+    },
+    {
+      "model": "DSC-HX7V",
+      "names": [
+        "HX7V",
+        "Sony HX7V",
+        "Cyber-shot HX7V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX9V",
+      "names": [
+        "HX9V",
+        "Sony HX9V",
+        "Cyber-shot HX9V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX10V",
+      "names": [
+        "HX10V",
+        "Sony HX10V",
+        "Cyber-shot HX10V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX20V",
+      "names": [
+        "HX20V",
+        "Sony HX20V",
+        "Cyber-shot HX20V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX30V",
+      "names": [
+        "HX30V",
+        "Sony HX30V",
+        "Cyber-shot HX30V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX50",
+      "names": [
+        "HX50",
+        "Sony HX50",
+        "Cyber-shot HX50"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX50V",
+      "names": [
+        "HX50V",
+        "Sony HX50V",
+        "Cyber-shot HX50V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX60",
+      "names": [
+        "HX60",
+        "Sony HX60",
+        "Cyber-shot HX60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX60V",
+      "names": [
+        "HX60V",
+        "Sony HX60V",
+        "Cyber-shot HX60V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX80",
+      "names": [
+        "HX80",
+        "Sony HX80",
+        "Cyber-shot HX80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX90",
+      "names": [
+        "HX90",
+        "Sony HX90",
+        "Cyber-shot HX90"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX90V",
+      "names": [
+        "HX90V",
+        "Sony HX90V",
+        "Cyber-shot HX90V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX95",
+      "names": [
+        "HX95",
+        "Sony HX95",
+        "Cyber-shot HX95"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX99",
+      "names": [
+        "HX99",
+        "Sony HX99",
+        "Cyber-shot HX99"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX100V",
+      "names": [
+        "HX100V",
+        "Sony HX100V",
+        "Cyber-shot HX100V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX200V",
+      "names": [
+        "HX200V",
+        "Sony HX200V",
+        "Cyber-shot HX200V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX300",
+      "names": [
+        "HX300",
+        "Sony HX300",
+        "Cyber-shot HX300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX350",
+      "names": [
+        "HX350",
+        "Sony HX350",
+        "Cyber-shot HX350"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX400",
+      "names": [
+        "HX400",
+        "Sony HX400",
+        "Cyber-shot HX400"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-HX400V",
+      "names": [
+        "HX400V",
+        "Sony HX400V",
+        "Cyber-shot HX400V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX100",
+      "names": [
+        "WX100",
+        "Sony WX100",
+        "Cyber-shot WX100"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX200",
+      "names": [
+        "WX200",
+        "Sony WX200",
+        "Cyber-shot WX200"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX220",
+      "names": [
+        "WX220",
+        "Sony WX220",
+        "Cyber-shot WX220"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX300",
+      "names": [
+        "WX300",
+        "Sony WX300",
+        "Cyber-shot WX300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX350",
+      "names": [
+        "WX350",
+        "Sony WX350",
+        "Cyber-shot WX350"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX500",
+      "names": [
+        "WX500",
+        "Sony WX500",
+        "Cyber-shot WX500"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-WX800",
+      "names": [
+        "WX800",
+        "Sony WX800",
+        "Cyber-shot WX800"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-H300",
+      "names": [
+        "H300",
+        "Sony H300",
+        "Cyber-shot H300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-H400",
+      "names": [
+        "H400",
+        "Sony H400",
+        "Cyber-shot H400"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "DSC-R1",
+      "names": [
+        "R1",
+        "Sony R1",
+        "Cyber-shot R1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        21.5,
+        14.4
+      ],
+      "crop": 1.67
+    },
+    {
+      "model": "DSC-F828",
+      "names": [
+        "F828",
+        "Sony F828",
+        "Cyber-shot F828"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^ILCE-[179](?!\\d{3})",
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "note": "E-mount full frame: α7 / α7R / α7S / α7C / α9 / α1 families (any mark, incl. future ILCE-7xMn / -9Mn / -1Mn)"
+    },
+    {
+      "pattern": "^ILCE-[3-6]\\d{3}",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "E-mount APS-C bodies: α3000/3500, α5000/5100, α6000-series (incl. \"A\" regional variants)"
+    },
+    {
+      "pattern": "^ILCE-QX",
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55,
+      "note": "Lens-style QX E-mount camera (APS-C)"
+    },
+    {
+      "pattern": "^ILME-FX30",
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55,
+      "note": "Cinema Line FX30 (APS-C); must precede the generic ILME-FX rule"
+    },
+    {
+      "pattern": "^ILME-",
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "note": "Cinema Line full-frame bodies: FX2, FX3, FX3A, FX6, FR7 and successors (every ILME except FX30 is full frame)"
+    },
+    {
+      "pattern": "^ILX-",
+      "format": "Full frame",
+      "sensorMm": [
+        35.7,
+        23.8
+      ],
+      "crop": 1.01,
+      "note": "Industrial / drone-mount E-mount bodies (ILX-LR1 = 61MP full frame)"
+    },
+    {
+      "pattern": "^UMC-",
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55,
+      "note": "UMC-R10C industrial E-mount camera (QX1-derived 20MP APS-C)"
+    },
+    {
+      "pattern": "^ZV-E10",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "ZV-E10 / ZV-E10 II vlog bodies (APS-C)"
+    },
+    {
+      "pattern": "^ZV-E1(?!\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.6,
+        23.8
+      ],
+      "crop": 1.01,
+      "note": "ZV-E1 full-frame vlog body and any future ZV-E1 marks"
+    },
+    {
+      "pattern": "^ZV-1",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "ZV-1 / ZV-1A / ZV-1F / ZV-1 II fixed-lens vlog compacts (1-inch)"
+    },
+    {
+      "pattern": "^NEX-VG900",
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "note": "NEX-VG900 full-frame E-mount Handycam"
+    },
+    {
+      "pattern": "^NEX-FS",
+      "format": "Super 35",
+      "sensorMm": [
+        23.6,
+        13.3
+      ],
+      "crop": 1.6,
+      "note": "NEX-FS100 / FS700 Super 35 video cameras"
+    },
+    {
+      "pattern": "^NEX-",
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54,
+      "note": "All other NEX E-mount stills/camcorders (NEX-3/5/6/7/C3/F3, VG10/20/30, EA50) are APS-C"
+    },
+    {
+      "pattern": "^SLT-A99",
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "note": "SLT-A99 / A99V full-frame translucent-mirror body"
+    },
+    {
+      "pattern": "^SLT-A",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Other SLT-A translucent-mirror bodies (A33/35/37/55/57/58/65/77) are APS-C"
+    },
+    {
+      "pattern": "^ILCA-99",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1,
+      "note": "ILCA-99M2 (α99 II) full frame"
+    },
+    {
+      "pattern": "^ILCA-",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Other ILCA A-mount bodies (α68, α77 II) are APS-C"
+    },
+    {
+      "pattern": "^DSLR-A(?:850|900)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1,
+      "note": "DSLR-A850 / A900 full-frame A-mount DSLRs"
+    },
+    {
+      "pattern": "^DSLR-A",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52,
+      "note": "All other Sony DSLR-A bodies are APS-C"
+    },
+    {
+      "pattern": "^DSC-RX1(?!0)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "note": "RX1 / RX1R / RX1R II / RX1R III full-frame fixed-lens compacts (excludes RX10 / RX100)"
+    },
+    {
+      "pattern": "^DSC-RX(?:0|10)",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "RX0, RX10 and RX100 series (all marks) use 1-inch sensors"
+    },
+    {
+      "pattern": "^DSC-QX100",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "QX100 lens-style camera (1-inch)"
+    },
+    {
+      "pattern": "^DSC-QX",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "QX10 / QX30 lens-style cameras (1/2.3\")"
+    },
+    {
+      "pattern": "^DSC-R1$",
+      "format": "APS-C",
+      "sensorMm": [
+        21.5,
+        14.4
+      ],
+      "crop": 1.67,
+      "note": "DSC-R1 (2005) large-sensor bridge camera, 21.5 x 14.4 mm"
+    },
+    {
+      "pattern": "^DSC-F(?:707|717|828)",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "DSC-F707 / F717 / F828 prosumer bridge cameras (2/3\"); not F88 (1/2.4\") or F505/F55"
+    },
+    {
+      "pattern": "^DSC-(?:HX1|HX5V?|WX1|F88)$",
+      "format": "1/2.4\"",
+      "sensorMm": [
+        6.1,
+        4.58
+      ],
+      "crop": 5.67,
+      "note": "Cyber-shot HX1, HX5/HX5V, WX1, F88 use 1/2.4\" sensors"
+    },
+    {
+      "pattern": "^DSC-(?:N2|W200|W300)$",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Cyber-shot N2, W200, W300 use 1/1.7\" CCDs"
+    },
+    {
+      "pattern": "^DSC-(?:N1|P(?:1|3|5|7|9|10|12|71|92|93|100|120|150|200)|S(?:70|75|85|800)|V[13]|W(?:1|5|7|12|17|100))$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Older Cyber-shot P/S/V/N/W models with 1/1.8\" CCDs (P1-P200, S70/S75/S85/S800, V1/V3, N1, W1/W5/W7/W12/W17/W100)"
+    },
+    {
+      "pattern": "^DSC-(?:HX|WX|TX|TF|KW|W|H|T|J|S)\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Cyber-shot HX/WX/TX/W/H/T compacts: modern ones are 1/2.3\" (some pre-2010 models are 1/2.5\"-1/2.4\", close enough)"
+    },
+    {
+      "pattern": "^DSC-",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Generic Cyber-shot fallback: assume small 1/2.3\" compact sensor"
+    }
+  ]
+}

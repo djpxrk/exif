@@ -1,0 +1,21 @@
+{
+  "key": "huawei",
+  "name": "HUAWEI",
+  "kind": "camera",
+  "viewBox": [
+    0.003,
+    -0.005,
+    57.577,
+    9.845
+  ],
+  "paths": [
+    {
+      "d": "M6.41 0V3.91H1.97V0H0.003V9.692H1.97V5.756H6.41V9.692H8.377V0ZM17.48 5.55C17.48 7.126 16.698 7.967 15.277 7.967 13.848 7.967 13.061 7.102 13.061 5.483V0.008H11.095V5.55C11.095 8.277 12.61 9.84 15.251 9.84 17.917 9.84 19.446 8.247 19.446 5.47V0.002H17.48ZM40.21 6.66L38.009-0.005H36.405L34.205 6.66 32.063 0H29.971L33.348 9.688H34.976L37.181 3.324 39.384 9.688H41.026L44.395 0H42.356ZM47.92 5.52H51.497V3.755H47.92V1.771H53.112V0.006H45.98V9.685H53.299V7.92H47.92ZM55.64 9.677H57.58V-0.002H55.64ZM25.55 2.45L26.952 5.695H26.947L27.042 5.919H24.068L24.162 5.695H24.16ZM27.773 7.667L28.643 9.684H30.704L26.474 0.054 26.436-0.003H24.717L20.447 9.684H22.454L23.278 7.808 23.337 7.667Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Huawei_wordmark_2019.svg (original: https://upload.wikimedia.org/wikipedia/commons/d/db/Huawei_wordmark_2019.svg; Commons source: Huawei Annual Report 2018 PDF, https://www.huawei.com/minisite/russia/annualreport2018rus/materials/annual_report_2018_en_v2.pdf)",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons)",
+  "trademark": "Huawei Technologies Co., Ltd.",
+  "notes": "Current (2019) HUAWEI wordmark only, without the red flower symbol. Commons says it was extracted with Inkscape from Huawei's 2018 annual report PDF, so it is real vector data, not a trace. Used unchanged: one path, no transforms, rect, text, background or (R) mark. Only change: normalized to absolute coordinates rounded to 3 decimals. The A's counter is a separate subpath that winds the opposite way, so nonzero fill already knocks it out (checked in the render). The source fill was #232527, now dropped because the app sets the colour. Simple Icons 'huawei' was not used because it is the flower symbol, not the wordmark. Commons also has an older (2006) wordmark, File:Huawei_wordmark.svg, but it is a user vectorization of a PNG, so it was rejected. Verified 2026-10-07: Commons file re-downloaded byte-identical to the local copy; JSON path renders pixel-identical to the source path; Commons page tags it PD-textlogo + trademarked, with no deletion request. The Huawei annual-report PDF that Commons cites as upstream now returns 404; this is only provenance and does not affect the Commons copy."
+}

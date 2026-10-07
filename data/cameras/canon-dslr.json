@@ -1,0 +1,1833 @@
+{
+  "group": "canon-dslr",
+  "brand": "Canon",
+  "exifMakes": [
+    "Canon"
+  ],
+  "cameras": [
+    {
+      "model": "Canon EOS-1D",
+      "names": [
+        "EOS 1D",
+        "1D",
+        "EOS-1D",
+        "1D Classic",
+        "1D Mark I",
+        "EOS-1D Classic"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        28.7,
+        19.1
+      ],
+      "crop": 1.26
+    },
+    {
+      "model": "Canon EOS-1D Mark II",
+      "names": [
+        "EOS 1D Mark II",
+        "1D Mark II",
+        "1D Mk II",
+        "1D MkII",
+        "1D II",
+        "1DII",
+        "1D2",
+        "1D Mark 2",
+        "1D Mk2",
+        "1Dmk2",
+        "EOS-1D Mark II",
+        "1DM2",
+        "1D Mk.II"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        28.7,
+        19.1
+      ],
+      "crop": 1.26
+    },
+    {
+      "model": "Canon EOS-1D Mark II N",
+      "names": [
+        "EOS-1D Mark II N",
+        "EOS 1D Mark II N",
+        "1D Mark II N",
+        "1D Mk IIN",
+        "1DIIN",
+        "1D2N",
+        "1D Mark IIN",
+        "1DM2N",
+        "1D Mark 2N",
+        "1D Mk2N",
+        "1Dmk2N",
+        "1D II N",
+        "1DmkIIN"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        28.7,
+        19.1
+      ],
+      "crop": 1.26
+    },
+    {
+      "model": "Canon EOS-1D Mark III",
+      "names": [
+        "EOS 1D Mark III",
+        "1D Mark III",
+        "1D Mk III",
+        "1D MkIII",
+        "1D III",
+        "1DIII",
+        "1D3",
+        "1D Mark 3",
+        "1D Mk3",
+        "1Dmk3",
+        "EOS-1D Mark III",
+        "1DM3",
+        "1D Mk.III"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        28.1,
+        18.7
+      ],
+      "crop": 1.28
+    },
+    {
+      "model": "Canon EOS-1D Mark IV",
+      "names": [
+        "EOS 1D Mark IV",
+        "1D Mark IV",
+        "1D Mk IV",
+        "1D MkIV",
+        "1D IV",
+        "1DIV",
+        "1D4",
+        "1D Mark 4",
+        "1D Mk4",
+        "1Dmk4",
+        "EOS-1D Mark IV",
+        "1DM4",
+        "1D Mk.IV"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        27.9,
+        18.6
+      ],
+      "crop": 1.29
+    },
+    {
+      "model": "Canon EOS-1DS",
+      "names": [
+        "EOS 1Ds",
+        "1Ds",
+        "EOS-1Ds",
+        "1Ds Mark I",
+        "1Ds Classic"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.8
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "Canon EOS-1Ds Mark II",
+      "names": [
+        "EOS 1Ds Mark II",
+        "1Ds Mark II",
+        "1Ds Mk II",
+        "1Ds MkII",
+        "1Ds II",
+        "1DsII",
+        "1Ds2",
+        "1Ds Mark 2",
+        "1Ds Mk2",
+        "1Dsmk2",
+        "EOS-1Ds Mark II",
+        "1DsM2",
+        "1DSMKII"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS-1Ds Mark III",
+      "names": [
+        "EOS 1Ds Mark III",
+        "1Ds Mark III",
+        "1Ds Mk III",
+        "1Ds MkIII",
+        "1Ds III",
+        "1DsIII",
+        "1Ds3",
+        "1Ds Mark 3",
+        "1Ds Mk3",
+        "1Dsmk3",
+        "EOS-1Ds Mark III",
+        "1DsM3",
+        "1DSMKIII",
+        "EOS K215"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS-1D X",
+      "names": [
+        "EOS 1D X",
+        "1D X",
+        "EOS-1D X",
+        "1DX",
+        "1D X Mark I",
+        "1DX Mark I"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS-1D C",
+      "names": [
+        "EOS 1D C",
+        "1D C",
+        "EOS-1D C",
+        "1DC"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS-1D X Mark II",
+      "names": [
+        "EOS 1D X Mark II",
+        "1D X Mark II",
+        "1D X Mk II",
+        "1D X MkII",
+        "1D X II",
+        "1DXII",
+        "1DX2",
+        "1D X Mark 2",
+        "1DX Mk2",
+        "1DXmk2",
+        "EOS-1D X Mark II",
+        "1DX Mark II",
+        "1DXM2",
+        "1D X M2",
+        "1DX II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS-1D X Mark III",
+      "names": [
+        "EOS 1D X Mark III",
+        "1D X Mark III",
+        "1D X Mk III",
+        "1D X MkIII",
+        "1D X III",
+        "1DXIII",
+        "1DX3",
+        "1D X Mark 3",
+        "1DX Mk3",
+        "1DXmk3",
+        "EOS-1D X Mark III",
+        "1DX Mark III",
+        "1DXM3",
+        "1D X M3",
+        "1DX III"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 5D",
+      "names": [
+        "EOS 5D",
+        "5D",
+        "5D Classic",
+        "5Dc",
+        "5D Mark I",
+        "5D Mk I",
+        "5D1",
+        "EOS 5D Classic"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "Canon EOS 5D Mark II",
+      "names": [
+        "EOS 5D Mark II",
+        "5D Mark II",
+        "5D Mk II",
+        "5D MkII",
+        "5D II",
+        "5DII",
+        "5D2",
+        "5D Mark 2",
+        "5D Mk2",
+        "5Dmk2",
+        "오두막",
+        "5DM2",
+        "5D M2",
+        "5D Mk.II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 5D Mark III",
+      "names": [
+        "EOS 5D Mark III",
+        "5D Mark III",
+        "5D Mk III",
+        "5D MkIII",
+        "5D III",
+        "5DIII",
+        "5D3",
+        "5D Mark 3",
+        "5D Mk3",
+        "5Dmk3",
+        "오막삼",
+        "5DM3",
+        "5D M3",
+        "5D Mk.III"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 5D Mark IV",
+      "names": [
+        "EOS 5D Mark IV",
+        "5D Mark IV",
+        "5D Mk IV",
+        "5D MkIV",
+        "5D IV",
+        "5DIV",
+        "5D4",
+        "5D Mark 4",
+        "5D Mk4",
+        "5Dmk4",
+        "오막포",
+        "오막사",
+        "5DM4",
+        "5D M4",
+        "5D Mk.IV"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 5DS",
+      "names": [
+        "EOS 5DS",
+        "5DS",
+        "5Ds",
+        "5D S"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 5DS R",
+      "names": [
+        "EOS 5DS R",
+        "5DS R",
+        "5DSR",
+        "EOS 5DSR",
+        "5DS-R"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 6D",
+      "names": [
+        "EOS 6D",
+        "6D",
+        "육디",
+        "6D Mark I",
+        "6D Mk I",
+        "6D1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "Canon EOS 6D Mark II",
+      "names": [
+        "EOS 6D Mark II",
+        "6D Mark II",
+        "6D Mk II",
+        "6D MkII",
+        "6D II",
+        "6DII",
+        "6D2",
+        "6D Mark 2",
+        "6D Mk2",
+        "6Dmk2",
+        "육두막",
+        "6DM2",
+        "6D M2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "Canon EOS 7D",
+      "names": [
+        "EOS 7D",
+        "7D",
+        "칠디",
+        "7D Mark I",
+        "7D Mk I",
+        "7D1"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 7D Mark II",
+      "names": [
+        "EOS 7D Mark II",
+        "7D Mark II",
+        "7D Mk II",
+        "7D MkII",
+        "7D II",
+        "7DII",
+        "7D2",
+        "7D Mark 2",
+        "7D Mk2",
+        "7Dmk2",
+        "칠두막",
+        "7DM2",
+        "7D M2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.4,
+        15
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "EOS D2000C",
+      "names": [
+        "EOS D2000C",
+        "EOS D2000",
+        "D2000",
+        "Canon EOS D2000",
+        "Canon D2000",
+        "Canon EOS D2000C"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        22.8,
+        15.5
+      ],
+      "crop": 1.57
+    },
+    {
+      "model": "EOS D6000C",
+      "names": [
+        "EOS D6000C",
+        "EOS D6000",
+        "D6000",
+        "Canon EOS D6000",
+        "Canon D6000",
+        "Canon EOS D6000C"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        27.6,
+        18.4
+      ],
+      "crop": 1.3,
+      "uncertain": true
+    },
+    {
+      "model": "Canon EOS D30",
+      "names": [
+        "EOS D30",
+        "Canon D30"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS D60",
+      "names": [
+        "EOS D60",
+        "Canon D60"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS 10D",
+      "names": [
+        "EOS 10D",
+        "10D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS 20D",
+      "names": [
+        "EOS 20D",
+        "20D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.5,
+        15
+      ],
+      "crop": 1.6
+    },
+    {
+      "model": "Canon EOS 20Da",
+      "names": [
+        "EOS 20Da",
+        "20Da"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.5,
+        15
+      ],
+      "crop": 1.6
+    },
+    {
+      "model": "Canon EOS 30D",
+      "names": [
+        "EOS 30D",
+        "30D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.5,
+        15
+      ],
+      "crop": 1.6
+    },
+    {
+      "model": "Canon EOS 40D",
+      "names": [
+        "EOS 40D",
+        "40D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS 50D",
+      "names": [
+        "EOS 50D",
+        "50D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 60D",
+      "names": [
+        "EOS 60D",
+        "60D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 60Da",
+      "names": [
+        "EOS 60Da",
+        "60Da"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 70D",
+      "names": [
+        "EOS 70D",
+        "70D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.5,
+        15
+      ],
+      "crop": 1.6
+    },
+    {
+      "model": "Canon EOS 80D",
+      "names": [
+        "EOS 80D",
+        "80D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 90D",
+      "names": [
+        "EOS 90D",
+        "90D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS 300D DIGITAL",
+      "names": [
+        "EOS 300D",
+        "300D",
+        "Canon 300D",
+        "EOS 300D Digital",
+        "300D Digital"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS DIGITAL REBEL",
+      "names": [
+        "EOS Digital Rebel",
+        "Digital Rebel",
+        "Canon Digital Rebel"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS Kiss Digital",
+      "names": [
+        "EOS Kiss Digital",
+        "Kiss Digital"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59
+    },
+    {
+      "model": "Canon EOS 350D DIGITAL",
+      "names": [
+        "EOS 350D",
+        "350D",
+        "Canon 350D",
+        "EOS 350D Digital",
+        "350D Digital"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS DIGITAL REBEL XT",
+      "names": [
+        "EOS Digital Rebel XT",
+        "Digital Rebel XT",
+        "EOS Rebel XT",
+        "Rebel XT"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss Digital N",
+      "names": [
+        "EOS Kiss Digital N",
+        "Kiss Digital N"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS 400D DIGITAL",
+      "names": [
+        "EOS 400D",
+        "400D",
+        "Canon 400D",
+        "EOS 400D Digital",
+        "400D Digital",
+        "EOS K236"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS DIGITAL REBEL XTi",
+      "names": [
+        "EOS Digital Rebel XTi",
+        "Digital Rebel XTi",
+        "EOS Rebel XTi",
+        "Rebel XTi"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss Digital X",
+      "names": [
+        "EOS Kiss Digital X",
+        "Kiss Digital X"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS 450D",
+      "names": [
+        "EOS 450D",
+        "450D",
+        "Canon 450D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS DIGITAL REBEL XSi",
+      "names": [
+        "EOS Digital Rebel XSi",
+        "Digital Rebel XSi",
+        "EOS Rebel XSi",
+        "Rebel XSi"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss X2",
+      "names": [
+        "EOS Kiss X2",
+        "Kiss X2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss Digital X2",
+      "names": [
+        "EOS Kiss Digital X2",
+        "Kiss Digital X2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62,
+      "uncertain": true
+    },
+    {
+      "model": "Canon EOS 1000D",
+      "names": [
+        "EOS 1000D",
+        "1000D",
+        "Canon 1000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS DIGITAL REBEL XS",
+      "names": [
+        "EOS Digital Rebel XS",
+        "Digital Rebel XS",
+        "EOS Rebel XS",
+        "Rebel XS"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss F",
+      "names": [
+        "EOS Kiss F",
+        "Kiss F"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62
+    },
+    {
+      "model": "Canon EOS Kiss Digital F",
+      "names": [
+        "EOS Kiss Digital F",
+        "Kiss Digital F"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.2,
+        14.8
+      ],
+      "crop": 1.62,
+      "uncertain": true
+    },
+    {
+      "model": "Canon EOS 500D",
+      "names": [
+        "EOS 500D",
+        "500D",
+        "Canon 500D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T1i",
+      "names": [
+        "EOS Rebel T1i",
+        "Rebel T1i",
+        "T1i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X3",
+      "names": [
+        "EOS Kiss X3",
+        "Kiss X3"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 550D",
+      "names": [
+        "EOS 550D",
+        "550D",
+        "Canon 550D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T2i",
+      "names": [
+        "EOS Rebel T2i",
+        "Rebel T2i",
+        "T2i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X4",
+      "names": [
+        "EOS Kiss X4",
+        "Kiss X4"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 1100D",
+      "names": [
+        "EOS 1100D",
+        "1100D",
+        "Canon 1100D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22,
+        14.7
+      ],
+      "crop": 1.64
+    },
+    {
+      "model": "Canon EOS REBEL T3",
+      "names": [
+        "EOS Rebel T3",
+        "Rebel T3"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22,
+        14.7
+      ],
+      "crop": 1.64
+    },
+    {
+      "model": "Canon EOS Kiss X50",
+      "names": [
+        "EOS Kiss X50",
+        "Kiss X50"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22,
+        14.7
+      ],
+      "crop": 1.64
+    },
+    {
+      "model": "Canon EOS 600D",
+      "names": [
+        "EOS 600D",
+        "600D",
+        "Canon 600D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T3i",
+      "names": [
+        "EOS Rebel T3i",
+        "Rebel T3i",
+        "T3i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X5",
+      "names": [
+        "EOS Kiss X5",
+        "Kiss X5"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 650D",
+      "names": [
+        "EOS 650D",
+        "650D",
+        "Canon 650D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T4i",
+      "names": [
+        "EOS Rebel T4i",
+        "Rebel T4i",
+        "T4i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X6i",
+      "names": [
+        "EOS Kiss X6i",
+        "Kiss X6i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 700D",
+      "names": [
+        "EOS 700D",
+        "700D",
+        "Canon 700D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T5i",
+      "names": [
+        "EOS Rebel T5i",
+        "Rebel T5i",
+        "T5i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X7i",
+      "names": [
+        "EOS Kiss X7i",
+        "Kiss X7i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 100D",
+      "names": [
+        "EOS 100D",
+        "100D",
+        "Canon 100D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL SL1",
+      "names": [
+        "EOS Rebel SL1",
+        "Rebel SL1"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X7",
+      "names": [
+        "EOS Kiss X7",
+        "Kiss X7"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 1200D",
+      "names": [
+        "EOS 1200D",
+        "1200D",
+        "Canon 1200D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS REBEL T5",
+      "names": [
+        "EOS Rebel T5",
+        "Rebel T5"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X70",
+      "names": [
+        "EOS Kiss X70",
+        "Kiss X70"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Hi",
+      "names": [
+        "EOS Hi",
+        "Canon Hi"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 750D",
+      "names": [
+        "EOS 750D",
+        "750D",
+        "Canon 750D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T6i",
+      "names": [
+        "EOS Rebel T6i",
+        "Rebel T6i",
+        "T6i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X8i",
+      "names": [
+        "EOS Kiss X8i",
+        "Kiss X8i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 760D",
+      "names": [
+        "EOS 760D",
+        "760D",
+        "Canon 760D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T6s",
+      "names": [
+        "EOS Rebel T6s",
+        "Rebel T6s",
+        "T6s"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 8000D",
+      "names": [
+        "EOS 8000D",
+        "8000D",
+        "Canon 8000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 1300D",
+      "names": [
+        "EOS 1300D",
+        "1300D",
+        "Canon 1300D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T6",
+      "names": [
+        "EOS Rebel T6",
+        "Rebel T6"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X80",
+      "names": [
+        "EOS Kiss X80",
+        "Kiss X80"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 77D",
+      "names": [
+        "EOS 77D",
+        "77D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 9000D",
+      "names": [
+        "EOS 9000D",
+        "9000D",
+        "Canon 9000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 800D",
+      "names": [
+        "EOS 800D",
+        "800D",
+        "Canon 800D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T7i",
+      "names": [
+        "EOS Rebel T7i",
+        "Rebel T7i",
+        "T7i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X9i",
+      "names": [
+        "EOS Kiss X9i",
+        "Kiss X9i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 200D",
+      "names": [
+        "EOS 200D",
+        "200D",
+        "Canon 200D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel SL2",
+      "names": [
+        "EOS Rebel SL2",
+        "Rebel SL2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X9",
+      "names": [
+        "EOS Kiss X9",
+        "Kiss X9"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 2000D",
+      "names": [
+        "EOS 2000D",
+        "2000D",
+        "Canon 2000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T7",
+      "names": [
+        "EOS Rebel T7",
+        "Rebel T7"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 1500D",
+      "names": [
+        "EOS 1500D",
+        "1500D",
+        "Canon 1500D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X90",
+      "names": [
+        "EOS Kiss X90",
+        "Kiss X90"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 4000D",
+      "names": [
+        "EOS 4000D",
+        "4000D",
+        "Canon 4000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T100",
+      "names": [
+        "EOS Rebel T100",
+        "Rebel T100",
+        "T100"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 3000D",
+      "names": [
+        "EOS 3000D",
+        "3000D",
+        "Canon 3000D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 250D",
+      "names": [
+        "EOS 250D",
+        "250D",
+        "Canon 250D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel SL3",
+      "names": [
+        "EOS Rebel SL3",
+        "Rebel SL3"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 200D II",
+      "names": [
+        "EOS 200D II",
+        "200D II",
+        "Canon 200D II",
+        "EOS 200D Mark II",
+        "200D Mark II",
+        "200D Mk II",
+        "200D2"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X10",
+      "names": [
+        "EOS Kiss X10",
+        "Kiss X10"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS 850D",
+      "names": [
+        "EOS 850D",
+        "850D",
+        "Canon 850D"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Rebel T8i",
+      "names": [
+        "EOS Rebel T8i",
+        "Rebel T8i",
+        "T8i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    },
+    {
+      "model": "Canon EOS Kiss X10i",
+      "names": [
+        "EOS Kiss X10i",
+        "Kiss X10i"
+      ],
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^(Canon )?EOS[- ]?1Ds\\b",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "EOS-1Ds / 1Ds Mark II / 1Ds Mark III are all full frame (original 1Ds 35.8x23.8)."
+    },
+    {
+      "pattern": "^(Canon )?EOS[- ]?1D[- ]?[XC]\\b",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "EOS-1D X / 1D C family (1D X, 1D C, 1D X Mark II/III and any later 1D X) are full frame."
+    },
+    {
+      "pattern": "^(Canon )?EOS[- ]?1D Mark III\\b",
+      "format": "APS-H",
+      "sensorMm": [
+        28.1,
+        18.7
+      ],
+      "crop": 1.28,
+      "note": "EOS-1D Mark III uses a 28.1x18.7 mm APS-H sensor (1.3x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS[- ]?1D Mark IV\\b",
+      "format": "APS-H",
+      "sensorMm": [
+        27.9,
+        18.6
+      ],
+      "crop": 1.29,
+      "note": "EOS-1D Mark IV uses a 27.9x18.6 mm APS-H sensor (1.3x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS[- ]?1D( Mark II( ?N)?)?$",
+      "format": "APS-H",
+      "sensorMm": [
+        28.7,
+        19.1
+      ],
+      "crop": 1.26,
+      "note": "Original EOS-1D and 1D Mark II / II N use 28.7x19.1 mm APS-H (1.3x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS[- ]?1D\\b",
+      "format": "APS-H",
+      "sensorMm": [
+        28.1,
+        18.7
+      ],
+      "crop": 1.28,
+      "note": "Any other non-X/C/s EOS-1D body is APS-H (1.3x) - the 1D (non-X) line was APS-H throughout."
+    },
+    {
+      "pattern": "^(Canon )?EOS [56]D",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "EOS 5D / 5D Mark II-IV / 5DS / 5DS R and EOS 6D / 6D Mark II are full frame."
+    },
+    {
+      "pattern": "^(Canon )?EOS 7D",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.4,
+        15
+      ],
+      "crop": 1.61,
+      "note": "EOS 7D / 7D Mark II are Canon APS-C (1.6x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS D(30|60)$",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.7,
+        15.1
+      ],
+      "crop": 1.59,
+      "note": "Early EOS D30 / D60 use a 22.7x15.1 mm APS-C CMOS."
+    },
+    {
+      "pattern": "^(Canon )?EOS \\d{2}Da?$",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "Two-digit xxD enthusiast DSLRs (10D-90D, incl. astro 20Da/60Da) are Canon APS-C (1.6x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS \\d{3,4}D( DIGITAL| Digital| II| Mark II)?$",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "Three/four-digit xxxD / xxxxD Rebel-class DSLRs (100D-850D, 1000D-4000D, 8000D/9000D, 200D II) are Canon APS-C (1.6x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS (DIGITAL )?REBEL\\b",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "US-market Digital Rebel / Rebel Txi / SLx models are Canon APS-C (1.6x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS Kiss\\b",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "Japan-market EOS Kiss models (DSLR Kiss Digital / Kiss Xn / Kiss F, and mirrorless Kiss M/M2) are all Canon APS-C (1.6x)."
+    },
+    {
+      "pattern": "^(Canon )?EOS Hi$",
+      "format": "APS-C (Canon)",
+      "sensorMm": [
+        22.3,
+        14.9
+      ],
+      "crop": 1.61,
+      "note": "EOS Hi is a regional name of the EOS 1200D (APS-C)."
+    }
+  ]
+}

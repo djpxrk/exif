@@ -1,0 +1,37 @@
+{
+  "key": "kodak",
+  "name": "Kodak",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    348.492,
+    88.531
+  ],
+  "paths": [
+    {
+      "d": "M20.128 36.877L47.395 2.622 72.168 2.622 40.63 42.013 73.716 86.806 47.395 86.806 20.128 49.304 20.128 86.806 0 86.806 0 2.622 20.128 2.622Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M102.336 22.865C124.449 22.865 136.294 37.569 136.294 55.697 136.294 73.828 124.627 88.531 102.336 88.531 80.045 88.531 68.377 73.828 68.377 55.697 68.377 37.569 80.222 22.865 102.336 22.865ZM102.336 38.44C112.379 38.44 117.757 46.169 117.757 55.697 117.757 65.226 112.458 72.953 102.336 72.953 92.212 72.953 86.913 65.226 86.913 55.697 86.913 46.169 92.29 38.44 102.336 38.44Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M175.662 22.865C181.121 22.865 186.145 24.308 189.966 26.742V0H209.249V55.697 55.697C209.249 73.828 197.829 88.531 175.662 88.531 153.495 88.531 141.894 73.828 141.894 55.697 141.894 37.569 153.671 22.865 175.662 22.865ZM175.662 38.44C185.653 38.44 190.999 46.169 190.999 55.697 190.999 65.226 185.73 72.953 175.662 72.953 165.597 72.953 160.326 65.226 160.326 55.697 160.326 46.169 165.674 38.44 175.662 38.44Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M215.203 66.169C215.203 50.464 226.219 46.388 244.134 46.388H258.612C258.612 39.14 253.619 36.792 244.297 36.792 236.101 36.792 228.764 38.367 225.553 40.342V25.739C231.032 23.427 240.732 22.597 247.726 22.597 265.933 22.597 275.866 30.056 275.866 47.459V65.633C275.866 78.469 264.067 88.531 245.973 88.531 226.346 88.531 215.203 80.117 215.203 66.169ZM232.456 65.369C232.456 60.178 236.916 58.66 244.643 58.66H258.612V65.189C258.612 69.543 253.524 72.953 245.721 72.953 237.26 72.953 232.456 70.236 232.456 65.369Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M304.387 49.851L324.211 24.879 346.385 24.879 322.607 54.406 348.492 86.806 324.024 86.806 304.387 61.869 304.387 86.806 284.258 86.806 284.258 0 304.387 0Z",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Logo_of_the_Eastman_Kodak_Company_(2006%E2%80%932016).svg (original file: https://upload.wikimedia.org/wikipedia/commons/d/d6/Logo_of_the_Eastman_Kodak_Company_%282006%E2%80%932016%29.svg)",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons)",
+  "trademark": "Eastman Kodak Company",
+  "notes": "Kodak 2006-2016 lowercase \"Kodak\" wordmark, taken from the Commons SVG (Adobe Illustrator export cleaned in Inkscape, from Brands of the World; Commons categories PD textlogo, With trademark). The current (2016) corporate logo is a different design: the red K-in-box symbol with separate uppercase K-O-D-A-K letters stacked vertically inside it (Commons: Eastman Kodak Company logo (2016).svg); this lowercase wordmark is the horizontal Kodak wordmark suited to a frame strip. The source is 5 single-colour red (#da0029) shapes with no background. Two polygons (K, k) were converted to path data. The single group translate(-7.754,-8.735) was baked in with svgpath, then everything was made absolute and rounded to 3 decimals. Paths are ordered left to right (K o d a k). EVENODD IS REQUIRED: the o, d and a counters are same-direction inner subpaths and fill solid under nonzero. viewBox = the true path bbox, which starts at 0,0 after the translate. Aspect ratio is about 3.94:1. Simple Icons siKodak (CC0) is only the 2016 K-in-box symbol, not a wordmark, so it was not used. Kodak-branded cameras are mostly made under licence (e.g. JK Imaging PIXPRO), so kind=camera. Verified 2026-10-07: upstream SVG re-downloaded byte-identical to work/kodak/kodak_2006.svg; JSON paths pixel-diffed against the upstream SVG at 4x with 0 differing pixels; Commons page shows PD-textlogo + Trademarked warning."
+}

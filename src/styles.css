@@ -260,3 +260,14 @@ input[type="range"] { width: 100%; accent-color: var(--ink); margin: 0; }
 .group legend output { color: var(--ink); }
 .focal35 { margin: 6px 0 4px 34px; }
 .focal35 small { display: block; color: var(--muted); font-size: 13px; }
+.crop-row { margin-top: 2px; }
+.crop-input { display: flex; align-items: center; gap: 8px; }
+.crop-input input {
+  width: 100%; min-width: 0; background: var(--raised); border: 1px solid transparent; border-radius: 3px;
+  padding: 8px 10px; font-size: 16px; color: var(--ink);
+}
+.crop-input input:focus { border-color: var(--line); outline: none; }
+.crop-input span { color: var(--muted); }
+.crop-note { margin: 0 0 8px 134px; }
+.crop-note small { color: var(--muted); font-size: 13px; }
+@media (max-width: 420px) { .crop-note { margin-left: 34px; } }

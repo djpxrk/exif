@@ -1,0 +1,21 @@
+{
+  "key": "tamron",
+  "name": "Tamron",
+  "kind": "lens",
+  "viewBox": [
+    0,
+    0,
+    1000,
+    156.96
+  ],
+  "paths": [
+    {
+      "d": "M186.5 3.33L143.1 153.89H179.69L188.66 122.79H247.89L257.06 153.89H293.65L249.91 3.33H186.5ZM198.24 89.02L213.36 37.51H223.44L238.56 89.02H198.24ZM0 37.7H52.98V153.89H88.57V37.96H141.55V3.33H0V37.7ZM761.13 0C733.41 0 706.79 2.07 695.6 30.24 691.72 40.32 691.16 50.7 691.16 78.48 691.16 106.26 691.71 116.89 695.6 126.72 706.84 155 733.45 156.96 761.13 156.96 788.81 156.96 815.52 154.89 826.66 126.72 830.59 116.89 831.15 106.26 831.15 78.48 831.15 50.7 830.8 40.32 826.66 30.24 815.67 2.07 789 0 761.13 0ZM794.04 108.42C790.51 119.76 778.46 122.79 761.13 122.79 743.8 122.79 731.74 119.77 728.22 108.42 726.62 98.56 726.1 88.55 726.66 78.58 726.1 68.62 726.63 58.63 728.22 48.79 731.75 37.4 743.85 34.37 761.13 34.37 778.41 34.37 790.52 37.39 794.04 48.79 795.66 58.63 796.19 68.62 795.6 78.58 796.23 88.55 795.76 98.56 794.19 108.42H794.04ZM401.88 84.12L374.87 3.33H322.1V153.89H357.89V49.7L384.2 127.98H420.29L446.4 49.7V153.89H481.99V3.33H429.22L401.9 84.13ZM964.62 3.33V97.38L913.4 3.33H871.16V153.89H906.75V59.83L957.71 153.89H1000V3.33H964.62ZM652.71 84.74C654.78 78.74 655.63 72.24 655.63 56.51 655.63 40.78 654.77 34.23 652.71 28.23 646.96 11.39 631.09 3.33 605.48 3.33H525.84V153.89H561.43V109.68H603.01L625.04 153.89H664.26L638.35 102.38C645.15 98.47 650.26 92.19 652.72 84.74ZM617.93 69.62C614.6 74.66 608.81 75.37 600.79 75.37H561.42V37.7H600.79C608.8 37.7 614.6 38.36 617.93 43.5 619.9 47.53 620.64 52.06 620.05 56.5 620.63 60.95 619.9 65.47 617.93 69.5V69.6Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://www.tamron.com/common/images/logo.svg (official Tamron Co., Ltd. site logo; blue .cls-2 wordmark path only, grey 'Focus on the Future' tagline dropped). Cross-checked against https://www.tamron.eu/_nuxt/tamron.Bvo-uYXR.svg (Tamron Europe site logo, IoU 0.99). Licensing basis: https://commons.wikimedia.org/wiki/File:Tamron_Logo_2019.svg",
+  "license": "Public domain (PD-textlogo on Wikimedia Commons for this wordmark design); trademark of Tamron Co., Ltd.",
+  "trademark": "Tamron Co., Ltd.",
+  "notes": "Current (2019+) TAMRON wordmark. Geometry taken from the official tamron.com logo.svg (single path, no transforms), made absolute and rounded to 0.01; viewBox is the exact path bbox. An earlier build used the Commons Tamron_Logo_2019.svg path, but that file is a lighter/wider variant (stems ~9% thinner, aspect 6.51 vs 6.37, IoU 0.91 against both official sites), so it was replaced. Counters (A, R, O) render as holes with both nonzero and evenodd; nonzero kept to match the source. Brand colour #005BAC (site) / #005BAA (EU) / #005CA9 (Commons)."
+}

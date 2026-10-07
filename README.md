@@ -15,7 +15,15 @@ EXIF comes from `exifr`, with a WebP `EXIF` chunk reader and a raw `Exif\0\0` sc
 
 ## Frames
 
-Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay) and Film rebate.
+Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay), Film rebate, and:
+
+- **Lightroom:** Lightroom-style info panel with the photo's real RGB histogram and the ISO / focal length / aperture / shutter readout.
+- **Atlas:** an offline map in a compass bezel. The pin marks where the photo was taken. When the camera recorded a compass heading, a wedge shows the direction it faced, as wide as the lens's actual angle of view. Shows the town, region and country. Exact coordinates appear only when Location is turned on. Map zoom: City, Region, Country, Continent.
+- **Postcard:** the photo above a postcard back. The caption is handwritten (or "Greetings from …"), and the camera details are typed on the address lines. The stamp shows a globe turned to the location, under a postmark with the town and date.
+- **Slide mount:** a square 35mm slide mount with a handwritten label, a frame number and a processing date.
+- **Cinema:** letterbox bars with a location/date title card, the caption as a subtitle, and a "Shot on" credit.
+
+Options:
 
 - **Orientation:** match the photo, or force a vertical or horizontal frame. With the original ratio this turns a horizontal photo into a vertical post (and back) by extending the background.
 - **Aspect ratio:** Original, 1:1, 4:5, 3:4, 2:3, 5:7, 9:16, A4, or any custom W:H. Presets flip with the orientation (4:5 ↔ 5:4).
@@ -23,6 +31,18 @@ Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay) and 
 - Border size, corner radius, background and typeface are adjustable. Every text line can be turned off or edited per photo.
 - **35mm-equivalent focal length:** a Details option. It uses the camera's recorded value, or works it out from the sensor size when the camera didn't record one.
 - Saved JPEGs can keep the camera metadata (never GPS).
+- **Crop factors:** a bundled database of about 1,280 cameras and 290 product-line rules (`data/cameras/*.json`, compiled by `npm run cameras`). It covers Canon, Nikon, Sony, Fujifilm, Panasonic/LUMIX, OM System/Olympus, Leica, Ricoh/Pentax, Sigma, Hasselblad and Phase One. Phones and drones rely on the 35mm value they record.
+- **Brand logos:** 32 camera and lens brands (`data/logos/*.json`, compiled by `npm run logos`).
+
+## Maps and place names
+
+Map frames are drawn on the device from bundled data, so a photo's location is never sent anywhere. The data is fetched only on first use (about 520 KB gzipped) and then cached for offline use.
+
+- Countries: [Natural Earth](https://www.naturalearthdata.com/) 1:10m (public domain), via `world-atlas`, simplified with mapshaper.
+- Place names: [GeoNames](https://www.geonames.org/) `cities15000` (CC BY 4.0), with region and country names.
+- Rebuild with `node scripts/build-geo.mjs <geonames-dir> <world-topojson>` (see the script header).
+
+Photos without GPS can be given a location by typing coordinates in Details → Location (e.g. `37.5665, 126.9780` or `37°33′59″N 126°58′41″E`). The Place field overrides the looked-up name.
 
 ## Full-resolution export
 

@@ -1,0 +1,21 @@
+{
+  "key": "tokina",
+  "name": "Tokina",
+  "kind": "lens",
+  "viewBox": [
+    0,
+    0,
+    1346,
+    202
+  ],
+  "paths": [
+    {
+      "d": "M0 0L255 0 255 44 154 44 154 202 102 202 102 45 0 45Z M293 47C263 47 245 59 245 81 245 81 245 135 245 166 245 188 264 202 293 202L436 202C466 202 482 189 482 166L482 81C482 59 464 47 436 47L293 47ZM427 166C417 166 303 166 303 166 303 166 293 167 293 156 293 148 293 91 293 91 293 91 294 82 304 81L425 81C425 81 436 79 436 93 436 106 436 154 436 154 436 154 437 166 427 166Z M509 0L558 0 558 119 563 119 669 47 741 47 623 124 741 202 669 202 563 128 558 128 558 202 509 202Z M773 0L820 0 820 33 773 33Z M773 47L820 47 820 202 773 202Z M848 47L1037 47C1064 47 1079 61 1079 86L1079 202 1031 202 1031 91C1031 91 1031 81 1024 81 1015 81 895 81 895 81L895 202 848 202 848 47Z M1108 47L1108 81C1108 81 1283 81 1290 81 1297 81 1298 90 1298 90L1298 109C1298 109 1174 109 1143 109 1121 109 1108 123 1108 142 1108 142 1108 166 1108 166 1108 188 1120 202 1143 202L1346 202C1346 202 1346 130 1346 90 1346 51 1325 47 1304 47L1108 47ZM1297 166L1152 166 1152 142 1297 142 1297 166Z",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Tokina_Logo.svg (file: https://upload.wikimedia.org/wikipedia/commons/8/85/Tokina_Logo.svg, 2017-06-25 revision by GTRus, CorelDRAW X8)",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons)",
+  "trademark": "Kenko Tokina Co., Ltd. (Tokina is a trademark of Kenko Tokina)",
+  "notes": "Seven shapes (5 polygons + 2 paths) from the Commons SVG converted to absolute path data and merged into one path; polygons converted to M/L/Z. No transforms or text in the source; original blue #2A3E92 fill dropped. Counters of \"o\" and \"a\" are inner subpaths, rendered with evenodd; no letters overlap (the \"o\" tucks under the T crossbar without touching). Subpaths reordered left-to-right. No ® mark or tagline present."
+}

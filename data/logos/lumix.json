@@ -1,0 +1,21 @@
+{
+  "key": "lumix",
+  "name": "LUMIX",
+  "kind": "camera+lens",
+  "viewBox": [
+    10,
+    10.4,
+    480,
+    93.4
+  ],
+  "paths": [
+    {
+      "d": "M285.4 103.6L314.2 60 314.1 68.6 314.1 103.5 331.3 103.5 331.3 32.9 314.2 32.9 276.4 89.7 239.4 32.9 222.3 32.9 222.3 103.5 239.5 103.5 239.5 68.6 239.4 60 268.2 103.6ZM10 10.4L10 99.1C10 102.2 12.1 103.7 14.8 103.7L95.7 103.7 95.7 91.2 32.4 91.2C30.7 91.2 30 90.1 30 88L30 10.4ZM189.4 103.7C194.1 103.7 195.3 101.9 197.7 98.9 200.1 95.9 203.6 87.6 203.6 78.1L203.6 33.1 186.4 33.1 186.4 75C186.4 80.8 186.4 86.6 184.2 88.8 182 91 178.8 91.5 173.5 91.5L137.9 91.5C132.5 91.5 129.4 91.1 127.2 88.8 125 86.6 125 80.8 125 75L125 33.1 107.8 33.1 107.8 78.1C107.8 87.6 111.4 95.9 113.7 98.9 116.1 101.9 117.2 103.7 122 103.7ZM371.7 103.7L354.5 103.7 354.5 33.1 371.7 33.1ZM490 103.5L447.7 67 487.1 33.1 465.3 33.1 436.7 57.6 408.3 33 386.4 33 426 67.1 383.6 103.8 405.4 103.8 436.9 76.5 468.3 103.7Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Lumix_logo.svg (original: https://upload.wikimedia.org/wikipedia/commons/3/3e/Lumix_logo.svg)",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons)",
+  "trademark": "Panasonic Holdings Corporation (LUMIX is a trademark of Panasonic)",
+  "notes": "Taken unchanged from the Commons SVG: a single path with no transforms, no background or registered mark, and no text elements. Only change: normalized to absolute coordinates rounded to 2 decimals. The L is taller than U/M/I/X, as in the real logo. Commons says the source is a Panasonic DMC-GF1 spec sheet (2011 upload) and adds a trademark warning."
+}

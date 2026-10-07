@@ -1,0 +1,21 @@
+{
+  "key": "ricoh",
+  "name": "RICOH",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    190,
+    34.289
+  ],
+  "paths": [
+    {
+      "d": "M13.449 15.765L13.446 18.88C18.676 22.922 24.003 28.295 27.91 33.422L40.35 33.422C36.02 28.338 29.383 22.294 24.492 19.256 30.231 19.016 36.635 16.694 36.635 10.105 36.635 1.643 27.595 0.101 18.459 0.101 10.995 0.101 4.114 0.441 0 0.781L0 33.422 10.366 33.422 10.366 5.69C12.286 5.485 14.349 5.257 18.509 5.257 23.851 5.257 26.554 7.019 26.554 10.105 26.554 12.731 25.435 15.879 13.449 15.765M45.328 33.422L56.444 33.422 56.444 0.864 45.328 0.864 45.328 33.422ZM73.927 17.147C73.927 23.828 78.878 28.759 87.142 28.759 90.628 28.759 93.922 28.208 97.325 26.619L100.415 30.845C96.139 33.107 92.022 34.289 85.696 34.289 72.506 34.289 62.807 27.937 62.807 17.15L62.807 17.146C62.807 6.361 72.506 0.007 85.696 0.007 92.022 0.007 95.657 0.934 100.115 2.844L96.94 7.7C93.569 5.903 90.628 5.536 87.142 5.536 78.878 5.536 73.927 10.456 73.927 17.139M124.26 0C111.488 0 102.276 6.357 102.276 17.144 102.276 27.936 111.488 34.287 124.26 34.287 137.031 34.287 146.241 27.936 146.241 17.144 146.241 6.357 137.031 0 124.26 0M124.26 28.954C117.232 28.954 113.353 23.674 113.353 17.139 113.353 10.604 117.232 5.328 124.26 5.328 131.283 5.328 135.163 10.604 135.163 17.139 135.163 23.674 131.283 28.954 124.26 28.954M179.446 19.625L179.446 33.422 190 33.422 190 0.864 179.446 0.864 179.446 13.273 163.313 13.273 163.313 0.864 152.78 0.864 152.78 33.422 163.313 33.422 163.313 19.625 179.446 19.625Z",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Ricoh_logo_2005.svg",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons) — https://commons.wikimedia.org/wiki/File:Ricoh_logo_2005.svg",
+  "trademark": "Ricoh Company, Ltd.",
+  "notes": "Plain RICOH wordmark (5 red #d7063b paths, no tagline/® in the file) captured by the Commons uploader from the Ricoh Annual Report 2008 PDF (vector, not traced). Group transforms translate(-219.13624,-147.37412) matrix(1.3413911,0,0,-1.3413911,...) baked into coordinates incl. the y-flip; letters reordered R-I-C-O-H and merged into one path; evenodd knocks out the O counter (letters do not overlap). Note the RICOH R has an open bowl by design. Commons file description mentions the \"imagine. change.\" tagline but the SVG contains only the wordmark. Simple Icons has no Ricoh icon."
+}

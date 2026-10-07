@@ -1,0 +1,1407 @@
+{
+  "group": "leica",
+  "brand": "Leica",
+  "exifMakes": [
+    "Leica Camera AG",
+    "LEICA CAMERA AG",
+    "LEICA",
+    "Leica"
+  ],
+  "cameras": [
+    {
+      "model": "M8 Digital Camera",
+      "names": [
+        "Leica M8",
+        "M8",
+        "Leica M8.2",
+        "M8.2"
+      ],
+      "format": "APS-H",
+      "sensorMm": [
+        27.0,
+        18.0
+      ],
+      "crop": 1.33
+    },
+    {
+      "model": "M9 Digital Camera",
+      "names": [
+        "Leica M9",
+        "M9",
+        "Leica M9-P",
+        "M9-P",
+        "M9 Titanium"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "M Monochrom",
+      "names": [
+        "Leica M Monochrom",
+        "M Monochrom",
+        "M Monochrom CCD",
+        "M9 Monochrom",
+        "MM"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "model": "M-E Digital Camera",
+      "names": [
+        "Leica M-E",
+        "M-E",
+        "Leica M-E (Typ 220)",
+        "M-E (Typ 220)",
+        "M-E 220"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "uncertain": true
+    },
+    {
+      "model": "LEICA M (Typ 240)",
+      "names": [
+        "Leica M (Typ 240)",
+        "M (Typ 240)",
+        "M240",
+        "M 240",
+        "M Typ 240",
+        "Leica M-P (Typ 240)",
+        "M-P (Typ 240)",
+        "M-P 240",
+        "Leica M-E (Typ 240)",
+        "M-E (Typ 240)",
+        "M Edition 60"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M-P (Typ 240)",
+      "names": [
+        "Leica M-P (Typ 240)",
+        "M-P 240"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0,
+      "uncertain": true
+    },
+    {
+      "model": "LEICA M-E (Typ 240)",
+      "names": [
+        "Leica M-E (Typ 240)",
+        "M-E 240"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0,
+      "uncertain": true
+    },
+    {
+      "model": "LEICA M MONOCHROM (Typ 246)",
+      "names": [
+        "Leica M Monochrom (Typ 246)",
+        "M Monochrom (Typ 246)",
+        "M246",
+        "M 246",
+        "Monochrom 246"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M (Typ 262)",
+      "names": [
+        "Leica M (Typ 262)",
+        "M (Typ 262)",
+        "M262",
+        "M 262"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M-D (Typ 262)",
+      "names": [
+        "Leica M-D (Typ 262)",
+        "M-D (Typ 262)",
+        "M-D",
+        "M-D 262"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M10",
+      "names": [
+        "Leica M10",
+        "M10"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M10-P",
+      "names": [
+        "Leica M10-P",
+        "M10-P",
+        "M10P",
+        "M10-P Reporter",
+        "M10-P ASC 100"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M10-D",
+      "names": [
+        "Leica M10-D",
+        "M10-D",
+        "M10D"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M10-R",
+      "names": [
+        "Leica M10-R",
+        "M10-R",
+        "M10R",
+        "M10-R Black Paint"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M10 MONOCHROM",
+      "names": [
+        "Leica M10 Monochrom",
+        "M10 Monochrom",
+        "M10M"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M11",
+      "names": [
+        "Leica M11",
+        "M11"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M11-P",
+      "names": [
+        "Leica M11-P",
+        "M11-P",
+        "M11P"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M11 Monochrom",
+      "names": [
+        "Leica M11 Monochrom",
+        "M11 Monochrom",
+        "M11M"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M11-D",
+      "names": [
+        "Leica M11-D",
+        "M11-D",
+        "M11D"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA M EV1",
+      "names": [
+        "Leica M EV1",
+        "M EV1",
+        "MEV1",
+        "M-EV1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "R8 - Digital Back DMR",
+      "names": [
+        "Leica R8 DMR",
+        "Digital Modul R",
+        "DMR"
+      ],
+      "format": "APS-H (DMR 1.37x)",
+      "sensorMm": [
+        26.33,
+        17.63
+      ],
+      "crop": 1.37
+    },
+    {
+      "model": "R9 - Digital Back DMR",
+      "names": [
+        "Leica R9 DMR",
+        "Digital Modul R",
+        "DMR"
+      ],
+      "format": "APS-H (DMR 1.37x)",
+      "sensorMm": [
+        26.33,
+        17.63
+      ],
+      "crop": 1.37
+    },
+    {
+      "model": "LEICA Q (Typ 116)",
+      "names": [
+        "Leica Q (Typ 116)",
+        "Leica Q",
+        "Q",
+        "Q116",
+        "Q Typ 116",
+        "Leica Q-P",
+        "Q-P"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA Q2",
+      "names": [
+        "Leica Q2",
+        "Q2",
+        "Q2 Reporter",
+        "Q2 Ghost"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA Q2 MONO",
+      "names": [
+        "Leica Q2 Monochrom",
+        "Q2 Monochrom",
+        "Q2 Mono",
+        "Q2M"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA Q3",
+      "names": [
+        "Leica Q3",
+        "Q3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA Q3 43",
+      "names": [
+        "Leica Q3 43",
+        "Q3 43",
+        "Q343"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA Q3 MONO",
+      "names": [
+        "Leica Q3 Monochrom",
+        "Q3 Monochrom",
+        "Q3 Mono",
+        "Q3M"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL (Typ 601)",
+      "names": [
+        "Leica SL (Typ 601)",
+        "Leica SL",
+        "SL",
+        "SL601",
+        "SL Typ 601"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL2",
+      "names": [
+        "Leica SL2",
+        "SL2"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL2-S",
+      "names": [
+        "Leica SL2-S",
+        "SL2-S",
+        "SL2S"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL3",
+      "names": [
+        "Leica SL3",
+        "SL3",
+        "SL3 Reporter"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL3-S",
+      "names": [
+        "Leica SL3-S",
+        "SL3-S",
+        "SL3S"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA SL3-P",
+      "names": [
+        "Leica SL3-P",
+        "SL3-P",
+        "SL3P"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "model": "LEICA T (Typ 701)",
+      "names": [
+        "Leica T (Typ 701)",
+        "Leica T",
+        "T (Typ 701)",
+        "T701"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "LEICA TL",
+      "names": [
+        "Leica TL",
+        "TL"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "LEICA TL2",
+      "names": [
+        "Leica TL2",
+        "TL2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "LEICA CL",
+      "names": [
+        "Leica CL",
+        "CL"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "S2",
+      "names": [
+        "Leica S2",
+        "S2",
+        "Leica S2-P",
+        "S2-P"
+      ],
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8
+    },
+    {
+      "model": "LEICA S (Typ 006)",
+      "names": [
+        "Leica S (Typ 006)",
+        "S (Typ 006)",
+        "S006",
+        "Leica S-E (Typ 006)"
+      ],
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8
+    },
+    {
+      "model": "LEICA S-E (Typ 006)",
+      "names": [
+        "Leica S-E (Typ 006)",
+        "S-E (Typ 006)",
+        "S-E"
+      ],
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8,
+      "uncertain": true
+    },
+    {
+      "model": "LEICA S (Typ 007)",
+      "names": [
+        "Leica S (Typ 007)",
+        "S (Typ 007)",
+        "S007"
+      ],
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8
+    },
+    {
+      "model": "LEICA S3",
+      "names": [
+        "Leica S3",
+        "S3"
+      ],
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8
+    },
+    {
+      "model": "LEICA X1",
+      "names": [
+        "Leica X1",
+        "X1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "LEICA X2",
+      "names": [
+        "Leica X2",
+        "X2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "LEICA X-E (Typ 102)",
+      "names": [
+        "Leica X-E (Typ 102)",
+        "X-E (Typ 102)",
+        "Leica X-E"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "LEICA X VARIO (Typ 107)",
+      "names": [
+        "Leica X Vario (Typ 107)",
+        "X Vario",
+        "Leica X Vario",
+        "Mini M"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "LEICA X (Typ 113)",
+      "names": [
+        "Leica X (Typ 113)",
+        "Leica X",
+        "X (Typ 113)",
+        "X113"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "LEICA X-U (Typ 113)",
+      "names": [
+        "Leica X-U (Typ 113)",
+        "X-U (Typ 113)",
+        "Leica X-U",
+        "X-U"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "D-LUX (Typ 109)",
+      "names": [
+        "Leica D-Lux (Typ 109)",
+        "D-Lux (Typ 109)",
+        "D-Lux 109",
+        "D-Lux Typ 109"
+      ],
+      "format": "Four Thirds (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "D-Lux 7",
+      "names": [
+        "Leica D-Lux 7",
+        "D-Lux 7",
+        "D-Lux7",
+        "D-Lux 7 007 Edition"
+      ],
+      "format": "Four Thirds (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "LEICA D-Lux 8",
+      "names": [
+        "Leica D-Lux 8",
+        "D-Lux 8",
+        "D-Lux8"
+      ],
+      "format": "Four Thirds (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "D-LUX 8 \"100 YEARS OF LEICA\"",
+      "names": [
+        "Leica D-Lux 8 100 Years of Leica",
+        "D-Lux 8 100 Years"
+      ],
+      "format": "Four Thirds (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2
+    },
+    {
+      "model": "D-LUX 6",
+      "names": [
+        "Leica D-Lux 6",
+        "D-Lux 6"
+      ],
+      "format": "1/1.7\" (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        6.78,
+        5.08
+      ],
+      "crop": 5.11
+    },
+    {
+      "model": "D-LUX 5",
+      "names": [
+        "Leica D-Lux 5",
+        "D-Lux 5"
+      ],
+      "format": "1/1.63\" (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        7.35,
+        5.51
+      ],
+      "crop": 4.71
+    },
+    {
+      "model": "D-LUX 4",
+      "names": [
+        "Leica D-Lux 4",
+        "D-Lux 4"
+      ],
+      "format": "1/1.63\" (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        7.35,
+        5.51
+      ],
+      "crop": 4.71
+    },
+    {
+      "model": "D-LUX 3",
+      "names": [
+        "Leica D-Lux 3",
+        "D-Lux 3"
+      ],
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43
+    },
+    {
+      "model": "D-LUX2",
+      "names": [
+        "Leica D-Lux 2",
+        "D-Lux 2",
+        "D-Lux2"
+      ],
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43
+    },
+    {
+      "model": "D-LUX",
+      "names": [
+        "Leica D-Lux",
+        "D-Lux"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "C-Lux",
+      "names": [
+        "Leica C-Lux",
+        "C-Lux",
+        "C-Lux (Typ 1546)"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "CAM-DC25",
+      "names": [
+        "Leica CAM-DC25",
+        "CAM-DC25"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "C (Typ 112)",
+      "names": [
+        "Leica C (Typ 112)",
+        "Leica C",
+        "C (Typ 112)",
+        "C112"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "C-LUX 3",
+      "names": [
+        "Leica C-Lux 3",
+        "C-Lux 3"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "C-LUX 2",
+      "names": [
+        "Leica C-Lux 2",
+        "C-Lux 2"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "C-LUX 1",
+      "names": [
+        "Leica C-Lux 1",
+        "C-Lux 1"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "V-Lux 5",
+      "names": [
+        "Leica V-Lux 5",
+        "V-Lux 5"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "V-LUX (Typ 114)",
+      "names": [
+        "Leica V-Lux (Typ 114)",
+        "V-Lux (Typ 114)",
+        "V-Lux 114",
+        "V-Lux Typ 114"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "V-LUX 4",
+      "names": [
+        "Leica V-Lux 4",
+        "V-Lux 4"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "V-LUX 3",
+      "names": [
+        "Leica V-Lux 3",
+        "V-Lux 3"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "V-LUX 2",
+      "names": [
+        "Leica V-Lux 2",
+        "V-Lux 2"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "V-LUX 1",
+      "names": [
+        "Leica V-Lux 1",
+        "V-Lux 1"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "V-LUX 40",
+      "names": [
+        "Leica V-Lux 40",
+        "V-Lux 40"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "V-LUX 30",
+      "names": [
+        "Leica V-Lux 30",
+        "V-Lux 30"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "V-LUX 20",
+      "names": [
+        "Leica V-Lux 20",
+        "V-Lux 20"
+      ],
+      "format": "1/2.33\" (12.1MP effective area of 14.5MP sensor)",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09
+    },
+    {
+      "model": "DIGILUX 3",
+      "names": [
+        "Leica Digilux 3",
+        "Digilux 3"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13.0
+      ],
+      "crop": 2.0
+    },
+    {
+      "model": "DIGILUX 2",
+      "names": [
+        "Leica Digilux 2",
+        "Digilux 2"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "Digilux1",
+      "names": [
+        "Leica Digilux 1",
+        "Digilux 1"
+      ],
+      "format": "1/1.76\"",
+      "sensorMm": [
+        7.27,
+        5.45
+      ],
+      "crop": 4.76
+    },
+    {
+      "model": "digilux 4.3",
+      "names": [
+        "Leica Digilux 4.3",
+        "Digilux 4.3"
+      ],
+      "format": "1/1.7\" (SuperCCD)",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "uncertain": true
+    },
+    {
+      "model": "digilux zoom",
+      "names": [
+        "Leica Digilux Zoom",
+        "Digilux Zoom"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "uncertain": true
+    },
+    {
+      "model": "digilux",
+      "names": [
+        "Leica Digilux",
+        "Digilux"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "uncertain": true
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^(LEICA )?M8\\b",
+      "format": "APS-H",
+      "sensorMm": [
+        27.0,
+        18.0
+      ],
+      "crop": 1.33,
+      "note": "Leica M8 / M8.2 (both write 'M8 Digital Camera'): 27×18 mm APS-H CCD, 1.33x"
+    },
+    {
+      "pattern": "^R[89]\\b.*DMR",
+      "format": "APS-H (DMR 1.37x)",
+      "sensorMm": [
+        26.33,
+        17.63
+      ],
+      "crop": 1.37,
+      "note": "Leica R8/R9 with Digital Modul R back: 26.3×17.6 mm Kodak CCD, ~1.37x"
+    },
+    {
+      "pattern": "^(LEICA )?(M9|M-E)\\b.*Digital Camera$|^(LEICA )?M9\\b|^(LEICA )?M Monochrom$|^(LEICA )?M-E\\b(?!.*\\b240\\b)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "note": "M9-generation 18MP Kodak CCD bodies (M9, M9-P, M9 Titanium, M-E Typ 220, M Monochrom CCD): 35.8×23.9 mm"
+    },
+    {
+      "pattern": "^LEICA M(\\b|\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0,
+      "note": "All 'LEICA M…' digital rangefinders from Typ 240 onward (M10/M11/M EV1 and future M12 etc.) are full-frame CMOS"
+    },
+    {
+      "pattern": "^LEICA Q(\\b|\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0,
+      "note": "Leica Q-series fixed-lens compacts (Q, Q2, Q3, Q3 43, Monochrom variants) are full frame"
+    },
+    {
+      "pattern": "^LEICA SL(\\b|\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        36.0,
+        24.0
+      ],
+      "crop": 1.0,
+      "note": "Leica SL-series L-mount mirrorless bodies are full frame"
+    },
+    {
+      "pattern": "^LEICA (CL\\d*|TL\\d*|T)\\b",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "Leica APS-C L-mount (T, TL, TL2, CL and successors): 23.6×15.7 mm"
+    },
+    {
+      "pattern": "^LEICA X(\\b|\\d)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "Leica X-series fixed-lens APS-C compacts (X Vario, X Typ 113, X-U: 23.6×15.7 mm; X1/X2/X-E are 23.6×15.8 and listed individually)"
+    },
+    {
+      "pattern": "^S2(-P)?$|^LEICA S(\\b|\\d)|^LEICA S-E\\b",
+      "format": "Medium format 45×30",
+      "sensorMm": [
+        45.0,
+        30.0
+      ],
+      "crop": 0.8,
+      "note": "Leica S-system medium format (S2, S Typ 006/007, S-E, S3): 45×30 mm, 0.80x"
+    },
+    {
+      "pattern": "^(LEICA )?D-LUX ?[23]$",
+      "format": "1/1.65\" (16:9)",
+      "sensorMm": [
+        8.5,
+        4.8
+      ],
+      "crop": 4.43,
+      "note": "D-Lux 2/3 (Panasonic LX1/LX2 twins): 1/1.65\" 16:9 CCD"
+    },
+    {
+      "pattern": "^(LEICA )?D-LUX ?[45]$",
+      "format": "1/1.63\" (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        7.35,
+        5.51
+      ],
+      "crop": 4.71,
+      "note": "D-Lux 4/5 (Panasonic LX3/LX5 twins): 1/1.63\" multi-aspect, 24mm-equiv at 5.1mm"
+    },
+    {
+      "pattern": "^(LEICA )?D-LUX ?6$",
+      "format": "1/1.7\" (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        6.78,
+        5.08
+      ],
+      "crop": 5.11,
+      "note": "D-Lux 6 (Panasonic LX7 twin): 1/1.7\" multi-aspect, 24mm-equiv at 4.7mm"
+    },
+    {
+      "pattern": "^(LEICA )?D-LUX ?(\\(Typ|[7-9]\\b|\\d{2})",
+      "format": "Four Thirds (multi-aspect, effective 4:3 area)",
+      "sensorMm": [
+        15.7,
+        11.8
+      ],
+      "crop": 2.2,
+      "note": "D-Lux Typ 109 / 7 / 8 and successors (Panasonic LX100-family twins): Four Thirds multi-aspect sensor, 24mm-equiv at 10.9mm (2.2x)"
+    },
+    {
+      "pattern": "^(LEICA )?V-LUX ?1$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "V-Lux 1 (Panasonic FZ50 twin): 1/1.8\""
+    },
+    {
+      "pattern": "^(LEICA )?V-LUX ?([234]|[34]0)$",
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "V-Lux 2/3/4 (FZ100/FZ150/FZ200) and V-Lux 30/40 (TZ20/TZ30 twins): 1/2.33\""
+    },
+    {
+      "pattern": "^(LEICA )?V-LUX ?20$",
+      "format": "1/2.33\" (12.1MP effective area of 14.5MP sensor)",
+      "sensorMm": [
+        5.68,
+        4.26
+      ],
+      "crop": 6.09,
+      "note": "V-Lux 20 (Panasonic TZ10/ZS7 twin): 12.1MP crop of a 14.5MP 1/2.33\" CCD; 4.1mm = 25mm-equiv (~6.1x)"
+    },
+    {
+      "pattern": "^(LEICA )?V-LUX",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Modern V-Lux bridge cameras (Typ 114, V-Lux 5 and later; Panasonic FZ1000-family twins): 1-inch"
+    },
+    {
+      "pattern": "^(LEICA )?C-LUX ?[12]$|^(LEICA )?D-LUX$",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Early Leica pocket compacts (C-Lux 1/2, original D-Lux): 1/2.5\""
+    },
+    {
+      "pattern": "^(LEICA )?C-LUX ?3$",
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "C-Lux 3: 1/2.33\""
+    },
+    {
+      "pattern": "^(LEICA )?C-LUX|^CAM-DC25$",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "C-Lux (2018, Panasonic TZ200/ZS200 twin) and successors: 1-inch"
+    },
+    {
+      "pattern": "^(LEICA )?C \\(Typ",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Leica C (Typ 112) (Panasonic LF1 twin): 1/1.7\""
+    },
+    {
+      "pattern": "^(LEICA )?DIGILUX ?3$",
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13.0
+      ],
+      "crop": 2.0,
+      "note": "Digilux 3 (Four Thirds DSLR, Panasonic L1 twin)"
+    },
+    {
+      "pattern": "^(LEICA )?DIGILUX ?2$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "Digilux 2 (Panasonic LC1 twin): 2/3\" CCD"
+    },
+    {
+      "pattern": "^(LEICA )?DIGILUX ?1$",
+      "format": "1/1.76\"",
+      "sensorMm": [
+        7.27,
+        5.45
+      ],
+      "crop": 4.76,
+      "note": "Digilux 1 (Panasonic LC5 twin): 1/1.76\" CCD"
+    },
+    {
+      "pattern": "^(LEICA )?DIGILUX( ZOOM)?$",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Original Digilux (1998) and Digilux Zoom (1999), Fujifilm MX-700/MX-1700-based: 1/2\" CCD (digicamdb/DPReview)"
+    },
+    {
+      "pattern": "^(LEICA )?DIGILUX ?4\\.3$",
+      "format": "1/1.7\" (SuperCCD)",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Digilux 4.3 (Fujifilm-built, 2.4MP 1/1.7\" SuperCCD, 36-108mm-equiv lens)"
+    }
+  ]
+}

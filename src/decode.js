@@ -1,6 +1,7 @@
 import { Capacitor, registerPlugin } from '@capacitor/core';
 import exifr from 'exifr';
 import { readExif, toFields, toMetadata, orientationOf } from './exif.js';
+import { cropFromTags, equivalentFocal } from './crop.js';
 import { isTiff, readIfds, findEmbeddedJpegs } from './tiff.js';
 import { drawOriented } from './render.js';
 
@@ -51,7 +52,15 @@ export async function decodeFile(file) {
 
   const orientation = decoded.orientation || 1;
   const { width, height } = uprightSize(decoded.image, orientation);
-  return { ...decoded, orientation, width, height, kind, fields: toFields(tags), meta: toMetadata(tags) };
+  const fields = toFields(tags);
+  const crop = cropFromTags(tags);
+  const focalMm = tags.FocalLength > 0 ? tags.FocalLength : null;
+  // The camera's own 35mm value is what it shows in its EXIF and menus; use it
+  // at import and compute from the crop factor only when it's missing.
+  fields.focal35 = tags.FocalLengthIn35mmFormat > 0
+    ? `${Math.round(tags.FocalLengthIn35mmFormat)}mm`
+    : equivalentFocal(focalMm, crop?.value);
+  return { ...decoded, orientation, width, height, kind, fields, crop, focalMm, meta: toMetadata(tags) };
 }
 
 function isDng(buffer) {

@@ -32,7 +32,7 @@ export function maxCanvasPixels() {
 
 /** Output pixel size for a photo with the current settings. */
 export function outputSize(photo, settings, size) {
-  const L = layout(photo.width, photo.height, settings);
+  const L = layout(photo.width, photo.height, settings, photo.fields);
   const scale = Math.min(1, SIZES[size] / Math.max(L.width, L.height));
   return { L, scale, width: Math.round(L.width * scale), height: Math.round(L.height * scale) };
 }
@@ -72,7 +72,12 @@ export async function exportPhoto(photo, settings, opts, onProgress = () => {}) 
     if (!blob) throw new Error('This device ran out of memory while saving. Try a smaller export size.');
     if (blob.type !== fmt.mime) format = blob.type === 'image/jpeg' ? 'jpeg' : 'png'; // Safari: no WebP encoder
   }
-  if (opts.keepExif && format === 'jpeg') blob = await injectExif(blob, photo.meta);
+  if (opts.keepExif && format === 'jpeg') {
+    // Fill in the 35mm-equivalent focal length when the camera didn't record one.
+    const meta = { ...photo.meta };
+    if (!meta.FocalLengthIn35mmFormat && photo.focalMm && photo.crop) meta.FocalLengthIn35mmFormat = Math.round(photo.focalMm * photo.crop.value);
+    blob = await injectExif(blob, meta);
+  }
   const base = photo.name.replace(/\.[^.]+$/, '');
   return { blob, name: `${base}-framed.${FORMATS[format].ext}`, strips, format, width, height };
 }

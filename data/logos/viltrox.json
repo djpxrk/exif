@@ -1,0 +1,45 @@
+{
+  "key": "viltrox",
+  "name": "Viltrox",
+  "kind": "lens",
+  "viewBox": [
+    0,
+    0,
+    78.971,
+    14.036
+  ],
+  "paths": [
+    {
+      "d": "M14.127 0.006L11.315 0.006 5.519 8.347 2.916 0.006 0 0.006 4.378 14.036 14.127 0.006Z",
+      "fillRule": "nonzero"
+    },
+    {
+      "d": "M16.307 14.036L19.043 0.014 16.342 0.014 13.606 14.036 16.307 14.036Z",
+      "fillRule": "nonzero"
+    },
+    {
+      "d": "M21.659 12.139L24.022 0 21.321 0 18.589 14.036 29.441 14.036 29.81 12.139 21.659 12.139Z",
+      "fillRule": "nonzero"
+    },
+    {
+      "d": "M40.953 0.014L30.145 0.014 29.77 1.944 34.005 1.944 31.655 14.035 34.355 14.035 36.706 1.944 40.578 1.944 40.953 0.014Z",
+      "fillRule": "nonzero"
+    },
+    {
+      "d": "M50.481 0.014L43.199 0.014 40.473 14.035 43.175 14.035 45.526 1.944 49.742 1.944C50.35 1.944 50.806 2.498 50.691 3.096L50.182 5.766C50.094 6.221 49.696 6.549 49.232 6.549L45.681 6.549 49.581 14.035 52.281 14.035 49.378 8.463 49.96 8.463C51.349 8.463 52.544 7.479 52.808 6.115L53.33 3.469C53.678 1.678 52.306 0.014 50.481 0.014Z",
+      "fillRule": "nonzero"
+    },
+    {
+      "d": "M56.773 11.002L58.361 2.726C58.45 2.271 58.848 1.943 59.312 1.943L62.74 1.943C63.348 1.943 63.805 2.498 63.689 3.095L62.1 11.371C62.012 11.825 61.614 12.153 61.151 12.153L57.722 12.153C57.114 12.153 56.657 11.599 56.773 11.002ZM55.742 2.361L54.158 10.574C53.81 12.364 55.182 14.028 57.008 14.028L61.897 14.028C63.285 14.028 64.479 13.045 64.744 11.681L66.328 3.469C66.677 1.677 65.304 0.013 63.479 0.013L58.59 0.013C57.201 0.013 56.008 0.998 55.742 2.361Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M78.971 0.014L76.074 0.014 72.622 4.575 70.864 0.014 68.163 0.014 70.832 6.94 65.461 14.035 68.359 14.035 71.809 9.477 73.567 14.035 76.267 14.035 73.599 7.112 78.971 0.014Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://cdn.shopify.com/s/files/1/0104/0380/7298/files/AF_35-1.2_LAB_FE_Manual.pdf (official VILTROX AF 35mm F1.2 LAB FE user manual, CorelDRAW 2020 vector PDF, page 1 cover wordmark; linked from https://viltrox.com/pages/af-35-1-2-lab-fe)",
+  "license": "Public domain as a simple text logo below the threshold of originality (Wikimedia Commons tags the same VILTROX wordmark {{PD-textlogo}} at https://commons.wikimedia.org/wiki/File:Viltrox_logo_black.png; this is a US-centric copyright assessment, not a licence granted by Viltrox). Vector extracted from the official manual PDF. Trademark rights still apply.",
+  "trademark": "Shenzhen Jueying Technology Co., Ltd. (VILTROX)",
+  "notes": "No Simple Icons entry and no SVG on Wikimedia Commons (only PNGs: File:Viltrox_logo_black.png, File:Viltrox-logo-s-U-E--2a67fab9-1920w.png); viltrox.com serves only a PNG header logo and has no press kit. Vector taken instead from Viltrox's own manual PDF (not traced): the 7 black filled shapes of the cover wordmark were read with PyMuPDF get_drawings (page coordinates, all PDF matrices already applied), translated to origin and rounded to 0.001. Geometry is identical in the AF 85mm F1.4 FE manual (https://cdn.shopify.com/s/files/1/0104/0380/7298/files/AF_85-1.4_FE_User_manual.pdf) and matches the current viltrox.com header logo. One path per letter V-I-L-T-R-O-X; only the O has a counter (second subpath), set to evenodd; the R is open (no counter). Italic all-caps horizontal wordmark, no symbol, no (R) mark."
+}

@@ -1,0 +1,1715 @@
+{
+  "group": "ricoh-pentax",
+  "brand": "RICOH / PENTAX",
+  "exifMakes": [
+    "RICOH IMAGING COMPANY, LTD.",
+    "RICOH",
+    "PENTAX",
+    "PENTAX Corporation",
+    "PENTAX RICOH IMAGING",
+    "Asahi Optical Co.,Ltd"
+  ],
+  "cameras": [
+    {
+      "brand": "RICOH",
+      "model": "GR",
+      "names": [
+        "Ricoh GR",
+        "GR (2013)",
+        "GR 2013",
+        "GR APS-C"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "RICOH",
+      "model": "GR II",
+      "names": [
+        "Ricoh GR II",
+        "GR2",
+        "GRII",
+        "GR 2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR III",
+      "names": [
+        "GR III",
+        "Ricoh GR III",
+        "GR3",
+        "GRIII",
+        "GR 3",
+        "GR III Street Edition",
+        "GR III Diary Edition"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR III HDF",
+      "names": [
+        "GR III HDF",
+        "Ricoh GR III HDF",
+        "GR3 HDF",
+        "GRIII HDF",
+        "GR3HDF"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IIIx",
+      "names": [
+        "GR IIIx",
+        "Ricoh GR IIIx",
+        "GR3x",
+        "GRIIIx",
+        "GR 3x",
+        "GR IIIx Urban Edition"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IIIx HDF",
+      "names": [
+        "GR IIIx HDF",
+        "Ricoh GR IIIx HDF",
+        "GR3x HDF",
+        "GRIIIx HDF"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IV",
+      "names": [
+        "GR IV",
+        "Ricoh GR IV",
+        "GR4",
+        "GRIV",
+        "GR 4",
+        "GR IV 30th Anniversary Edition"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IV HDF",
+      "names": [
+        "GR IV HDF",
+        "Ricoh GR IV HDF",
+        "GR4 HDF",
+        "GRIV HDF"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IV Monochrome",
+      "names": [
+        "GR IV Monochrome",
+        "Ricoh GR IV Monochrome",
+        "GR4 Monochrome",
+        "GR IV Mono",
+        "GR4 Mono",
+        "GRIV Monochrome"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GR IVx",
+      "names": [
+        "GR IVx",
+        "Ricoh GR IVx",
+        "GR4x",
+        "GRIVx",
+        "GR 4x"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55,
+      "uncertain": true,
+      "note": "Announced in development Aug 2026 (40mm-equiv, same 25.7MP sensor as GR IV); EXIF string assumed from GR IV naming"
+    },
+    {
+      "brand": "RICOH",
+      "model": "GR Digital",
+      "names": [
+        "Ricoh GR Digital",
+        "GRD",
+        "GRD1",
+        "GR Digital I"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "GR DIGITAL 2",
+      "names": [
+        "Ricoh GR Digital II",
+        "GR Digital II",
+        "GRD2",
+        "GRDII",
+        "GR Digital 2"
+      ],
+      "format": "1/1.75\"",
+      "sensorMm": [
+        7.31,
+        5.49
+      ],
+      "crop": 4.73,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "GR DIGITAL 3",
+      "names": [
+        "Ricoh GR Digital III",
+        "GR Digital III",
+        "GRD3",
+        "GRDIII",
+        "GR Digital 3"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "GR DIGITAL 4",
+      "names": [
+        "Ricoh GR Digital IV",
+        "GR Digital IV",
+        "GRD4",
+        "GRDIV",
+        "GR Digital 4"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "GXR",
+      "names": [
+        "Ricoh GXR",
+        "GXR A12",
+        "GXR Mount A12",
+        "GXR GR Lens A12 28mm",
+        "GXR GR Lens A12 50mm",
+        "GXR A16"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53,
+      "uncertain": true,
+      "note": "Sensor lives in the swappable camera unit: A12/A16 units are APS-C (23.6x15.7); S10 unit is 1/1.7\" (crop 4.65); P10 unit is 1/2.3\" (crop 5.64). EXIF Model does not distinguish units."
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH GX200",
+      "names": [
+        "Ricoh GX200",
+        "GX200",
+        "Caplio GX200"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "brand": "RICOH",
+      "model": "Caplio GX100",
+      "names": [
+        "Ricoh GX100",
+        "GX100",
+        "Caplio GX100"
+      ],
+      "format": "1/1.75\"",
+      "sensorMm": [
+        7.31,
+        5.49
+      ],
+      "crop": 4.73,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA S",
+      "names": [
+        "THETA S",
+        "Ricoh Theta S"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA SC",
+      "names": [
+        "THETA SC",
+        "Ricoh Theta SC"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA SC2",
+      "names": [
+        "THETA SC2",
+        "Ricoh Theta SC2"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA V",
+      "names": [
+        "THETA V",
+        "Ricoh Theta V"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA Z1",
+      "names": [
+        "THETA Z1",
+        "Ricoh Theta Z1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH THETA X",
+      "names": [
+        "THETA X",
+        "Ricoh Theta X"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "uncertain": true,
+      "note": "360-degree dual-lens camera; crop shown is per individual sensor, 35mm-equivalent focal length is not meaningful for stitched equirectangular output"
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-4",
+      "names": [
+        "Ricoh WG-4",
+        "WG-4",
+        "WG4"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-4 GPS",
+      "names": [
+        "Ricoh WG-4 GPS",
+        "WG-4 GPS"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-5 GPS",
+      "names": [
+        "Ricoh WG-5 GPS",
+        "WG-5 GPS",
+        "WG-5"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-6",
+      "names": [
+        "Ricoh WG-6",
+        "WG-6",
+        "WG6"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-7",
+      "names": [
+        "Ricoh WG-7",
+        "WG-7",
+        "WG7"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-8",
+      "names": [
+        "Ricoh WG-8",
+        "WG-8",
+        "WG8"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH G900",
+      "names": [
+        "Ricoh G900",
+        "G900"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH G900SE",
+      "names": [
+        "Ricoh G900SE",
+        "G900SE",
+        "G900 SE"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-30",
+      "names": [
+        "Ricoh WG-30",
+        "WG-30"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-30W",
+      "names": [
+        "Ricoh WG-30W",
+        "WG-30W"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-50",
+      "names": [
+        "Ricoh WG-50",
+        "WG-50"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-70",
+      "names": [
+        "Ricoh WG-70",
+        "WG-70"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "RICOH",
+      "model": "RICOH WG-80",
+      "names": [
+        "Ricoh WG-80",
+        "WG-80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-1",
+      "names": [
+        "Pentax K-1",
+        "K-1",
+        "K1"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-1 Mark II",
+      "names": [
+        "Pentax K-1 Mark II",
+        "K-1 Mark II",
+        "K-1 II",
+        "K1 II",
+        "K1 Mark II",
+        "K-1II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24.0
+      ],
+      "crop": 1.0
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX 645D",
+      "names": [
+        "Pentax 645D",
+        "645D"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.0,
+        33.0
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX 645Z",
+      "names": [
+        "Pentax 645Z",
+        "645Z"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.8
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-3 Mark III",
+      "names": [
+        "Pentax K-3 Mark III",
+        "K-3 Mark III",
+        "K-3 III",
+        "K-3III",
+        "K3 III",
+        "K3 Mark III",
+        "K3iii"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-3 Mark III Monochrome",
+      "names": [
+        "Pentax K-3 Mark III Monochrome",
+        "K-3 Mark III Monochrome",
+        "K-3 III Monochrome",
+        "K-3 III Mono",
+        "K3 III Monochrome",
+        "K3iii Mono"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-3 II",
+      "names": [
+        "Pentax K-3 II",
+        "K-3 II",
+        "K-3II",
+        "K3 II",
+        "K3II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-3",
+      "names": [
+        "Pentax K-3",
+        "K-3",
+        "K3"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX KP",
+      "names": [
+        "Pentax KP",
+        "KP"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX KF",
+      "names": [
+        "Pentax KF",
+        "KF"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-70",
+      "names": [
+        "Pentax K-70",
+        "K-70",
+        "K70"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-S2",
+      "names": [
+        "Pentax K-S2",
+        "K-S2",
+        "KS2",
+        "K S2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-S1",
+      "names": [
+        "Pentax K-S1",
+        "K-S1",
+        "KS1",
+        "K S1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-5 II s",
+      "names": [
+        "Pentax K-5 IIs",
+        "K-5 IIs",
+        "K-5 II s",
+        "K5 IIs",
+        "K-5IIs",
+        "K5IIs"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-5 II",
+      "names": [
+        "Pentax K-5 II",
+        "K-5 II",
+        "K5 II",
+        "K-5II",
+        "K5II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-5",
+      "names": [
+        "Pentax K-5",
+        "K-5",
+        "K5"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-7",
+      "names": [
+        "Pentax K-7",
+        "K-7",
+        "K7"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-500",
+      "names": [
+        "Pentax K-500",
+        "K-500",
+        "K500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-50",
+      "names": [
+        "Pentax K-50",
+        "K-50",
+        "K50"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-30",
+      "names": [
+        "Pentax K-30",
+        "K-30",
+        "K30"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-01",
+      "names": [
+        "Pentax K-01",
+        "K-01",
+        "K01"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-r",
+      "names": [
+        "Pentax K-r",
+        "K-r",
+        "Kr"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-x",
+      "names": [
+        "Pentax K-x",
+        "K-x",
+        "Kx"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K-m",
+      "names": [
+        "Pentax K-m",
+        "K-m",
+        "Km"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K2000",
+      "names": [
+        "Pentax K2000",
+        "K2000",
+        "K-2000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K200D",
+      "names": [
+        "Pentax K200D",
+        "K200D",
+        "K-200D"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K20D",
+      "names": [
+        "Pentax K20D",
+        "K20D",
+        "K-20D"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.4,
+        15.6
+      ],
+      "crop": 1.54
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K10D",
+      "names": [
+        "Pentax K10D",
+        "K10D",
+        "K-10D"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K100D Super",
+      "names": [
+        "Pentax K100D Super",
+        "K100D Super",
+        "K-100D Super"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K100D",
+      "names": [
+        "Pentax K100D",
+        "K100D",
+        "K-100D"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX K110D",
+      "names": [
+        "Pentax K110D",
+        "K110D",
+        "K-110D"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX *ist D",
+      "names": [
+        "Pentax *ist D",
+        "*ist D",
+        "ist D",
+        "istD"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX *ist DS",
+      "names": [
+        "Pentax *ist DS",
+        "*ist DS",
+        "ist DS",
+        "istDS"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX *ist DS2",
+      "names": [
+        "Pentax *ist DS2",
+        "*ist DS2",
+        "ist DS2",
+        "istDS2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX *ist DL",
+      "names": [
+        "Pentax *ist DL",
+        "*ist DL",
+        "ist DL",
+        "istDL"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX *ist DL2",
+      "names": [
+        "Pentax *ist DL2",
+        "*ist DL2",
+        "ist DL2",
+        "istDL2"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Q",
+      "names": [
+        "Pentax Q"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Q10",
+      "names": [
+        "Pentax Q10",
+        "Q10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Q7",
+      "names": [
+        "Pentax Q7",
+        "Q7"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Q-S1",
+      "names": [
+        "Pentax Q-S1",
+        "Q-S1",
+        "QS1",
+        "QS-1"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX MX-1",
+      "names": [
+        "Pentax MX-1",
+        "MX-1",
+        "MX1"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX X-5",
+      "names": [
+        "Pentax X-5",
+        "X-5",
+        "X5"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Optio WG-1 GPS",
+      "names": [
+        "Pentax Optio WG-1 GPS",
+        "WG-1 GPS",
+        "WG-1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX Optio WG-2 GPS",
+      "names": [
+        "Pentax Optio WG-2 GPS",
+        "WG-2 GPS",
+        "WG-2"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX WG-3",
+      "names": [
+        "Pentax WG-3",
+        "WG-3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX WG-3 GPS",
+      "names": [
+        "Pentax WG-3 GPS",
+        "WG-3 GPS"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX WG-10",
+      "names": [
+        "Pentax WG-10",
+        "WG-10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX WG-90",
+      "names": [
+        "Pentax WG-90",
+        "WG-90"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    },
+    {
+      "brand": "PENTAX",
+      "model": "PENTAX WG-1000",
+      "names": [
+        "Pentax WG-1000",
+        "WG-1000"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "uncertain": true
+    }
+  ],
+  "rules": [
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR ?(IV|4)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55,
+      "note": "GR IV family (GR IV, IV HDF, IV Monochrome, IVx and later IV variants): 25.7MP APS-C 23.3x15.5 per Ricoh spec"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR ?(III|3)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "GR III / IIIx family incl. HDF, Street/Diary/Urban editions: 24.2MP APS-C 23.5x15.6"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR( ?(II|2))?$",
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52,
+      "note": "2013 GR and GR II: 16.2MP APS-C 23.7x15.7"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR ?DIGITAL( ?(I|1))?$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Original GR Digital (2005): 1/1.8\" 8MP"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR ?DIGITAL ?(II|2)$",
+      "format": "1/1.75\"",
+      "sensorMm": [
+        7.31,
+        5.49
+      ],
+      "crop": 4.73,
+      "note": "GR Digital II: 1/1.75\" 10MP"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR ?DIGITAL",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "GR Digital III/IV and any other GR Digital: 1/1.7\" 10MP"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GR\\b",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Fallback for any future/unlisted GR model (GR line has been APS-C since 2013)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?GXR",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "GXR body: assumes APS-C A12/A16 unit (S10 unit is 1/1.7\", P10 unit is 1/2.3\"; EXIF Model doesn't say which)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?(Caplio )?GX ?100\\b",
+      "format": "1/1.75\"",
+      "sensorMm": [
+        7.31,
+        5.49
+      ],
+      "crop": 4.73,
+      "note": "Caplio GX100: 1/1.75\" 10MP"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?(Caplio )?GX ?200\\b",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "GX200: 1/1.7\" 12MP CCD"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?(Caplio )?GX ?8?$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Caplio GX / GX8: 1/1.8\" CCD (Digicamdb; lensfun crop 4.9)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?THETA ?Z\\d",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "THETA Z1 class: dual 1-inch sensors (360-degree camera)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?THETA ?X\\b",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "THETA X: dual 1/2\" sensors (360-degree camera)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?THETA(?! ?(Z\\d|X\\b))",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Other THETA 360 cameras (S, SC, SC2, V, m15...): dual 1/2.3\" sensors; excludes Z1 (1-inch) and X (1/2\") so rule order cannot misassign them"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?(WG-|G\\d{3})",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Ricoh-branded rugged WG / G series: 1/2.3\""
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?(Caplio )?(CX\\d|R(8|10)$|PX|HZ\\d+)",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Ricoh CX1-CX6 / R8 / R10 / PX / HZ15 consumer compacts: 1/2.3\" (Digicamdb). Bare R8/R10 anchored with $ so model-only input like \"R5 Mark III\" is not captured"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?Caplio R(1V|[2-7])\\b",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Caplio R1V / R2-R7: 1/2.5\" CCD (Digicamdb)"
+    },
+    {
+      "brand": "RICOH",
+      "pattern": "^(RICOH )?Caplio R1(?![\\dV])",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Caplio R1 (2004): 1/1.8\" CCD (Digicamdb)"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?K-?1(?!\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24.0
+      ],
+      "crop": 1.0,
+      "note": "K-1 family (K-1, K-1 Mark II, future K-1 bodies; also \"K1\", \"K-1II\"): full frame 35.9x24.0. (?!\\d) keeps K10D/K100D/K110D out"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?645",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.0,
+        33.0
+      ],
+      "crop": 0.79,
+      "note": "645D / 645Z / future 645 digital: 44x33 medium format"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?K-?3 ?(Mark ?|Mk ?|M)?(III|3)(?!\\d)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55,
+      "note": "K-3 Mark III (incl. Monochrome): 25.7MP APS-C 23.3x15.5"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?K-?(5|30|50|500|01)(?!\\d)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52,
+      "note": "16MP-era K-5 / K-30 / K-50 / K-500 / K-01 bodies: 23.7x15.7"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?Q-?(7|S-?1)(?!\\d)",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Pentax Q7 / Q-S1: 1/1.7\""
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?Q(10)?(?![\\w-])",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Pentax Q / Q10 (incl. suffixed editions like \"Q10 Evangelion\"): 1/2.3\". Q7/Q-S1 excluded"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?MX-?1\\b",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Pentax MX-1: 1/1.7\""
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?(Optio )?WG-",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Pentax rugged WG series: 1/2.3\""
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?Optio ?(430|450|550|555|750Z)\\b",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Optio 430/450/550/555/750Z: 1/1.8\" CCD (lensfun crop 4.84)"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?Optio ?(33LF?|230GS|330GS|43WR)\\b",
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44,
+      "note": "Optio 33L/33LF/230GS/330GS/43WR: 1/2.7\" CCD (lensfun crop ~6.5)"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?Optio(?! ?(430|450|550|555|750Z|33LF?|230GS|330GS|43WR)\\b)",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Pentax Optio compacts: mostly 1/2.3\" (older 1/1.8\" and 1/2.7\" Optios have their own rules)"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?X-?\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Pentax X-series bridge cameras (X-5, X70, X90): ~1/2.3\""
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^(PENTAX )?(\\*ist|K-?(?!1(?!\\d)|3 ?(Mark ?|Mk ?|M)?(III|3)(?!\\d)|(5|30|50|500|01)(?!\\d))\\d|K-[a-z]|K[a-z]\\b)",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Any other Pentax K-mount DSLR / mirrorless body: APS-C ~23.5x15.6. Excludes K-1 (full frame), K-3 Mark III and the 16MP K-5/K-30/K-50/K-500/K-01 bodies, which have their own rules (the app sorts rules by pattern length, so this long catch-all would otherwise be tested first)"
+    },
+    {
+      "brand": "PENTAX",
+      "pattern": "^PENTAX\\b",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Last-resort fallback for unknown Pentax-branded bodies (most likely K-mount APS-C)"
+    }
+  ]
+}

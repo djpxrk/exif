@@ -1,0 +1,2367 @@
+{
+  "group": "sigma-hasselblad-mf",
+  "brand": "SIGMA / Hasselblad / Phase One",
+  "exifMakes": [
+    "SIGMA",
+    "Sigma",
+    "Hasselblad",
+    "HASSELBLAD",
+    "Phase One",
+    "Phase One A/S"
+  ],
+  "cameras": [
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA fp",
+      "names": [
+        "fp",
+        "Sigma fp",
+        "SIGMA fp"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA fp L",
+      "names": [
+        "fp L",
+        "fpL",
+        "Sigma fp L",
+        "SIGMA fp L"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA BF",
+      "names": [
+        "BF",
+        "Sigma BF",
+        "SIGMA BF"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "brand": "SIGMA",
+      "model": "sd Quattro",
+      "names": [
+        "sd Quattro",
+        "SD Quattro",
+        "Sigma sd Quattro",
+        "sdQ"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.4,
+        15.5
+      ],
+      "crop": 1.54
+    },
+    {
+      "brand": "SIGMA",
+      "model": "sd Quattro H",
+      "names": [
+        "sd Quattro H",
+        "SD Quattro H",
+        "Sigma sd Quattro H",
+        "sdQH"
+      ],
+      "format": "Foveon APS-H",
+      "sensorMm": [
+        26.7,
+        17.9
+      ],
+      "crop": 1.35
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD1 Merrill",
+      "names": [
+        "SD1 Merrill",
+        "Sigma SD1 Merrill"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD1",
+      "names": [
+        "SD1",
+        "Sigma SD1"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD15",
+      "names": [
+        "SD15",
+        "Sigma SD15"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD14",
+      "names": [
+        "SD14",
+        "Sigma SD14"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD10",
+      "names": [
+        "SD10",
+        "Sigma SD10"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA SD9",
+      "names": [
+        "SD9",
+        "Sigma SD9"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP1 Merrill",
+      "names": [
+        "DP1 Merrill",
+        "DP1M",
+        "Sigma DP1 Merrill"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP2 Merrill",
+      "names": [
+        "DP2 Merrill",
+        "DP2M",
+        "Sigma DP2 Merrill"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP3 Merrill",
+      "names": [
+        "DP3 Merrill",
+        "DP3M",
+        "Sigma DP3 Merrill"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA dp0 Quattro",
+      "names": [
+        "dp0 Quattro",
+        "DP0 Quattro",
+        "dp0Q",
+        "Sigma dp0 Quattro"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA dp1 Quattro",
+      "names": [
+        "dp1 Quattro",
+        "DP1 Quattro",
+        "dp1Q",
+        "Sigma dp1 Quattro"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA dp2 Quattro",
+      "names": [
+        "dp2 Quattro",
+        "DP2 Quattro",
+        "dp2Q",
+        "Sigma dp2 Quattro"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA dp3 Quattro",
+      "names": [
+        "dp3 Quattro",
+        "DP3 Quattro",
+        "dp3Q",
+        "Sigma dp3 Quattro"
+      ],
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP1",
+      "names": [
+        "DP1",
+        "Sigma DP1"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP1S",
+      "names": [
+        "DP1s",
+        "DP1S",
+        "Sigma DP1s"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP1X",
+      "names": [
+        "DP1x",
+        "DP1X",
+        "Sigma DP1x"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP2",
+      "names": [
+        "DP2",
+        "Sigma DP2"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP2S",
+      "names": [
+        "DP2s",
+        "DP2S",
+        "Sigma DP2s"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "SIGMA",
+      "model": "SIGMA DP2X",
+      "names": [
+        "DP2x",
+        "DP2X",
+        "Sigma DP2x"
+      ],
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X1D",
+      "names": [
+        "X1D",
+        "X1D-50c",
+        "X1D 50c",
+        "Hasselblad X1D-50c",
+        "X1D 4116 Edition"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X1D-50c",
+      "names": [
+        "X1D-50c",
+        "X1D"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "X1D II 50C",
+      "names": [
+        "X1D II",
+        "X1D II 50C",
+        "X1D2",
+        "X1D Mark II",
+        "Hasselblad X1D II 50C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X1D II 50C",
+      "names": [
+        "X1D II",
+        "X1D II 50C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X1DM2-50c",
+      "names": [
+        "X1D II",
+        "X1D II 50C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "X2D 100C",
+      "names": [
+        "X2D",
+        "X2D 100C",
+        "X2D 100C Earth Explorer",
+        "Hasselblad X2D 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X2D 100C",
+      "names": [
+        "X2D",
+        "X2D 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "X2D II 100C",
+      "names": [
+        "X2D II",
+        "X2D II 100C",
+        "X2D Mark II",
+        "Hasselblad X2D II 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad X2D II 100C",
+      "names": [
+        "X2D II",
+        "X2D II 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "CFV II 50C/907X",
+      "names": [
+        "907X",
+        "907X 50C",
+        "907X & CFV II 50C",
+        "CFV II 50C",
+        "907X Special Edition",
+        "907X Anniversary Edition"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad CFV II 50C",
+      "names": [
+        "CFV II 50C",
+        "907X 50C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "CFV 100C/907X",
+      "names": [
+        "907X 100C",
+        "907X & CFV 100C",
+        "CFV 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad CFV 100C",
+      "names": [
+        "CFV 100C",
+        "907X 100C"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad CFV-50c",
+      "names": [
+        "CFV-50c",
+        "CFV 50c"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad CFV-50",
+      "names": [
+        "CFV-50",
+        "CFV 50"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad CFV-39",
+      "names": [
+        "CFV-39",
+        "CFV 39"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71,
+      "uncertain": true
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad 503CWD",
+      "names": [
+        "503CWD",
+        "503CWD CFV-16",
+        "CFV-16"
+      ],
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.7,
+        36.7
+      ],
+      "crop": 0.83
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad 500 mech.",
+      "names": [
+        "CFV",
+        "CFV-16",
+        "CFV 16"
+      ],
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.7,
+        36.7
+      ],
+      "crop": 0.83,
+      "uncertain": true,
+      "note": "Original CFV (16MP) back writes the attached V-body name as Model; same string may appear for other CFV backs on 500-series bodies"
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H6D-100c",
+      "names": [
+        "H6D-100c",
+        "H6D 100c",
+        "H6D"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H6D-100cMS",
+      "names": [
+        "H6D-100c MS",
+        "H6D-100c"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H6D-400c MS",
+      "names": [
+        "H6D-400c MS",
+        "H6D-400c",
+        "H6D 400c"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H6D-50c",
+      "names": [
+        "H6D-50c",
+        "H6D 50c"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad A6D-100c",
+      "names": [
+        "A6D-100c",
+        "A6D"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "uncertain": true
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-50c",
+      "names": [
+        "H5D-50c",
+        "H5D 50c"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-50c MS",
+      "names": [
+        "H5D-50c MS",
+        "H5D-50c Multi-Shot"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-200c MS",
+      "names": [
+        "H5D-200c MS",
+        "H5D-200c"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-200MS",
+      "names": [
+        "H5D-200MS",
+        "H5D-200 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-60",
+      "names": [
+        "H5D-60",
+        "H5D 60"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.2
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-50",
+      "names": [
+        "H5D-50",
+        "H5D 50"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-50MS",
+      "names": [
+        "H5D-50MS",
+        "H5D-50 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H5D-40",
+      "names": [
+        "H5D-40",
+        "H5D 40"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-200MS",
+      "names": [
+        "H4D-200MS",
+        "H4D-200 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-60",
+      "names": [
+        "H4D-60",
+        "H4D 60"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.2
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-50",
+      "names": [
+        "H4D-50",
+        "H4D 50"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-50MS",
+      "names": [
+        "H4D-50MS",
+        "H4D-50 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71,
+      "uncertain": true
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-40",
+      "names": [
+        "H4D-40",
+        "H4D 40"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H4D-31",
+      "names": [
+        "H4D-31",
+        "H4D 31"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-50",
+      "names": [
+        "H3DII-50",
+        "H3D II-50",
+        "H3D-II 50"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-50MS",
+      "names": [
+        "H3DII-50MS",
+        "H3D II-50 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-39",
+      "names": [
+        "H3DII-39",
+        "H3D II-39",
+        "H3D-II 39"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-39MS",
+      "names": [
+        "H3DII-39MS",
+        "H3D II-39 MS"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-31",
+      "names": [
+        "H3DII-31",
+        "H3D II-31",
+        "H3D-II 31"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3DII-22",
+      "names": [
+        "H3DII-22",
+        "H3D II-22"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48,
+        36
+      ],
+      "crop": 0.72
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3D-39",
+      "names": [
+        "H3D-39",
+        "H3D 39"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3D-31",
+      "names": [
+        "H3D-31",
+        "H3D 31"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H3D-22",
+      "names": [
+        "H3D-22",
+        "H3D 22"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48,
+        36
+      ],
+      "crop": 0.72
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H2D-39",
+      "names": [
+        "H2D-39",
+        "H2D 39"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Hasselblad H2D-22",
+      "names": [
+        "H2D-22",
+        "H2D 22"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48,
+        36
+      ],
+      "crop": 0.72
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "HV",
+      "names": [
+        "Hasselblad HV"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Lunar",
+      "names": [
+        "Hasselblad Lunar"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Stellar",
+      "names": [
+        "Hasselblad Stellar"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Stellar II",
+      "names": [
+        "Hasselblad Stellar II"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "uncertain": true
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "Lusso",
+      "names": [
+        "Hasselblad Lusso"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1,
+      "uncertain": true
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "L1D-20c",
+      "names": [
+        "Mavic 2 Pro",
+        "DJI Mavic 2 Pro",
+        "Hasselblad L1D-20c"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "DJI Mavic 2 Pro main camera; EXIF Make is Hasselblad"
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "L2D-20c",
+      "names": [
+        "Mavic 3",
+        "Mavic 3 Classic",
+        "Mavic 3 Pro",
+        "Mavic 3 Cine",
+        "DJI Mavic 3",
+        "Hasselblad L2D-20c"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "DJI Mavic 3 / 3 Classic / 3 Pro / 3 Cine main camera; EXIF Make is Hasselblad"
+    },
+    {
+      "brand": "Hasselblad",
+      "model": "L3D-100c",
+      "names": [
+        "Mavic 4 Pro",
+        "DJI Mavic 4 Pro",
+        "Hasselblad L3D-100c"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "DJI Mavic 4 Pro main camera (100MP 4/3 CMOS, 21.6 mm diagonal per DJI spec); EXIF Make is Hasselblad; some files write L3D-100C"
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ4 150MP",
+      "names": [
+        "IQ4 150",
+        "IQ4 150MP",
+        "XF IQ4 150MP",
+        "XT IQ4 150MP",
+        "Phase One XF",
+        "Phase One XT"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ4 150MP Achromatic",
+      "names": [
+        "IQ4 150MP Achromatic",
+        "IQ4 Achromatic"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ4 100MP Trichromatic",
+      "names": [
+        "IQ4 100MP",
+        "IQ4 100MP Trichromatic",
+        "XF IQ4 100MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 100MP",
+      "names": [
+        "IQ3 100",
+        "IQ3 100MP",
+        "XF 100MP",
+        "XF IQ3 100MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 100MP Trichr",
+      "names": [
+        "IQ3 100MP Trichromatic",
+        "IQ3 Trichromatic"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 100MP Achromatic",
+      "names": [
+        "IQ3 100MP Achromatic",
+        "IQ3 Achromatic"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 80MP",
+      "names": [
+        "IQ3 80",
+        "IQ3 80MP",
+        "XF IQ3 80MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 60MP",
+      "names": [
+        "IQ3 60",
+        "IQ3 60MP",
+        "XF IQ3 60MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ3 50MP",
+      "names": [
+        "IQ3 50",
+        "IQ3 50MP",
+        "XF IQ3 50MP"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ1 100MP",
+      "names": [
+        "IQ1 100",
+        "IQ1 100MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ1 80MP",
+      "names": [
+        "IQ1 80",
+        "IQ1 80MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ1 60MP",
+      "names": [
+        "IQ1 60",
+        "IQ1 60MP"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ1 50MP",
+      "names": [
+        "IQ1 50",
+        "IQ1 50MP"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ1 40MP",
+      "names": [
+        "IQ1 40",
+        "IQ1 40MP"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ280",
+      "names": [
+        "IQ280",
+        "IQ2 80"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ260",
+      "names": [
+        "IQ260",
+        "IQ2 60"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ260 Achromatic",
+      "names": [
+        "IQ260 Achromatic"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64,
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ250",
+      "names": [
+        "IQ250",
+        "IQ2 50"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ180",
+      "names": [
+        "IQ180"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ160",
+      "names": [
+        "IQ160"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ150",
+      "names": [
+        "IQ150"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Phase One",
+      "model": "IQ140",
+      "names": [
+        "IQ140"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Phase One",
+      "model": "P65+",
+      "names": [
+        "P65+",
+        "P 65+",
+        "P65 Plus"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64
+    },
+    {
+      "brand": "Phase One",
+      "model": "P45+",
+      "names": [
+        "P45+",
+        "P 45+",
+        "P45 Plus"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.8
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 45",
+      "names": [
+        "P45",
+        "P 45"
+      ],
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.8
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Phase One",
+      "model": "P40+",
+      "names": [
+        "P40+",
+        "P 40+",
+        "P40 Plus"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79
+    },
+    {
+      "brand": "Phase One",
+      "model": "P30+",
+      "names": [
+        "P30+",
+        "P 30+",
+        "P30 Plus"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 30",
+      "names": [
+        "P30",
+        "P 30"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Phase One",
+      "model": "P25+",
+      "names": [
+        "P25+",
+        "P 25+",
+        "P25 Plus"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48.9,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 25",
+      "names": [
+        "P25",
+        "P 25"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48.9,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 21+",
+      "names": [
+        "P21+",
+        "P 21+",
+        "P21 Plus"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.1,
+        33.1
+      ],
+      "crop": 0.78
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 20+",
+      "names": [
+        "P20+",
+        "P 20+",
+        "P20 Plus"
+      ],
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.9,
+        36.9
+      ],
+      "crop": 0.83
+    },
+    {
+      "brand": "Phase One",
+      "model": "P 20",
+      "names": [
+        "P20",
+        "P 20"
+      ],
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.9,
+        36.9
+      ],
+      "crop": 0.83
+    },
+    {
+      "brand": "Phase One",
+      "model": "H 25",
+      "names": [
+        "H25",
+        "H 25"
+      ],
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48.9,
+        36.7
+      ],
+      "crop": 0.71
+    },
+    {
+      "brand": "Phase One",
+      "model": "H 20",
+      "names": [
+        "H20",
+        "H 20"
+      ],
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.9,
+        36.9
+      ],
+      "crop": 0.83
+    },
+    {
+      "brand": "Phase One",
+      "model": "iXM-100",
+      "names": [
+        "iXM-100",
+        "iXM 100MP"
+      ],
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "uncertain": true,
+      "note": "Aerial/industrial camera; 100MP BSI 44×33 sensor"
+    },
+    {
+      "brand": "Phase One",
+      "model": "iXM-RS150F",
+      "names": [
+        "iXM-RS150F",
+        "iXM-RS150"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "uncertain": true,
+      "note": "Aerial/industrial camera; 150MP 54×40 sensor"
+    },
+    {
+      "brand": "Phase One",
+      "model": "iXU180",
+      "names": [
+        "iXU180",
+        "iXU 180"
+      ],
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64,
+      "uncertain": true,
+      "note": "Aerial/industrial camera; 80MP 54×40 CCD"
+    }
+  ],
+  "rules": [
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?fp L$",
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        24
+      ],
+      "crop": 1,
+      "note": "SIGMA fp L (61MP full frame); must precede plain fp rule"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?fp( \\S+)?$",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "SIGMA fp family (24.6MP full frame); also catches future fp variants"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?BF( \\S+)?$",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "SIGMA BF (full frame); some files write Make/Model as \"Sigma\"/\"Sigma BF\""
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?sd ?Quattro ?H\\b",
+      "format": "Foveon APS-H",
+      "sensorMm": [
+        26.7,
+        17.9
+      ],
+      "crop": 1.35,
+      "note": "sd Quattro H Foveon APS-H 26.7×17.9"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?sd ?Quattro\\b(?! ?H\\b)",
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.4,
+        15.5
+      ],
+      "crop": 1.54,
+      "note": "sd Quattro Foveon APS-C 23.4×15.5 (sigma-global.com spec); excludes sd Quattro H"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?dp\\d ?Quattro\\b",
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "dp0/dp1/dp2/dp3 Quattro Foveon APS-C 23.5×15.7 (sigma-global.com spec; the sd Quattro body is 23.4×15.5)"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?DP\\d ?Merrill\\b",
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "DP1/DP2/DP3 Merrill Foveon APS-C 23.5×15.7"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?SD1( Merrill)?$",
+      "format": "Foveon APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "SD1 / SD1 Merrill Foveon APS-C 23.5×15.7 (sigma-global.com spec)"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?DP\\d[SX]?$",
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74,
+      "note": "Original DP1/DP2 (incl. s/x) Foveon 20.7×13.8"
+    },
+    {
+      "brand": "SIGMA",
+      "pattern": "^(SIGMA )?SD(9|10|14|15)$",
+      "format": "Foveon APS-C (20.7×13.8)",
+      "sensorMm": [
+        20.7,
+        13.8
+      ],
+      "crop": 1.74,
+      "note": "SD9/SD10/SD14/SD15 Foveon 20.7×13.8"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?X2D\\b",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "X2D 100C / X2D II 100C and future X2D (44×33 BSI 100MP)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?X1D",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "X1D-50c / X1D II 50C / X1DM2-50c (44×33)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?X\\dD\\b",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "Future Hasselblad X-system bodies (all 44×33 so far)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CFV[- ]?100C",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "CFV 100C back (on 907X or V bodies, e.g. \"CFV 100C/907X\", \"CFV 100C/Electronic Shutter\")"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CFV[- ](II )?50C(?!\\d)|^(Hasselblad )?CFV 50C II",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "CFV-50c / CFV II 50C backs (44×33 CMOS), any \"/body\" suffix"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CFV-50(\\/|$)",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "CFV-50 CCD back (49×37)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CFV-39",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "CFV-39 CCD back (49×37)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?907X",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "If Model is just \"907X\": all 907X backs are 44×33"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CFV(-16)?(\\/|$)",
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.7,
+        36.7
+      ],
+      "crop": 0.83,
+      "note": "Original CFV / CFV-16 16MP square back (36.7×36.7)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^Hasselblad 50[0-9]",
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.7,
+        36.7
+      ],
+      "crop": 0.83,
+      "note": "V-series body name written by early CFV(-16) backs (e.g. \"Hasselblad 500 mech.\", \"Hasselblad 503CWD\")"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD-(50|200)c",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "H5D-50c / H5D-50c MS / H6D-50c / H5D-200c MS CMOS (43.8×32.9)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?[HA]\\dD-(100|400)c",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "note": "H6D-100c / H6D-400c MS / A6D-100c CMOS (53.4×40.0)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD ?(II)?-(50|200)(?!c)",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "50MP Kodak CCD bodies incl. multishot: H3DII-50, H4D-50, H4D-50MS, H5D-50, H4D-200MS, H5D-200MS (49.1×36.7); excludes CMOS \"c\" models"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD ?(II)?-60",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.2
+      ],
+      "crop": 0.65,
+      "note": "H4D-60 / H5D-60 60MP CCD (53.7×40.2)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD ?(II)?-(31|40)",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78,
+      "note": "H3D-31, H3DII-31, H4D-31, H4D-40, H5D-40 (44.2×33.1)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD ?(II)?-39",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "H2D-39, H3D-39, H3DII-39(MS) (49.0×36.7)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?H\\dD ?(II)?-22",
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48,
+        36
+      ],
+      "crop": 0.72,
+      "note": "H2D-22, H3D-22, H3DII-22 (48×36)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CF(H|V)?-39",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "CF-39 / CFH-39 / CF-39MS backs (49×37)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CF-31",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78,
+      "note": "CF-31 back (44×33)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^(Hasselblad )?CF(H|528| II)?-22",
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48,
+        36
+      ],
+      "crop": 0.72,
+      "note": "CF-22 / CFH-22 / CF II-22 / CF528-22 backs (48×36)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^HV$",
+      "format": "Full frame",
+      "sensorMm": [
+        35.8,
+        23.9
+      ],
+      "crop": 1.01,
+      "note": "Hasselblad HV (Sony A99 based) full frame"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^Lunar$",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Hasselblad Lunar (Sony NEX-7 based) APS-C"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^Stellar( II)?$",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Hasselblad Stellar / Stellar II (Sony RX100 based) 1-inch"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^Lusso$",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1,
+      "note": "Hasselblad Lusso (Sony A7R based) full frame"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^L1D-",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "DJI Mavic 2 Pro Hasselblad camera, 1-inch"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^L3D-",
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "DJI Mavic 4 Pro Hasselblad camera, 4/3 CMOS (21.6 mm diagonal per DJI spec)"
+    },
+    {
+      "brand": "Hasselblad",
+      "pattern": "^L[2-9]D-",
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "DJI Mavic 3-series and later Hasselblad drone cameras, Four Thirds"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?IQ\\d (100|150)MP",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "note": "IQ1/IQ3/IQ4 100MP & 150MP backs incl. Achromatic/Trichromatic (53.4×40.0)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?IQ(\\d80|\\d 80MP)",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64,
+      "note": "IQ180 / IQ280 / IQ1 80MP / IQ3 80MP (53.7×40.4)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?IQ(\\d60|\\d 60MP)",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64,
+      "note": "IQ160 / IQ260 / IQ1 60MP / IQ3 60MP (53.9×40.4)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?IQ(\\d[45]0|\\d [45]0MP)",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "IQ140 / IQ150 / IQ250 / IQ1 40-50MP / IQ3 50MP (43.9×32.9) — note \"IQ150\" is 50MP, not IQ4 150MP"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?IQ4\\b",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "note": "Any other IQ4 back (all 53.4×40.0 so far)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?P ?65(\\+| ?Plus)?$",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64,
+      "note": "P65 / P65+ (53.9×40.4)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?P ?45(\\+| ?Plus)?$",
+      "format": "Medium format 49×37",
+      "sensorMm": [
+        49.1,
+        36.8
+      ],
+      "crop": 0.71,
+      "note": "P45 / P45+ (49.1×36.8)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?P ?40(\\+| ?Plus)?$",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "P40+ (43.9×32.9)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?P ?30(\\+| ?Plus)?$",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.2,
+        33.1
+      ],
+      "crop": 0.78,
+      "note": "P30 / P30+ (44.2×33.1)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?[PH] ?25(\\+| ?Plus)?$",
+      "format": "Medium format 48×36",
+      "sensorMm": [
+        48.9,
+        36.7
+      ],
+      "crop": 0.71,
+      "note": "P25 / P25+ / H25 (48.9×36.7)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?P ?21(\\+| ?Plus)?$",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        44.1,
+        33.1
+      ],
+      "crop": 0.78,
+      "note": "P21 / P21+ (44.1×33.1)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^(Phase One )?[PH] ?20(\\+| ?Plus)?$",
+      "format": "Medium format 37×37 (square)",
+      "sensorMm": [
+        36.9,
+        36.9
+      ],
+      "crop": 0.83,
+      "note": "P20 / P20+ / H20 square (36.9×36.9)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXM-(50|100|GS\\d+|FS\\d+)\\b",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.9,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "Phase One iXM-50 / iXM-100 / iXM-GS120 / iXM-FS130 (44×33 class, 43.9×32.9)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXM-RS1[05]0",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "note": "Phase One iXM-RS100F / iXM-RS150F aerial (53.4×40.0); RS250F is 54×36 and RS280F is a dual-sensor camera"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXM-RS250",
+      "format": "Medium format 54×36",
+      "sensorMm": [
+        54,
+        36
+      ],
+      "crop": 0.67,
+      "note": "Phase One iXM-RS250F aerial, 247MP 19240×12840 (54×36)",
+      "uncertain": true
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXU[- ]?(RS[- ]?)?1000",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.4,
+        40
+      ],
+      "crop": 0.65,
+      "note": "Phase One iXU-RS1000 aerial (53.4×40.0)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXU[- ]?(RS[- ]?)?180",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.7,
+        40.4
+      ],
+      "crop": 0.64,
+      "note": "Phase One iXU 180 / iXU-RS 180 aerial, 80MP CCD (53.7×40.4)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXU[- ]?(RS[- ]?)?160",
+      "format": "Medium format 54×40",
+      "sensorMm": [
+        53.9,
+        40.4
+      ],
+      "crop": 0.64,
+      "note": "Phase One iXU 160 / iXU-RS 160 aerial, 60MP CCD (53.9×40.4)"
+    },
+    {
+      "brand": "Phase One",
+      "pattern": "^iXU[- ]?150",
+      "format": "Medium format 44×33",
+      "sensorMm": [
+        43.8,
+        32.9
+      ],
+      "crop": 0.79,
+      "note": "Phase One iXU 150 aerial, 50MP CMOS 8280×6208 (43.8×32.9)"
+    }
+  ]
+}

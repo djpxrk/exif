@@ -1,0 +1,2333 @@
+{
+  "group": "nikon",
+  "brand": "Nikon",
+  "exifMakes": [
+    "NIKON CORPORATION",
+    "NIKON",
+    "Nikon",
+    "Nikon Corporation"
+  ],
+  "cameras": [
+    {
+      "model": "NIKON Z 9",
+      "names": [
+        "Z9",
+        "Z 9",
+        "Nikon Z9",
+        "Nikon Z 9"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 8",
+      "names": [
+        "Z8",
+        "Z 8",
+        "Nikon Z8",
+        "Nikon Z 8"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 7",
+      "names": [
+        "Z7",
+        "Z 7",
+        "Nikon Z7",
+        "Nikon Z 7"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 7_2",
+      "names": [
+        "Z7II",
+        "Z7 II",
+        "Z 7II",
+        "Z 7 II",
+        "Z7 Mark II",
+        "Nikon Z7II",
+        "Nikon Z7 II",
+        "Z7ii",
+        "Z7_2",
+        "Z 7_2",
+        "Z7 M2",
+        "Z7M2",
+        "Z7 Mark 2",
+        "Nikon Z 7II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 6",
+      "names": [
+        "Z6",
+        "Z 6",
+        "Nikon Z6",
+        "Nikon Z 6"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 6_2",
+      "names": [
+        "Z6II",
+        "Z6 II",
+        "Z 6II",
+        "Z 6 II",
+        "Z6 Mark II",
+        "Nikon Z6II",
+        "Nikon Z6 II",
+        "Z6ii",
+        "Z6_2",
+        "Z 6_2",
+        "Z6 M2",
+        "Z6M2",
+        "Z6 Mark 2",
+        "Nikon Z 6II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z6_3",
+      "names": [
+        "Z6III",
+        "Z6 III",
+        "Z 6III",
+        "Z 6 III",
+        "Z6 Mark III",
+        "Nikon Z6III",
+        "Nikon Z6 III",
+        "Z6iii",
+        "Z6_3",
+        "Z 6_3",
+        "Z6 M3",
+        "Z6M3",
+        "Z6 Mark 3",
+        "Nikon Z 6III"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z 5",
+      "names": [
+        "Z5",
+        "Z 5",
+        "Nikon Z5",
+        "Nikon Z 5"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z5_2",
+      "names": [
+        "Z5II",
+        "Z5 II",
+        "Z 5II",
+        "Z 5 II",
+        "Z5 Mark II",
+        "Nikon Z5II",
+        "Nikon Z5 II",
+        "Z5ii",
+        "Z5_2",
+        "Z 5_2",
+        "Z5 M2",
+        "Z5M2",
+        "Z5 Mark 2",
+        "Nikon Z 5II"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z5_2C",
+      "names": [
+        "Z5IIC",
+        "Z5IIc",
+        "Z5 II C",
+        "Z5 IIc",
+        "Z5II C",
+        "Nikon Z5IIC",
+        "Nikon Z5 II C",
+        "Z5 IIC",
+        "Z5II-C",
+        "Z5 Mark II C",
+        "Z5_2C",
+        "Z 5_2C",
+        "Nikon Z 5IIC",
+        "Nikon Z5IIc"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z f",
+      "names": [
+        "Zf",
+        "Z f",
+        "Nikon Zf",
+        "Nikon Z f"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON ZR",
+      "names": [
+        "ZR",
+        "Z R",
+        "Nikon ZR",
+        "Nikon ZR cinema"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Z fc",
+      "names": [
+        "Zfc",
+        "Z fc",
+        "Nikon Zfc",
+        "Nikon Z fc"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON Z 50",
+      "names": [
+        "Z50",
+        "Z 50",
+        "Nikon Z50",
+        "Nikon Z 50"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON Z50_2",
+      "names": [
+        "Z50II",
+        "Z50 II",
+        "Z 50II",
+        "Z 50 II",
+        "Z50 Mark II",
+        "Nikon Z50II",
+        "Nikon Z50 II",
+        "Z50ii",
+        "Z50_2",
+        "Z 50_2",
+        "Z50 M2",
+        "Z50M2",
+        "Z50 Mark 2",
+        "Nikon Z 50II"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON Z 30",
+      "names": [
+        "Z30",
+        "Z 30",
+        "Nikon Z30",
+        "Nikon Z 30"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D1",
+      "names": [
+        "D1",
+        "Nikon D1"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D1H",
+      "names": [
+        "D1H",
+        "Nikon D1H"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D1X",
+      "names": [
+        "D1X",
+        "Nikon D1X",
+        "D1x"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D2H",
+      "names": [
+        "D2H",
+        "Nikon D2H"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "NIKON D2Hs",
+      "names": [
+        "D2Hs",
+        "Nikon D2Hs",
+        "D2HS"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.3,
+        15.5
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "NIKON D2X",
+      "names": [
+        "D2X",
+        "Nikon D2X",
+        "D2x"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D2Xs",
+      "names": [
+        "D2Xs",
+        "Nikon D2Xs",
+        "D2XS"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.7
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D3",
+      "names": [
+        "D3",
+        "Nikon D3"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D3S",
+      "names": [
+        "D3S",
+        "Nikon D3S",
+        "D3s"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D3X",
+      "names": [
+        "D3X",
+        "Nikon D3X",
+        "D3x"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D4",
+      "names": [
+        "D4",
+        "Nikon D4"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D4S",
+      "names": [
+        "D4S",
+        "Nikon D4S",
+        "D4s"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D5",
+      "names": [
+        "D5",
+        "Nikon D5"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D6",
+      "names": [
+        "D6",
+        "Nikon D6"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D700",
+      "names": [
+        "D700",
+        "Nikon D700"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D750",
+      "names": [
+        "D750",
+        "Nikon D750"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D780",
+      "names": [
+        "D780",
+        "Nikon D780"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D800",
+      "names": [
+        "D800",
+        "Nikon D800"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D800E",
+      "names": [
+        "D800E",
+        "Nikon D800E"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D810",
+      "names": [
+        "D810",
+        "Nikon D810"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D810A",
+      "names": [
+        "D810A",
+        "Nikon D810A"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D850",
+      "names": [
+        "D850",
+        "Nikon D850"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D600",
+      "names": [
+        "D600",
+        "Nikon D600"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D610",
+      "names": [
+        "D610",
+        "Nikon D610"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON Df",
+      "names": [
+        "Df",
+        "Nikon Df",
+        "DF"
+      ],
+      "format": "Full frame",
+      "sensorMm": [
+        36,
+        23.9
+      ],
+      "crop": 1
+    },
+    {
+      "model": "NIKON D40",
+      "names": [
+        "D40",
+        "Nikon D40"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D40X",
+      "names": [
+        "D40X",
+        "Nikon D40X",
+        "D40x"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D50",
+      "names": [
+        "D50",
+        "Nikon D50"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D60",
+      "names": [
+        "D60",
+        "Nikon D60"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D70",
+      "names": [
+        "D70",
+        "Nikon D70"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D70s",
+      "names": [
+        "D70s",
+        "Nikon D70s",
+        "D70S"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D80",
+      "names": [
+        "D80",
+        "Nikon D80"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D90",
+      "names": [
+        "D90",
+        "Nikon D90"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D100",
+      "names": [
+        "D100",
+        "Nikon D100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.7,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D200",
+      "names": [
+        "D200",
+        "Nikon D200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D300",
+      "names": [
+        "D300",
+        "Nikon D300"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D300S",
+      "names": [
+        "D300S",
+        "Nikon D300S",
+        "D300s"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D500",
+      "names": [
+        "D500",
+        "Nikon D500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D3000",
+      "names": [
+        "D3000",
+        "Nikon D3000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D3100",
+      "names": [
+        "D3100",
+        "Nikon D3100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.1,
+        15.4
+      ],
+      "crop": 1.56
+    },
+    {
+      "model": "NIKON D3200",
+      "names": [
+        "D3200",
+        "Nikon D3200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.2,
+        15.4
+      ],
+      "crop": 1.55
+    },
+    {
+      "model": "NIKON D3300",
+      "names": [
+        "D3300",
+        "Nikon D3300"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D3400",
+      "names": [
+        "D3400",
+        "Nikon D3400"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D3500",
+      "names": [
+        "D3500",
+        "Nikon D3500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D5000",
+      "names": [
+        "D5000",
+        "Nikon D5000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.8
+      ],
+      "crop": 1.52
+    },
+    {
+      "model": "NIKON D5100",
+      "names": [
+        "D5100",
+        "Nikon D5100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D5200",
+      "names": [
+        "D5200",
+        "Nikon D5200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D5300",
+      "names": [
+        "D5300",
+        "Nikon D5300"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D5500",
+      "names": [
+        "D5500",
+        "Nikon D5500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D5600",
+      "names": [
+        "D5600",
+        "Nikon D5600"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D7000",
+      "names": [
+        "D7000",
+        "Nikon D7000"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D7100",
+      "names": [
+        "D7100",
+        "Nikon D7100"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D7200",
+      "names": [
+        "D7200",
+        "Nikon D7200"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON D7500",
+      "names": [
+        "D7500",
+        "Nikon D7500"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "NIKON 1 J1",
+      "names": [
+        "Nikon 1 J1",
+        "1 J1",
+        "J1",
+        "Nikon1 J1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 V1",
+      "names": [
+        "Nikon 1 V1",
+        "1 V1",
+        "V1",
+        "Nikon1 V1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 J2",
+      "names": [
+        "Nikon 1 J2",
+        "1 J2",
+        "J2",
+        "Nikon1 J2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 J3",
+      "names": [
+        "Nikon 1 J3",
+        "1 J3",
+        "J3",
+        "Nikon1 J3"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 S1",
+      "names": [
+        "Nikon 1 S1",
+        "1 S1",
+        "Nikon1 S1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 V2",
+      "names": [
+        "Nikon 1 V2",
+        "1 V2",
+        "V2",
+        "Nikon1 V2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 J4",
+      "names": [
+        "Nikon 1 J4",
+        "1 J4",
+        "J4",
+        "Nikon1 J4"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 S2",
+      "names": [
+        "Nikon 1 S2",
+        "1 S2",
+        "Nikon1 S2"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 V3",
+      "names": [
+        "Nikon 1 V3",
+        "1 V3",
+        "V3",
+        "Nikon1 V3"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 J5",
+      "names": [
+        "Nikon 1 J5",
+        "1 J5",
+        "J5",
+        "Nikon1 J5"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "NIKON 1 AW1",
+      "names": [
+        "Nikon 1 AW1",
+        "1 AW1",
+        "AW1",
+        "Nikon1 AW1"
+      ],
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73
+    },
+    {
+      "model": "COOLPIX A",
+      "names": [
+        "Coolpix A",
+        "Nikon Coolpix A",
+        "Nikon A"
+      ],
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53
+    },
+    {
+      "model": "COOLPIX P7000",
+      "names": [
+        "Coolpix P7000",
+        "COOLPIX P7000",
+        "Nikon P7000",
+        "Nikon Coolpix P7000",
+        "P7000"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P7100",
+      "names": [
+        "Coolpix P7100",
+        "COOLPIX P7100",
+        "Nikon P7100",
+        "Nikon Coolpix P7100",
+        "P7100"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P7700",
+      "names": [
+        "Coolpix P7700",
+        "COOLPIX P7700",
+        "Nikon P7700",
+        "Nikon Coolpix P7700",
+        "P7700"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P7800",
+      "names": [
+        "Coolpix P7800",
+        "COOLPIX P7800",
+        "Nikon P7800",
+        "Nikon Coolpix P7800",
+        "P7800"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P6000",
+      "names": [
+        "Coolpix P6000",
+        "COOLPIX P6000",
+        "Nikon P6000",
+        "Nikon Coolpix P6000",
+        "P6000"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P330",
+      "names": [
+        "Coolpix P330",
+        "COOLPIX P330",
+        "Nikon P330",
+        "Nikon Coolpix P330",
+        "P330"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P340",
+      "names": [
+        "Coolpix P340",
+        "COOLPIX P340",
+        "Nikon P340",
+        "Nikon Coolpix P340",
+        "P340"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P5000",
+      "names": [
+        "Coolpix P5000",
+        "COOLPIX P5000",
+        "Nikon P5000",
+        "Nikon Coolpix P5000",
+        "P5000"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "COOLPIX P5100",
+      "names": [
+        "Coolpix P5100",
+        "COOLPIX P5100",
+        "Nikon P5100",
+        "Nikon Coolpix P5100",
+        "P5100"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "COOLPIX P1100",
+      "names": [
+        "Coolpix P1100",
+        "COOLPIX P1100",
+        "Nikon P1100",
+        "Nikon Coolpix P1100",
+        "P1100"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P1000",
+      "names": [
+        "Coolpix P1000",
+        "COOLPIX P1000",
+        "Nikon P1000",
+        "Nikon Coolpix P1000",
+        "P1000"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P950",
+      "names": [
+        "Coolpix P950",
+        "COOLPIX P950",
+        "Nikon P950",
+        "Nikon Coolpix P950",
+        "P950"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P900",
+      "names": [
+        "Coolpix P900",
+        "COOLPIX P900",
+        "Nikon P900",
+        "Nikon Coolpix P900",
+        "P900"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P610",
+      "names": [
+        "Coolpix P610",
+        "COOLPIX P610",
+        "Nikon P610",
+        "Nikon Coolpix P610",
+        "P610"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P600",
+      "names": [
+        "Coolpix P600",
+        "COOLPIX P600",
+        "Nikon P600",
+        "Nikon Coolpix P600",
+        "P600"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P530",
+      "names": [
+        "Coolpix P530",
+        "COOLPIX P530",
+        "Nikon P530",
+        "Nikon Coolpix P530",
+        "P530"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P520",
+      "names": [
+        "Coolpix P520",
+        "COOLPIX P520",
+        "Nikon P520",
+        "Nikon Coolpix P520",
+        "P520"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P510",
+      "names": [
+        "Coolpix P510",
+        "COOLPIX P510",
+        "Nikon P510",
+        "Nikon Coolpix P510",
+        "P510"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P500",
+      "names": [
+        "Coolpix P500",
+        "COOLPIX P500",
+        "Nikon P500",
+        "Nikon Coolpix P500",
+        "P500"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P100",
+      "names": [
+        "Coolpix P100",
+        "COOLPIX P100",
+        "Nikon P100",
+        "Nikon Coolpix P100",
+        "P100"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P90",
+      "names": [
+        "Coolpix P90",
+        "COOLPIX P90",
+        "Nikon P90",
+        "Nikon Coolpix P90",
+        "P90"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "COOLPIX P80",
+      "names": [
+        "Coolpix P80",
+        "COOLPIX P80",
+        "Nikon P80",
+        "Nikon Coolpix P80",
+        "P80"
+      ],
+      "format": "1/2.33\"",
+      "sensorMm": [
+        6.08,
+        4.56
+      ],
+      "crop": 5.69
+    },
+    {
+      "model": "COOLPIX P310",
+      "names": [
+        "Coolpix P310",
+        "COOLPIX P310",
+        "Nikon P310",
+        "Nikon Coolpix P310",
+        "P310"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P300",
+      "names": [
+        "Coolpix P300",
+        "COOLPIX P300",
+        "Nikon P300",
+        "Nikon Coolpix P300",
+        "P300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX A1000",
+      "names": [
+        "Coolpix A1000",
+        "COOLPIX A1000",
+        "Nikon A1000",
+        "Nikon Coolpix A1000",
+        "A1000"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX A900",
+      "names": [
+        "Coolpix A900",
+        "COOLPIX A900",
+        "Nikon Coolpix A900"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX A300",
+      "names": [
+        "Coolpix A300",
+        "COOLPIX A300",
+        "Nikon Coolpix A300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX B700",
+      "names": [
+        "Coolpix B700",
+        "COOLPIX B700",
+        "Nikon B700",
+        "Nikon Coolpix B700",
+        "B700"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX B600",
+      "names": [
+        "Coolpix B600",
+        "COOLPIX B600",
+        "Nikon B600",
+        "Nikon Coolpix B600",
+        "B600"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX B500",
+      "names": [
+        "Coolpix B500",
+        "COOLPIX B500",
+        "Nikon B500",
+        "Nikon Coolpix B500",
+        "B500"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX S9900",
+      "names": [
+        "Coolpix S9900",
+        "COOLPIX S9900",
+        "Nikon S9900",
+        "Nikon Coolpix S9900",
+        "S9900"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX S9700",
+      "names": [
+        "Coolpix S9700",
+        "COOLPIX S9700",
+        "Nikon S9700",
+        "Nikon Coolpix S9700",
+        "S9700"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX S9500",
+      "names": [
+        "Coolpix S9500",
+        "COOLPIX S9500",
+        "Nikon S9500",
+        "Nikon Coolpix S9500",
+        "S9500"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX S7000",
+      "names": [
+        "Coolpix S7000",
+        "COOLPIX S7000",
+        "Nikon S7000",
+        "Nikon Coolpix S7000",
+        "S7000"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX W300",
+      "names": [
+        "Coolpix W300",
+        "COOLPIX W300",
+        "Nikon W300",
+        "Nikon Coolpix W300",
+        "W300"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX W150",
+      "names": [
+        "Coolpix W150",
+        "COOLPIX W150",
+        "Nikon W150",
+        "Nikon Coolpix W150",
+        "W150"
+      ],
+      "format": "1/3.1\"",
+      "sensorMm": [
+        4.7,
+        3.5
+      ],
+      "crop": 7.38
+    },
+    {
+      "model": "COOLPIX W100",
+      "names": [
+        "Coolpix W100",
+        "COOLPIX W100",
+        "Nikon W100",
+        "Nikon Coolpix W100",
+        "W100"
+      ],
+      "format": "1/3.1\"",
+      "sensorMm": [
+        4.7,
+        3.5
+      ],
+      "crop": 7.38
+    },
+    {
+      "model": "COOLPIX AW130",
+      "names": [
+        "Coolpix AW130",
+        "COOLPIX AW130",
+        "Nikon AW130",
+        "Nikon Coolpix AW130",
+        "AW130"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX AW120",
+      "names": [
+        "Coolpix AW120",
+        "COOLPIX AW120",
+        "Nikon AW120",
+        "Nikon Coolpix AW120",
+        "AW120"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX AW110",
+      "names": [
+        "Coolpix AW110",
+        "COOLPIX AW110",
+        "Nikon AW110",
+        "Nikon Coolpix AW110",
+        "AW110"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX L840",
+      "names": [
+        "Coolpix L840",
+        "COOLPIX L840",
+        "Nikon L840",
+        "Nikon Coolpix L840",
+        "L840"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX L340",
+      "names": [
+        "Coolpix L340",
+        "COOLPIX L340",
+        "Nikon L340",
+        "Nikon Coolpix L340",
+        "L340"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "COOLPIX P60",
+      "names": [
+        "Coolpix P60",
+        "COOLPIX P60",
+        "Nikon P60",
+        "Nikon Coolpix P60",
+        "P60"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "COOLPIX P50",
+      "names": [
+        "Coolpix P50",
+        "COOLPIX P50",
+        "Nikon P50",
+        "Nikon Coolpix P50",
+        "P50"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "E8800",
+      "names": [
+        "Coolpix 8800",
+        "COOLPIX 8800",
+        "Nikon Coolpix 8800",
+        "E8800"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E8700",
+      "names": [
+        "Coolpix 8700",
+        "COOLPIX 8700",
+        "Nikon Coolpix 8700",
+        "E8700"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E8400",
+      "names": [
+        "Coolpix 8400",
+        "COOLPIX 8400",
+        "Nikon Coolpix 8400",
+        "E8400"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E5700",
+      "names": [
+        "Coolpix 5700",
+        "COOLPIX 5700",
+        "Nikon Coolpix 5700",
+        "E5700"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E5000",
+      "names": [
+        "Coolpix 5000",
+        "COOLPIX 5000",
+        "Nikon Coolpix 5000",
+        "E5000"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E5400",
+      "names": [
+        "Coolpix 5400",
+        "COOLPIX 5400",
+        "Nikon Coolpix 5400",
+        "E5400"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "E4500",
+      "names": [
+        "Coolpix 4500",
+        "COOLPIX 4500",
+        "Nikon Coolpix 4500",
+        "E4500"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "E995",
+      "names": [
+        "Coolpix 995",
+        "COOLPIX 995",
+        "Nikon Coolpix 995",
+        "E995"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "E990",
+      "names": [
+        "Coolpix 990",
+        "COOLPIX 990",
+        "Nikon Coolpix 990",
+        "E990"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "S1",
+      "names": [
+        "Coolpix S1",
+        "COOLPIX S1",
+        "Nikon Coolpix S1"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "S2",
+      "names": [
+        "Coolpix S2",
+        "COOLPIX S2",
+        "Nikon Coolpix S2"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "SQ",
+      "names": [
+        "Coolpix SQ",
+        "COOLPIX SQ",
+        "Nikon Coolpix SQ"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44
+    },
+    {
+      "model": "KeyMission 360",
+      "names": [
+        "KeyMission 360",
+        "Nikon KeyMission 360",
+        "Key Mission 360"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "KeyMission 170",
+      "names": [
+        "KeyMission 170",
+        "Nikon KeyMission 170",
+        "Key Mission 170"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "KeyMission 80",
+      "names": [
+        "KeyMission 80",
+        "Nikon KeyMission 80",
+        "Key Mission 80"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^NIKON Z ?(fc|[1-9]0)(_\\d+| ?I{1,3})?\\b",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.7
+      ],
+      "crop": 1.53,
+      "note": "Z-mount DX bodies: Z 30, Z 50, Z50_2, Z fc (also typed forms like \"Z50II\"/\"Z50 II\") and future two-digit \"x0\" or fc models (APS-C 23.5x15.7)."
+    },
+    {
+      "pattern": "^NIKON Z ?[5-9](?!\\d)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "Z-mount single-digit bodies (Z 5..Z 9 incl. _2/_3/C variants such as Z5_2, Z6_3) are FX full frame."
+    },
+    {
+      "pattern": "^NIKON Z ?(f|R)\\b",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "Z f (Zf) and ZR cinema body are FX full frame."
+    },
+    {
+      "pattern": "^NIKON Z\\b(?! ?(fc|[1-9]0)(_\\d+| ?I{1,3})?\\b)",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        23.9
+      ],
+      "crop": 1,
+      "note": "Generic Z-mount fallback (excludes the DX Z 30/Z 50/Z50_2/Z fc pattern): remaining Z bodies are FX full frame."
+    },
+    {
+      "pattern": "^NIKON 1\\b",
+      "format": "1-inch",
+      "sensorMm": [
+        13.2,
+        8.8
+      ],
+      "crop": 2.73,
+      "note": "Nikon 1 series (J/V/S/AW) use the 1-inch CX sensor 13.2x8.8."
+    },
+    {
+      "pattern": "^NIKON D([3-6](S|X)?|[678]\\d0(E|A)?|f)$",
+      "format": "Full frame",
+      "sensorMm": [
+        35.9,
+        24
+      ],
+      "crop": 1,
+      "note": "FX DSLRs: D3/D3S/D3X/D4/D4S/D5/D6, 3-digit D6x0/D7x0/D8x0 (D600, D610, D700, D750, D780, D800, D800E, D810, D810A, D850) and Df."
+    },
+    {
+      "pattern": "^NIKON D(?!([3-6](S|X)?|[678]\\d0(E|A)?)$)\\d",
+      "format": "APS-C",
+      "sensorMm": [
+        23.5,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "All other Nikon DSLRs (D1/D2 series, 2-digit D40-D90, 3-digit D100-D500, 4-digit D3000-D7500) are DX APS-C."
+    },
+    {
+      "pattern": "^COOLPIX A$",
+      "format": "APS-C",
+      "sensorMm": [
+        23.6,
+        15.6
+      ],
+      "crop": 1.53,
+      "note": "Coolpix A has an APS-C (DX) sensor."
+    },
+    {
+      "pattern": "^COOLPIX (P(7\\d{3}|6000|3[34]0|5100)|S7[01]0)$",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "1/1.7\"-class (1/1.7\" or 1/1.72\") Coolpix: P7000/P7100/P7700/P7800, P6000, P330/P340, P5100 and S700/S710."
+    },
+    {
+      "pattern": "^COOLPIX P([1-4]|5000)$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Coolpix P1/P2/P3/P4 and P5000 use 1/1.8\" CCDs."
+    },
+    {
+      "pattern": "^COOLPIX (L1?[0-9]|P[56]0|S([1-9]|10|7c|5[0-2]c?|2[01]0|5[0-2]0))$",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "2005-2008 Coolpix with 1/2.5\" CCDs: L1-L19, P50/P60, S1-S9/S7c/S10, S50/S51/S52 (+c), S200/S210, S500/S510/S520. (Coolpix S1/S2 actually write Model \"S1\"/\"S2\" and are listed as models.)"
+    },
+    {
+      "pattern": "^COOLPIX (W1[05]0|S02|S3[023])$",
+      "format": "1/3.1\"",
+      "sensorMm": [
+        4.7,
+        3.5
+      ],
+      "crop": 7.38,
+      "note": "Small-sensor kids/waterproof Coolpix W100/W150, S02, S30/S32/S33 (1/3.1\"-1/3\")."
+    },
+    {
+      "pattern": "^COOLPIX (S01|S31)$",
+      "format": "1/2.9\"",
+      "sensorMm": [
+        4.96,
+        3.72
+      ],
+      "crop": 6.98,
+      "note": "Coolpix S01 and S31 use 1/2.9\" CCDs."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(5000|5700|8400|8700|8800)$",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "Coolpix 5000/5700/8400/8700/8800 with 2/3\" sensors (EXIF Model \"E####\")."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(880|885|990|995|4200|4300|4500|5200|5400|5900|7600|7900)$",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Pre-2006 Coolpix with 1/1.8\" CCDs (EXIF Model \"E####\")."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(700|800|910|950)$",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Coolpix 700/800/910/950 with 1/2\" CCDs."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(4100|4600|4800|5100|5600)$",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Coolpix 4100/4600/4800/5100/5600 with 1/2.5\" CCDs (EXIF Model \"E####\")."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(600|775|900|2000|2500|3100|3200|3500|3700)$",
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44,
+      "note": "Budget Coolpix 600/775/900/2000/2500/3100/3200/3500/3700 with 1/2.7\" CCDs (Coolpix SQ writes Model \"SQ\" and is listed as a model)."
+    },
+    {
+      "pattern": "^(E|COOLPIX ?)(2100|2200)$",
+      "format": "1/3.2\"",
+      "sensorMm": [
+        4.54,
+        3.42
+      ],
+      "crop": 7.61,
+      "note": "Coolpix 2100/2200 with 1/3.2\" CCDs."
+    },
+    {
+      "pattern": "^COOLPIX",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Fallback for other Coolpix compacts and superzooms (P1000/P1100/P950, B, A, S, L, W, AW lines from ~2009 on) which almost all use 1/2.3\" sensors; older/smaller-sensor lines are caught by the rules above."
+    },
+    {
+      "pattern": "^KeyMission",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Nikon KeyMission action cameras use 1/2.3\" sensors."
+    }
+  ]
+}

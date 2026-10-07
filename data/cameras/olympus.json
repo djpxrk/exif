@@ -1,0 +1,2142 @@
+{
+  "group": "olympus",
+  "brand": "OM SYSTEM",
+  "exifMakes": [
+    "OLYMPUS IMAGING CORP.",
+    "OLYMPUS CORPORATION",
+    "OM Digital Solutions",
+    "OLYMPUS OPTICAL CO.,LTD"
+  ],
+  "cameras": [
+    {
+      "model": "E-1",
+      "names": [
+        "Olympus E-1",
+        "E1"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-300",
+      "names": [
+        "EVOLT E-300",
+        "E300"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-500",
+      "names": [
+        "EVOLT E-500",
+        "E500"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-330",
+      "names": [
+        "EVOLT E-330",
+        "E330"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-400",
+      "names": [
+        "Olympus E-400",
+        "E400"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-410",
+      "names": [
+        "EVOLT E-410",
+        "E410"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-510",
+      "names": [
+        "EVOLT E-510",
+        "E510"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-3",
+      "names": [
+        "Olympus E-3",
+        "E3"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-420",
+      "names": [
+        "EVOLT E-420",
+        "E420"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-520",
+      "names": [
+        "EVOLT E-520",
+        "E520"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-30",
+      "names": [
+        "Olympus E-30",
+        "E30"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-620",
+      "names": [
+        "Olympus E-620",
+        "E620"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-450",
+      "names": [
+        "Olympus E-450",
+        "E450"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-600",
+      "names": [
+        "Olympus E-600",
+        "E600"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-5",
+      "names": [
+        "Olympus E-5",
+        "E5"
+      ],
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-P1",
+      "names": [
+        "PEN E-P1",
+        "EP1",
+        "EP-1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-P2",
+      "names": [
+        "PEN E-P2",
+        "EP2",
+        "EP-2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-P3",
+      "names": [
+        "PEN E-P3",
+        "EP3",
+        "EP-3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-P5",
+      "names": [
+        "PEN E-P5",
+        "EP5",
+        "EP-5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-P7",
+      "names": [
+        "PEN E-P7",
+        "EP7",
+        "EP-7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL1",
+      "names": [
+        "PEN E-PL1",
+        "EPL1",
+        "E-PL 1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL1s",
+      "names": [
+        "PEN E-PL1s",
+        "EPL1s"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL2",
+      "names": [
+        "PEN E-PL2",
+        "EPL2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL3",
+      "names": [
+        "PEN Lite E-PL3",
+        "PEN E-PL3",
+        "EPL3"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL5",
+      "names": [
+        "PEN Lite E-PL5",
+        "PEN E-PL5",
+        "EPL5"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL6",
+      "names": [
+        "PEN Lite E-PL6",
+        "PEN E-PL6",
+        "EPL6"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL7",
+      "names": [
+        "PEN Lite E-PL7",
+        "PEN E-PL7",
+        "EPL7"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL8",
+      "names": [
+        "PEN E-PL8",
+        "EPL8"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL9",
+      "names": [
+        "PEN E-PL9",
+        "EPL9"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PL10",
+      "names": [
+        "PEN E-PL10",
+        "EPL10"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PM1",
+      "names": [
+        "PEN Mini E-PM1",
+        "PEN E-PM1",
+        "EPM1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-PM2",
+      "names": [
+        "PEN Mini E-PM2",
+        "PEN E-PM2",
+        "EPM2"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "PEN-F",
+      "names": [
+        "PEN F",
+        "PENF",
+        "Olympus PEN-F",
+        "Digital PEN-F",
+        "PEN-F Mark I"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M5",
+      "names": [
+        "OM-D E-M5",
+        "EM5",
+        "E-M5 Mark I",
+        "EM5 Mark I",
+        "Olympus E-M5",
+        "E-M5 Mark 1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M5MarkII",
+      "names": [
+        "OM-D E-M5 Mark II",
+        "E-M5 Mark II",
+        "E-M5 II",
+        "EM5 Mark II",
+        "EM5 II",
+        "EM5II",
+        "E-M5M2",
+        "EM5M2",
+        "E-M5 MkII",
+        "E-M5 Mark 2",
+        "E-M5 Mk2",
+        "OM-D E-M5 II",
+        "E-M5.2",
+        "Olympus E-M5 Mark II"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M5MarkIII",
+      "names": [
+        "OM-D E-M5 Mark III",
+        "E-M5 Mark III",
+        "E-M5 III",
+        "EM5 Mark III",
+        "EM5 III",
+        "EM5III",
+        "E-M5M3",
+        "EM5M3",
+        "E-M5 MkIII",
+        "E-M5 Mark 3",
+        "E-M5 Mk3",
+        "OM-D E-M5 III",
+        "E-M5.3",
+        "Olympus E-M5 Mark III"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M1",
+      "names": [
+        "OM-D E-M1",
+        "EM1",
+        "E-M1 Mark I",
+        "EM1 Mark I",
+        "Olympus E-M1",
+        "E-M1 Mark 1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M1MarkII",
+      "names": [
+        "OM-D E-M1 Mark II",
+        "E-M1 Mark II",
+        "E-M1 II",
+        "EM1 Mark II",
+        "EM1 II",
+        "EM1II",
+        "E-M1M2",
+        "EM1M2",
+        "E-M1 MkII",
+        "E-M1 Mark 2",
+        "E-M1 Mk2",
+        "OM-D E-M1 II",
+        "E-M1.2",
+        "Olympus E-M1 Mark II"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M1MarkIII",
+      "names": [
+        "OM-D E-M1 Mark III",
+        "E-M1 Mark III",
+        "E-M1 III",
+        "EM1 Mark III",
+        "EM1 III",
+        "EM1III",
+        "E-M1M3",
+        "EM1M3",
+        "E-M1 MkIII",
+        "E-M1 Mark 3",
+        "E-M1 Mk3",
+        "OM-D E-M1 III",
+        "E-M1.3",
+        "Olympus E-M1 Mark III",
+        "E-M1 Mark III ASTRO",
+        "OM-D E-M1 Mark III ASTRO",
+        "E-M1 III Astro"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M1X",
+      "names": [
+        "OM-D E-M1X",
+        "EM1X",
+        "E-M1 X",
+        "Olympus E-M1X"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M10",
+      "names": [
+        "OM-D E-M10",
+        "EM10",
+        "E-M10 Mark I",
+        "EM10 Mark I",
+        "Olympus E-M10",
+        "E-M10 Mark 1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M10MarkII",
+      "names": [
+        "OM-D E-M10 Mark II",
+        "E-M10 Mark II",
+        "E-M10 II",
+        "EM10 Mark II",
+        "EM10 II",
+        "EM10II",
+        "E-M10M2",
+        "EM10M2",
+        "E-M10 MkII",
+        "E-M10 Mark 2",
+        "E-M10 Mk2",
+        "OM-D E-M10 II",
+        "E-M10.2",
+        "Olympus E-M10 Mark II"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M10 Mark III",
+      "names": [
+        "E-M10MarkIII",
+        "OM-D E-M10 Mark III",
+        "E-M10 III",
+        "EM10 Mark III",
+        "EM10 III",
+        "EM10III",
+        "E-M10M3",
+        "EM10M3",
+        "E-M10 MkIII",
+        "E-M10 Mark 3",
+        "E-M10 Mk3",
+        "OM-D E-M10 III",
+        "E-M10.3",
+        "Olympus E-M10 Mark III"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M10MarkIIIS",
+      "names": [
+        "OM-D E-M10 Mark IIIs",
+        "E-M10 Mark IIIs",
+        "E-M10 Mark III S",
+        "E-M10 IIIs",
+        "EM10 IIIs",
+        "EM10 Mark IIIs",
+        "E-M10 Mark 3s",
+        "OM-D E-M10 IIIs",
+        "Olympus E-M10 Mark IIIs"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "E-M10MarkIV",
+      "names": [
+        "OM-D E-M10 Mark IV",
+        "E-M10 Mark IV",
+        "E-M10 IV",
+        "EM10 Mark IV",
+        "EM10 IV",
+        "EM10IV",
+        "E-M10M4",
+        "EM10M4",
+        "E-M10 MkIV",
+        "E-M10 Mark 4",
+        "E-M10 Mk4",
+        "OM-D E-M10 IV",
+        "E-M10.4",
+        "Olympus E-M10 Mark IV"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "OM-1",
+      "names": [
+        "OM SYSTEM OM-1",
+        "OM1",
+        "OM-1 Mark I",
+        "Olympus OM-1"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "OM-1MarkII",
+      "names": [
+        "OM SYSTEM OM-1 Mark II",
+        "OM-1 Mark II",
+        "OM-1 II",
+        "OM1 II",
+        "OM1 Mark II",
+        "OM-1M2",
+        "OM1M2",
+        "OM-1 MkII",
+        "OM-1 Mark II IR",
+        "OM-1 Mark 2",
+        "OM-1 Mk2",
+        "OM System OM-1 II"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "OM-3",
+      "names": [
+        "OM SYSTEM OM-3",
+        "OM3",
+        "OM-3 ASTRO",
+        "OM SYSTEM OM-3 ASTRO"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "OM-5",
+      "names": [
+        "OM SYSTEM OM-5",
+        "OM5",
+        "OM-5 Mark I"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "OM-5MarkII",
+      "names": [
+        "OM SYSTEM OM-5 Mark II",
+        "OM-5 Mark II",
+        "OM-5 II",
+        "OM5 II",
+        "OM5 Mark II",
+        "OM-5M2",
+        "OM5M2",
+        "OM-5 Mark 2",
+        "OM-5 Mk2",
+        "OM-5 MkII",
+        "OM System OM-5 II"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "AIR-A01",
+      "names": [
+        "Olympus Air",
+        "Olympus Air A01",
+        "Air A01",
+        "A01",
+        "Olympus Air 01"
+      ],
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2
+    },
+    {
+      "model": "STYLUS1",
+      "names": [
+        "Stylus 1",
+        "Stylus1",
+        "Olympus Stylus 1"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "STYLUS1,1s",
+      "names": [
+        "Stylus 1s",
+        "Stylus1s",
+        "Olympus Stylus 1s"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "XZ-1",
+      "names": [
+        "Olympus XZ-1",
+        "XZ1"
+      ],
+      "format": "1/1.63\"",
+      "sensorMm": [
+        7.42,
+        5.56
+      ],
+      "crop": 4.67
+    },
+    {
+      "model": "XZ-2",
+      "names": [
+        "XZ-2 iHS",
+        "Olympus XZ-2",
+        "XZ2"
+      ],
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65
+    },
+    {
+      "model": "XZ-10",
+      "names": [
+        "XZ-10 iHS",
+        "Olympus XZ-10",
+        "XZ10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-1",
+      "names": [
+        "Tough TG-1 iHS",
+        "Tough TG-1",
+        "TG1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-2",
+      "names": [
+        "Tough TG-2 iHS",
+        "Stylus Tough TG-2",
+        "TG2"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-3",
+      "names": [
+        "Stylus Tough TG-3",
+        "Tough TG-3",
+        "TG3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-4",
+      "names": [
+        "Tough TG-4",
+        "TG4",
+        "Olympus TG-4",
+        "Olympus Tough TG-4"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-5",
+      "names": [
+        "Tough TG-5",
+        "TG5",
+        "Olympus TG-5",
+        "Olympus Tough TG-5"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-6",
+      "names": [
+        "Tough TG-6",
+        "TG6",
+        "Olympus TG-6",
+        "Olympus Tough TG-6"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-7",
+      "names": [
+        "OM SYSTEM Tough TG-7",
+        "Tough TG-7",
+        "TG7",
+        "OM System TG-7"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-TRACKER",
+      "names": [
+        "Stylus TG-Tracker",
+        "Tough TG-Tracker",
+        "TG-Tracker"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-870",
+      "names": [
+        "Stylus Tough TG-870",
+        "Tough TG-870"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-860",
+      "names": [
+        "Stylus Tough TG-860",
+        "Tough TG-860"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-850",
+      "names": [
+        "Stylus Tough TG-850 iHS",
+        "Tough TG-850"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-835",
+      "names": [
+        "Stylus Tough TG-835",
+        "Tough TG-835"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-830",
+      "names": [
+        "Stylus Tough TG-830 iHS",
+        "Tough TG-830"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-820",
+      "names": [
+        "Tough TG-820 iHS",
+        "Tough TG-820"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-810",
+      "names": [
+        "Tough TG-810"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-630",
+      "names": [
+        "Tough TG-630 iHS",
+        "Tough TG-630"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-625",
+      "names": [
+        "Tough TG-625"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-620",
+      "names": [
+        "Tough TG-620 iHS",
+        "Tough TG-620"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-615",
+      "names": [
+        "Tough TG-615"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-610",
+      "names": [
+        "Tough TG-610"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-320",
+      "names": [
+        "Tough TG-320"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "TG-310",
+      "names": [
+        "Tough TG-310"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-1",
+      "names": [
+        "Stylus SH-1",
+        "SH1"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-2",
+      "names": [
+        "Stylus SH-2",
+        "SH2"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-3",
+      "names": [
+        "Stylus SH-3",
+        "SH3"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-21",
+      "names": [
+        "SH21"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-25MR",
+      "names": [
+        "SH25MR"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-50",
+      "names": [
+        "Stylus SH-50 iHS",
+        "SH50"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SH-60",
+      "names": [
+        "Stylus SH-60",
+        "SH60"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-100EE",
+      "names": [
+        "Stylus SP-100EE",
+        "SP-100",
+        "SP100EE"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-820UZ",
+      "names": [
+        "SP-820UZ iHS",
+        "SP820UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-810UZ",
+      "names": [
+        "SP810UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-720UZ",
+      "names": [
+        "SP-720UZ iHS",
+        "SP720UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-620UZ",
+      "names": [
+        "SP620UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP-610UZ",
+      "names": [
+        "SP610UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP800UZ",
+      "names": [
+        "SP-800UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP600UZ",
+      "names": [
+        "SP-600UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP590UZ",
+      "names": [
+        "SP-590UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP570UZ",
+      "names": [
+        "SP-570UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP565UZ",
+      "names": [
+        "SP-565UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP560UZ",
+      "names": [
+        "SP-560UZ"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SP550UZ",
+      "names": [
+        "SP-550UZ"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "SP510UZ",
+      "names": [
+        "SP-510UZ",
+        "SP-510 Ultra Zoom"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "SP500UZ",
+      "names": [
+        "SP-500UZ",
+        "SP-500 Ultra Zoom"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "SP350",
+      "names": [
+        "SP-350"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "SP320",
+      "names": [
+        "SP-320"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "SP310",
+      "names": [
+        "SP-310"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "SZ-10",
+      "names": [
+        "SZ10"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-11",
+      "names": [
+        "SZ11"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-12",
+      "names": [
+        "SZ12"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-14",
+      "names": [
+        "SZ14"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-15",
+      "names": [
+        "SZ15"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-16,DZ-105",
+      "names": [
+        "SZ-16",
+        "SZ-16 iHS",
+        "DZ-105"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-20",
+      "names": [
+        "SZ20"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-30MR",
+      "names": [
+        "SZ30MR"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "SZ-31MR",
+      "names": [
+        "SZ-31MR iHS",
+        "SZ31MR"
+      ],
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64
+    },
+    {
+      "model": "E-10",
+      "names": [
+        "Olympus E-10",
+        "E10"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E-20,E-20N,E-20P",
+      "names": [
+        "Olympus E-20",
+        "E-20",
+        "E-20N",
+        "E-20P",
+        "E20"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "E100RS",
+      "names": [
+        "E-100RS",
+        "E-100 RS",
+        "Camedia E-100RS",
+        "E100 RS"
+      ],
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41
+    },
+    {
+      "model": "C8080WZ",
+      "names": [
+        "C-8080 Wide Zoom",
+        "C-8080WZ",
+        "Camedia C-8080"
+      ],
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93
+    },
+    {
+      "model": "C7070WZ",
+      "names": [
+        "C-7070 Wide Zoom",
+        "C-7070WZ",
+        "Camedia C-7070"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "C5060WZ",
+      "names": [
+        "C-5060 Wide Zoom",
+        "C-5060WZ",
+        "Camedia C-5060"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "C5050Z",
+      "names": [
+        "C-5050 Zoom",
+        "C-5050Z",
+        "Camedia C-5050"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "C700UZ",
+      "names": [
+        "C-700UZ",
+        "C-700 Ultra Zoom",
+        "Camedia C-700"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44
+    },
+    {
+      "model": "C730UZ",
+      "names": [
+        "C-730UZ",
+        "C-730 Ultra Zoom",
+        "Camedia C-730"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44
+    },
+    {
+      "model": "C740UZ",
+      "names": [
+        "C-740UZ",
+        "C-740 Ultra Zoom",
+        "Camedia C-740"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "C750UZ",
+      "names": [
+        "C-750UZ",
+        "C-750 Ultra Zoom",
+        "Camedia C-750"
+      ],
+      "format": "1/2.7\"",
+      "sensorMm": [
+        5.37,
+        4.04
+      ],
+      "crop": 6.44
+    },
+    {
+      "model": "C770UZ",
+      "names": [
+        "C-770UZ",
+        "C-770 Ultra Zoom",
+        "Camedia C-770"
+      ],
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02
+    },
+    {
+      "model": "X-2,C-50Z",
+      "names": [
+        "C-50 Zoom",
+        "C-50Z",
+        "C50Z",
+        "X-2",
+        "Camedia C-50"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    },
+    {
+      "model": "X-3,C-60Z",
+      "names": [
+        "C-60 Zoom",
+        "C-60Z",
+        "C60Z",
+        "X-3",
+        "Camedia C-60"
+      ],
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84
+    }
+  ],
+  "rules": [
+    {
+      "pattern": "^(OLYMPUS )?(OM-?D )?E-?M ?\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "OM-D E-M1 / E-M5 / E-M10 bodies incl. MarkII/III/IV, X and IIIS variants; all Micro Four Thirds"
+    },
+    {
+      "pattern": "^(OM ?SYSTEM |OLYMPUS )?OM-?\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "OM SYSTEM OM-1 / OM-3 / OM-5 bodies (incl. MarkII, IR) and future OM-n models; Micro Four Thirds"
+    },
+    {
+      "pattern": "^(OLYMPUS )?(PEN )?E-?P ?\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "PEN E-P series (E-P1..E-P7 and successors); Micro Four Thirds"
+    },
+    {
+      "pattern": "^(OLYMPUS )?(PEN )?(Lite |Mini )?E-?P[LM] ?\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "PEN Lite E-PL and PEN Mini E-PM series; Micro Four Thirds"
+    },
+    {
+      "pattern": "^PEN-?F\\b",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "PEN-F (and a possible PEN-F II); Micro Four Thirds"
+    },
+    {
+      "pattern": "^(OM ?SYSTEM |OLYMPUS )?PEN\\b",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "Any PEN-named body, incl. the 2026 OM SYSTEM PEN (20.4MP 4/3 Live MOS) whose EXIF Model string is not yet confirmed; does not match PENTAX"
+    },
+    {
+      "pattern": "^AIR-?A\\d",
+      "format": "Micro Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "Olympus Air lens-style camera; Micro Four Thirds"
+    },
+    {
+      "pattern": "^E-(10|20)\\b",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "E-10 / E-20 fixed-lens prosumer SLRs (pre-Four Thirds) use a 2/3-inch CCD"
+    },
+    {
+      "pattern": "^E-(?!10\\b|20\\b|100\\b)\\d{1,3}\\b",
+      "format": "Four Thirds",
+      "sensorMm": [
+        17.3,
+        13
+      ],
+      "crop": 2,
+      "note": "Four Thirds DSLRs: E-1, E-3, E-5, E-30, E-300..E-620 (excludes E-10/E-20 2/3-inch and E-100RS 1/2-inch)"
+    },
+    {
+      "pattern": "^STYLUS ?1s?\\b",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "Stylus 1 / 1s premium bridge camera (EXIF 'STYLUS1' / 'STYLUS1,1s'); does not match old Stylus 1000-series"
+    },
+    {
+      "pattern": "^XZ-1\\b",
+      "format": "1/1.63\"",
+      "sensorMm": [
+        7.42,
+        5.56
+      ],
+      "crop": 4.67,
+      "note": "XZ-1 premium compact: 1/1.63-inch CCD; 4:3 imaging area sized so 6-24mm = Olympus' stated 28-112mm equivalent (crop 4.67)"
+    },
+    {
+      "pattern": "^XZ-2\\b",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "XZ-2 iHS premium compact"
+    },
+    {
+      "pattern": "^XZ-10\\b",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "XZ-10 iHS compact"
+    },
+    {
+      "pattern": "^TG-",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Tough TG series (TG-1..TG-7, TG-3xx/6xx/8xx, TG-Tracker) all use 1/2.3-inch sensors"
+    },
+    {
+      "pattern": "^SH-(\\d{2}MR|\\d{1,2})\\b",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Stylus SH travel zooms (SH-1/2/3/21/25MR/50/60); pattern avoids Sharp phone codes like SH-01L"
+    },
+    {
+      "pattern": "^SZ-\\d{2}(MR)?\\b",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "SZ travel/superzoom compacts"
+    },
+    {
+      "pattern": "^SP-?(5[015]0UZ|700)\\b",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Early SP Ultra Zooms (SP-500UZ/510UZ/550UZ) and SP-700 use 1/2.5-inch CCDs"
+    },
+    {
+      "pattern": "^SP-?(?!5[015]0UZ)\\d{3}UZ\\b",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Later SP Ultra Zooms (SP-560UZ onward) use 1/2.3 or 1/2.33-inch sensors"
+    },
+    {
+      "pattern": "^SP-?(310|320|350)\\b",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "SP-310/320/350 advanced compacts use 1/1.8-inch CCDs"
+    },
+    {
+      "pattern": "^SP-?100",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "Stylus SP-100EE / SP-100 superzoom"
+    },
+    {
+      "pattern": "^(VG|VR|VH)-?\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "VG / VR / VH budget compacts (approximate: almost all 1/2.3-inch)"
+    },
+    {
+      "pattern": "^FE-?250(?!\\d)",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "FE-250 (EXIF 'FE250/X800') uses an 8MP 1/1.8-inch CCD"
+    },
+    {
+      "pattern": "^FE-?300(?!\\d)",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "FE-300 (EXIF 'FE300,X830') uses a 1/1.72-inch CCD"
+    },
+    {
+      "pattern": "^FE-?(1\\d\\d|2[0-4]0|270|290|310|350)(?!\\d)",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Early FE compacts FE-100..FE-240, FE-270, FE-290, FE-310, FE-350 (Wide) use 1/2.5-inch CCDs"
+    },
+    {
+      "pattern": "^FE-?(?!250(?!\\d)|300(?!\\d))\\d",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "FE budget compacts not caught by the rules above (FE-15..FE-48, FE-280, FE-320..FE-370, FE-3000..FE-5050): 1/2.3 to 1/2.35-inch"
+    },
+    {
+      "pattern": "^(u|µ|μ|mju|Stylus) ?-?D?(800|810|1000)(?!\\d)",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "mju/Stylus 800, 810 and 1000 Digital (EXIF 'uD800,S800', 'u810/S810', 'u1000/S1000') use 1/1.8-inch CCDs"
+    },
+    {
+      "pattern": "^(u|µ|μ|mju|Stylus) ?-?D?1200(?!\\d)",
+      "format": "1/1.7\"",
+      "sensorMm": [
+        7.44,
+        5.58
+      ],
+      "crop": 4.65,
+      "note": "mju/Stylus 1200 Digital (EXIF 'u1200,S1200') uses a 1/1.72-inch CCD"
+    },
+    {
+      "pattern": "^((u|µ|μ|mju|Stylus) ?-?D?((10|20|30|40)D|300|400|410|500|600)(?!\\d)|(u|µ|μ|mju) ?-?mini|Stylus ?V(erve|S)?\\b)",
+      "format": "1/2.5\"",
+      "sensorMm": [
+        5.76,
+        4.29
+      ],
+      "crop": 6.02,
+      "note": "Early mju/Stylus Digital 300/400/410/500/600 (EXIF 'u10D,S300D,u300D' .. 'uD600,S600') and Stylus Verve / mju mini Digital use 1/2.5-inch CCDs"
+    },
+    {
+      "pattern": "^(u|µ|μ|mju) ?((-|D|T)?\\d|-?Tough)",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "mju / Stylus (u-series, uD, uT / uTough) compacts not caught by the rules above: 1/2.3 or 1/2.33-inch"
+    },
+    {
+      "pattern": "^Stylus[ -]?(Tough|VS?\\b|\\d{3,4})",
+      "format": "1/2.3\"",
+      "sensorMm": [
+        6.17,
+        4.55
+      ],
+      "crop": 5.64,
+      "note": "US-named Stylus / Stylus Tough compacts not caught by the rules above (approximate 1/2.3-inch); excludes Stylus 1"
+    },
+    {
+      "pattern": "^C-?8080",
+      "format": "2/3\"",
+      "sensorMm": [
+        8.8,
+        6.6
+      ],
+      "crop": 3.93,
+      "note": "Camedia C-8080 Wide Zoom uses a 2/3-inch CCD"
+    },
+    {
+      "pattern": "^C-?(20[024]0 ?Z|2100 ?UZ)",
+      "format": "1/2\"",
+      "sensorMm": [
+        6.4,
+        4.8
+      ],
+      "crop": 5.41,
+      "note": "Camedia C-2000/C-2020/C-2040 Zoom and C-2100 Ultra Zoom use 1/2-inch CCDs"
+    },
+    {
+      "pattern": "^C-?((?!8080|20[024]0)\\d{4}(Z|WZ)|[457]0Z|55Z)\\b",
+      "format": "1/1.8\"",
+      "sensorMm": [
+        7.18,
+        5.32
+      ],
+      "crop": 4.84,
+      "note": "Camedia 1/1.8-inch compacts: C-3000..C-7070 Zoom / Wide Zoom (C3000Z/C3030Z/C3040Z/C4000Z/C4040Z/C5000Z/C5050Z/C5060WZ/C7070WZ) plus EXIF 'C40Z,D40Z', 'C55Z,C5500Z', 'C70Z,C7000Z'"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "key": "samyang",
+  "name": "SAMYANG",
+  "kind": "lens",
+  "viewBox": [
+    0,
+    0,
+    351.5,
+    54.9
+  ],
+  "paths": [
+    {
+      "d": "M29.4 12.8C27.4 10 23.8 8.7 20.2 8.7 15.9 8.7 11.6 10.6 11.6 15.4 11.6 25.8 36.6 19.9 36.6 38.3 36.6 49.4 27.7 54.9 17.3 54.9 10.7 54.9 4.3 52.9 0 47.9L7.1 41.2C9.4 44.6 13.4 46.6 17.5 46.6 21.8 46.6 26.7 44.3 26.7 39.5 26.7 28.1 1.7 34.7 1.7 16.1 1.7 5.4 11.4 0.4 21.2 0.4 26.7 0.4 32.2 1.9 36.3 5.8ZM89.2 53.5L69.2 1.5H59.2L39.2 53.5H49.5L52.7 45.3C59.3 39.1 69.3 39.1 75.9 45.4L79 53.6H89.2ZM57.3 33.1L64.2 15.3 71.1 33.1C66.6 31.8 61.8 31.8 57.3 33.1M145.1 1.5H139.3C136.7 1.5 135.1 2.3 134.4 4.6L123.3 37.8 112.3 4.6C111.5 2.3 110.1 1.5 107.4 1.5H101.7L92.7 53.5H102.3L108 20.7 119 53.5H127.7L138.7 20.7 144.3 53.5H153.9ZM152.9 1.5H163.5L176.6 24.7 189.6 1.5H200.1L181.5 35.5V53.5H171.5V35.5ZM243.7 53.5L223.7 1.5H213.7L193.7 53.5H204L207.2 45.3C213.8 39.1 223.8 39.1 230.4 45.4L233.5 53.6H243.7ZM211.9 33.1L218.8 15.3 225.7 33.1C221.1 31.8 216.4 31.8 211.9 33.1M290.5 1.5H280.6V35.7L260.3 4.6C259 2.6 257.8 1.5 255.4 1.5H248.9V53.5H258.8V19.4L281.1 53.5H290.5ZM297.7 27.1C297.7 42.3 310.1 54.7 325.3 54.7 340 54.7 351 44.7 351.4 31L351.5 25.9H325.5V35.7H340.5C338.3 41.3 332.7 44.8 325.3 44.8 315.5 44.8 307.5 36.8 307.5 27 307.5 17.4 315.3 9.9 325.3 9.9 332.3 9.9 336.5 12.7 340.7 16.8L347.7 9.8C343.1 5.2 336.5 0 325.3 0 309.8 0.2 297.7 12 297.7 27.1",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://www.lksamyang.com/assets/images/img_SAMYANG.svg (official LK Samyang / Samyang Optics website header logo, referenced from https://www.lksamyang.com/assets/css/sy.common.css)",
+  "license": "Public domain in the US as a simple text logo (PD-textlogo per Wikimedia Commons determination for the identical design, https://commons.wikimedia.org/wiki/File:Samyang_logo.png); vector paths taken from the brand's official website SVG (no explicit license; trademark)",
+  "trademark": "LK Samyang Co., Ltd. (formerly Samyang Optics Co., Ltd.)",
+  "notes": "Kept only the 7 red (#c40d3c) SAMYANG letter paths. Removed the grey \"A New Perspective\" tagline, the orange-gradient slash accent after the G (secondary colour layer, clip-path + gradient), and an empty <text> element (no glyphs). Source had no transforms on the letters; converted to absolute coordinates and shifted to origin. The two A counters are separate subpaths, so fillRule evenodd."
+}

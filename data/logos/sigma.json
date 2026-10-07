@@ -1,0 +1,21 @@
+{
+  "key": "sigma",
+  "name": "SIGMA",
+  "kind": "camera+lens",
+  "viewBox": [
+    0,
+    0.9,
+    85.02,
+    20.004
+  ],
+  "paths": [
+    {
+      "d": "M0 18.738V14.846H0.109C2.541 17.766 5.026 19.549 7.759 19.549 10.165 19.549 11.974 18.306 11.974 16.171 11.974 14.767 11.028 13.738 8.705 12.766L4.245 10.874C2.162 9.981 0.296 8.524 0.296 6.035S2.921 0.9 7.136 0.9C9.568 0.9 11.517 1.659 13.596 2.819V6.52H13.487C11.164 3.821 9.324 2.252 6.622 2.252 4.242 2.252 2.89 3.821 2.89 5.277 2.89 6.546 3.483 7.548 5.541 8.385L10.083 10.251C13.217 11.55 14.677 12.98 14.677 15.304 14.677 18.682 11.46 20.9 7.624 20.9 4.869 20.9 2.515 20.307 0 18.738 M17.57 1.55V1.441H21.677V1.55C21.219 2.657 21.001 3.847 21.001 5.198V16.606C21.001 17.957 21.219 19.147 21.677 20.255V20.364H17.57V20.255C18.028 19.147 18.246 17.957 18.246 16.606V5.198C18.246 3.847 18.028 2.657 17.57 1.55 M24.41 10.9C24.41 5.36 28.87 0.9 34.357 0.9 37.086 0.9 39.331 1.873 41.088 2.98V6.846H40.979C38.843 4.388 37.034 2.252 33.869 2.252 30.221 2.252 27.571 5.818 27.571 10.416S30.3 19.553 35.112 19.553C36.572 19.553 37.597 19.095 38.761 18.175V15.093C38.761 13.742 38.543 12.552 38.085 11.445V11.336H42.191V11.445C41.734 12.552 41.516 13.742 41.516 15.093V19.038C39.541 20.093 37 20.904 34.489 20.904 28.704 20.904 24.406 16.445 24.406 10.904Z M53.107 18.093L47.51 4.2V16.606C47.51 17.957 47.728 19.147 48.186 20.255V20.364H45.156V20.255C45.614 19.147 45.832 17.957 45.832 16.606V5.198C45.832 3.847 45.614 2.657 45.156 1.55V1.441H49.345C49.398 1.794 49.533 2.169 49.668 2.522L55.4 16.903 60.941 2.522C61.076 2.169 61.211 1.794 61.264 1.441H65.344V1.55C64.886 2.657 64.668 3.847 64.668 5.198V16.606C64.668 17.957 64.886 19.147 65.344 20.255V20.364H61.29V20.255C61.748 19.147 61.966 17.957 61.966 16.606V4.144L56.643 18.093C56.346 18.851 56.076 19.632 55.915 20.364H53.888C53.7 19.635 53.4 18.851 53.103 18.093Z M69.239 16.171L73.995 3.791C74.427 2.683 74.078 2.008 73.751 1.546V1.437H77.426C77.479 1.816 77.723 2.571 78.049 3.382L82.94 16.167C83.642 17.98 84.344 19.358 85.02 20.247V20.356H80.478V20.247C80.857 18.87 80.831 18.085 80.099 16.193L79.476 14.545H71.503L70.88 16.193C70.151 18.085 70.121 18.87 70.501 20.247V20.356H67.148V20.247C67.824 19.354 68.526 17.976 69.228 16.167ZM78.943 13.198L75.482 4.196 72.051 13.198Z",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Sigma%27s_new_updated_logo_revealed,_February_2025.svg (original: https://upload.wikimedia.org/wikipedia/commons/8/8f/Sigma%27s_new_updated_logo_revealed%2C_February_2025.svg)",
+  "license": "Public domain (PD-textlogo, Wikimedia Commons)",
+  "trademark": "Sigma Corporation",
+  "notes": "Current official serif SIGMA wordmark (new visual identity by Stockholm Design Lab, adopted 24 Feb 2025; used on sigma-global.com and post-2025 products such as the BF). Original SVG was a Figma export: 5 paths filled #333 with a no-op clipPath (clip removed, it trimmed only 0.004 units off the G); no transforms, no text. Paths merged into one, made absolute, rounded to 3 decimals; the A counter is wound opposite, so evenodd and nonzero render identically. The pre-2025 bold sans wordmark found on most existing Sigma lenses/cameras (2012-2025) is saved as an alternative in sigma-classic.json (same JSON shape; source https://commons.wikimedia.org/wiki/File:SIGMA_CORPORATION.svg, PD-textlogo). Verified 2026-10-07: the Commons original is byte-identical (3085 B) to Sigma's own site header asset https://www.sigma-global.com/common/images/logo.svg; JSON render pixel-matches the official paths (0 px differing by >50% at 40 px/unit)."
+}
