@@ -1,0 +1,10 @@
+{
+  "appId": "com.parkdj.rebate",
+  "appName": "Rebate",
+  "webDir": "dist",
+  "backgroundColor": "#242527",
+  "ios": {
+    "contentInset": "never",
+    "scheme": "Rebate"
+  }
+}

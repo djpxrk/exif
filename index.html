@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#232426" />
+  <meta name="description" content="Frame your photos with their camera settings. Works with JPEG, PNG, WebP, HEIF, TIFF, DNG and ARW, entirely on your device." />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="icon" href="/icon-192.png" />
+  <link rel="apple-touch-icon" href="/icon-180.png" />
+  <title>Rebate</title>
+</head>
+<body>
+  <div class="app" id="app">
+    <header class="topbar">
+      <h1 class="brand"><span class="brand-mark" aria-hidden="true"></span>Rebate</h1>
+      <button class="btn btn-ghost" id="add-btn" type="button">Add photos</button>
+      <input id="file-input" type="file" multiple hidden />
+    </header>
+
+    <main class="workspace">
+      <section class="stage" id="stage" aria-label="Preview">
+        <div class="empty" id="empty">
+          <div class="empty-frame" aria-hidden="true">
+            <div class="empty-photo"></div>
+            <div class="empty-bar"><i></i><i></i></div>
+          </div>
+          <h2>Drop photos to frame them</h2>
+          <p>Camera, lens and exposure are read from each file and set into the border. JPEG, PNG, WebP, HEIF, TIFF, DNG and ARW. Nothing leaves your device.</p>
+          <button class="btn btn-primary" id="empty-add" type="button">Choose photos</button>
+        </div>
+        <canvas id="preview" class="preview" hidden></canvas>
+        <div class="busy" id="busy" hidden><span class="spinner" aria-hidden="true"></span><span id="busy-text">Reading…</span></div>
+        <p class="note" id="note" role="status" hidden></p>
+      </section>
+
+      <nav class="filmstrip" id="filmstrip" aria-label="Photos" hidden></nav>
+    </main>
+
+    <aside class="panel" id="panel" aria-label="Frame settings">
+      <div class="tabs" role="tablist">
+        <button role="tab" aria-selected="true" data-tab="frame">Frame</button>
+        <button role="tab" aria-selected="false" data-tab="details">Details</button>
+        <button role="tab" aria-selected="false" data-tab="layout">Layout</button>
+        <button role="tab" aria-selected="false" data-tab="save">Save</button>
+      </div>
+
+      <div class="tab-body" data-body="frame">
+        <div class="templates" id="templates"></div>
+      </div>
+
+      <div class="tab-body" data-body="details" hidden>
+        <p class="hint" id="details-hint">Turn a line off to leave it out of the frame. Edits apply to the selected photo.</p>
+        <div class="fields" id="fields"></div>
+        <div class="row-actions">
+          <button class="btn btn-ghost" id="reset-fields" type="button">Reset to EXIF</button>
+          <button class="btn btn-ghost" id="copy-fields" type="button">Use artist and caption on all photos</button>
+        </div>
+      </div>
+
+      <div class="tab-body" data-body="layout" hidden>
+        <fieldset class="group">
+          <legend>Aspect ratio</legend>
+          <div class="chips" id="ratios"></div>
+        </fieldset>
+        <label class="group slider">
+          <span>Border <output id="border-out"></output></span>
+          <input type="range" id="border" min="0" max="2" step="0.05" />
+        </label>
+        <label class="group slider">
+          <span>Corner radius <output id="radius-out"></output></span>
+          <input type="range" id="radius" min="0" max="1" step="0.05" />
+        </label>
+        <fieldset class="group">
+          <legend>Background</legend>
+          <div class="swatches" id="swatches"></div>
+        </fieldset>
+        <fieldset class="group">
+          <legend>Typeface</legend>
+          <div class="fonts" id="fonts"></div>
+        </fieldset>
+      </div>
+
+      <div class="tab-body" data-body="save" hidden>
+        <fieldset class="group">
+          <legend>Format</legend>
+          <div class="chips" id="formats"></div>
+        </fieldset>
+        <label class="group slider" id="quality-row">
+          <span>Quality <output id="quality-out"></output></span>
+          <input type="range" id="quality" min="0.6" max="1" step="0.01" />
+        </label>
+        <fieldset class="group">
+          <legend>Size</legend>
+          <div class="chips" id="sizes"></div>
+        </fieldset>
+        <label class="toggle group">
+          <input type="checkbox" id="keep-exif" />
+          <span>Keep camera metadata in the file<small>JPEG only. Location is never written.</small></span>
+        </label>
+        <p class="dims" id="dims"></p>
+        <div class="save-actions">
+          <button class="btn btn-primary" id="save-one" type="button">Save photo</button>
+          <button class="btn btn-ghost" id="save-all" type="button" hidden>Save all</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
