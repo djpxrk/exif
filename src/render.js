@@ -288,6 +288,7 @@ export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, 
   t.brands = brands.items;
   t.hasLogo = brands.hasLogo;
   if (brands.camLogo) t.camera = t.model; // the logo already names the brand
+  t.gear = [t.camera, t.lens].filter(Boolean).join('   '); // camera and lens on one line
   const { S, photo } = L;
   const radius = settings.radius * S * 0.05;
 
@@ -353,9 +354,9 @@ function drawStrip({ ctx, font, ink, S, L, t }) {
   const l2 = l1 + small * 1.55;
   const half = (right - left) / 2;
 
-  // Left: camera model over lens
-  const model = t.model || t.make;
-  const sub = t.lens || t.caption;
+  // Left: camera model and lens on one bold line, the caption beneath
+  const model = [t.model || t.make, t.lens].filter(Boolean).join('   ');
+  const sub = t.caption;
   text(ctx, model, left, sub ? l1 : (l1 + l2) / 2 - small * 0.3, { font, size: big, weight: 'bold', color: ink.primary, maxWidth: half * 0.95 });
   text(ctx, sub, left, model ? l2 : l1, { font, size: small, color: ink.muted, maxWidth: half * 0.95 });
 
@@ -397,8 +398,9 @@ function drawPolaroid({ ctx, font, ink, S, L, t }) {
   const cx = photo.x + photo.w / 2;
   const top = photo.y + photo.h;
   const area = L.content.y + L.content.h - top;
-  const headline = t.caption || t.camera;
-  const gear = (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   ');
+  // Camera and lens share a line: the headline, or under the caption when there is one.
+  const headline = t.caption || t.gear;
+  const gear = t.caption ? t.gear : '';
   const exposure = t.exposure && { s: t.exposure, size: S * 0.026, weight: 'regular', color: ink.muted };
   const gearLine = gear && { s: gear, size: S * 0.022, color: ink.muted };
   const lines = [
@@ -433,8 +435,8 @@ function drawBackdrop({ ctx, font, S, L, t }) {
   const area = L.content.y + L.content.h - top;
   const lines = [
     t.hasLogo && { row: t.brands, size: S * 0.028, color: '#ffffff', rule: 'rgba(255,255,255,0.45)' },
-    (t.caption || t.camera) && { s: t.caption || t.camera, size: S * 0.034, weight: 'bold', color: '#ffffff' },
-    (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   ') && { s: (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   '), size: S * 0.022, color: 'rgba(255,255,255,0.78)' },
+    (t.caption || t.gear) && { s: t.caption || t.gear, size: S * 0.034, weight: 'bold', color: '#ffffff' },
+    t.caption && t.gear && { s: t.gear, size: S * 0.022, color: 'rgba(255,255,255,0.78)' },
     t.exposure && { s: t.exposure, size: S * 0.024, weight: 'bold', color: 'rgba(255,255,255,0.92)' },
     [t.when, t.artist].filter(Boolean).join('   ') && { s: [t.when, t.artist].filter(Boolean).join('   '), size: S * 0.02, color: 'rgba(255,255,255,0.66)' },
   ].filter(Boolean);
@@ -549,11 +551,11 @@ function drawLightroom({ ctx, font, ink, S, L, t, fields, settings, W, H, small 
 
   // Loupe info: what you'd see over the photo with Info Overlay on.
   const colW = hx - left - S * 0.05;
-  const title = t.caption || t.camera;
+  const title = t.caption || t.gear;
   const info = [
     t.hasLogo && { row: t.brands, size: S * 0.022, color: ink.primary, rule: ink.rule },
     title && { s: title, size: S * 0.034, weight: 'bold', color: ink.primary },
-    (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   ') && { s: (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   '), size: S * 0.02, color: ink.muted },
+    t.caption && t.gear && { s: t.gear, size: S * 0.02, color: ink.muted },
     [t.when, `${W} × ${H}`, t.artist].filter(Boolean).join('   ') && { s: [t.when, `${W} × ${H}`, t.artist].filter(Boolean).join('   '), size: S * 0.018, color: ink.muted },
   ].filter(Boolean);
   stack(ctx, info, left, top + area * 0.5, colW, font, 'left');
@@ -669,16 +671,15 @@ function drawAtlas({ ctx, font, ink, S, L, t, fields, settings, bg, scale }) {
     if (extra) lines.push({ s: extra, size: S * 0.017, color: ink.muted, gap: 1.9 });
   } else {
     if (t.hasLogo) lines.push({ row: t.brands, size: S * 0.024, color: ink.primary, rule: ink.rule });
-    if (t.model || t.camera) lines.push({ s: t.hasLogo ? t.model : t.camera, size: S * 0.036, weight: 'bold', color: ink.primary });
-    if (t.lens) lines.push({ s: t.lens, size: S * 0.02, color: ink.muted });
+    const gear = [t.hasLogo ? t.model : t.camera, t.lens].filter(Boolean).join('   ');
+    if (gear) lines.push({ s: gear, size: S * 0.036, weight: 'bold', color: ink.primary });
   }
   stack(ctx, lines, left, cy, half * (geo.coords ? 1.15 : 1), font, 'left');
 
   const camera = geo.coords || fields.place
     ? [
       t.hasLogo ? { row: t.brands, size: S * 0.02, color: ink.primary, rule: ink.rule } : null,
-      (t.hasLogo ? t.model : t.camera) && { s: t.hasLogo ? t.model : t.camera, size: S * 0.022, weight: 'bold', color: ink.primary },
-      t.lens && { s: t.lens, size: S * 0.017, color: ink.muted },
+      [t.hasLogo ? t.model : t.camera, t.lens].some(Boolean) && { s: [t.hasLogo ? t.model : t.camera, t.lens].filter(Boolean).join('   '), size: S * 0.022, weight: 'bold', color: ink.primary },
       t.exposure && { s: t.exposure, size: S * 0.017, color: ink.muted },
       [t.datetime, t.artist].filter(Boolean).join('   ') && { s: [t.datetime, t.artist].filter(Boolean).join('   '), size: S * 0.017, color: ink.muted },
     ]
