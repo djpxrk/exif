@@ -115,7 +115,7 @@ button, input, select { font: inherit; color: inherit; }
 
 /* ---------- Filmstrip ---------- */
 .filmstrip {
-  display: flex; gap: 12px; overflow-x: auto; scrollbar-width: none;
+  display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; overscroll-behavior-x: contain;
   padding: 10px calc(16px + var(--safe-r)) 10px calc(16px + var(--safe-l));
   border-top: 1px solid var(--line); background: var(--chrome);
 }
@@ -154,8 +154,15 @@ button, input, select { font: inherit; color: inherit; }
   padding: 18px calc(16px + var(--safe-r)) 24px calc(16px + var(--safe-l));
 }
 
-.templates { display: flex; gap: 18px; overflow-x: auto; padding: 6px 6px 4px; scrollbar-width: thin; }
+/* A sideways-scrolling row on phones. overflow-y is pinned to hidden: with
+   overflow-x auto it would otherwise become auto too, and the selection
+   brackets (5px outside each button) made the row scroll up and down by a pixel. */
+.templates {
+  display: flex; gap: 18px; overflow-x: auto; overflow-y: hidden; padding: 6px;
+  scrollbar-width: thin; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: 6px;
+}
 .template {
+  scroll-snap-align: start;
   flex: none; width: 128px; background: none; border: 0; padding: 0; cursor: pointer; text-align: left;
 }
 .template-art {
@@ -205,7 +212,7 @@ input[type="range"] { width: 100%; accent-color: var(--ink); margin: 0; }
 .swatch.custom { position: relative; overflow: hidden; background: conic-gradient(from 90deg, #e66, #ec6, #6c8, #6ae, #a6e, #e66); }
 .swatch.custom input { position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%; }
 
-.chips-row { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; margin: 0 0 10px; padding-bottom: 2px; }
+.chips-row { flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden; scrollbar-width: none; overscroll-behavior-x: contain; margin: 0 0 10px; padding-bottom: 2px; }
 .chips-row::-webkit-scrollbar { display: none; }
 .chips-row .chip { flex: none; }
 .fonts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
