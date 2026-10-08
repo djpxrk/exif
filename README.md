@@ -53,6 +53,18 @@ Map frames are drawn on the device from bundled data, so a photo's location is n
 
 Photos without GPS can be given a location by typing coordinates in Details → Location (e.g. `37.5665, 126.9780` or `37°33′59″N 126°58′41″E`). The Place field overrides the looked-up name.
 
+## Settings
+
+The gear in the top bar opens Settings:
+
+- **You:** your name, used as the artist when a photo's EXIF has none, and whether to show it.
+- **Date and time:** 2026.10.07, 2026-10-07, 07.10.2026, 10/07/2026 or Oct 7, 2026; 24- or 12-hour time. Dates you typed yourself are left alone.
+- **Saving:** where saves go (below), file names (original + "-framed", original, or date, time and camera) and whether to keep camera metadata.
+- **Location:** show coordinates or place names on every frame, and download the map data ahead of time for offline use.
+- **About:** build, credits and licenses, and Reset all settings (two taps).
+
+Settings stay in your browser (localStorage); nothing is sent anywhere.
+
 ## Saving
 
 Each device offers its own destinations (Save tab → Save to):
@@ -65,6 +77,12 @@ Each device offers its own destinations (Save tab → Save to):
 ## Full-resolution export
 
 Frames are saved at the photo's native resolution. When a frame is larger than the browser allows in one canvas (iOS caps canvases at about 16.7 MP), it's drawn in strips and encoded by a streaming JPEG/PNG encoder in a Web Worker (`src/encode-worker.js`). Output size is never reduced to fit the device. Strip-encoded files match a normal export to within 43–48 dB PSNR, which is visually identical.
+
+## License
+
+© 2026 djpxrk. All rights reserved. The code is public to read, not to reuse: see `LICENSE`. Bundled fonts, libraries, map data and logos keep their own licenses, listed there and in Settings → About.
+
+The repository only accepts changes from its owner. Rulesets block force-pushes to and deletion of `main`, and deletion of `gh-pages`.
 
 ## Develop
 

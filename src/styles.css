@@ -293,3 +293,47 @@ input[type="range"] { width: 100%; accent-color: var(--ink); margin: 0; }
   padding: 6px 8px; font-size: 16px; color: var(--ink);
 }
 .crop-input input:focus { border-color: var(--line); outline: none; }
+
+/* ---------- Settings ---------- */
+.topbar-actions { display: flex; align-items: center; gap: 8px; }
+.icon-btn {
+  display: grid; place-items: center; width: 38px; height: 38px; padding: 0;
+  background: none; border: 0; border-radius: 3px; color: var(--muted); cursor: pointer; font-size: 26px; line-height: 1;
+}
+.icon-btn:hover { color: var(--ink); background: var(--raised); }
+.sheet {
+  width: min(560px, calc(100vw - 32px)); max-height: min(88dvh, 920px); padding: 0;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--chrome); color: var(--ink);
+}
+.sheet[open] { display: flex; flex-direction: column; }
+.sheet::backdrop { background: rgba(0, 0, 0, .6); }
+.sheet-head {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 10px 10px 10px 20px; border-bottom: 1px solid var(--line);
+}
+.sheet-head h2 { margin: 0; font: 600 22px/1 var(--display); }
+.sheet-body { overflow-y: auto; padding: 6px 20px 20px; }
+.pref { padding: 14px 0 16px; border-bottom: 1px solid var(--line); display: grid; gap: 12px; }
+.pref:last-child { border-bottom: 0; }
+.pref h3 { margin: 0; font: 600 13px/1 var(--ui); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.pref .hint, .pref .ratio-hint { margin: 0; }
+.pref-label { margin: 2px 0 -4px; color: var(--muted); font-size: 14px; }
+.pref-field { display: grid; gap: 6px; color: var(--muted); font-size: 14px; }
+.pref-field input {
+  width: 100%; background: var(--raised); border: 1px solid transparent; border-radius: 3px;
+  padding: 8px 10px; font-size: 16px; color: var(--ink);
+}
+.pref-field input:focus { border-color: var(--line); outline: none; }
+.pref-field small { font-size: 12.5px; }
+.credits { color: var(--muted); font-size: 13px; }
+.credits summary { cursor: pointer; color: var(--ink); }
+.credits p { margin: 8px 0 0; }
+#reset-all { justify-self: start; }
+#reset-all.armed { background: #8c2f28; }
+@media (max-width: 899px) {
+  /* Full screen on phones. */
+  .sheet { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; margin: 0; border: 0; border-radius: 0; }
+  .sheet-head { padding-top: calc(10px + var(--safe-t)); }
+  .sheet-body { padding-bottom: calc(24px + var(--safe-b)); }
+  .icon-btn { width: 34px; height: 34px; }
+}

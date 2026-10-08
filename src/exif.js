@@ -152,8 +152,35 @@ export const formatIso = (iso) => (iso ? `ISO${Array.isArray(iso) ? iso[0] : iso
 
 const pad2 = (n) => String(n).padStart(2, '0');
 const validDate = (d) => d instanceof Date && !isNaN(d);
-export const formatDate = (d) => (validDate(d) ? `${d.getFullYear()}.${pad2(d.getMonth() + 1)}.${pad2(d.getDate())}` : '');
-export const formatTime = (d) => (validDate(d) ? `${pad2(d.getHours())}:${pad2(d.getMinutes())}` : '');
+const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+/** Date styles offered in Settings; fmt takes year, month (1–12), day. */
+export const DATE_FORMATS = {
+  'ymd.': { label: '2026.10.07', fmt: (y, m, d) => `${y}.${pad2(m)}.${pad2(d)}` },
+  'ymd-': { label: '2026-10-07', fmt: (y, m, d) => `${y}-${pad2(m)}-${pad2(d)}` },
+  dmy: { label: '07.10.2026', fmt: (y, m, d) => `${pad2(d)}.${pad2(m)}.${y}` },
+  mdy: { label: '10/07/2026', fmt: (y, m, d) => `${pad2(m)}/${pad2(d)}/${y}` },
+  long: { label: 'Oct 7, 2026', fmt: (y, m, d) => `${MON[m - 1]} ${d}, ${y}` },
+};
+export const formatDate = (d, format = 'ymd.') =>
+  (validDate(d) ? (DATE_FORMATS[format] || DATE_FORMATS['ymd.']).fmt(d.getFullYear(), d.getMonth() + 1, d.getDate()) : '');
+export const formatTime = (d, format = '24') => {
+  if (!validDate(d)) return '';
+  if (format !== '12') return `${pad2(d.getHours())}:${pad2(d.getMinutes())}`;
+  return `${d.getHours() % 12 || 12}:${pad2(d.getMinutes())} ${d.getHours() < 12 ? 'AM' : 'PM'}`;
+};
+
+/** { y, m (1–12), d } from a date written in any DATE_FORMATS style (as shown or typed), or null. */
+export function parseDateText(text) {
+  const s = String(text || '').trim();
+  let m;
+  const ok = (y, mo, d) => (mo >= 1 && mo <= 12 && d >= 1 && d <= 31 ? { y, m: mo, d } : null);
+  if ((m = s.match(/^(\d{4})[.\-/](\d{1,2})[.\-/](\d{1,2})/))) return ok(+m[1], +m[2], +m[3]);
+  if ((m = s.match(/^(\d{1,2})\.(\d{1,2})\.(\d{4})/))) return ok(+m[3], +m[2], +m[1]);
+  if ((m = s.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})/))) return ok(+m[3], +m[1], +m[2]);
+  if ((m = s.match(/^([a-z]{3})[a-z]*\.? (\d{1,2}),? (\d{4})/i))) return ok(+m[3], MON.findIndex((x) => x.toLowerCase() === m[1].toLowerCase()) + 1, +m[2]);
+  return null;
+}
 
 export function formatLocation(lat, lon) {
   if (typeof lat !== 'number' || typeof lon !== 'number') return '';
@@ -198,6 +225,7 @@ export function toFields(tags) {
     iso: formatIso(tags.ISO ?? tags.ISOSpeedRatings ?? tags.RecommendedExposureIndex),
     date: formatDate(taken),
     time: formatTime(taken),
+    taken: validDate(taken) ? taken.toISOString() : '', // not shown; re-formats date and time when Settings change
     location: formatLocation(tags.latitude, tags.longitude),
     // Not shown as rows; used by map frames.
     altitude: typeof tags.GPSAltitude === 'number' ? `${Math.round(tags.GPSAltitudeRef === 1 ? -tags.GPSAltitude : tags.GPSAltitude)} m` : '',

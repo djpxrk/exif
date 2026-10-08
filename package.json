@@ -1,7 +1,9 @@
 {
   "name": "rebate",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "Frame photos with their camera settings, on-device. Web app + iOS.",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -11,9 +13,6 @@
     "cameras": "node scripts/build-cameras.mjs",
     "logos": "node scripts/build-logos.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "module",
   "dependencies": {
     "@capacitor/core": "^8.5.2",

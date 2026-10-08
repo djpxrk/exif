@@ -1,0 +1,21 @@
+Copyright (c) 2026 djpxrk. All rights reserved.
+
+The source code in this repository (the Rebate web app and iOS app) is
+published so it can be read, not reused. No permission is granted to copy,
+modify, redistribute or publish it, in whole or in part, without written
+permission from the copyright holder.
+
+Third-party components bundled with or used by Rebate keep their own
+licenses, which this notice does not change:
+
+- Typefaces: SIL Open Font License 1.1 (Inter, Manrope, Unbounded, Barlow,
+  Fraunces, EB Garamond, Noto Serif Display, JetBrains Mono, Fira Code,
+  IBM Plex Mono, IBM Plex Sans KR, Source Code Pro, Space Mono, Courier Prime,
+  Orbitron, VT323, Press Start 2P, Caveat, Nanum Pen Script, Nanum Gothic
+  Coding, Gowun Batang, DSEG).
+- Libraries: exifr, UTIF.js, fflate, Capacitor (MIT); d3-geo, topojson-client,
+  libraw-wasm (ISC); heic-to (LGPL-3.0, loaded as a separate module).
+- Map data: Natural Earth (public domain). Place names: GeoNames (CC BY 4.0).
+- Brand logos are trademarks of their owners, shown only to identify the
+  equipment a photo was taken with. Sources and licenses are listed in
+  src/logos.js and data/logos/*.json.

@@ -56,10 +56,10 @@ import { ACCEPT, decodeFile, makePreview } from './decode.js';
 import { equivalentFocal, formatForCrop, lookupCamera } from './crop.js';
 import { cameraLogo, lensLogo } from './brands.js';
 import { LOGOS } from './logos.js';
-import { prettyModel } from './exif.js';
+import { DATE_FORMATS, formatDate, formatTime, prettyModel } from './exif.js';
 import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, FONT_GROUPS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
 import { coordsOf, loadMaps, maps, placeOf } from './map.js';
-import { ALBUM, FORMATS, chooseFolder, deliver, exportPhoto, folderReady, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder } from './export.js';
+import { ALBUM, FILE_NAMES, FORMATS, chooseFolder, deliver, exportPhoto, folderReady, forgetFolder, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder } from './export.js';
 
 const $ = (sel) => document.querySelector(sel);
 const el = (tag, props = {}, ...children) => {
@@ -91,7 +91,7 @@ const stored = load('rebate:settings', {});
 const settings = { ...structuredClone(DEFAULT_SETTINGS), ...stored, show: { ...DEFAULT_SETTINGS.show, ...stored.show } };
 // Ratios saved by earlier versions ('3:2', '16:9') map to their short:long preset.
 if (!RATIOS[settings.ratio]) settings.ratio = { '3:2': '2:3', '16:9': '9:16' }[settings.ratio] || 'auto';
-const exportOpts = { format: 'jpeg', quality: 0.92, size: 'full', keepExif: true, ...load('rebate:export', {}) };
+const exportOpts = { format: 'jpeg', quality: 0.92, size: 'full', keepExif: true, fileName: 'framed', ...load('rebate:export', {}) };
 // Where saves go; the first destination this device offers is the default.
 if (!saveTargets().some(([k]) => k === exportOpts.target)) exportOpts.target = saveTargets()[0][0];
 const photos = [];
@@ -142,7 +142,9 @@ async function addFiles(files) {
         original: { ...d.fields },
         originalCrop: d.crop,
         originalFocalMm: d.focalMm,
+        edited: {}, // Details fields the user typed in, which Settings then leave alone
       });
+      applyPrefs(photos[photos.length - 1]);
       if (d.note) lastNote = `${file.name}: ${d.note}`;
       if (current === -1 || i === 0) current = photos.length - 1;
     } catch (err) {
@@ -329,6 +331,7 @@ function drawTemplates() {
 }
 
 let sample;
+const SAMPLE_TAKEN = new Date(2026, 9, 7, 17, 42);
 function samplePhoto() {
   if (sample) return sample;
   const c = el('canvas');
@@ -341,7 +344,8 @@ function samplePhoto() {
     width: 6000, height: 4000, thumb: c,
     fields: {
       make: 'SONY', model: 'α7 IV', lens: 'FE 35mm F1.4 GM', focal: '35mm', focal35: '35mm', aperture: 'f/1.4', shutter: '1/500s',
-      iso: 'ISO100', date: '2026.10.07', time: '17:42', location: '33.4581°N 126.9426°E', place: '', heading: '75°', altitude: '',
+      iso: 'ISO100', date: formatDate(SAMPLE_TAKEN, settings.dateFormat), time: formatTime(SAMPLE_TAKEN, settings.timeFormat),
+      location: '33.4581°N 126.9426°E', place: '', heading: '75°', altitude: '',
       artist: '', caption: '', file: 'DSC01234.ARW',
     },
   };
@@ -390,6 +394,7 @@ function drawFields() {
     check.onchange = () => { settings.show[key] = check.checked; changed(); };
     input.oninput = () => {
       photo.fields[prop] = input.value;
+      photo.edited[key] = true;
       if (key === 'make' || key === 'model') {
         // New camera entered: look its crop factor up in the database.
         const hit = lookupCamera(photo.fields.make, photo.fields.model);
@@ -462,6 +467,8 @@ $('#reset-fields').onclick = () => {
   const photo = photos[current];
   if (!photo) return;
   photo.fields = { ...photo.original, artist: photo.fields.artist, caption: photo.fields.caption };
+  photo.edited = { artist: photo.edited.artist };
+  applyPrefs(photo);
   photo.crop = photo.originalCrop;
   photo.focalMm = photo.originalFocalMm;
   drawFields(); drawPreview(); drawTemplatesLater();
@@ -469,7 +476,7 @@ $('#reset-fields').onclick = () => {
 $('#copy-fields').onclick = () => {
   const photo = photos[current];
   if (!photo) return;
-  photos.forEach((p) => { p.fields.artist = photo.fields.artist; p.fields.caption = photo.fields.caption; });
+  photos.forEach((p) => { p.fields.artist = photo.fields.artist; p.fields.caption = photo.fields.caption; p.edited.artist = true; });
   note(`Artist and caption copied to ${photos.length} photo${photos.length === 1 ? '' : 's'}.`);
 };
 
@@ -605,6 +612,10 @@ function drawSaveControls() {
       $('#change-folder').textContent = f ? 'Change folder' : 'Choose folder';
     });
   }
+  $('#forget-folder').hidden = true;
+  if (exportOpts.target === 'folder') savedFolder().then((f) => ($('#forget-folder').hidden = !f));
+  const label = targets.find(([k]) => k === exportOpts.target)[1];
+  $('#save-dest').replaceChildren(`Saves go to ${label}. `, el('button', { className: 'link', type: 'button', textContent: 'Change in Settings', onclick: openSettings }));
   $('#quality-row').hidden = exportOpts.format === 'png';
   $('#quality').value = exportOpts.quality;
   $('#quality-out').textContent = `${Math.round(exportOpts.quality * 100)}`;
@@ -678,12 +689,83 @@ async function save(list) {
     drawSaveControls();
   }
 }
+$('#forget-folder').onclick = async () => { await forgetFolder(); note('Forgot the folder. You’ll be asked again on your next save.'); drawSaveControls(); };
 $('#change-folder').onclick = async () => {
   try { const f = await chooseFolder(); note(`Saves now go to “${f.label}”.`); } catch (err) { if (err.name !== 'AbortError') note(err.message, true); }
   drawSaveControls();
 };
 $('#save-one').onclick = () => photos[current] && save([photos[current]]);
 $('#save-all').onclick = () => save(photos);
+
+// ---------- Settings page ----------
+
+/** Applies Settings to a photo's text: the date and time style, and your name as the default artist. */
+function applyPrefs(photo) {
+  const taken = new Date(photo.fields.taken || NaN);
+  if (!isNaN(taken)) {
+    if (!photo.edited.date) photo.fields.date = formatDate(taken, settings.dateFormat);
+    if (!photo.edited.time) photo.fields.time = formatTime(taken, settings.timeFormat);
+  }
+  if (!photo.edited.artist && !photo.original.artist) photo.fields.artist = settings.artist;
+}
+
+const settingsSheet = $('#settings');
+function openSettings() {
+  drawSettings();
+  settingsSheet.showModal();
+}
+$('#settings-btn').onclick = openSettings;
+$('#settings-close').onclick = () => settingsSheet.close();
+settingsSheet.addEventListener('click', (e) => { if (e.target === settingsSheet) settingsSheet.close(); }); // backdrop
+settingsSheet.addEventListener('close', () => refreshAll());
+
+function prefsChanged() {
+  photos.forEach(applyPrefs);
+  sample = null; // the template thumbnails' sample photo shows the date style too
+  persist();
+  drawSettings();
+  drawPreview();
+}
+
+function drawSettings() {
+  $('#pref-artist').value = settings.artist || '';
+  $('#pref-show-artist').checked = settings.show.artist;
+  chipGroup($('#pref-date'), Object.entries(DATE_FORMATS).map(([k, f]) => [k, f.label]), (v) => settings.dateFormat === v, (v) => { settings.dateFormat = v; prefsChanged(); });
+  chipGroup($('#pref-time'), [['24', '24-hour · 17:42'], ['12', '12-hour · 5:42 PM']], (v) => settings.timeFormat === v, (v) => { settings.timeFormat = v; prefsChanged(); });
+  chipGroup($('#pref-names'), Object.entries(FILE_NAMES), (v) => exportOpts.fileName === v, (v) => { exportOpts.fileName = v; persist(); drawSettings(); });
+  $('#pref-show-location').checked = settings.show.location;
+  $('#pref-show-place').checked = settings.show.place;
+  $('#map-status').textContent = maps()
+    ? 'Map data is on this device, so map frames work offline.'
+    : 'Map frames download about 520 KB of map data the first time.';
+  $('#map-download').hidden = !!maps();
+  drawSaveControls(); // Save to and metadata live here too
+}
+$('#pref-artist').oninput = (e) => { settings.artist = e.target.value.trim(); photos.forEach(applyPrefs); persist(); drawPreview(); };
+$('#pref-show-artist').onchange = (e) => { settings.show.artist = e.target.checked; prefsChanged(); };
+$('#pref-show-location').onchange = (e) => { settings.show.location = e.target.checked; prefsChanged(); };
+$('#pref-show-place').onchange = (e) => { settings.show.place = e.target.checked; prefsChanged(); };
+$('#map-download').onclick = () => {
+  $('#map-status').textContent = 'Downloading map data…';
+  loadMaps().then(drawSettings, () => { $('#map-status').textContent = 'Couldn’t download the map data. Check your connection.'; });
+};
+$('#build').textContent = typeof __BUILD__ === 'string' ? `build ${__BUILD__}` : '(development build)';
+
+let resetTimer;
+$('#reset-all').onclick = async (e) => {
+  const button = e.currentTarget;
+  if (!button.classList.contains('armed')) {
+    // Two taps, so a stray one can't wipe everything.
+    button.classList.add('armed');
+    button.textContent = 'Tap again: reset settings and clear added photos';
+    resetTimer = setTimeout(() => { button.classList.remove('armed'); button.textContent = 'Reset all settings'; }, 4000);
+    return;
+  }
+  clearTimeout(resetTimer);
+  try { localStorage.removeItem('rebate:settings'); localStorage.removeItem('rebate:export'); } catch { /* private mode */ }
+  await forgetFolder();
+  location.reload();
+};
 
 // ---------- Refresh ----------
 

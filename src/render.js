@@ -1,4 +1,5 @@
 import { LOGOS } from './logos.js';
+import { parseDateText } from './exif.js';
 import { cameraLogo, lensLogo } from './brands.js';
 import { compassPoint, coordsOf, fieldOfView, formatDms, headingOf, maps, placeOf } from './map.js';
 
@@ -95,6 +96,9 @@ export const DEFAULT_SETTINGS = {
   font: 'template',
   focal35: false,        // show the 35mm-equivalent focal length
   logo: 'both',          // 'both' camera + lens logos | 'camera' | 'text' (brand as plain text)
+  artist: '',            // Settings: the artist used when a photo has none
+  dateFormat: 'ymd.',    // Settings: a DATE_FORMATS key
+  timeFormat: '24',      // Settings: '24' | '12'
   mapScale: 'region',    // Atlas map zoom, a MAP_SCALES key
   show: {
     make: true, model: true, lens: true, focal: true, aperture: true, shutter: true,
@@ -480,8 +484,8 @@ function drawFilm({ ctx, font, S, L, t, scale }) {
   const { photo } = L;
   // Date imprint in the photo corner, like a 90s compact camera back.
   if (t.date) {
-    const d = t.date.match(/^(\d{4})\.(\d{2})\.(\d{2})/);
-    const stamp = d ? `'${d[1].slice(2)} ${+d[2]} ${+d[3]}` : t.date; // like a 90s date back: '26 5 16
+    const d = parseDateText(t.date);
+    const stamp = d ? `'${String(d.y).slice(2)} ${d.m} ${d.d}` : t.date; // like a 90s date back: '26 5 16
     ctx.save();
     ctx.shadowColor = 'rgba(255,120,20,0.85)';
     ctx.shadowBlur = S * 0.012 * scale;
@@ -798,8 +802,8 @@ function compassRose(ctx, cx, cy, r, ink, accent) {
 const MONTHS = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
 const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const dateParts = (date) => {
-  const m = String(date || '').match(/^(\d{4})\.(\d{2})\.(\d{2})/);
-  return m ? { y: +m[1], m: +m[2] - 1, d: +m[3] } : null;
+  const p = parseDateText(date);
+  return p ? { y: p.y, m: p.m - 1, d: p.d } : null;
 };
 
 function drawPostcard({ ctx, font, ink, S, L, t, fields, settings, bg, small }) {

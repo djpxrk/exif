@@ -4,6 +4,25 @@ import { layout, renderFrame } from './render.js';
 import { injectExif } from './exif-writer.js';
 
 export const SIZES = { full: Infinity, 4096: 4096, 2048: 2048 };
+
+// File name styles offered in Settings.
+export const FILE_NAMES = {
+  framed: 'Original name + “-framed”',
+  same: 'Original name',
+  dated: 'Date, time and camera',
+};
+function fileBase(photo, style = 'framed') {
+  const base = photo.name.replace(/\.[^.]+$/, '');
+  if (style === 'same') return base;
+  const taken = new Date(photo.fields.taken || NaN);
+  if (style === 'dated' && !isNaN(taken)) {
+    const p = (n) => String(n).padStart(2, '0');
+    const stamp = `${taken.getFullYear()}${p(taken.getMonth() + 1)}${p(taken.getDate())}_${p(taken.getHours())}${p(taken.getMinutes())}${p(taken.getSeconds())}`;
+    const camera = String(photo.fields.model || '').replace(/[\\/:*?"<>|]+/g, '').trim().replace(/\s+/g, '-');
+    return camera ? `${stamp}_${camera}` : stamp;
+  }
+  return `${base}-framed`;
+}
 export const FORMATS = {
   jpeg: { mime: 'image/jpeg', ext: 'jpg', label: 'JPEG' },
   png: { mime: 'image/png', ext: 'png', label: 'PNG' },
@@ -78,8 +97,7 @@ export async function exportPhoto(photo, settings, opts, onProgress = () => {}) 
     if (!meta.FocalLengthIn35mmFormat && photo.focalMm && photo.crop) meta.FocalLengthIn35mmFormat = Math.round(photo.focalMm * photo.crop.value);
     blob = await injectExif(blob, meta);
   }
-  const base = photo.name.replace(/\.[^.]+$/, '');
-  return { blob, name: `${base}-framed.${FORMATS[format].ext}`, strips, format, width, height };
+  return { blob, name: `${fileBase(photo, opts.fileName)}.${FORMATS[format].ext}`, strips, format, width, height };
 }
 
 const STRIP_ROWS = 256;  // multiple of 8 for JPEG blocks
@@ -192,6 +210,11 @@ export async function chooseFolder() {
   const folder = { dir, label: inside ? ALBUM : `${parent.name}/${ALBUM}` };
   await idb('readwrite', (s) => s.put(folder, 'folder'));
   return folder;
+}
+
+/** Forgets the picked folder (the folder itself and its files stay). */
+export async function forgetFolder() {
+  try { await idb('readwrite', (s) => s.delete('folder')); } catch { /* nothing saved */ }
 }
 
 /**

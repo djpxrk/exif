@@ -16,7 +16,10 @@
   <div class="app" id="app">
     <header class="topbar">
       <h1 class="brand"><span class="brand-mark" aria-hidden="true"></span>Rebate</h1>
-      <button class="btn btn-ghost" id="add-btn" type="button">Add photos</button>
+      <div class="topbar-actions">
+        <button class="icon-btn" id="settings-btn" type="button" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="3.2" stroke-dasharray="3.2 3.24"/><circle cx="12" cy="12" r="5.6" fill="none" stroke="currentColor" stroke-width="2.4"/></svg></button>
+        <button class="btn btn-ghost" id="add-btn" type="button">Add photos</button>
+      </div>
       <input id="file-input" type="file" multiple hidden />
     </header>
 
@@ -125,18 +128,65 @@
           <legend>Size</legend>
           <div class="chips" id="sizes"></div>
         </fieldset>
-        <fieldset class="group">
-          <legend>Save to</legend>
-          <div class="chips" id="targets"></div>
-          <p class="hint ratio-hint"><span id="target-hint"></span> <button class="link" id="change-folder" type="button" hidden>Change folder</button></p>
-        </fieldset>
-        <label class="toggle group">
-          <input type="checkbox" id="keep-exif" />
-          <span>Keep camera metadata in the file<small>JPEG only. Location is never written.</small></span>
-        </label>
+        <p class="hint" id="save-dest"></p>
       </div>
     </aside>
   </div>
+
+  <dialog class="sheet" id="settings" aria-labelledby="settings-title">
+    <header class="sheet-head">
+      <h2 id="settings-title">Settings</h2>
+      <button class="icon-btn" id="settings-close" type="button" aria-label="Close">&times;</button>
+    </header>
+    <div class="sheet-body">
+      <section class="pref">
+        <h3>You</h3>
+        <label class="pref-field">Your name
+          <input type="text" id="pref-artist" autocomplete="name" placeholder="e.g. DJ Park" />
+          <small>Used as the artist on photos whose EXIF doesn't name one.</small>
+        </label>
+        <label class="toggle"><input type="checkbox" id="pref-show-artist" /><span>Show your name on frames</span></label>
+      </section>
+
+      <section class="pref">
+        <h3>Date and time</h3>
+        <div class="chips" id="pref-date"></div>
+        <div class="chips" id="pref-time"></div>
+      </section>
+
+      <section class="pref">
+        <h3>Saving</h3>
+        <div class="chips" id="targets"></div>
+        <p class="hint ratio-hint"><span id="target-hint"></span>
+          <button class="link" id="change-folder" type="button" hidden>Change folder</button>
+          <button class="link" id="forget-folder" type="button" hidden>Forget folder</button></p>
+        <p class="pref-label">File names</p>
+        <div class="chips" id="pref-names"></div>
+        <label class="toggle"><input type="checkbox" id="keep-exif" /><span>Keep camera metadata in saved photos<small>JPEG only. Location is never written.</small></span></label>
+      </section>
+
+      <section class="pref">
+        <h3>Location</h3>
+        <label class="toggle"><input type="checkbox" id="pref-show-location" /><span>Show coordinates on frames<small>Off by default, so photos don't reveal exactly where you were.</small></span></label>
+        <label class="toggle"><input type="checkbox" id="pref-show-place" /><span>Show place names (town, country) on every frame<small>Map frames always show them.</small></span></label>
+        <p class="hint ratio-hint"><span id="map-status"></span> <button class="link" id="map-download" type="button">Download now</button></p>
+      </section>
+
+      <section class="pref">
+        <h3>About</h3>
+        <p class="hint">Rebate <span id="build"></span>. Photos are read and framed on your device; nothing is uploaded.</p>
+        <p class="hint">© 2026 djpxrk. All rights reserved. <a class="link" href="https://github.com/djpxrk/rebate" target="_blank" rel="noopener">Source</a></p>
+        <details class="credits">
+          <summary>Credits and licenses</summary>
+          <p>Typefaces under the SIL Open Font License: Inter, Manrope, Unbounded, Barlow, Fraunces, EB Garamond, Noto Serif Display, JetBrains Mono, Fira Code, IBM Plex Mono, IBM Plex Sans KR, Source Code Pro, Space Mono, Courier Prime, Orbitron, VT323, Press Start 2P, Caveat, Nanum Pen Script, Nanum Gothic Coding, Gowun Batang, DSEG.</p>
+          <p>Map: Natural Earth (public domain). Place names: GeoNames (CC BY 4.0).</p>
+          <p>Libraries: exifr, UTIF.js, fflate, Capacitor (MIT); d3-geo, topojson-client, libraw-wasm (ISC); heic-to (LGPL-3.0).</p>
+          <p>Brand logos are trademarks of their owners, shown only to name the equipment a photo was taken with.</p>
+        </details>
+        <button class="btn btn-ghost" id="reset-all" type="button">Reset all settings</button>
+      </section>
+    </div>
+  </dialog>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
