@@ -773,6 +773,171 @@ $('#reset-all').onclick = async (e) => {
   location.reload();
 };
 
+// ---------- Magnifier ----------
+
+// Tapping the preview opens it full screen, re-rendered sharper from the
+// full-resolution photo, with pinch, double-tap and wheel zoom and panning.
+// The page itself can't zoom (see styles.css), so this is the way to look closer.
+const viewer = $('#viewer');
+const viewerCanvas = $('#viewer-canvas');
+const view = { s: 1, x: 0, y: 0, fitW: 0, fitH: 0, photo: null };
+const MAX_ZOOM = 8;
+
+canvas.addEventListener('click', () => photos[current] && openViewer(photos[current]));
+
+function openViewer(photo) {
+  view.photo = photo;
+  // Show the preview at once, then swap in a sharper render.
+  viewerCanvas.width = canvas.width;
+  viewerCanvas.height = canvas.height;
+  viewerCanvas.getContext('2d').drawImage(canvas, 0, 0);
+  viewer.showModal();
+  fitView();
+  const hint = $('#viewer-hint');
+  hint.classList.remove('gone');
+  setTimeout(() => hint.classList.add('gone'), 2500);
+  setTimeout(() => {
+    if (view.photo !== photo || !viewer.open) return;
+    const L = layout(photo.width, photo.height, settings, photo.fields);
+    const limit = maxCanvasPixels() * 0.8;
+    let k = Math.min(1, 4096 / Math.max(L.width, L.height));
+    if (L.width * k * L.height * k > limit) k = Math.sqrt(limit / (L.width * L.height));
+    const sharp = document.createElement('canvas');
+    sharp.width = Math.round(L.width * k);
+    sharp.height = Math.round(L.height * k);
+    renderFrame(sharp.getContext('2d'), {
+      img: photo.image, orientation: photo.orientation, blurImg: photo.preview,
+      W: photo.width, H: photo.height, fields: photo.fields, settings, scale: k,
+    });
+    if (view.photo !== photo || !viewer.open) return;
+    viewerCanvas.width = sharp.width;
+    viewerCanvas.height = sharp.height;
+    viewerCanvas.getContext('2d').drawImage(sharp, 0, 0);
+    sharp.width = sharp.height = 1;
+  }, 60);
+}
+function closeViewer() {
+  viewer.close();
+  view.photo = null;
+  viewerCanvas.width = viewerCanvas.height = 1; // free the memory on phones
+}
+$('#viewer-close').onclick = closeViewer;
+viewer.addEventListener('cancel', (e) => { e.preventDefault(); closeViewer(); }); // Esc
+window.addEventListener('resize', () => viewer.open && fitView());
+
+/** Sizes the image to fit the screen and resets zoom. */
+function fitView() {
+  const vw = viewer.clientWidth;
+  const vh = viewer.clientHeight;
+  const r = viewerCanvas.width / viewerCanvas.height;
+  view.fitW = Math.min(vw - 24, (vh - 24) * r);
+  view.fitH = view.fitW / r;
+  viewerCanvas.style.width = `${view.fitW}px`;
+  viewerCanvas.style.height = `${view.fitH}px`;
+  setView(1, (vw - view.fitW) / 2, (vh - view.fitH) / 2);
+}
+function setView(s, x, y, settle = false) {
+  view.s = s; view.x = x; view.y = y;
+  viewer.classList.toggle('settling', settle);
+  viewerCanvas.style.transform = `translate(${x}px, ${y}px) scale(${s})`;
+  viewerCanvas.style.opacity = '';
+}
+/** Keeps the zoomed image covering the screen (or centred when smaller). */
+function clampView(s, x, y) {
+  const vw = viewer.clientWidth;
+  const vh = viewer.clientHeight;
+  s = Math.min(MAX_ZOOM, Math.max(1, s));
+  const w = view.fitW * s;
+  const h = view.fitH * s;
+  x = w <= vw ? (vw - w) / 2 : Math.min(0, Math.max(vw - w, x));
+  y = h <= vh ? (vh - h) / 2 : Math.min(0, Math.max(vh - h, y));
+  return [s, x, y];
+}
+/** Zooms by `factor` around the screen point (px, py). */
+function zoomAt(factor, px, py, settle) {
+  const s = Math.min(MAX_ZOOM, Math.max(1, view.s * factor));
+  const k = s / view.s;
+  setView(...clampView(s, px - (px - view.x) * k, py - (py - view.y) * k), settle);
+}
+
+const pointers = new Map();
+let gesture = null;
+let lastTap = { t: 0, x: 0, y: 0 };
+viewer.addEventListener('pointerdown', (e) => {
+  if (e.target.closest('button')) return;
+  try { viewer.setPointerCapture(e.pointerId); } catch { /* pointer already gone */ }
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  const pts = [...pointers.values()];
+  const mid = pts.length === 2 ? { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 } : pts[0];
+  gesture = {
+    s: view.s, x: view.x, y: view.y, mid, t: Date.now(), moved: false, pinch: pts.length === 2,
+    dist: pts.length === 2 ? Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) : 0,
+  };
+});
+viewer.addEventListener('pointermove', (e) => {
+  if (!pointers.has(e.pointerId) || !gesture) return;
+  pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
+  const pts = [...pointers.values()];
+  if (pts.length === 2) {
+    const mid = { x: (pts[0].x + pts[1].x) / 2, y: (pts[0].y + pts[1].y) / 2 };
+    const s = Math.min(MAX_ZOOM, Math.max(0.6, gesture.s * Math.hypot(pts[0].x - pts[1].x, pts[0].y - pts[1].y) / gesture.dist));
+    const k = s / gesture.s;
+    // The point under the fingers' midpoint stays under it.
+    setView(s, mid.x - (gesture.mid.x - gesture.x) * k, mid.y - (gesture.mid.y - gesture.y) * k);
+    gesture.moved = true;
+    return;
+  }
+  if (gesture.pinch) return; // one finger lifted mid-pinch: wait for the other
+  const dx = pts[0].x - gesture.mid.x;
+  const dy = pts[0].y - gesture.mid.y;
+  if (Math.hypot(dx, dy) > 6) gesture.moved = true;
+  if (gesture.s > 1.01) {
+    setView(gesture.s, gesture.x + dx, gesture.y + dy);
+  } else if (gesture.moved) {
+    // Not zoomed: drag down to close.
+    setView(1, gesture.x, gesture.y + Math.max(0, dy));
+    viewerCanvas.style.opacity = String(Math.max(0.3, 1 - Math.max(0, dy) / 400));
+  }
+});
+function endPointer(e) {
+  if (!pointers.has(e.pointerId)) return;
+  const was = pointers.get(e.pointerId);
+  pointers.delete(e.pointerId);
+  if (pointers.size || !gesture) {
+    if (pointers.size === 1) {
+      // Pinch became a one-finger pan: restart from here.
+      const p = [...pointers.values()][0];
+      gesture = { s: view.s, x: view.x, y: view.y, mid: p, t: Date.now(), moved: true, pinch: false };
+    }
+    return;
+  }
+  const g = gesture;
+  gesture = null;
+  if (!g.moved && Date.now() - g.t < 300) {
+    const now = Date.now();
+    if (now - lastTap.t < 320 && Math.hypot(was.x - lastTap.x, was.y - lastTap.y) < 30) {
+      // Double tap: zoom in to 3× where tapped, or back out.
+      lastTap.t = 0;
+      if (view.s > 1.01) setView(...clampView(1, 0, 0), true);
+      else zoomAt(3, was.x, was.y, true);
+      return;
+    }
+    lastTap = { t: now, x: was.x, y: was.y };
+    // A single tap beside the image closes the viewer.
+    const r = viewerCanvas.getBoundingClientRect();
+    if (was.x < r.left || was.x > r.right || was.y < r.top || was.y > r.bottom) closeViewer();
+    return;
+  }
+  if (g.s <= 1.01 && view.y - g.y > 120) { closeViewer(); return; }
+  setView(...clampView(view.s, view.x, view.y), true);
+}
+viewer.addEventListener('pointerup', endPointer);
+viewer.addEventListener('pointercancel', endPointer);
+viewer.addEventListener('wheel', (e) => {
+  e.preventDefault();
+  zoomAt(Math.exp(-e.deltaY * 0.0025), e.clientX, e.clientY);
+}, { passive: false });
+
 // ---------- Share ----------
 
 // Top-right button: shares the framed photo (at the Save tab's format and

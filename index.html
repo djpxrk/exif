@@ -134,6 +134,12 @@
     </aside>
   </div>
 
+  <dialog class="viewer" id="viewer" aria-label="Magnified photo" autofocus>
+    <canvas id="viewer-canvas"></canvas>
+    <button class="icon-btn viewer-close" id="viewer-close" type="button" aria-label="Close">&times;</button>
+    <p class="viewer-hint" id="viewer-hint">Pinch or double-tap to zoom · swipe down to close</p>
+  </dialog>
+
   <dialog class="sheet" id="settings" aria-labelledby="settings-title">
     <header class="sheet-head">
       <h2 id="settings-title">Settings</h2>
