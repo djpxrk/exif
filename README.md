@@ -76,7 +76,7 @@ npm run build      # outputs dist/
 
 ## Website
 
-Live at **https://djpxrk.github.io/exif/**
+Live at **https://djpxrk.github.io/rebate/**
 
 To publish changes:
 
