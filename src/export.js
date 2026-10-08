@@ -238,6 +238,47 @@ async function freeName(exists, name) {
   }
 }
 
+// ---------- System share sheet ----------
+
+export const SITE_URL = 'https://djpxrk.github.io/rebate/';
+
+/** True when this device has a share sheet (iOS app, and most phone and desktop browsers). */
+export const canShare = () => Capacitor.isNativePlatform() || typeof navigator.share === 'function';
+
+/**
+ * Opens the operating system's share sheet with finished files, or with a
+ * link when `files` is empty. Returns 'shared' | 'cancelled' | 'unsupported',
+ * or 'needs-tap' when the browser wants a fresh tap first (Safari, after a
+ * long render): call again from the next click.
+ */
+export async function shareFiles(files, { title = 'Rebate', text = '', url = '' } = {}) {
+  if (Capacitor.isNativePlatform()) {
+    const { Share } = await import('@capacitor/share');
+    const shared = { title, text: text || undefined, url: url || undefined };
+    if (files.length) {
+      const { Filesystem, Directory } = await import('@capacitor/filesystem');
+      shared.files = [];
+      for (const f of files) {
+        const { uri } = await Filesystem.writeFile({ path: f.name, data: await toBase64(f.blob), directory: Directory.Cache });
+        shared.files.push(uri);
+      }
+    }
+    try { await Share.share(shared); return 'shared'; } catch { return 'cancelled'; }
+  }
+  const data = files.length
+    ? { files: files.map((f) => new File([f.blob], f.name, { type: f.blob.type })), title }
+    : { title, text, url };
+  if (typeof navigator.share !== 'function' || (navigator.canShare && !navigator.canShare(data))) return 'unsupported';
+  try {
+    await navigator.share(data);
+    return 'shared';
+  } catch (err) {
+    if (err.name === 'AbortError') return 'cancelled';
+    if (err.name === 'NotAllowedError') return 'needs-tap';
+    throw err;
+  }
+}
+
 /**
  * Hands finished files over. `target` is a saveTargets() key; `folder` is the
  * result of folderReady() for the 'folder' target. Returns what happened:

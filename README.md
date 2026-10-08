@@ -53,6 +53,10 @@ Map frames are drawn on the device from bundled data, so a photo's location is n
 
 Photos without GPS can be given a location by typing coordinates in Details → Location (e.g. `37.5665, 126.9780` or `37°33′59″N 126°58′41″E`). The Place field overrides the looked-up name.
 
+## Sharing
+
+The share button at the top right opens the system share sheet (iOS, Android, macOS and Windows) with the framed photo, using the Save tab's format, quality and size. With no photo open, it shares a link to Rebate. It's hidden in browsers without a share sheet (e.g. Firefox on desktop).
+
 ## Settings
 
 The gear in the top bar opens Settings:

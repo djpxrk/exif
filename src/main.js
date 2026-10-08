@@ -59,7 +59,7 @@ import { LOGOS } from './logos.js';
 import { DATE_FORMATS, formatDate, formatTime, prettyModel } from './exif.js';
 import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, FONT_GROUPS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
 import { coordsOf, loadMaps, maps, placeOf } from './map.js';
-import { ALBUM, FILE_NAMES, FORMATS, chooseFolder, deliver, exportPhoto, folderReady, forgetFolder, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder } from './export.js';
+import { ALBUM, FILE_NAMES, FORMATS, SITE_URL, canShare, chooseFolder, deliver, exportPhoto, folderReady, forgetFolder, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder, shareFiles } from './export.js';
 
 const $ = (sel) => document.querySelector(sel);
 const el = (tag, props = {}, ...children) => {
@@ -640,6 +640,21 @@ function updateDims() {
 }
 let canvasLimitKnown = null;
 
+/** Renders photos at export settings, with progress in the status pill. */
+async function renderList(list) {
+  canvasLimitKnown = maxCanvasPixels();
+  const out = [];
+  for (const [i, photo] of list.entries()) {
+    const label = `Rendering ${photo.name}${list.length > 1 ? ` (${i + 1} of ${list.length})` : ''}`;
+    busy(label);
+    await new Promise((r) => setTimeout(r, 30)); // let the status paint
+    await Promise.all(activeFontKeys().map((key) => ensureFont(key, frameText(photo))));
+    if (needsMaps()) await loadMaps().catch(() => { throw new Error('The map data couldn’t be loaded. Check your connection and try again.'); });
+    out.push(await exportPhoto(photo, settings, exportOpts, (p) => busy(`${label} ${Math.round(p * 100)}%`)));
+  }
+  return out;
+}
+
 async function save(list) {
   const buttons = [$('#save-one'), $('#save-all')];
   buttons.forEach((b) => (b.disabled = true));
@@ -657,16 +672,7 @@ async function save(list) {
     }
   }
   try {
-    canvasLimitKnown = maxCanvasPixels();
-    const out = [];
-    for (const [i, photo] of list.entries()) {
-      const label = `Rendering ${photo.name}${list.length > 1 ? ` (${i + 1} of ${list.length})` : ''}`;
-      busy(label);
-      await new Promise((r) => setTimeout(r, 30)); // let the status paint
-      await Promise.all(activeFontKeys().map((key) => ensureFont(key, frameText(photo))));
-      if (needsMaps()) await loadMaps().catch(() => { throw new Error('The map data couldn’t be loaded. Check your connection and try again.'); });
-      out.push(await exportPhoto(photo, settings, exportOpts, (p) => busy(`${label} ${Math.round(p * 100)}%`)));
-    }
+    const out = await renderList(list);
     busy(list.length > 1 ? 'Packing' : 'Saving');
     const result = await deliver(out, target, folder);
     busy(null);
@@ -765,6 +771,39 @@ $('#reset-all').onclick = async (e) => {
   try { localStorage.removeItem('rebate:settings'); localStorage.removeItem('rebate:export'); } catch { /* private mode */ }
   await forgetFolder();
   location.reload();
+};
+
+// ---------- Share ----------
+
+// Top-right button: shares the framed photo (at the Save tab's format and
+// size) through the system share sheet, or a link to Rebate when no photo is open.
+const shareBtn = $('#share-btn');
+shareBtn.hidden = !canShare();
+shareBtn.onclick = async () => {
+  shareBtn.disabled = true;
+  try {
+    const photo = photos[current];
+    const files = photo ? await renderList([photo]) : [];
+    busy(null);
+    const extra = photo ? { title: files[0].name } : { title: 'Rebate', text: 'Frame your photos with their camera settings.', url: SITE_URL };
+    const result = await shareFiles(files, extra);
+    if (result === 'unsupported') note('This browser can’t share images. Use Save instead.', true);
+    if (result === 'needs-tap') {
+      // The render took long enough that the browser no longer counts the tap: ask for one more.
+      const go = el('button', { className: 'link', type: 'button', textContent: 'Tap to share' });
+      go.onclick = () => { note(null); shareFiles(files, extra).catch((err) => note(err.message, true)); };
+      note('Your photo is ready.');
+      clearTimeout(noteTimer);
+      noteTimer = setTimeout(() => ($('#note').hidden = true), 20000);
+      $('#note').append(' ', go);
+    }
+  } catch (err) {
+    busy(null);
+    console.error(err);
+    note(err.message || 'Sharing failed.', true);
+  } finally {
+    shareBtn.disabled = false;
+  }
 };
 
 // ---------- Refresh ----------
