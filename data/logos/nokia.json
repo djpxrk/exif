@@ -1,0 +1,21 @@
+{
+  "key": "nokia",
+  "name": "Nokia",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    24,
+    5.647
+  ],
+  "paths": [
+    {
+      "d": "M16.59 0.172V5.476H17.386V0.172ZM8.093 0.082C6.543 0.082 5.341 1.209 5.341 2.824 5.341 4.511 6.543 5.566 8.093 5.566 9.643 5.566 10.847 4.511 10.844 2.824A2.72 2.72 0 0 0 8.093 0.082ZM10.05 2.824C10.05 4.019 9.174 4.811 8.093 4.811 7.011 4.811 6.135 4.019 6.135 2.824 6.135 1.65 7.011 0.837 8.093 0.837 9.173 0.837 10.05 1.65 10.05 2.824ZM0 0V5.476H0.812V1.857L5.03 5.647V4.512ZM11.442 2.824L14.394 5.476H15.578L12.622 2.824 15.578 0.172H14.394ZM24 5.476H23.125L22.485 4.301H19.587L18.947 5.476H18.072L19.132 3.518H22.069L20.604 0.798 21.036 0Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/nokia.svg (simple-icons npm v16.34.0; upstream source listed as https://www.nokia.com)",
+  "license": "CC0 1.0 (Simple Icons package); the mark is a trademark of its owner, used only to identify the device (nominative use).",
+  "trademark": "Nokia Corporation",
+  "notes": "Simple Icons path used as-is (24×24 grid), translated to the origin; viewBox is the tight bounding box. Added 2026-10-08."
+}

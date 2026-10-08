@@ -1,4 +1,4 @@
-import { Capacitor } from '@capacitor/core';
+import { Capacitor, registerPlugin } from '@capacitor/core';
 import { zipSync } from 'fflate';
 import { layout, renderFrame } from './render.js';
 import { injectExif } from './exif-writer.js';
@@ -136,23 +136,134 @@ const toBase64 = (blob) => new Promise((resolve, reject) => {
   r.readAsDataURL(blob);
 });
 
-/** Hands finished files to the user: share sheet on iOS, download on desktop. */
-export async function deliver(files) {
+// ---------- Where saved files go ----------
+
+// iOS app: the "Rebate" album in Photos (ios/App/App/PhotoLibraryPlugin.swift).
+const PhotoLibrary = registerPlugin('PhotoLibrary');
+export const ALBUM = 'Rebate';
+
+/**
+ * Save destinations this device offers, as [key, label, detail]:
+ * - iOS app: an album in Photos, the app's folder in the Files app, or the share sheet
+ * - desktop Chrome/Edge: a "Rebate" folder the user picks once, or Downloads
+ * - other browsers: the share sheet on phones (Save to Photos/Files), Downloads otherwise
+ */
+export function saveTargets() {
+  if (Capacitor.isNativePlatform()) {
+    return [
+      ['album', `Photos album “${ALBUM}”`, 'Framed photos are added to their own album in Photos.'],
+      ['files', 'Files app', `Saved in Files → On My iPhone → ${ALBUM}.`],
+      ['share', 'Share…', 'Opens the share sheet each time.'],
+    ];
+  }
+  const touch = matchMedia('(pointer: coarse)').matches;
+  const targets = [];
+  if ('showDirectoryPicker' in window) targets.push(['folder', `“${ALBUM}” folder`, 'Every save goes into one folder you pick once.']);
+  if (touch && navigator.canShare) targets.push(['share', 'Photos / Files', 'Opens the share sheet: choose Save Image(s), or Save to Files and pick a folder (iOS remembers it).']);
+  targets.push(['download', 'Downloads', 'Saved by the browser. Several photos at once come as one .zip.']);
+  return targets;
+}
+
+// The picked folder is kept in IndexedDB (handles can't go in localStorage).
+function idb(mode, fn) {
+  return new Promise((resolve, reject) => {
+    const open = indexedDB.open('rebate', 1);
+    open.onupgradeneeded = () => open.result.createObjectStore('kv');
+    open.onerror = () => reject(open.error);
+    open.onsuccess = () => {
+      const tx = open.result.transaction('kv', mode);
+      const req = fn(tx.objectStore('kv'));
+      tx.oncomplete = () => resolve(req.result);
+      tx.onerror = () => reject(tx.error);
+    };
+  });
+}
+
+/** The saved folder, as { dir, label }, or null. */
+export async function savedFolder() {
+  try { return (await idb('readonly', (s) => s.get('folder'))) || null; } catch { return null; }
+}
+
+/** Asks for a location and makes (or reuses) a "Rebate" folder in it. Needs a user gesture. */
+export async function chooseFolder() {
+  const parent = await window.showDirectoryPicker({ id: 'rebate', mode: 'readwrite', startIn: 'pictures' });
+  const inside = parent.name === ALBUM;
+  const dir = inside ? parent : await parent.getDirectoryHandle(ALBUM, { create: true });
+  const folder = { dir, label: inside ? ALBUM : `${parent.name}/${ALBUM}` };
+  await idb('readwrite', (s) => s.put(folder, 'folder'));
+  return folder;
+}
+
+/**
+ * The saved folder with write access granted, asking again if the browser
+ * has forgotten. Call at the start of a click: the prompt needs the gesture.
+ */
+export async function folderReady() {
+  const folder = await savedFolder();
+  if (!folder) return null;
+  let state = await folder.dir.queryPermission({ mode: 'readwrite' });
+  if (state === 'prompt') state = await folder.dir.requestPermission({ mode: 'readwrite' });
+  return state === 'granted' ? folder : null;
+}
+
+/** "name.jpg", or "name-2.jpg" and so on when that's taken, so nothing is overwritten. */
+async function freeName(exists, name) {
+  const dot = name.lastIndexOf('.');
+  for (let i = 1; ; i++) {
+    const candidate = i === 1 ? name : `${name.slice(0, dot)}-${i}${name.slice(dot)}`;
+    if (!(await exists(candidate))) return candidate;
+  }
+}
+
+/**
+ * Hands finished files over. `target` is a saveTargets() key; `folder` is the
+ * result of folderReady() for the 'folder' target. Returns what happened:
+ * 'album' | 'files' | 'folder' | 'shared' | 'downloaded' | 'cancelled'.
+ */
+export async function deliver(files, target = 'download', folder = null) {
   if (Capacitor.isNativePlatform()) {
     const { Filesystem, Directory } = await import('@capacitor/filesystem');
-    const { Share } = await import('@capacitor/share');
+    if (target === 'files') {
+      const exists = (path) => Filesystem.stat({ path, directory: Directory.Documents }).then(() => true, () => false);
+      for (const f of files) {
+        const path = await freeName(exists, f.name);
+        await Filesystem.writeFile({ path, data: await toBase64(f.blob), directory: Directory.Documents });
+        f.savedAs = path;
+      }
+      return 'files';
+    }
     const uris = [];
     for (const f of files) {
       const { uri } = await Filesystem.writeFile({ path: f.name, data: await toBase64(f.blob), directory: Directory.Cache });
       uris.push(uri);
     }
+    if (target === 'album') {
+      try {
+        await PhotoLibrary.saveToAlbum({ paths: uris, album: ALBUM });
+        return 'album';
+      } catch (err) {
+        console.warn('Photos album save failed; falling back to the share sheet.', err);
+      }
+    }
+    const { Share } = await import('@capacitor/share');
     await Share.share({ files: uris });
     return 'shared';
   }
 
+  if (target === 'folder' && folder) {
+    const exists = (name) => folder.dir.getFileHandle(name).then(() => true, () => false);
+    for (const f of files) {
+      f.savedAs = await freeName(exists, f.name);
+      const handle = await folder.dir.getFileHandle(f.savedAs, { create: true });
+      const out = await handle.createWritable();
+      await out.write(f.blob);
+      await out.close();
+    }
+    return 'folder';
+  }
+
   const asFiles = files.map((f) => new File([f.blob], f.name, { type: f.blob.type }));
-  const touch = matchMedia('(pointer: coarse)').matches;
-  if (touch && navigator.canShare?.({ files: asFiles })) {
+  if (target === 'share' && navigator.canShare?.({ files: asFiles })) {
     try { await navigator.share({ files: asFiles }); return 'shared'; }
     catch (err) { if (err.name === 'AbortError') return 'cancelled'; }
   }

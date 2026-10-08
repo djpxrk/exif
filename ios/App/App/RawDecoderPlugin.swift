@@ -64,5 +64,6 @@ public class RawDecoderPlugin: CAPPlugin, CAPBridgedPlugin {
 class AppViewController: CAPBridgeViewController {
     override open func capacitorDidLoad() {
         bridge?.registerPluginInstance(RawDecoderPlugin())
+        bridge?.registerPluginInstance(PhotoLibraryPlugin())
     }
 }

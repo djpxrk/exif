@@ -1,0 +1,21 @@
+{
+  "key": "oneplus",
+  "name": "OnePlus",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    24,
+    24
+  ],
+  "paths": [
+    {
+      "d": "M0 3.74V24H20.26V12.428H18.004V21.745H2.254V5.995H11.572V3.742ZM18.004 0V3.74H14.246V5.996H18.004V9.754H20.259V5.996H24V3.74H20.242V0ZM11.554 18.756V8.862H9.562C9.562 9.544 9.334 10.051 8.985 10.366 8.618 10.663 8.075 10.803 7.429 10.803H7.184V12.428H9.317V18.738H11.554Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/oneplus.svg (simple-icons npm v16.34.0; upstream source listed as https://www.oneplus.com/ca_en/brand/asset)",
+  "license": "CC0 1.0 (Simple Icons package); the mark is a trademark of its owner, used only to identify the device (nominative use).",
+  "trademark": "OnePlus Technology (Shenzhen) Co., Ltd.",
+  "notes": "Simple Icons path used as-is (24×24 grid), translated to the origin; viewBox is the tight bounding box. Added 2026-10-08."
+}

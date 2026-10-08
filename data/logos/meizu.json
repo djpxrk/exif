@@ -1,0 +1,37 @@
+{
+  "key": "meizu",
+  "name": "Meizu",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    300.01,
+    54
+  ],
+  "paths": [
+    {
+      "d": "M0 0L96.31 0 96.31 54 77.18 54 77.18 8.95 71.51 8.95 71.51 54 44.93 54 44.93 8.95 39.22 8.95 39.22 54 0 54Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M167.38 0L178.88 0 178.88 53.71 167.38 53.71 167.38 0Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M105.54 0L160.28 0 160.28 7.3 118.8 7.3 118.8 24.39 160.28 24.39 160.28 29.91 118.8 29.91 118.8 46.41 160.28 46.41 160.28 53.71 105.54 53.71Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M185.01 0L238.13 0 238.14 5.66 195.58 48.19 237.97 48.19 237.97 53.93 184.85 53.93 184.85 48.19 227.94 5.74 185.01 5.74 185.01 0Z",
+      "fillRule": "evenodd"
+    },
+    {
+      "d": "M243.9 0L249.37 0 249.37 48.24 294.54 48.24 294.54 0 300.01 0 300.01 53.71 243.9 53.71Z",
+      "fillRule": "evenodd"
+    }
+  ],
+  "source": "https://commons.wikimedia.org/wiki/File:Meizu_logo.svg",
+  "license": "Public domain (Wikimedia Commons: below the threshold of originality); trademark of its owner, used only to identify the equipment (nominative use).",
+  "trademark": "Meizu Technology Co., Ltd.",
+  "notes": "MEIZU wordmark. Shapes flattened with every transform baked in (Chrome getScreenCTM + svgpath), recoloured as one ink. Added 2026-10-08."
+}

@@ -32,7 +32,16 @@ Options:
 - **35mm-equivalent focal length:** a Details option. It uses the camera's recorded value, or works it out from the sensor size when the camera didn't record one.
 - Saved JPEGs can keep the camera metadata (never GPS).
 - **Crop factors:** a bundled database of about 1,280 cameras and 290 product-line rules (`data/cameras/*.json`, compiled by `npm run cameras`). It covers Canon, Nikon, Sony, Fujifilm, Panasonic/LUMIX, OM System/Olympus, Leica, Ricoh/Pentax, Sigma, Hasselblad and Phase One. Phones and drones rely on the 35mm value they record.
-- **Brand logos:** 32 camera and lens brands (`data/logos/*.json`, compiled by `npm run logos`).
+- **Brand logos:** 51 camera, phone and lens brands (`data/logos/*.json`, compiled by `npm run logos`), from Simple Icons (CC0) and public-domain Wikimedia Commons wordmarks. With logos on, the logo row sits above the camera/lens line, and the shot details go beneath.
+- **Typefaces** (all open source, bundled), picked by kind:
+  - Sans: Inter, Manrope, Unbounded, Barlow Condensed
+  - Serif: Fraunces, EB Garamond, Noto Serif Display
+  - Code & mono: JetBrains Mono, Fira Code, IBM Plex Mono, Source Code Pro, Space Mono, Courier Prime
+  - Digital: DSEG14 (14-segment LCD), Orbitron, VT323, Press Start 2P
+  - Handwriting: Caveat, Nanum Pen Script
+  - 한글: IBM Plex Sans KR, Gowun Batang
+  
+  Korean text in any Latin face falls back to a Korean face of the same style (sans → IBM Plex Sans KR, serif → Gowun Batang, mono → Nanum Gothic Coding, handwriting → Nanum Pen Script). Fonts load per character range, so a Korean caption only downloads the glyphs it uses. Only WOFF2 files are bundled.
 
 ## Maps and place names
 
@@ -43,6 +52,15 @@ Map frames are drawn on the device from bundled data, so a photo's location is n
 - Rebuild with `node scripts/build-geo.mjs <geonames-dir> <world-topojson>` (see the script header).
 
 Photos without GPS can be given a location by typing coordinates in Details → Location (e.g. `37.5665, 126.9780` or `37°33′59″N 126°58′41″E`). The Place field overrides the looked-up name.
+
+## Saving
+
+Each device offers its own destinations (Save tab → Save to):
+
+- **iOS app:** the "Rebate" album in Photos (created on first save; the JPEG is added byte-for-byte, so its EXIF survives), the app's folder in Files (On My iPhone → Rebate), or the share sheet.
+- **Desktop Chrome / Edge:** a "Rebate" folder. You pick where it lives once, and every save after that goes there without asking. Files are never overwritten (`-2`, `-3`… are added).
+- **Phones in a browser:** the share sheet (Save Image to Photos, or Save to Files, where iOS remembers the last folder), or Downloads.
+- **Other browsers:** Downloads; several photos at once come as one .zip.
 
 ## Full-resolution export
 
@@ -82,10 +100,11 @@ npx cap open ios         # opens Xcode
 In Xcode, choose your Team under Signing & Capabilities, then run on a device. The bundle id is `com.parkdj.rebate` (change it in `capacitor.config.json` and in Xcode).
 
 Native pieces in `ios/App/App/`:
-- `RawDecoderPlugin.swift`: develops RAW files with `CIRAWFilter` when the embedded preview is too small. Registered by `AppViewController`.
-- `Info.plist`: photo library and camera permission strings.
+- `RawDecoderPlugin.swift`: develops RAW files with `CIRAWFilter` when the embedded preview is too small. `AppViewController` (in the same file) registers the local plugins.
+- `PhotoLibraryPlugin.swift`: saves into the "Rebate" album in Photos. With limited library access it saves without the album.
+- `Info.plist`: photo library and camera permission strings, and file sharing so the app's folder shows up in the Files app.
 
-Saving on iOS opens the share sheet. Choose "Save Image" to put the framed photo in Photos.
+These two Swift files have only been type-checked (against a stand-in for Capacitor), not built: this Mac has no Xcode. Expect to fix small compile errors on the first build.
 
 ## Limits worth knowing
 

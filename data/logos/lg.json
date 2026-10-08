@@ -1,0 +1,21 @@
+{
+  "key": "lg",
+  "name": "LG",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    24,
+    10.582
+  ],
+  "paths": [
+    {
+      "d": "M14.522 7.369H17.792V8.699H12.945V1.869H14.522V7.369ZM21.262 6.095H22.546V7.29C22.31 7.38 21.848 7.47 21.409 7.47 19.989 7.47 19.516 6.749 19.516 5.284 19.516 3.886 19.966 3.063 21.385 3.063 22.176 3.063 22.625 3.311 22.997 3.785L23.979 2.882C23.379 2.027 22.333 1.768 21.35 1.768 19.142 1.768 17.982 2.973 17.982 5.272 17.982 7.56 19.029 8.8 21.34 8.8 22.4 8.8 23.436 8.53 24 8.135V4.821H21.261V6.095ZM5.291 0A5.29 5.29 0 1 1 5.291 10.582 5.291 5.291 0 1 1 5.291 0M8.451 8.457A4.445 4.445 0 0 0 9.761 5.296V5.054L9.541 5.055H6.596V5.549H9.258L9.257 5.564A3.985 3.985 0 0 1 5.292 9.272 3.95 3.95 0 0 1 2.481 8.107 3.952 3.952 0 0 1 1.317 5.296C1.317 4.235 1.731 3.237 2.481 2.486A3.951 3.951 0 0 1 5.291 1.322L5.543 1.325V0.83L5.292 0.827A4.475 4.475 0 0 0 0.822 5.296C0.822 6.49 1.287 7.612 2.131 8.457A4.444 4.444 0 0 0 5.291 9.767 4.444 4.444 0 0 0 8.453 8.457M5.543 7.16V2.935H5.04V7.655H6.596V7.16H5.543ZM4.278 3.608A0.676 0.676 0 1 0 3.603 4.282 0.676 0.676 0 0 0 4.278 3.608",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/lg.svg (simple-icons npm v16.34.0; upstream source listed as https://www.lg.com/global/our-brand/brand-expression/elements/logo/index.jsp)",
+  "license": "CC0 1.0 (Simple Icons package); the mark is a trademark of its owner, used only to identify the device (nominative use).",
+  "trademark": "LG Corp.",
+  "notes": "Simple Icons path used as-is (24×24 grid), translated to the origin; viewBox is the tight bounding box. Added 2026-10-08."
+}

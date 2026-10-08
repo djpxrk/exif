@@ -10,6 +10,9 @@ const CAMERA_KEYS = {
   leica: 'leica', ricoh: 'ricoh', pentax: 'pentax', sigma: 'sigma', hasselblad: 'hasselblad',
   phaseone: 'phase-one', dji: 'dji', gopro: 'gopro', insta360: 'insta360', apple: 'apple',
   samsung: 'samsung', google: 'google', xiaomi: 'xiaomi', huawei: 'huawei', kodak: 'kodak', zeiss: 'zeiss',
+  vivo: 'vivo', oppo: 'oppo', oneplus: 'oneplus', honor: 'honor', motorola: 'motorola', nokia: 'nokia', realme: 'realme',
+  meizu: 'meizu', lg: 'lg', asus: 'asus', htc: 'htc', fairphone: 'fairphone', epson: 'epson', seikoepson: 'epson',
+  minolta: 'minolta', konicaminolta: 'konica-minolta', mamiya: 'mamiya', rollei: 'rollei', yashica: 'yashica',
 };
 
 /** Logo key for a camera brand, or null when there's no logo for it. */
@@ -35,6 +38,12 @@ const LENS_RULES = [
   ['ttartisan', /\bttartisan/i],
   ['7artisans', /\b7\s?artisans\b/i],
   ['sirui', /\bsirui\b/i],
+  ['schneider', /schneider|kreuznach|\bxenon\b|super-?angulon|\bxenar\b|apo-?digitar/i],
+  ['konica-minolta', /konica\s?minolta/i],
+  ['minolta', /\bminolta\b/i],
+  ['mamiya', /\bmamiya\b|\bsekor\b/i],
+  ['rollei', /\brollei\b/i],
+  ['yashica', /\byashica\b/i],
   ['leica', /\bleica\b|summilux|summicron|summarit|elmarit|noctilux|\belmar\b|\bapo-?summicron/i],
   ['fujifilm', /^(XF|XC|GF)\s?\d/i],
   ['canon', /^(RF|EF|EF-S|EF-M)\s?\d/i],
@@ -47,7 +56,8 @@ const LENS_RULES = [
   ['sony', /^(FE|E)\s?\d|\bG Master\b|\bGM\b|\bSEL\d/i],
 ];
 
-const THIRD_PARTY = new Set(['sigma', 'tamron', 'zeiss', 'voigtlander', 'viltrox', 'samyang', 'tokina', 'laowa', 'ttartisan', '7artisans', 'sirui']);
+const THIRD_PARTY = new Set(['sigma', 'tamron', 'zeiss', 'voigtlander', 'viltrox', 'samyang', 'tokina', 'laowa', 'ttartisan', '7artisans', 'sirui',
+  'schneider', 'konica-minolta', 'minolta', 'mamiya', 'rollei', 'yashica']);
 
 /**
  * Lens maker key from the lens name and LensMake tag. Third-party name

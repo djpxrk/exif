@@ -1,0 +1,21 @@
+{
+  "key": "asus",
+  "name": "ASUS",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    24,
+    4.956
+  ],
+  "paths": [
+    {
+      "d": "M23.904 1.266V0H19.248C18.276 0 17.838 0.6 17.766 1.182V1.2 0H16.398V1.266H17.76ZM17.76 1.722L16.392 1.644V3.102C16.392 3.558 16.164 3.696 15.372 3.696H14.28C13.626 3.696 13.35 3.51 13.35 3.102V1.506L11.964 1.404V3.216H11.934C11.856 2.688 11.658 2.076 10.338 1.986L6 1.698C6 2.364 6.474 2.76 7.218 2.838L10.242 3.144C10.482 3.162 10.656 3.234 10.656 3.432 10.656 3.648 10.476 3.672 10.2 3.672H5.946V1.698L4.56 1.608V4.956H10.206C11.466 4.956 11.868 4.302 11.928 3.756H11.958C12.114 4.62 12.87 4.956 14.148 4.956H15.558C17.052 4.956 17.76 4.5 17.76 3.432ZM22.158 1.98L17.82 1.722C17.82 2.388 18.258 2.832 19.002 2.892L22.092 3.132C22.332 3.15 22.476 3.21 22.476 3.408 22.476 3.594 22.308 3.666 21.96 3.666H17.748V4.956H22.05C23.406 4.956 24 4.482 24 3.402 24 2.43 23.466 2.064 22.158 1.98ZM11.964 0H13.35V1.266H11.964ZM3.798 1.548L2.292 1.398 0 4.956H1.686ZM11.712 0H7.482C6.498 0 6.066 0.612 5.964 1.2V0H3.618C3.288 0 3.132 0.102 2.976 0.33L2.328 1.266H11.712Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/asus.svg (simple-icons npm v16.34.0; upstream source listed as https://www.asus.com)",
+  "license": "CC0 1.0 (Simple Icons package); the mark is a trademark of its owner, used only to identify the device (nominative use).",
+  "trademark": "ASUSTeK Computer Inc.",
+  "notes": "Simple Icons path used as-is (24×24 grid), translated to the origin; viewBox is the tight bounding box. Added 2026-10-08."
+}

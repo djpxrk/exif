@@ -87,11 +87,31 @@ const MAKE_NAMES = [
   [/^gopro/i, 'GoPro'],
   [/^insta360|^arashi/i, 'Insta360'],
   [/^phase one/i, 'Phase One'],
+  [/^vivo/i, 'vivo'],
+  [/^oppo/i, 'OPPO'],
+  [/^oneplus/i, 'OnePlus'],
+  [/^honor/i, 'HONOR'],
+  [/^motorola/i, 'motorola'],
+  [/^realme/i, 'realme'],
+  [/^nokia/i, 'Nokia'],
+  [/^meizu/i, 'Meizu'],
+  [/^lg\b|^lge$/i, 'LG'],
+  [/^asus/i, 'ASUS'],
+  [/^htc/i, 'HTC'],
+  [/^fairphone/i, 'Fairphone'],
+  [/^(seiko )?epson/i, 'EPSON'],
+  [/^konica minolta/i, 'Konica Minolta'],
+  [/^minolta/i, 'Minolta'],
+  [/^mamiya/i, 'Mamiya'],
+  [/^rollei/i, 'Rollei'],
+  [/^yashica/i, 'YASHICA'],
 ];
 
 export function prettyMake(make = '', model = '') {
   // Pentax bodies write Make "RICOH IMAGING COMPANY, LTD." but are Pentax-branded.
   if (/^pentax/i.test(String(model).trim())) return 'PENTAX';
+  // HMD Global made Nokia-branded phones.
+  if (/^hmd/i.test(String(make).trim()) && /^nokia/i.test(String(model).trim())) return 'Nokia';
   // OM Digital Solutions still made Olympus-branded bodies; OM-1/OM-3/OM-5 and TG-7 are OM SYSTEM.
   if (/^(olympus|om digital)/i.test(String(make).trim())) {
     return /^(OM-\d|TG-7)/i.test(String(model).trim()) ? 'OM SYSTEM' : 'OLYMPUS';

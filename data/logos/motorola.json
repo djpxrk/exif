@@ -1,0 +1,21 @@
+{
+  "key": "motorola",
+  "name": "Motorola",
+  "kind": "camera",
+  "viewBox": [
+    0,
+    0,
+    24,
+    24
+  ],
+  "paths": [
+    {
+      "d": "M12 0C5.373 0 0 5.373 0 12S5.373 24 12 24 24 18.627 24 12C24.002 5.375 18.632 0.002 12.007 0H12ZM19.327 18.065S18.746 15.438 17.799 13.868C17.285 13.011 16.491 12.315 15.431 12.336 14.686 12.336 14.032 12.759 13.231 13.889 12.762 14.659 12.349 15.462 11.996 16.292 11.996 16.292 11.706 15.617 11.366 14.949A8.038 8.038 0 0 0 10.761 13.9C9.957 12.77 9.306 12.361 8.561 12.347 7.512 12.326 6.707 13.022 6.197 13.875 5.249 15.449 4.669 18.072 4.669 18.072H3.805L8.411 2.952 11.971 14.756 11.995 14.777 12.019 14.756 15.579 2.952 20.189 18.065H19.327Z",
+      "fillRule": "nonzero"
+    }
+  ],
+  "source": "https://github.com/simple-icons/simple-icons/blob/develop/icons/motorola.svg (simple-icons npm v16.34.0; upstream source listed as https://motorola-global-portal-de.custhelp.com)",
+  "license": "CC0 1.0 (Simple Icons package); the mark is a trademark of its owner, used only to identify the device (nominative use).",
+  "trademark": "Motorola Trademark Holdings, LLC",
+  "notes": "Simple Icons path used as-is (24×24 grid), translated to the origin; viewBox is the tight bounding box. Added 2026-10-08."
+}

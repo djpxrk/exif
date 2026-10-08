@@ -5,20 +5,39 @@ import { compassPoint, coordsOf, fieldOfView, formatDms, headingOf, maps, placeO
 // Frame renderer. Every measurement is derived from the photo's short edge (S),
 // so the live preview and the full-resolution export are pixel-for-pixel alike.
 
-// `stack` adds fallbacks for scripts a face lacks (canvas falls back per glyph).
+// `stack` adds fallbacks for what a face lacks (canvas falls back per glyph):
+// α for Sony model names, and Hangul from a Korean face of the same style.
+// `scale` evens out x-heights (Caveat's is tiny); it applies relative to the
+// frame's own default face, so each frame keeps its tuned look.
+const KR_SANS = '"IBM Plex Sans KR"';
+const KR_SERIF = '"Gowun Batang"';
+const KR_MONO = '"Nanum Gothic Coding"';
+const KR_HAND = '"Nanum Pen Script"';
 export const FONTS = {
-  inter: { family: 'Inter', label: 'Inter', regular: 400, bold: 700 },
-  manrope: { family: 'Manrope', label: 'Manrope', regular: 400, bold: 700 },
-  unbounded: { family: 'Unbounded', label: 'Unbounded', regular: 400, bold: 700 },
-  barlow: { family: 'Barlow Condensed', label: 'Barlow Condensed', regular: 500, bold: 700 },
-  fraunces: { family: 'Fraunces', label: 'Fraunces', regular: 400, bold: 600, italic: true },
-  garamond: { family: 'EB Garamond', label: 'EB Garamond', regular: 400, bold: 700, italic: true },
-  didone: { family: 'Noto Serif Display', label: 'Noto Serif Display', regular: 400, bold: 700, italic: true },
-  mono: { family: 'JetBrains Mono', label: 'JetBrains Mono', regular: 400, bold: 600 },
-  courier: { family: 'Courier Prime', label: 'Courier Prime', regular: 400, bold: 700 },
-  caveat: { family: 'Caveat', label: 'Caveat', regular: 400, bold: 700, stack: '"Nanum Pen Script"' },
-  nanumpen: { family: 'Nanum Pen Script', label: 'Nanum Pen Script (한글)', regular: 400, bold: 400, sample: '오늘의 사진 1/250s' },
+  inter: { group: 'sans', family: 'Inter', label: 'Inter', regular: 400, bold: 700, stack: KR_SANS },
+  manrope: { group: 'sans', family: 'Manrope', label: 'Manrope', regular: 400, bold: 700, stack: KR_SANS },
+  unbounded: { group: 'sans', family: 'Unbounded', label: 'Unbounded', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.92 },
+  barlow: { group: 'sans', family: 'Barlow Condensed', label: 'Barlow Condensed', regular: 500, bold: 700, stack: `"Inter", ${KR_SANS}` },
+  fraunces: { group: 'serif', family: 'Fraunces', label: 'Fraunces', regular: 400, bold: 600, italic: true, stack: `"EB Garamond", ${KR_SERIF}` },
+  garamond: { group: 'serif', family: 'EB Garamond', label: 'EB Garamond', regular: 400, bold: 700, italic: true, stack: KR_SERIF, scale: 1.15 },
+  didone: { group: 'serif', family: 'Noto Serif Display', label: 'Noto Serif Display', regular: 400, bold: 700, italic: true, stack: KR_SERIF },
+  mono: { group: 'mono', family: 'JetBrains Mono', label: 'JetBrains Mono', regular: 400, bold: 600, stack: KR_MONO },
+  firacode: { group: 'mono', family: 'Fira Code', label: 'Fira Code', regular: 400, bold: 700, stack: KR_MONO },
+  plexmono: { group: 'mono', family: 'IBM Plex Mono', label: 'IBM Plex Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}` },
+  sourcecode: { group: 'mono', family: 'Source Code Pro', label: 'Source Code Pro', regular: 400, bold: 700, stack: KR_MONO },
+  spacemono: { group: 'mono', family: 'Space Mono', label: 'Space Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}` },
+  courier: { group: 'mono', family: 'Courier Prime', label: 'Courier Prime', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2 },
+  // Digital: a 14-segment LCD (capitals only, registered in main.js), a display face, a CRT terminal and pixels.
+  lcd: { group: 'digital', family: 'DSEG14 Classic', label: 'DSEG14 LCD', regular: 400, bold: 700, upper: true, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 0.9, sample: '1/250 F2' },
+  orbitron: { group: 'digital', family: 'Orbitron', label: 'Orbitron', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.9 },
+  vt323: { group: 'digital', family: 'VT323', label: 'VT323', regular: 400, bold: 400, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2 },
+  pixel: { group: 'digital', family: 'Press Start 2P', label: 'Press Start 2P', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, scale: 0.7 },
+  caveat: { group: 'hand', family: 'Caveat', label: 'Caveat', regular: 400, bold: 700, stack: `${KR_HAND}, "Manrope"`, scale: 1.3 },
+  nanumpen: { group: 'hand', family: 'Nanum Pen Script', label: 'Nanum Pen Script', regular: 400, bold: 400, stack: '"Manrope"', scale: 1.3, sample: '오늘의 사진' },
+  plexkr: { group: 'korean', family: 'IBM Plex Sans KR', label: 'IBM Plex Sans KR', regular: 400, bold: 700, stack: '"Inter"', sample: '서울 1/250' },
+  batang: { group: 'korean', family: 'Gowun Batang', label: 'Gowun Batang', regular: 400, bold: 700, stack: '"EB Garamond"', sample: '여름 f/2.8' },
 };
+export const FONT_GROUPS = { sans: 'Sans', serif: 'Serif', mono: 'Code & mono', digital: 'Digital', hand: 'Handwriting', korean: '한글' };
 
 /** CSS font shorthand for canvas, with the face's fallback stack. */
 export function fontSpec(font, weight, px, italic = false) {
@@ -163,7 +182,7 @@ export function layout(W, H, settings, fields) {
   switch (settings.template) {
     case 'strip': {
       const m = S * 0.025 * b;
-      pad = { top: m, left: m, right: m, bottom: m + S * 0.12 };
+      pad = { top: m, left: m, right: m, bottom: m + S * (logoRow ? 0.14 : 0.12) };
       break;
     }
     case 'polaroid': {
@@ -255,7 +274,8 @@ export function layout(W, H, settings, fields) {
 export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, settings, scale = 1, offsetX = 0, offsetY = 0 }) {
   const L = layout(W, H, settings, fields);
   const tpl = TEMPLATES[settings.template];
-  const font = FONTS[settings.font === 'template' ? tpl.font : settings.font];
+  const face = FONTS[settings.font === 'template' ? tpl.font : settings.font] || FONTS[tpl.font];
+  const font = { ...face, k: (face.scale || 1) / (FONTS[tpl.font].scale || 1) };
   const bg = settings.background === 'template' ? tpl.background : settings.background;
   const t = compose(fields, settings.show, settings.focal35);
   // Brand logos replace the brand name; a lens logo is added when the lens
@@ -318,14 +338,15 @@ export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, 
 function drawStrip({ ctx, font, ink, S, L, t }) {
   const { photo } = L;
   const barTop = photo.y + photo.h;
-  const barH = S * 0.12; // bar height is independent of the border
+  const unit = S * 0.12; // bar height is independent of the border
+  const barH = t.hasLogo ? S * 0.14 : unit; // taller for the logo row (see layout)
   const inset = Math.max(S * 0.035, photo.x - L.content.x + S * 0.01);
   const left = L.content.x + inset;
   const right = L.content.x + L.content.w - inset;
-  const big = barH * 0.2;
-  const small = barH * 0.15;
-  const l1 = barTop + barH * 0.47;
-  const l2 = barTop + barH * 0.47 + small * 1.55;
+  const big = unit * 0.2;
+  const small = unit * 0.15;
+  const l1 = barTop + barH / 2 - unit * 0.03;
+  const l2 = l1 + small * 1.55;
   const half = (right - left) / 2;
 
   // Left: camera model over lens
@@ -334,15 +355,26 @@ function drawStrip({ ctx, font, ink, S, L, t }) {
   text(ctx, model, left, sub ? l1 : (l1 + l2) / 2 - small * 0.3, { font, size: big, weight: 'bold', color: ink.primary, maxWidth: half * 0.95 });
   text(ctx, sub, left, model ? l2 : l1, { font, size: small, color: ink.muted, maxWidth: half * 0.95 });
 
-  // Right: exposure over date/time, preceded by the make as a wordmark
   const second = [t.when, t.artist].filter(Boolean).join('   ');
+  // The brand is skipped when the model is hidden and the brand alone already shows on the left.
+  const brands = t.model ? t.brands : t.brands.filter((b) => b.logo && b.logo !== cameraLogo(t.make));
+
+  // With logos: the camera and lens logos on top, the shot details beneath.
+  if (brands.some((b) => b.logo)) {
+    stack(ctx, [
+      { row: brands, size: S * 0.017, color: ink.primary, rule: ink.rule },
+      t.exposure && { s: t.exposure, size: S * 0.022, weight: 'bold', color: ink.primary },
+      second && { s: second, size: S * 0.016, color: ink.muted },
+    ].filter(Boolean), right, barTop + barH / 2, half * 0.9, font, 'right');
+    return;
+  }
+
+  // Right: exposure over date/time, preceded by the make as a wordmark
   const rightTop = second ? l1 : (l1 + l2) / 2 - small * 0.3;
   const w1 = text(ctx, t.exposure, right, rightTop, { font, size: big, weight: 'bold', color: ink.primary, align: 'right', maxWidth: half * 0.72 });
   const w2 = text(ctx, second, right, t.exposure ? l2 : l1, { font, size: small, color: ink.muted, align: 'right', maxWidth: half * 0.72 });
   const blockW = Math.max(w1, w2);
-  // The brand sits beside the exposure block. It's skipped when the model is
-  // hidden and the brand alone already shows on the left.
-  const brands = t.model ? t.brands : t.brands.filter((b) => b.logo && b.logo !== cameraLogo(t.make));
+  // The brand name sits beside the exposure block.
   if (brands.length) {
     const gap = S * 0.018;
     let x = right;
@@ -362,11 +394,14 @@ function drawPolaroid({ ctx, font, ink, S, L, t }) {
   const top = photo.y + photo.h;
   const area = L.content.y + L.content.h - top;
   const headline = t.caption || t.camera;
+  const gear = (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   ');
+  const exposure = t.exposure && { s: t.exposure, size: S * 0.026, weight: 'regular', color: ink.muted };
+  const gearLine = gear && { s: gear, size: S * 0.022, color: ink.muted };
   const lines = [
     t.hasLogo && { row: t.brands, size: S * 0.03, color: ink.primary, rule: ink.rule },
     headline && { s: headline, size: S * 0.05, weight: 'regular', italic: font.italic, color: ink.primary },
-    t.exposure && { s: t.exposure, size: S * 0.026, weight: 'regular', color: ink.muted },
-    (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('  ') && { s: (t.caption ? [t.camera, t.lens] : [t.lens]).filter(Boolean).join('   '), size: S * 0.022, color: ink.muted },
+    // With logos, camera and lens sit up with the logo row and the shot details go below.
+    ...(t.hasLogo ? [gearLine, exposure] : [exposure, gearLine]),
     [t.when, t.artist].filter(Boolean).join('   ') && { s: [t.when, t.artist].filter(Boolean).join('   '), size: S * 0.022, color: ink.muted },
   ].filter(Boolean);
   stackCentered(ctx, lines, cx, top + area / 2, photo.w * 0.92, font);
@@ -421,10 +456,19 @@ function drawViewfinder({ ctx, font, S, L, t, scale }) {
   ctx.save();
   ctx.shadowColor = 'rgba(0,0,0,0.5)';
   ctx.shadowBlur = S * 0.006 * scale;
-  const top = below ? base - sub * 1.6 : base;
-  if (t.hasLogo) brandRow(ctx, t.brands, left, top - size * 1.45, S * 0.026, { color: '#ffffff', rule: 'rgba(255,255,255,0.5)', font, maxWidth: photo.w * 0.6 });
-  text(ctx, exposure || t.caption, left, top, { font, size, weight: 'bold', color: '#ffffff', maxWidth: photo.w * 0.62 });
-  text(ctx, below, left, base, { font, size: sub, color: 'rgba(255,255,255,0.82)', maxWidth: photo.w * 0.62 });
+  if (t.hasLogo) {
+    // Logos, then camera and lens, then the shot details on the bottom line.
+    const main = exposure || t.caption;
+    const gearY = main ? base - size * 1.25 : base;
+    const logoH = S * 0.026;
+    text(ctx, main, left, base, { font, size, weight: 'bold', color: '#ffffff', maxWidth: photo.w * 0.62 });
+    text(ctx, below, left, gearY, { font, size: sub, color: 'rgba(255,255,255,0.82)', maxWidth: photo.w * 0.62 });
+    brandRow(ctx, t.brands, left, (below ? gearY - sub * 1.05 : gearY - size * 0.95) - logoH * 0.8, logoH, { color: '#ffffff', rule: 'rgba(255,255,255,0.5)', font, maxWidth: photo.w * 0.6 });
+  } else {
+    const top = below ? base - sub * 1.6 : base;
+    text(ctx, exposure || t.caption, left, top, { font, size, weight: 'bold', color: '#ffffff', maxWidth: photo.w * 0.62 });
+    text(ctx, below, left, base, { font, size: sub, color: 'rgba(255,255,255,0.82)', maxWidth: photo.w * 0.62 });
+  }
   const rightLines = [t.when, t.artist, exposure ? t.caption : ''].filter(Boolean);
   rightLines.reverse().forEach((s, i) => {
     text(ctx, s, right, base - i * sub * 1.6, { font, size: sub, color: 'rgba(255,255,255,0.82)', align: 'right', maxWidth: photo.w * 0.34 });
@@ -1076,7 +1120,7 @@ function logoPaths(key) {
 }
 // Optical size corrections: scripts with flourishes and stacked marks look
 // small next to block wordmarks at the same height.
-const OPTICAL = { leica: 1.7, voigtlander: 1.4, 'om-system': 1.35, hasselblad: 0.9 };
+const OPTICAL = { leica: 1.7, voigtlander: 1.4, 'om-system': 1.35, hasselblad: 0.9, schneider: 1.45, vivo: 1.35, oppo: 1.25, htc: 1.2, realme: 1.15 };
 function logoHeight(key, h) {
   const [, , w, hh] = LOGOS[key].vb;
   return h * (OPTICAL[key] || (w / hh < 1.6 ? 1.45 : 1)); // compact marks (Apple) need more height
@@ -1105,8 +1149,9 @@ function drawLogo(ctx, key, x, cy, h, color) {
  * exists, separated by a thin rule. h is the cap height. Returns the width used.
  */
 function brandRow(ctx, items, x, cy, h, { color, rule, align = 'left', font, maxWidth = Infinity }) {
+  if (font.upper) items = items.map((it) => (it.text ? { text: it.text.toUpperCase() } : it));
   const measure = (hh) => {
-    const size = hh * 1.38; // cap height ≈ 0.72 of the font size
+    const size = hh * 1.38 * (font.k || 1); // cap height ≈ 0.72 of the font size
     ctx.font = fontSpec(font, font.bold, size);
     const widths = items.map((it) => (it.logo ? logoWidth(it.logo, hh) : ctx.measureText(it.text).width));
     const gap = hh * 0.8;
@@ -1136,8 +1181,9 @@ function brandRow(ctx, items, x, cy, h, { color, rule, align = 'left', font, max
 /** Draws text, shrinking it to fit maxWidth. Returns the drawn width. */
 function text(ctx, s, x, y, { font, size, weight = 'regular', italic = false, color, align = 'left', maxWidth = Infinity }) {
   if (!s) return 0;
+  if (font.upper) s = s.toUpperCase();
   const w = weight === 'bold' ? font.bold : font.regular;
-  let px = size;
+  let px = size * (font.k || 1);
   const spec = (p) => fontSpec(font, w, p, italic);
   ctx.font = spec(px);
   let width = ctx.measureText(s).width;

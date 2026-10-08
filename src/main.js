@@ -26,7 +26,29 @@ import '@fontsource/courier-prime/700.css';
 import '@fontsource/caveat/400.css';
 import '@fontsource/caveat/700.css';
 import '@fontsource/nanum-pen-script/400.css';
+// Korean faces: selectable themselves, and the Hangul fallback for the Latin faces.
+import '@fontsource/ibm-plex-sans-kr/400.css';
+import '@fontsource/ibm-plex-sans-kr/700.css';
+import '@fontsource/gowun-batang/400.css';
+import '@fontsource/gowun-batang/700.css';
+import '@fontsource/nanum-gothic-coding/korean-400.css';
+import '@fontsource/nanum-gothic-coding/korean-700.css';
+// Code and digital faces.
+import '@fontsource/fira-code/400.css';
+import '@fontsource/fira-code/700.css';
+import '@fontsource/ibm-plex-mono/400.css';
+import '@fontsource/ibm-plex-mono/700.css';
+import '@fontsource/source-code-pro/400.css';
+import '@fontsource/source-code-pro/700.css';
+import '@fontsource/space-mono/400.css';
+import '@fontsource/space-mono/700.css';
+import '@fontsource/orbitron/400.css';
+import '@fontsource/orbitron/700.css';
+import '@fontsource/vt323/400.css';
+import '@fontsource/press-start-2p/400.css';
 import dsegUrl from 'dseg/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2?url';
+import lcdRegularUrl from 'dseg/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff2?url';
+import lcdBoldUrl from 'dseg/fonts/DSEG14-Classic/DSEG14Classic-Bold.woff2?url';
 import './styles.css';
 
 import { Capacitor } from '@capacitor/core';
@@ -35,9 +57,9 @@ import { equivalentFocal, formatForCrop, lookupCamera } from './crop.js';
 import { cameraLogo, lensLogo } from './brands.js';
 import { LOGOS } from './logos.js';
 import { prettyModel } from './exif.js';
-import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
+import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, FONT_GROUPS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
 import { coordsOf, loadMaps, maps, placeOf } from './map.js';
-import { FORMATS, deliver, exportPhoto, maxCanvasPixels, needsStrips, outputSize } from './export.js';
+import { ALBUM, FORMATS, chooseFolder, deliver, exportPhoto, folderReady, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder } from './export.js';
 
 const $ = (sel) => document.querySelector(sel);
 const el = (tag, props = {}, ...children) => {
@@ -48,10 +70,12 @@ const el = (tag, props = {}, ...children) => {
 
 // ---------- State ----------
 
+// [key, label, width in twelfths]: related values share a row to keep Details short.
 const FIELD_ROWS = [
-  ['make', 'Brand'], ['model', 'Camera'], ['lens', 'Lens'], ['focal', 'Focal length'],
-  ['aperture', 'Aperture'], ['shutter', 'Shutter'], ['iso', 'ISO'], ['date', 'Date'], ['time', 'Time'],
-  ['location', 'Location'], ['place', 'Place'], ['artist', 'Artist'], ['caption', 'Caption'],
+  ['make', 'Brand', 5], ['model', 'Camera', 7], ['lens', 'Lens', 12],
+  ['focal', 'Focal', 3], ['aperture', 'Aperture', 3], ['shutter', 'Shutter', 3], ['iso', 'ISO', 3],
+  ['date', 'Date', 6], ['time', 'Time', 6], ['location', 'Location', 7], ['place', 'Place', 5],
+  ['artist', 'Artist', 5], ['caption', 'Caption', 7],
 ];
 const BACKGROUNDS = [
   ['template', 'Template default', 'auto'],
@@ -68,6 +92,8 @@ const settings = { ...structuredClone(DEFAULT_SETTINGS), ...stored, show: { ...D
 // Ratios saved by earlier versions ('3:2', '16:9') map to their short:long preset.
 if (!RATIOS[settings.ratio]) settings.ratio = { '3:2': '2:3', '16:9': '9:16' }[settings.ratio] || 'auto';
 const exportOpts = { format: 'jpeg', quality: 0.92, size: 'full', keepExif: true, ...load('rebate:export', {}) };
+// Where saves go; the first destination this device offers is the default.
+if (!saveTargets().some(([k]) => k === exportOpts.target)) exportOpts.target = saveTargets()[0][0];
 const photos = [];
 let current = -1;
 
@@ -155,6 +181,10 @@ function note(text, error = false) {
 const dateStampFace = new FontFace(DATE_STAMP_FONT.family, `url(${dsegUrl}) format("woff2")`, { weight: '700' });
 document.fonts.add(dateStampFace);
 const dateStampReady = dateStampFace.load().catch(() => null);
+// The 14-segment LCD face is a selectable typeface; it loads when first used.
+for (const [url, weight] of [[lcdRegularUrl, '400'], [lcdBoldUrl, '700']]) {
+  document.fonts.add(new FontFace(FONTS.lcd.family, `url(${url}) format("woff2")`, { weight }));
+}
 
 // Canvas text only uses a web font once it has loaded, and @font-face
 // unicode-range means each script (Latin, Greek, Korean…) loads separately,
@@ -325,12 +355,13 @@ function drawFields() {
   $('#details-hint').textContent = !photo
     ? 'Add a photo to edit its details.'
     : TEMPLATES[settings.template].map
-      ? `${TEMPLATES[settings.template].label} always shows where the photo was taken${coordsOf(photo.fields) ? '' : ' (type coordinates under Location, e.g. 37.5665, 126.9780)'}; exact coordinates appear only with Location on.`
-      : 'Turn a line off to leave it out of the frame. Text edits apply to the selected photo.';
+      ? `${TEMPLATES[settings.template].label} always shows where the photo was taken${coordsOf(photo.fields) ? '' : ' (type coordinates under Location, e.g. 37.5665, 126.9780)'}; exact coordinates appear only with Location ticked.`
+      : 'Untick a line to leave it out. Edits apply to the selected photo.';
   let focalInput;
   let placeInput;
   let cropInput;
   let cropStatus;
+  let focalExtras;
 
   // Recomputes the 35mm value from the focal length and crop factor, and
   // refreshes the crop row without rebuilding inputs (keeps typing focus).
@@ -338,13 +369,13 @@ function drawFields() {
     if (!photo) return;
     if (photo.crop && photo.focalMm) photo.fields.focal35 = equivalentFocal(photo.focalMm, photo.crop.value);
     if (cropInput && document.activeElement !== cropInput) cropInput.value = photo.crop ? photo.crop.value.toFixed(2) : '';
-    if (cropStatus) cropStatus.textContent = message || cropDescription(photo.crop);
+    if (cropStatus) cropStatus.textContent = message || cropDescription(photo.crop, photo.fields);
     if (focalInput && settings.focal35 && document.activeElement !== focalInput) focalInput.value = photo.fields.focal35 || photo.fields.focal;
     drawPreview();
     drawTemplatesLater();
   };
 
-  const rows = FIELD_ROWS.map(([key, label]) => {
+  const rows = FIELD_ROWS.map(([key, label, span]) => {
     // The focal length row edits whichever value is shown: actual or 35mm equivalent.
     const prop = key === 'focal' && settings.focal35 && photo?.fields.focal35 ? 'focal35' : key;
     const id = `f-${key}`;
@@ -373,18 +404,13 @@ function drawFields() {
       drawPreview();
       drawTemplatesLater();
     };
-    const row = el('div', { className: 'field' }, check, el('label', { htmlFor: id, textContent: prop === 'focal35' ? 'Focal (35mm)' : label }), input);
+    const row = el('div', { className: 'field' }, el('div', { className: 'field-head' }, check, el('label', { htmlFor: id, textContent: prop === 'focal35' ? 'Focal 35' : label })), input);
+    row.style.gridColumn = `span ${span}`;
     if (key !== 'focal') return row;
     focalInput = input;
 
     const toggle = el('input', { type: 'checkbox', id: 'focal35', checked: settings.focal35 });
     toggle.onchange = () => { settings.focal35 = toggle.checked; changed(); drawFields(); };
-    const actual = photo?.fields.focal;
-    const eq = photo?.fields.focal35;
-    const detail = settings.focal35 && photo && !eq
-      ? 'No crop factor for this camera yet, so the actual focal length is shown. Enter one below.'
-      : actual && eq && actual !== eq ? `${actual} on this camera equals ${eq} on full frame.`
-      : 'Shows the focal length as it would be on a full-frame (35mm) camera.';
 
     cropInput = el('input', {
       type: 'number', id: 'crop', min: '0.2', max: '12', step: '0.01', inputMode: 'decimal', disabled: !photo,
@@ -396,18 +422,17 @@ function drawFields() {
       photo.crop = { value: v, format: formatForCrop(v), source: 'manual' };
       syncCrop();
     };
-    cropStatus = el('small', { className: 'crop-status', textContent: photo ? cropDescription(photo.crop) : '' });
-    const cropRow = el('div', { className: 'field crop-row' },
-      el('span'), el('label', { htmlFor: 'crop', textContent: 'Crop factor' }),
-      el('div', { className: 'crop-input' }, cropInput, el('span', { textContent: '×', ariaHidden: 'true' })));
-    return [
-      row,
-      el('label', { className: 'toggle focal35' }, toggle, el('span', {}, 'Use 35mm-equivalent focal length', el('small', { textContent: detail }))),
-      cropRow,
-      el('div', { className: 'crop-note' }, cropStatus),
-    ];
+    cropStatus = el('small', { className: 'crop-status', textContent: photo ? cropDescription(photo.crop, photo.fields) : '' });
+    // 35mm switch and crop factor share one line under the exposure row.
+    focalExtras = el('div', { className: 'focal-extras' },
+      el('label', { className: 'toggle' }, toggle, el('span', { textContent: '35mm equivalent' })),
+      el('label', { className: 'crop-input', htmlFor: 'crop' }, el('span', { textContent: 'Crop' }), cropInput, el('span', { textContent: '×', ariaHidden: 'true' })),
+      cropStatus);
+    return row;
   });
-  $('#fields').replaceChildren(...rows.flat());
+  const iso = rows.findIndex((r) => r.querySelector('#f-iso'));
+  rows.splice(iso + 1, 0, focalExtras);
+  $('#fields').replaceChildren(...rows);
 }
 
 /** Placeholder for the Place field: the name looked up from the coordinates. */
@@ -418,8 +443,8 @@ function placeHint(photo) {
   return maps().placeName(coordsOf(photo.fields).lat, coordsOf(photo.fields).lon).label || 'No town nearby';
 }
 
-function cropDescription(crop) {
-  if (!crop) return 'Not found. Type the crop factor, e.g. 1.5 for APS-C or 2 for Micro Four Thirds.';
+function cropDescription(crop, fields) {
+  if (!crop) return 'Crop factor not found: type it, e.g. 1.5 for APS-C or 2 for Micro Four Thirds.';
   const where = {
     database: crop.matched === 'series'
       ? 'estimated from the camera’s product line'
@@ -428,7 +453,8 @@ function cropDescription(crop) {
     sensor: 'estimated from the sensor size in EXIF',
     manual: 'set by you',
   }[crop.source];
-  return `${crop.format || formatForCrop(crop.value)}, ${where}.`;
+  const eq = fields?.focal && fields.focal35 && fields.focal !== fields.focal35 ? ` ${fields.focal} = ${fields.focal35} on full frame.` : '';
+  return `${crop.format || formatForCrop(crop.value)}, ${where}.${eq}`;
 }
 const drawTemplatesLater = () => { if (!$('[data-body="frame"]').hidden) drawTemplates(); };
 
@@ -510,18 +536,23 @@ function drawLayoutControls() {
     (v) => (settings.logo || 'both') === v, (v) => { settings.logo = v; changed(); });
   $('#logo-hint').textContent = logoHint(photos[current]);
 
+  // Typefaces by kind: the chips switch which kind is listed, so the list stays short.
   const tplFont = FONTS[TEMPLATES[settings.template].font];
+  const shown = fontGroup || (settings.font === 'template' ? tplFont : FONTS[settings.font])?.group || 'sans';
+  chipGroup($('#font-groups'), Object.entries(FONT_GROUPS), (v) => v === shown, (v) => { fontGroup = v; drawLayoutControls(); });
+  const faces = [['template', tplFont, `Default · ${tplFont.label}`], ...Object.entries(FONTS).filter(([, f]) => f.group === shown).map(([k, f]) => [k, f, f.label])];
   $('#fonts').replaceChildren(
-    ...[['template', `Template default`, tplFont], ...Object.entries(FONTS).map(([k, f]) => [k, f.label, f])].map(([key, label, f]) => {
+    ...faces.map(([key, f, label]) => {
       const b = el('button', { className: 'font-opt af', type: 'button' },
-        el('b', { textContent: f.sample || '1/250s f/2.8', style: `font-family:"${f.family}";${f.italic && key === 'fraunces' ? 'font-style:italic;' : ''}` }),
-        el('small', { textContent: key === 'template' ? `${label} (${f.label})` : label }));
+        el('b', { textContent: f.sample || 'Ag 1/250', style: `font-family:"${f.family}";${f.upper ? 'text-transform:uppercase;' : ''}` }),
+        el('small', { textContent: label }));
       b.setAttribute('aria-pressed', String(settings.font === key));
       b.onclick = () => { settings.font = key; changed(); };
       return b;
     }),
   );
 }
+let fontGroup = null; // the kind of typeface the picker lists; follows the selection until a chip is used
 function logoHint(photo) {
   if (!photo) return 'Logos appear for supported camera and lens brands. A lens logo is added when the lens maker differs from the camera’s.';
   const cam = cameraLogo(photo.fields.make);
@@ -563,6 +594,17 @@ $('#radius').oninput = (e) => { settings.radius = +e.target.value; $('#radius-ou
 function drawSaveControls() {
   chipGroup($('#formats'), Object.entries(FORMATS).map(([k, f]) => [k, f.label]), (v) => exportOpts.format === v, (v) => { exportOpts.format = v; persist(); drawSaveControls(); });
   chipGroup($('#sizes'), [['full', 'Full size'], ['4096', '4096 px'], ['2048', '2048 px']], (v) => exportOpts.size === v, (v) => { exportOpts.size = v; persist(); drawSaveControls(); });
+  const targets = saveTargets();
+  chipGroup($('#targets'), targets.map(([k, label]) => [k, label]), (v) => exportOpts.target === v, (v) => { exportOpts.target = v; persist(); drawSaveControls(); });
+  const [, , detail] = targets.find(([k]) => k === exportOpts.target);
+  $('#target-hint').textContent = detail;
+  $('#change-folder').hidden = exportOpts.target !== 'folder';
+  if (exportOpts.target === 'folder') {
+    savedFolder().then((f) => {
+      $('#target-hint').textContent = f ? `Saving into “${f.label}”. ${detail}` : `${detail} You’ll be asked where on your first save.`;
+      $('#change-folder').textContent = f ? 'Change folder' : 'Choose folder';
+    });
+  }
   $('#quality-row').hidden = exportOpts.format === 'png';
   $('#quality').value = exportOpts.quality;
   $('#quality-out').textContent = `${Math.round(exportOpts.quality * 100)}`;
@@ -590,6 +632,19 @@ let canvasLimitKnown = null;
 async function save(list) {
   const buttons = [$('#save-one'), $('#save-all')];
   buttons.forEach((b) => (b.disabled = true));
+  let target = exportOpts.target;
+  let folder = null;
+  if (target === 'folder') {
+    // Ask for access (or a folder) now, while the click still counts as a user gesture.
+    try {
+      folder = (await folderReady()) || (await chooseFolder());
+    } catch (err) {
+      buttons.forEach((b) => (b.disabled = false));
+      if (err.name !== 'AbortError') note(`Couldn’t open the folder (${err.message}). Saving to Downloads instead.`, true);
+      if (err.name === 'AbortError') return;
+      target = 'download';
+    }
+  }
   try {
     canvasLimitKnown = maxCanvasPixels();
     const out = [];
@@ -602,9 +657,13 @@ async function save(list) {
       out.push(await exportPhoto(photo, settings, exportOpts, (p) => busy(`${label} ${Math.round(p * 100)}%`)));
     }
     busy(list.length > 1 ? 'Packing' : 'Saving');
-    const result = await deliver(out);
+    const result = await deliver(out, target, folder);
     busy(null);
-    if (result === 'downloaded') note(list.length > 1 ? `Saved ${list.length} photos as framed-photos.zip.` : `Saved ${out[0].name} (${out[0].width} × ${out[0].height} px).`);
+    const what = list.length > 1 ? `${list.length} photos` : `${out[0].savedAs || out[0].name} (${out[0].width} × ${out[0].height} px)`;
+    if (result === 'downloaded') note(list.length > 1 ? `Saved ${list.length} photos as framed-photos.zip.` : `Saved ${what}.`);
+    if (result === 'folder') note(`Saved ${what} to “${folder.label}”.`);
+    if (result === 'album') note(`Saved ${what} to the “${ALBUM}” album in Photos.`);
+    if (result === 'files') note(`Saved ${what} to Files → On My iPhone → ${ALBUM}.`);
     if (exportOpts.format === 'webp' && out.some((o) => o.format !== 'webp')) {
       note(out.some((o) => o.strips)
         ? 'Saved as JPEG: frames this large can only be saved as JPEG or PNG.'
@@ -619,6 +678,10 @@ async function save(list) {
     drawSaveControls();
   }
 }
+$('#change-folder').onclick = async () => {
+  try { const f = await chooseFolder(); note(`Saves now go to “${f.label}”.`); } catch (err) { if (err.name !== 'AbortError') note(err.message, true); }
+  drawSaveControls();
+};
 $('#save-one').onclick = () => photos[current] && save([photos[current]]);
 $('#save-all').onclick = () => save(photos);
 
@@ -640,7 +703,7 @@ function refreshAll() {
 
 // Template default faces are needed for the template thumbnails at once;
 // other typefaces load on demand (see ensureFont).
-Promise.allSettled([...new Set(Object.values(TEMPLATES).map((t) => t.font))].map((k) => ensureFont(k))).then(refreshAll);
+Promise.allSettled([...new Set(Object.values(TEMPLATES).flatMap((t) => [t.font, ...(t.fonts || [])]))].map((k) => ensureFont(k))).then(refreshAll);
 refreshAll();
 
 if ('serviceWorker' in navigator && import.meta.env.PROD && !Capacitor.isNativePlatform()) {
