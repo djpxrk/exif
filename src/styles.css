@@ -97,6 +97,25 @@ button, input, select { font: inherit; color: inherit; }
 .empty-bar i { display: block; height: 5px; background: #222; border-radius: 1px; }
 .empty-bar i:first-child { width: 42px; }
 .empty-bar i:last-child { width: 64px; }
+/* The drop area adapts to the stage's height (phones with the browser's
+   toolbars showing leave very little): smaller first, then the illustration
+   and finally the paragraph give way, so nothing is cut off. */
+.stage { container-type: size; }
+.empty { max-height: 100%; overflow: hidden; }
+@container (max-height: 400px) {
+  .empty-frame { width: 120px; padding: 5px 5px 0; }
+  .empty-bar { height: 16px; }
+  .empty h2 { font-size: 24px; margin: 14px 0 6px; }
+  .empty p { font-size: 14px; margin-bottom: 14px; }
+  .empty .btn { padding: 9px 16px; }
+}
+@container (max-height: 290px) {
+  .empty-frame { display: none; }
+  .empty h2 { margin-top: 0; }
+}
+@container (max-height: 190px) {
+  .empty p { display: none; }
+}
 
 .busy {
   position: absolute; inset: auto 0 18px; margin: auto; width: max-content;
