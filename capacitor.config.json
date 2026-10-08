@@ -5,6 +5,7 @@
   "backgroundColor": "#242527",
   "ios": {
     "contentInset": "never",
-    "scheme": "Rebate"
+    "scheme": "Rebate",
+    "scrollEnabled": false
   }
 }
