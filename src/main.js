@@ -45,6 +45,8 @@ import '@fontsource/space-mono/700.css';
 import '@fontsource/orbitron/400.css';
 import '@fontsource/orbitron/700.css';
 import '@fontsource/vt323/400.css';
+import '@fontsource/anton/400.css';
+import '@fontsource/pacifico/400.css';
 import '@fontsource/press-start-2p/400.css';
 import dsegUrl from 'dseg/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2?url';
 import lcdRegularUrl from 'dseg/fonts/DSEG14-Classic/DSEG14Classic-Regular.woff2?url';

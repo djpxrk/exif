@@ -19,6 +19,7 @@ export const FONTS = {
   manrope: { group: 'sans', family: 'Manrope', label: 'Manrope', regular: 400, bold: 700, stack: KR_SANS },
   unbounded: { group: 'sans', family: 'Unbounded', label: 'Unbounded', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.92 },
   barlow: { group: 'sans', family: 'Barlow Condensed', label: 'Barlow Condensed', regular: 500, bold: 700, stack: `"Inter", ${KR_SANS}` },
+  anton: { group: 'sans', family: 'Anton', label: 'Anton', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}` },
   fraunces: { group: 'serif', family: 'Fraunces', label: 'Fraunces', regular: 400, bold: 600, italic: true, stack: `"EB Garamond", ${KR_SERIF}` },
   garamond: { group: 'serif', family: 'EB Garamond', label: 'EB Garamond', regular: 400, bold: 700, italic: true, stack: KR_SERIF, scale: 1.15 },
   didone: { group: 'serif', family: 'Noto Serif Display', label: 'Noto Serif Display', regular: 400, bold: 700, italic: true, stack: KR_SERIF },
@@ -33,6 +34,7 @@ export const FONTS = {
   orbitron: { group: 'digital', family: 'Orbitron', label: 'Orbitron', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.9 },
   vt323: { group: 'digital', family: 'VT323', label: 'VT323', regular: 400, bold: 400, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2 },
   pixel: { group: 'digital', family: 'Press Start 2P', label: 'Press Start 2P', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, scale: 0.7 },
+  pacifico: { group: 'hand', family: 'Pacifico', label: 'Pacifico', regular: 400, bold: 400, stack: `"Caveat", ${KR_HAND}, "Manrope"`, scale: 0.85 },
   caveat: { group: 'hand', family: 'Caveat', label: 'Caveat', regular: 400, bold: 700, stack: `${KR_HAND}, "Manrope"`, scale: 1.3 },
   nanumpen: { group: 'hand', family: 'Nanum Pen Script', label: 'Nanum Pen Script', regular: 400, bold: 400, stack: '"Manrope"', scale: 1.3, sample: '오늘의 사진' },
   plexkr: { group: 'korean', family: 'IBM Plex Sans KR', label: 'IBM Plex Sans KR', regular: 400, bold: 700, stack: '"Inter"', sample: '서울 1/250' },
@@ -62,6 +64,9 @@ export const TEMPLATES = {
   postcard: { label: 'Postcard', font: 'caveat', background: '#f3eee3', map: true, fonts: ['courier'] },
   slide: { label: 'Slide mount', font: 'courier', background: '#e9e5db', fonts: ['caveat'] },
   cinema: { label: 'Cinema', font: 'manrope', background: '#000000' },
+  filmstrip: { label: 'Film strip', font: 'barlow', background: '#17110b' },
+  terminal: { label: 'Terminal', font: 'vt323', background: '#040805' },
+  greetings: { label: 'Greetings', font: 'pacifico', background: '#efe3c8', map: true, fonts: ['anton', 'courier'] },
 };
 
 // Ground distance from the map's centre to its rim.
@@ -240,6 +245,24 @@ export function layout(W, H, settings, fields) {
       pad = { top: m, left: 0, right: 0, bottom: m };
       break;
     }
+    case 'filmstrip': {
+      // 35mm film: the 24mm picture height is S, and each edge (perforations
+      // and edge printing) is 5.5mm. The strip runs along the photo's long side.
+      const band = S * (5.5 / 24);
+      const gap = S * 0.06 * b;
+      pad = W >= H ? { top: band, bottom: band, left: gap, right: gap } : { left: band, right: band, top: gap, bottom: gap };
+      break;
+    }
+    case 'terminal': {
+      const m = S * 0.045 * b;
+      pad = { top: m, left: m, right: m, bottom: m + S * 0.3 };
+      break;
+    }
+    case 'greetings': {
+      const m = S * 0.065 * b;
+      pad = { top: m, left: m, right: m, bottom: m + S * 0.42 };
+      break;
+    }
     default:
       pad = { top: 0, left: 0, right: 0, bottom: 0 };
   }
@@ -304,16 +327,17 @@ export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, 
 
   // Photo
   ctx.save();
+  const gate = { slide: S * 0.022, filmstrip: S * 0.012 }[settings.template] || 0; // always-rounded windows
   if (settings.template === 'backdrop' || settings.template === 'slide') {
     ctx.shadowColor = 'rgba(0,0,0,0.45)';
     ctx.shadowBlur = S * 0.035 * scale;
     ctx.shadowOffsetY = S * 0.012 * scale;
     ctx.fillStyle = '#000';
-    roundRect(ctx, photo.x, photo.y, photo.w, photo.h, settings.template === 'slide' ? Math.max(radius, S * 0.022) : radius);
+    roundRect(ctx, photo.x, photo.y, photo.w, photo.h, Math.max(radius, gate));
     ctx.fill();
     ctx.shadowColor = 'transparent';
   }
-  const r = settings.template === 'slide' ? Math.max(radius, S * 0.022) : radius; // slide windows are always rounded
+  const r = Math.max(radius, gate);
   roundRect(ctx, photo.x, photo.y, photo.w, photo.h, r);
   ctx.clip();
   ctx.imageSmoothingQuality = 'high';
@@ -334,6 +358,9 @@ export function renderFrame(ctx, { img, orientation = 1, blurImg, W, H, fields, 
     postcard: drawPostcard,
     slide: drawSlide,
     cinema: drawCinema,
+    filmstrip: drawFilmStrip,
+    terminal: drawTerminal,
+    greetings: drawGreetings,
   })[settings.template](draw);
 
   ctx.restore();
@@ -1097,6 +1124,291 @@ function drawCinema({ ctx, font, S, L, t, fields, settings }) {
     }
     text(ctx, tracked(credit.toUpperCase()), cx, photo.y + photo.h + botH * (sub ? 0.76 : 0.56), { font, size: Math.min(botH * 0.13, S * 0.016), color: 'rgba(255,255,255,0.55)', align: 'center', maxWidth: photo.w * 0.92 });
   }
+}
+
+// ---------- Film strip ----------
+
+const LIGHT_TABLE = '#f5efe1';
+const EDGE_INK = '#e9a23b';
+
+/** A frame number from the file name's digits (DSC01234 → 35), like the numbers printed on a roll. */
+const frameNumber = (fields) => ((parseInt(String(fields.file || '').replace(/\D/g, '').slice(-4), 10) || 0) % 36) + 1;
+
+function drawFilmStrip({ ctx, font, S, L, t, fields }) {
+  const { photo, content } = L;
+  const mm = S / 24; // the picture is 24mm high on 35mm film
+  ctx.save();
+  // Strip coordinates: u runs along the film, v across it. A portrait photo's
+  // strip runs top to bottom, so it's drawn rotated a quarter turn.
+  let len, wid, pu, pv, pl, pw;
+  if (photo.w >= photo.h) {
+    ctx.translate(content.x, content.y);
+    [len, wid, pu, pv, pl, pw] = [content.w, content.h, photo.x - content.x, photo.y - content.y, photo.w, photo.h];
+  } else {
+    ctx.translate(content.x + content.w, content.y);
+    ctx.rotate(Math.PI / 2);
+    [len, wid, pu, pv, pl, pw] = [content.h, content.w, photo.y - content.y, content.x + content.w - photo.x - photo.w, photo.h, photo.w];
+  }
+
+  // Perforations (KS: 1.98 × 2.79mm every 4.75mm), lit from below as on a light table.
+  const holeU = 1.98 * mm;
+  const holeV = 2.79 * mm;
+  const pitch = 4.75 * mm;
+  const center = pu + pl / 2;
+  const edges = []; // [v0, v1] of the margin between each row of holes and the film's edge
+  for (const [v0, v1, outside] of [[0, pv, 'top'], [pv + pw, wid, 'bottom']]) {
+    if (v1 - v0 < holeV + mm) continue;
+    const vh = outside === 'top' ? v1 - 1.1 * mm - holeV : v0 + 1.1 * mm;
+    edges.push(outside === 'top' ? [v0, vh] : [vh + holeV, v1]);
+    for (let k = Math.floor(-center / pitch) - 1; k <= Math.ceil((len - center) / pitch) + 1; k++) {
+      const u = center + k * pitch - holeU / 2;
+      roundRect(ctx, u, vh, holeU, holeV, 0.33 * mm);
+      ctx.fillStyle = LIGHT_TABLE;
+      ctx.fill();
+      ctx.strokeStyle = 'rgba(0,0,0,0.3)';
+      ctx.lineWidth = 0.12 * mm;
+      ctx.stroke();
+    }
+  }
+
+  // Edge printing in the outer margins: frame numbers and stock name on one
+  // edge, the camera details and a DX-style barcode on the other.
+  const size = 1.05 * mm;
+  const ink = { font, size, weight: 'bold', color: EDGE_INK };
+  const n = frameNumber(fields);
+  if (edges[0]) {
+    const [a, b] = edges[0];
+    const y = (a + b) / 2 + size * 0.36;
+    text(ctx, `▸ ${n}A`, pu + 2 * mm, y, ink);
+    text(ctx, 'REBATE 400  ·  SAFETY FILM', center, y, { ...ink, align: 'center', maxWidth: pl * 0.5 });
+    text(ctx, `${n + 1} ▸`, pu + pl - 2 * mm, y, { ...ink, align: 'right' });
+  }
+  if (edges[1]) {
+    const [a, b] = edges[1];
+    const y = (a + b) / 2 + size * 0.36;
+    const line = [[t.make, t.model].filter(Boolean).join(' '), t.lens, t.exposure, t.datetime].filter(Boolean).join('   ·   ').toUpperCase();
+    // Barcode: bars from a hash of the frame's details, then the details, then the frame number.
+    let h = 2166136261;
+    for (const c of `${line}${n}`) h = Math.imul(h ^ c.charCodeAt(0), 16777619) >>> 0;
+    const barH = (b - a) * 0.62;
+    let u = pu + 2 * mm;
+    ctx.fillStyle = EDGE_INK;
+    for (let i = 0; i < 22; i++) {
+      const w = ((h >>> (i % 31)) & 1 ? 0.34 : 0.17) * mm;
+      ctx.fillRect(u, (a + b) / 2 - barH / 2, w, barH);
+      u += w + 0.2 * mm;
+    }
+    const end = pu + pl - 2 * mm;
+    const numW = text(ctx, String(n).padStart(2, '0'), end, y, { ...ink, align: 'right' });
+    const from = u + 3 * mm;
+    const to = end - numW - 3 * mm;
+    text(ctx, line, (from + to) / 2, y, { ...ink, align: 'center', maxWidth: Math.max(0, to - from) });
+  }
+  ctx.restore();
+}
+
+// ---------- Terminal ----------
+
+const PHOSPHOR = '#56ff8e';
+
+function drawTerminal({ ctx, font, S, L, t, fields, settings, scale }) {
+  const { photo, content } = L;
+  const left = photo.x;
+  const right = photo.x + photo.w;
+
+  // CRT glass: a dim green glow fading to dark corners, and scanlines,
+  // everywhere but over the photo.
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(content.x, content.y, content.w, content.h);
+  ctx.rect(photo.x, photo.y, photo.w, photo.h);
+  ctx.clip('evenodd');
+  const cx = content.x + content.w / 2;
+  const cy = content.y + content.h / 2;
+  const glow = ctx.createRadialGradient(cx, cy, S * 0.1, cx, cy, Math.hypot(content.w, content.h) * 0.62);
+  glow.addColorStop(0, 'rgba(60,160,90,0.12)');
+  glow.addColorStop(1, 'rgba(0,0,0,0.55)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(content.x, content.y, content.w, content.h);
+  const pitch = S * 0.0045;
+  ctx.fillStyle = 'rgba(0,0,0,0.33)';
+  for (let y = content.y; y < content.y + content.h; y += pitch) ctx.fillRect(content.x, y, content.w, pitch * 0.45);
+  ctx.restore();
+
+  // Phosphor outline around the picture.
+  ctx.save();
+  ctx.shadowColor = 'rgba(86,255,142,0.6)';
+  ctx.shadowBlur = S * 0.012 * scale;
+  ctx.strokeStyle = 'rgba(86,255,142,0.75)';
+  ctx.lineWidth = S * 0.0022;
+  const o = S * 0.008;
+  ctx.strokeRect(photo.x - o, photo.y - o, photo.w + o * 2, photo.h + o * 2);
+  ctx.restore();
+
+  // The details as a command's output, with dotted leaders and a cursor.
+  const show = settings.show;
+  const geo = geoFor(fields, photo.w < photo.h);
+  const rows = [
+    ['CAMERA', [t.make, t.model].filter(Boolean).join(' ')],
+    ['LENS', t.lens],
+    ['SHOT', t.exposure.replace(/ {2}/g, ' ')],
+    ['DATE', t.datetime],
+    ['PLACE', show.place ? geo.place?.label : ''],
+    ['GPS', show.location && geo.coords ? formatDms(geo.coords) : ''],
+    ['NOTE', t.caption],
+    ['BY', t.artist.replace(/^© /, '')],
+  ].filter(([, v]) => v);
+  const panelTop = photo.y + photo.h + S * 0.035;
+  const panelH = content.y + content.h - panelTop - Math.max(S * 0.025, photo.x - content.x);
+  const size = Math.min(S * 0.034, panelH / ((rows.length + 2) * 1.22));
+  const lh = size * 1.22;
+  const prompt = 'C:\\REBATE>';
+  ctx.save();
+  ctx.shadowColor = 'rgba(86,255,142,0.65)';
+  ctx.shadowBlur = size * 0.35 * scale;
+  let y = panelTop + size;
+  const dim = 'rgba(86,255,142,0.6)';
+  text(ctx, `${prompt} exif ${fields.file || 'PHOTO.JPG'}`, left, y, { font, size, color: dim, maxWidth: photo.w * 0.6 });
+  for (const [label, value] of rows) {
+    y += lh;
+    const w = text(ctx, `${label} `.padEnd(9, '.') + ' ', left, y, { font, size, color: dim });
+    text(ctx, value, left + w, y, { font, size, color: PHOSPHOR, maxWidth: right - left - w });
+  }
+  y += lh;
+  const w = text(ctx, `${prompt} `, left, y, { font, size, color: dim });
+  ctx.fillStyle = PHOSPHOR;
+  ctx.fillRect(left + w, y - size * 0.72, size * 0.5, size * 0.82);
+  if (t.hasLogo) brandRow(ctx, t.brands, right, panelTop + size * 0.62, size * 0.62, { color: PHOSPHOR, rule: 'rgba(86,255,142,0.4)', align: 'right', font, maxWidth: photo.w * 0.35 });
+  ctx.restore();
+}
+
+// ---------- Greetings (large-letter postcard) ----------
+
+/** A rectangle whose edges are scalloped outward, like a deckle-edged print. */
+function scallopedRect(ctx, x, y, w, h, r) {
+  const nx = Math.max(2, Math.round(w / (2 * r)));
+  const ny = Math.max(2, Math.round(h / (2 * r)));
+  const rx = w / nx / 2;
+  const ry = h / ny / 2;
+  ctx.moveTo(x, y);
+  for (let i = 0; i < nx; i++) ctx.arc(x + rx * (2 * i + 1), y, rx, Math.PI, 0);
+  for (let i = 0; i < ny; i++) ctx.arc(x + w, y + ry * (2 * i + 1), ry, -Math.PI / 2, Math.PI / 2);
+  for (let i = 0; i < nx; i++) ctx.arc(x + w - rx * (2 * i + 1), y + h, rx, 0, Math.PI);
+  for (let i = 0; i < ny; i++) ctx.arc(x, y + h - ry * (2 * i + 1), ry, Math.PI / 2, Math.PI * 1.5);
+  ctx.closePath();
+}
+
+// Photo-filled lettering is rendered once per size and reused, since strip
+// exports call the renderer once per tile.
+const letterCache = new WeakMap();
+function photoLetters(ctx, word, fnt, size, x, y, img, scale) {
+  ctx.font = fontSpec(fnt, fnt.regular, size);
+  const m = ctx.measureText(word);
+  const asc = m.actualBoundingBoxAscent;
+  const desc = m.actualBoundingBoxDescent;
+  const bx = x - m.width / 2;
+  const by = y - asc;
+  // Keep the bitmap under ~8 MP; the fill is the photo, so a little softness is fine.
+  const k = Math.min(scale, Math.sqrt(8e6 / Math.max(1, m.width * (asc + desc))));
+  const key = `${word}|${size}|${k}|${fnt.family}`;
+  let hit = letterCache.get(img);
+  if (hit?.key !== key) {
+    const off = document.createElement('canvas');
+    off.width = Math.ceil(m.width * k) + 4;
+    off.height = Math.ceil((asc + desc) * k) + 4;
+    const g = off.getContext('2d');
+    const iw = img.naturalWidth || img.width;
+    const ih = img.naturalHeight || img.height;
+    const cover = Math.max(off.width / iw, off.height / ih);
+    g.imageSmoothingQuality = 'high';
+    g.drawImage(img, (off.width - iw * cover) / 2, (off.height - ih * cover) / 2, iw * cover, ih * cover);
+    const sheen = g.createLinearGradient(0, 0, 0, off.height);
+    sheen.addColorStop(0, 'rgba(255,255,255,0.22)');
+    sheen.addColorStop(0.55, 'rgba(255,255,255,0)');
+    sheen.addColorStop(1, 'rgba(0,0,0,0.18)');
+    g.fillStyle = sheen;
+    g.fillRect(0, 0, off.width, off.height);
+    g.globalCompositeOperation = 'destination-in';
+    g.font = fontSpec(fnt, fnt.regular, size * k);
+    g.textBaseline = 'alphabetic';
+    g.fillStyle = '#000';
+    g.fillText(word, 2, asc * k + 2);
+    hit = { key, canvas: off };
+    letterCache.set(img, hit);
+  }
+  ctx.drawImage(hit.canvas, bx - 2 / k, by - 2 / k, hit.canvas.width / k, hit.canvas.height / k);
+}
+
+function drawGreetings({ ctx, font, S, L, t, fields, scale, small }) {
+  const { photo, content } = L;
+
+  // Linen-finish card: a faint woven texture around the photo.
+  ctx.save();
+  ctx.beginPath();
+  ctx.rect(content.x, content.y, content.w, content.h);
+  ctx.rect(photo.x, photo.y, photo.w, photo.h);
+  ctx.clip('evenodd');
+  ctx.fillStyle = 'rgba(120,90,50,0.07)';
+  const weave = S * 0.006;
+  for (let x = content.x; x < content.x + content.w; x += weave) ctx.fillRect(x, content.y, weave * 0.35, content.h);
+  for (let y = content.y; y < content.y + content.h; y += weave) ctx.fillRect(content.x, y, content.w, weave * 0.35);
+
+  // Deckle-edged white border, its shadow kept off the photo.
+  const bw = S * 0.022;
+  ctx.beginPath();
+  scallopedRect(ctx, photo.x - bw, photo.y - bw, photo.w + bw * 2, photo.h + bw * 2, S * 0.011);
+  ctx.shadowColor = 'rgba(70,45,10,0.28)';
+  ctx.shadowBlur = S * 0.014 * scale;
+  ctx.shadowOffsetY = S * 0.004 * scale;
+  ctx.fillStyle = '#fbf8f1';
+  ctx.fill();
+  ctx.restore();
+
+  // "Greetings from" in script over big block letters filled with the photo.
+  const top = photo.y + photo.h + bw;
+  const area = content.y + content.h - top;
+  const cx = content.x + content.w / 2;
+  const geo = geoFor(fields, photo.w < photo.h);
+  const [place] = placeLines(geo.place);
+  const dp = dateParts(fields.date);
+  const word = (place || t.caption || (dp ? `${MONTH_NAMES[dp.m]} ${dp.y}` : 'Somewhere')).toUpperCase();
+
+  const block = FONTS.anton;
+  const maxW = content.w - S * 0.14;
+  ctx.font = fontSpec(block, block.regular, 100);
+  const unit = ctx.measureText(word).width / 100;
+  const size = Math.min(area * 0.56, maxW / unit);
+  const base = top + area * 0.8;
+
+  const script = Math.min(area * 0.19, S * 0.085);
+  ctx.save();
+  ctx.translate(cx - Math.min(maxW, unit * size) * 0.28, top + area * 0.2);
+  ctx.rotate(-0.07);
+  ctx.font = fontSpec(font, font.regular, script * (font.k || 1));
+  ctx.textAlign = 'center';
+  ctx.lineJoin = 'round';
+  ctx.lineWidth = script * 0.16;
+  ctx.strokeStyle = '#fbf8f1';
+  ctx.strokeText('Greetings from', 0, 0);
+  ctx.fillStyle = '#b3322b';
+  ctx.fillText('Greetings from', 0, 0);
+  ctx.restore();
+
+  ctx.save();
+  ctx.font = fontSpec(block, block.regular, size);
+  ctx.textAlign = 'center';
+  ctx.lineJoin = 'round';
+  const depth = size * 0.07;
+  ctx.fillStyle = '#1f3a5f';
+  for (let i = 10; i >= 1; i--) ctx.fillText(word, cx + (depth * i) / 10, base + (depth * i) / 10);
+  ctx.lineWidth = size * 0.05;
+  ctx.strokeStyle = '#fbf8f1';
+  ctx.strokeText(word, cx, base);
+  ctx.restore();
+  if (small) photoLetters(ctx, word, block, size, cx, base, small, scale);
+
+  const credit = [[t.make, t.model].filter(Boolean).join(' '), t.lens, t.exposure].filter(Boolean).join('   ·   ');
+  text(ctx, credit, cx, content.y + content.h - Math.max(S * 0.03, photo.x - content.x) * 0.55, { font: FONTS.courier, size: S * 0.017, color: '#6b5a41', align: 'center', maxWidth: content.w * 0.9 });
 }
 
 // ---------- Helpers ----------

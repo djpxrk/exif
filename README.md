@@ -22,6 +22,9 @@ Strip, Instant, Gallery mat, Backdrop (blurred photo), Viewfinder (overlay), Fil
 - **Postcard:** the photo above a postcard back. The caption is handwritten (or "Greetings from …"), and the camera details are typed on the address lines. The stamp shows a globe turned to the location, under a postmark with the town and date.
 - **Slide mount:** a square 35mm slide mount with a handwritten label, a frame number and a processing date.
 - **Cinema:** letterbox bars with a location/date title card, the caption as a subtitle, and a "Shot on" credit.
+- **Film strip:** a strip of 35mm film on a light table: true-to-scale perforations, amber edge printing (frame numbers, stock name, a DX-style barcode) and the camera details along the edge. Runs vertically for portrait photos.
+- **Terminal:** a green phosphor screen: the details printed as a command's output with dotted leaders and a cursor, scanlines and glow.
+- **Greetings:** a vintage large-letter postcard: deckle-edged print on a linen card, "Greetings from" in script, and the place name in 3D block letters filled with the photo.
 
 Options:
 
@@ -109,6 +112,24 @@ npm run deploy
 This builds the site and pushes `dist/` to the `gh-pages` branch. Pages is set to **Deploy from a branch** (`gh-pages`, root) under Settings → Pages.
 
 The RAW develop fallback (libraw-wasm) needs a cross-origin isolated page. GitHub Pages can't send the required headers, so the service worker (`public/sw.js`) adds them. On a first visit the page reloads once to pick them up. `vercel.json` sends the same headers if you ever host on Vercel instead.
+
+## Publishing the iOS app
+
+What you need:
+- **Xcode** (free, Mac App Store). This Mac only has the Command Line Tools, so install Xcode first, open it once, then run `sudo xcode-select -s /Applications/Xcode.app`.
+- **Apple Developer Program** ($99/year) to use TestFlight and the App Store. A free Apple ID can still run the app on your own iPhone, but it expires after 7 days.
+
+Steps:
+1. `npm run ios` (build and copy into `ios/`), then `npx cap open ios`.
+2. In Xcode: App target → Signing & Capabilities → choose your Team. Plug in your iPhone (Settings → Privacy & Security → Developer Mode on) and press Run to test.
+3. In [App Store Connect](https://appstoreconnect.apple.com): New App, bundle ID `com.parkdj.rebate`. "Rebate" alone may be taken on the App Store; something like "Rebate: EXIF Frames" works.
+4. In Xcode: Product → Archive → Distribute App → App Store Connect. The build appears in TestFlight for testing.
+5. Fill in the listing: screenshots (iPhone 6.9", plus iPad 13" while iPad is a supported device), description, category Photo & Video, privacy policy URL `https://djpxrk.github.io/rebate/privacy.html`, support URL `https://github.com/djpxrk/rebate/issues`. App Privacy: **Data Not Collected**.
+6. Submit for review.
+
+Already in the project: app icon, launch screen, permission texts, a privacy manifest (`PrivacyInfo.xcprivacy`), and `ITSAppUsesNonExemptEncryption = NO`, so no export-compliance question.
+
+Review risk worth knowing: App Review is strict about third-party trademarks (guideline 5.2), and especially Apple's own logo. Consider defaulting to "Name as text" (or dropping the Apple logo) in the App Store build.
 
 ## iOS app (Capacitor)
 
