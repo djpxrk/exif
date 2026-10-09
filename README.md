@@ -36,13 +36,16 @@ Options:
 - Saved JPEGs can keep the camera metadata (never GPS).
 - **Crop factors:** a bundled database of about 1,280 cameras and 290 product-line rules (`data/cameras/*.json`, compiled by `npm run cameras`). It covers Canon, Nikon, Sony, Fujifilm, Panasonic/LUMIX, OM System/Olympus, Leica, Ricoh/Pentax, Sigma, Hasselblad and Phase One. Phones and drones rely on the 35mm value they record.
 - **Brand logos:** 51 camera, phone and lens brands (`data/logos/*.json`, compiled by `npm run logos`), from Simple Icons (CC0) and public-domain Wikimedia Commons wordmarks. With logos on, the logo row sits above the camera/lens line, and the shot details go beneath.
-- **Typefaces** (all open source, bundled), picked by kind:
-  - Sans: Inter, Manrope, Unbounded, Barlow Condensed
-  - Serif: Fraunces, EB Garamond, Noto Serif Display
+- **Typefaces** (38, all open source, bundled), picked by kind:
+  - Sans: Inter, Manrope, Unbounded, Barlow Condensed, Jost, Space Grotesk, Oswald
+  - Serif: Fraunces, EB Garamond, Playfair Display, Cormorant Garamond, Instrument Serif, Noto Serif Display
+  - Display: Anton, Bebas Neue, Abril Fatface, Righteous
   - Code & mono: JetBrains Mono, Fira Code, IBM Plex Mono, Source Code Pro, Space Mono, Courier Prime
-  - Digital: DSEG14 (14-segment LCD), Orbitron, VT323, Press Start 2P
-  - Handwriting: Caveat, Nanum Pen Script
-  - 한글: IBM Plex Sans KR, Gowun Batang
+  - Digital: DSEG14 (14-segment LCD), Orbitron, VT323, Share Tech Mono, Silkscreen, Press Start 2P
+  - Handwriting: Pacifico, Dancing Script, Permanent Marker, Caveat, Nanum Pen Script
+  - 한글: IBM Plex Sans KR, Gowun Batang, Black Han Sans, Gaegu
+
+  Every glyph is drawn in the chosen face. Where a face lacks a symbol (measured per face: α in about two thirds of them, ′ ″ · © × —), a stand-in in the same face is used, so "α7CR" in Caveat reads "a7CR" in Caveat rather than mixing in a glyph from another font.
   
   Korean text in any Latin face falls back to a Korean face of the same style (sans → IBM Plex Sans KR, serif → Gowun Batang, mono → Nanum Gothic Coding, handwriting → Nanum Pen Script). Fonts load per character range, so a Korean caption only downloads the glyphs it uses. Only WOFF2 files are bundled.
 

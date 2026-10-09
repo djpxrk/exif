@@ -16,31 +16,60 @@ const KR_MONO = '"Nanum Gothic Coding"';
 const KR_HAND = '"Nanum Pen Script"';
 export const FONTS = {
   inter: { group: 'sans', family: 'Inter', label: 'Inter', regular: 400, bold: 700, stack: KR_SANS },
-  manrope: { group: 'sans', family: 'Manrope', label: 'Manrope', regular: 400, bold: 700, stack: KR_SANS },
-  unbounded: { group: 'sans', family: 'Unbounded', label: 'Unbounded', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.92 },
-  barlow: { group: 'sans', family: 'Barlow Condensed', label: 'Barlow Condensed', regular: 500, bold: 700, stack: `"Inter", ${KR_SANS}` },
-  anton: { group: 'sans', family: 'Anton', label: 'Anton', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}` },
-  fraunces: { group: 'serif', family: 'Fraunces', label: 'Fraunces', regular: 400, bold: 600, italic: true, stack: `"EB Garamond", ${KR_SERIF}` },
+  manrope: { group: 'sans', family: 'Manrope', label: 'Manrope', regular: 400, bold: 700, stack: KR_SANS, lacks: '′″' },
+  unbounded: { group: 'sans', family: 'Unbounded', label: 'Unbounded', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.92, lacks: 'αΑ′″' },
+  barlow: { group: 'sans', family: 'Barlow Condensed', label: 'Barlow Condensed', regular: 500, bold: 700, stack: `"Inter", ${KR_SANS}`, lacks: 'αΑ' },
+  jost: { group: 'sans', family: 'Jost', label: 'Jost', regular: 400, bold: 700, stack: `"Inter", ${KR_SANS}`, lacks: 'αΑ′″' },
+  spacegrotesk: { group: 'sans', family: 'Space Grotesk', label: 'Space Grotesk', regular: 400, bold: 700, stack: `"Inter", ${KR_SANS}`, lacks: 'αΑ' },
+  oswald: { group: 'sans', family: 'Oswald', label: 'Oswald', regular: 400, bold: 700, stack: `"Inter", ${KR_SANS}`, scale: 0.95, lacks: 'αΑ' },
+  anton: { group: 'display', family: 'Anton', label: 'Anton', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, lacks: 'αΑ' },
+  bebas: { group: 'display', family: 'Bebas Neue', label: 'Bebas Neue', regular: 400, bold: 400, stack: `"Oswald", "Inter", ${KR_SANS}`, scale: 1.1, lacks: 'αΑ′″' },
+  abril: { group: 'display', family: 'Abril Fatface', label: 'Abril Fatface', regular: 400, bold: 400, stack: `"Playfair Display", ${KR_SERIF}`, lacks: 'αΑ′″' },
+  righteous: { group: 'display', family: 'Righteous', label: 'Righteous', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, lacks: 'αΑ′″' },
+  fraunces: { group: 'serif', family: 'Fraunces', label: 'Fraunces', regular: 400, bold: 600, italic: true, stack: `"EB Garamond", ${KR_SERIF}`, lacks: 'αΑ' },
   garamond: { group: 'serif', family: 'EB Garamond', label: 'EB Garamond', regular: 400, bold: 700, italic: true, stack: KR_SERIF, scale: 1.15 },
+  playfair: { group: 'serif', family: 'Playfair Display', label: 'Playfair Display', regular: 400, bold: 700, italic: true, stack: `"EB Garamond", ${KR_SERIF}`, lacks: 'αΑ' },
+  cormorant: { group: 'serif', family: 'Cormorant Garamond', label: 'Cormorant Garamond', regular: 500, bold: 700, italic: true, stack: `"EB Garamond", ${KR_SERIF}`, scale: 1.18, lacks: 'αΑ' },
+  instrument: { group: 'serif', family: 'Instrument Serif', label: 'Instrument Serif', regular: 400, bold: 400, italic: true, stack: `"EB Garamond", ${KR_SERIF}`, scale: 1.12, lacks: 'αΑ′″' },
   didone: { group: 'serif', family: 'Noto Serif Display', label: 'Noto Serif Display', regular: 400, bold: 700, italic: true, stack: KR_SERIF },
   mono: { group: 'mono', family: 'JetBrains Mono', label: 'JetBrains Mono', regular: 400, bold: 600, stack: KR_MONO },
-  firacode: { group: 'mono', family: 'Fira Code', label: 'Fira Code', regular: 400, bold: 700, stack: KR_MONO },
-  plexmono: { group: 'mono', family: 'IBM Plex Mono', label: 'IBM Plex Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}` },
+  firacode: { group: 'mono', family: 'Fira Code', label: 'Fira Code', regular: 400, bold: 700, stack: KR_MONO, lacks: '′″' },
+  plexmono: { group: 'mono', family: 'IBM Plex Mono', label: 'IBM Plex Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}`, lacks: 'αΑ' },
   sourcecode: { group: 'mono', family: 'Source Code Pro', label: 'Source Code Pro', regular: 400, bold: 700, stack: KR_MONO },
-  spacemono: { group: 'mono', family: 'Space Mono', label: 'Space Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}` },
-  courier: { group: 'mono', family: 'Courier Prime', label: 'Courier Prime', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2 },
+  spacemono: { group: 'mono', family: 'Space Mono', label: 'Space Mono', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}`, lacks: 'αΑ' },
+  courier: { group: 'mono', family: 'Courier Prime', label: 'Courier Prime', regular: 400, bold: 700, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2, lacks: 'αΑ' },
   // Digital: a 14-segment LCD (capitals only, registered in main.js), a display face, a CRT terminal and pixels.
-  lcd: { group: 'digital', family: 'DSEG14 Classic', label: 'DSEG14 LCD', regular: 400, bold: 700, upper: true, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 0.9, sample: '1/250 F2' },
-  orbitron: { group: 'digital', family: 'Orbitron', label: 'Orbitron', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.9 },
-  vt323: { group: 'digital', family: 'VT323', label: 'VT323', regular: 400, bold: 400, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2 },
-  pixel: { group: 'digital', family: 'Press Start 2P', label: 'Press Start 2P', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, scale: 0.7 },
-  pacifico: { group: 'hand', family: 'Pacifico', label: 'Pacifico', regular: 400, bold: 400, stack: `"Caveat", ${KR_HAND}, "Manrope"`, scale: 0.85 },
-  caveat: { group: 'hand', family: 'Caveat', label: 'Caveat', regular: 400, bold: 700, stack: `${KR_HAND}, "Manrope"`, scale: 1.3 },
-  nanumpen: { group: 'hand', family: 'Nanum Pen Script', label: 'Nanum Pen Script', regular: 400, bold: 400, stack: '"Manrope"', scale: 1.3, sample: '오늘의 사진' },
-  plexkr: { group: 'korean', family: 'IBM Plex Sans KR', label: 'IBM Plex Sans KR', regular: 400, bold: 700, stack: '"Inter"', sample: '서울 1/250' },
-  batang: { group: 'korean', family: 'Gowun Batang', label: 'Gowun Batang', regular: 400, bold: 700, stack: '"EB Garamond"', sample: '여름 f/2.8' },
+  lcd: { group: 'digital', family: 'DSEG14 Classic', label: 'DSEG14 LCD', regular: 400, bold: 700, upper: true, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 0.9, sample: '1/250 F2', lacks: 'αΑ·′″©×—’•' },
+  orbitron: { group: 'digital', family: 'Orbitron', label: 'Orbitron', regular: 400, bold: 700, stack: `"Manrope", ${KR_SANS}`, scale: 0.9, lacks: 'αΑ·′″©' },
+  vt323: { group: 'digital', family: 'VT323', label: 'VT323', regular: 400, bold: 400, stack: `"JetBrains Mono", ${KR_MONO}`, scale: 1.2, lacks: 'αΑ′″' },
+  sharetech: { group: 'digital', family: 'Share Tech Mono', label: 'Share Tech Mono', regular: 400, bold: 400, stack: `"JetBrains Mono", ${KR_MONO}`, lacks: 'αΑ′″' },
+  silkscreen: { group: 'digital', family: 'Silkscreen', label: 'Silkscreen', regular: 400, bold: 700, stack: `"Press Start 2P", "JetBrains Mono", ${KR_MONO}`, scale: 0.8, lacks: 'αΑ′″' },
+  pixel: { group: 'digital', family: 'Press Start 2P', label: 'Press Start 2P', regular: 400, bold: 400, stack: `"Inter", ${KR_SANS}`, scale: 0.7, lacks: '′″' },
+  pacifico: { group: 'hand', family: 'Pacifico', label: 'Pacifico', regular: 400, bold: 400, stack: `"Caveat", ${KR_HAND}, "Manrope"`, scale: 0.85, lacks: 'αΑ′″' },
+  dancing: { group: 'hand', family: 'Dancing Script', label: 'Dancing Script', regular: 400, bold: 700, stack: `${KR_HAND}, "Caveat", "Manrope"`, scale: 1.15, lacks: 'αΑ′″' },
+  marker: { group: 'hand', family: 'Permanent Marker', label: 'Permanent Marker', regular: 400, bold: 400, stack: `${KR_HAND}, "Manrope"`, scale: 0.95, lacks: 'αΑ′″' },
+  caveat: { group: 'hand', family: 'Caveat', label: 'Caveat', regular: 400, bold: 700, stack: `${KR_HAND}, "Manrope"`, scale: 1.3, lacks: 'αΑ' },
+  nanumpen: { group: 'hand', family: 'Nanum Pen Script', label: 'Nanum Pen Script', regular: 400, bold: 400, stack: '"Manrope"', scale: 1.3, sample: '오늘의 사진', lacks: 'αΑ·′″—•' },
+  plexkr: { group: 'korean', family: 'IBM Plex Sans KR', label: 'IBM Plex Sans KR', regular: 400, bold: 700, stack: '"Inter"', sample: '서울 1/250', lacks: 'αΑ' },
+  batang: { group: 'korean', family: 'Gowun Batang', label: 'Gowun Batang', regular: 400, bold: 700, stack: '"EB Garamond"', sample: '여름 f/2.8', lacks: 'αΑ' },
+  blackhan: { group: 'korean', family: 'Black Han Sans', label: 'Black Han Sans', regular: 400, bold: 400, stack: '"Inter"', sample: '사진 1/250', lacks: 'αΑ·′″©—•' },
+  gaegu: { group: 'korean', family: 'Gaegu', label: 'Gaegu', regular: 400, bold: 700, stack: '"Caveat", "Manrope"', scale: 1.25, sample: '오늘 1/250', lacks: 'αΑ·′″©×—•' },
 };
-export const FONT_GROUPS = { sans: 'Sans', serif: 'Serif', mono: 'Code & mono', digital: 'Digital', hand: 'Handwriting', korean: '한글' };
+export const FONT_GROUPS = { sans: 'Sans', serif: 'Serif', display: 'Display', mono: 'Code & mono', digital: 'Digital', hand: 'Handwriting', korean: '한글' };
+
+// Symbols a face lacks (`lacks`, measured per face) are swapped for stand-ins
+// drawn in the face itself, instead of borrowing the glyph from a fallback font
+// of a different style: "α7CR" in Caveat becomes "a7CR" in Caveat.
+const STAND_INS = { 'α': 'a', 'Α': 'A', '′': "'", '″': '"', '×': 'x', '—': '-', '’': "'", '©': '(c)', '·': '•', '•': '-' };
+export function inFace(s, font) {
+  if (!font?.lacks || !s) return s;
+  let out = '';
+  for (let ch of String(s)) {
+    for (let i = 0; i < 3 && font.lacks.includes(ch) && STAND_INS[ch]; i++) ch = STAND_INS[ch];
+    out += ch;
+  }
+  return out;
+}
 
 /** CSS font shorthand for canvas, with the face's fallback stack. */
 export function fontSpec(font, weight, px, italic = false) {
@@ -988,6 +1017,7 @@ function drawPostmark(ctx, { cx, cy, r, top, bottom, mid, sub, lineEnd }) {
 /** Text set along a circle, centred on angle `at`; `under` reads along the bottom. */
 function arcText(ctx, s, cx, cy, r, at, size, color, under) {
   if (!s) return;
+  s = inFace(s, FONTS.courier);
   ctx.save();
   ctx.font = fontSpec(FONTS.courier, FONTS.courier.bold, size);
   ctx.fillStyle = color;
@@ -1371,9 +1401,9 @@ function drawGreetings({ ctx, font, S, L, t, fields, scale, small }) {
   const geo = geoFor(fields, photo.w < photo.h);
   const [place] = placeLines(geo.place);
   const dp = dateParts(fields.date);
-  const word = (place || t.caption || (dp ? `${MONTH_NAMES[dp.m]} ${dp.y}` : 'Somewhere')).toUpperCase();
-
   const block = FONTS.anton;
+  const word = inFace((place || t.caption || (dp ? `${MONTH_NAMES[dp.m]} ${dp.y}` : 'Somewhere')).toUpperCase(), block);
+
   const maxW = content.w - S * 0.14;
   ctx.font = fontSpec(block, block.regular, 100);
   const unit = ctx.measureText(word).width / 100;
@@ -1466,7 +1496,7 @@ function drawLogo(ctx, key, x, cy, h, color) {
  * exists, separated by a thin rule. h is the cap height. Returns the width used.
  */
 function brandRow(ctx, items, x, cy, h, { color, rule, align = 'left', font, maxWidth = Infinity }) {
-  if (font.upper) items = items.map((it) => (it.text ? { text: it.text.toUpperCase() } : it));
+  items = items.map((it) => (it.text ? { text: inFace(font.upper ? it.text.toUpperCase() : it.text, font) } : it));
   const measure = (hh) => {
     const size = hh * 1.38 * (font.k || 1); // cap height ≈ 0.72 of the font size
     ctx.font = fontSpec(font, font.bold, size);
@@ -1499,6 +1529,7 @@ function brandRow(ctx, items, x, cy, h, { color, rule, align = 'left', font, max
 function text(ctx, s, x, y, { font, size, weight = 'regular', italic = false, color, align = 'left', maxWidth = Infinity }) {
   if (!s) return 0;
   if (font.upper) s = s.toUpperCase();
+  s = inFace(s, font);
   const w = weight === 'bold' ? font.bold : font.regular;
   let px = size * (font.k || 1);
   const spec = (p) => fontSpec(font, w, p, italic);

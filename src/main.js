@@ -46,6 +46,32 @@ import '@fontsource/orbitron/400.css';
 import '@fontsource/orbitron/700.css';
 import '@fontsource/vt323/400.css';
 import '@fontsource/anton/400.css';
+import '@fontsource/jost/400.css';
+import '@fontsource/jost/700.css';
+import '@fontsource/space-grotesk/400.css';
+import '@fontsource/space-grotesk/700.css';
+import '@fontsource/oswald/400.css';
+import '@fontsource/oswald/700.css';
+import '@fontsource/bebas-neue/400.css';
+import '@fontsource/abril-fatface/400.css';
+import '@fontsource/righteous/400.css';
+import '@fontsource/playfair-display/400.css';
+import '@fontsource/playfair-display/700.css';
+import '@fontsource/playfair-display/400-italic.css';
+import '@fontsource/cormorant-garamond/500.css';
+import '@fontsource/cormorant-garamond/700.css';
+import '@fontsource/cormorant-garamond/500-italic.css';
+import '@fontsource/instrument-serif/400.css';
+import '@fontsource/instrument-serif/400-italic.css';
+import '@fontsource/share-tech-mono/400.css';
+import '@fontsource/silkscreen/400.css';
+import '@fontsource/silkscreen/700.css';
+import '@fontsource/dancing-script/400.css';
+import '@fontsource/dancing-script/700.css';
+import '@fontsource/permanent-marker/400.css';
+import '@fontsource/black-han-sans/400.css';
+import '@fontsource/gaegu/400.css';
+import '@fontsource/gaegu/700.css';
 import '@fontsource/pacifico/400.css';
 import '@fontsource/press-start-2p/400.css';
 import dsegUrl from 'dseg/fonts/DSEG7-Classic/DSEG7Classic-Bold.woff2?url';
@@ -59,7 +85,7 @@ import { equivalentFocal, formatForCrop, lookupCamera } from './crop.js';
 import { cameraLogo, lensLogo } from './brands.js';
 import { LOGOS } from './logos.js';
 import { DATE_FORMATS, formatDate, formatTime, prettyModel } from './exif.js';
-import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, FONT_GROUPS, MAP_SCALES, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
+import { DATE_STAMP_FONT, DEFAULT_SETTINGS, FONTS, FONT_GROUPS, MAP_SCALES, inFace, RATIOS, TEMPLATES, layout, ratioLabel, renderFrame } from './render.js';
 import { coordsOf, loadMaps, maps, placeOf } from './map.js';
 import { ALBUM, FILE_NAMES, FORMATS, SITE_URL, canShare, chooseFolder, deliver, exportPhoto, folderReady, forgetFolder, maxCanvasPixels, needsStrips, outputSize, saveTargets, savedFolder, shareFiles } from './export.js';
 
@@ -553,7 +579,8 @@ function drawLayoutControls() {
   $('#fonts').replaceChildren(
     ...faces.map(([key, f, label]) => {
       const b = el('button', { className: 'font-opt af', type: 'button' },
-        el('b', { textContent: f.sample || 'Ag 1/250', style: `font-family:"${f.family}";${f.upper ? 'text-transform:uppercase;' : ''}` }),
+        // Previewed at the weight and size the frames use, never as a browser-faked bold.
+        el('b', { textContent: inFace(f.sample || 'Ag 1/250', f), style: `font-family:"${f.family}";font-weight:${f.bold};font-size:${(16 * (f.scale || 1)).toFixed(1)}px;font-synthesis:none;${f.upper ? 'text-transform:uppercase;' : ''}` }),
         el('small', { textContent: label }));
       b.setAttribute('aria-pressed', String(settings.font === key));
       b.onclick = () => { settings.font = key; changed(); };
